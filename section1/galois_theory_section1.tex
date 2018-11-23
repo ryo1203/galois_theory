@@ -1,9 +1,109 @@
-
 \documentclass[../master_galois_theory]{subfiles}
 \begin{document}
 
-\setcounter{section}{0}
+\setcounter{section}{1}
 
 \subsection{体の拡大}
+
+以降の議論では特に述べない限り体は可換体とする。
+可換体は以下のように言い換えられる。
+
+$\Leftrightarrow$ 可換整域で $(0)$と $(1)$以外のイデアルがない。
+
+$\Leftrightarrow$ クルル次元が0の可換整域。
+
+$\Leftrightarrow$ 可換整域で0以外の元は可逆。
+
+ただしKrull次元とは環の素イデアルの包含関係による順序の鎖の長さの上限のことである。
+
+$K$:体とするとき $K^\times$:可逆元の集合とし、上の同値からこれは $K^\times = K - \{ 0 \}$としたものと等しい。
+
+\begin{exam}
+  $\mathbb{Q}, \mathbb{R}, \mathbb{C}, \mathbb{F}_p = \mathbb{Z}/p\mathbb{Z} \, (p:素数), \mathbb{Q}_p \, (p進体)$
+\end{exam}
+
+\begin{exam}
+  $K$;体としたとき
+
+  $K(x)$:有理関数体 $= \{ 多項式 / 多項式(\neq 0) | 多項式 \in K[x]$
+
+  $K[[x]]$:形式的冪級数体 $\{ \sum_{i \in \mathbb{Z} , i \leq n} c_i x^i | c_i \in K , \in \mathbb{Z} \}$
+
+  $\mathbb{Q}$に $\alpha$を添加した体 $\Leftrightarrow$
+  $\mathbb{Q}(\alpha) \, (\alpha \in \mathbb{C})
+  = (\alpha$を含む最小の体 $\subset \mathbb{C})
+  = \{ f(\alpha) | f \in \mathbb{Q}(x) , (fの分母)(\alpha) \neq 0 \}
+  = \{ \alpha と有理数からできる元全体 \}$
+\end{exam}
+
+\begin{fact}
+  $R$:可換環 $\supset I : イデアル$のとき、
+  $R/I$:体 $\Leftrightarrow$ $I$:極大イデアル
+\end{fact}
+
+\begin{exam}
+  $R = K[x] , I = (f)$とするとき Factから
+
+  $I$が極大 $\Leftrightarrow$ $I$:素イデアル $\Leftrightarrow$ $f$:既約
+
+  よって $K[x]/(f)$が体 $\Leftrightarrow$ $f$が既約
+\end{exam}
+
+\begin{rem}
+  $\mathbb{Z}/\mathbb{Z} = 0$は零環で体ではない。
+  $\mathbb{F}_1$:一元体 $\subset \mathbb{Z}$は実際にはない。
+\end{rem}
+
+\begin{defi}
+  $K , L$:体 $K \subset L$とする。
+
+  $(Kの体構造) = (Lの体構造をKに制限したもの)$であるとき
+  $K$は $L$の \underline{部分体 $(\mathrm{subfield})$}、
+  $L$は $K$の \underline{拡大体 $(\mathrm{extension \  field})$}
+  といい、
+  体の拡大 $(\mathrm{field \  extension})$ $L/K$とも言う。
+  つまり、以下の図が可換であるということ。
+
+%\[
+%  \begin{tikzcd}
+%    L \times L \arrow[r] & L \\
+%    K \times K \arrow[r] \arrow[u , hook] & K \arrow[u , hook]
+%  \end{tikzcd}
+%\]
+
+\end{defi}
+
+\begin{defi}
+  体の準同型とは環としての準同型のこと。
+\end{defi}
+
+\begin{note}
+  体の準同型は全て単射。
+\end{note}
+\begin{proof}
+  $K , L$:体 , $\phi : K \longrightarrow L$:準同型
+  とするとき $\ker (\phi)$は $K$のイデアルであるから体であることより
+  $\ker (\phi) = (0) または (1) = K$となる。
+  $\ker (\phi) = K$のとき $\phi(K) = 0$から準同型であるための $\phi(1) = 1$を満たしていないからこれは不適。
+  したがって $\ker (\phi) = (0)$より $\phi$は単射。
+\end{proof}
+
+  hom : $\phi : K \longrightarrow L$があると単射より $K$は $L$の部分体 $\phi(K)$と同一視できる。
+  これより $L$が $K$を含んでいなくても $K$の拡大体と見ることができる。
+
+  $L/K$が拡大のときとくに $L$は $K$上のベクトル空間とみなせるため $\dim_K(L)$が定義できる。 $(\in \mathbb{Z}_{\geq 1} \cup \{ \infty \})$
+
+  \begin{defi}
+    $[L:K] := \dim_K(L)$と書きこれを $L/K$の \underline{拡大次数 $(\mathrm{extension \  degree})$}という。
+    この値により拡大は有限次拡大、無限次拡大に分けられる。
+  \end{defi}
+
+  \begin{exam}
+    $K(x)/K$とするとき $x$が不定元なのでこれは無限次拡大。
+    
+    $K[x]/(f)$で $f = a_0 + a_1 x + \cdots + a_n x^n$で既約とすると
+    $a_n = 1$とできて、 $x^n \equiv -(a_0 + \cdots + a_{n-1} x^{n-1})$となり
+    $n$次以上の多項式の次数を下げられるので結局基底は $1 , x , \cdots x^{n-1}$より $[K(x)/(f) : K] = n$となるのでこれは有限次拡大。
+  \end{exam}
 
 \end{document}

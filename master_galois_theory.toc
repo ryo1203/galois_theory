@@ -1,2 +1,4 @@
 \contentsline {section}{\numberline {1}体の拡大}{2}
-\contentsline {section}{\numberline {2}Galois理論の基本定理}{3}
+\contentsline {section}{\numberline {2}Galois理論の基本定理}{4}
+\contentsline {subsection}{\numberline {2.1}Dedekindの補題}{4}
+\contentsline {subsection}{\numberline {2.2}Artinの定理}{5}

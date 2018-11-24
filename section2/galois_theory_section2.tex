@@ -5,8 +5,271 @@
 
 \section{Galois理論の基本定理}
 
+\subsection{Dedekindの補題}
+
 \begin{defi}
   有限次拡大 $L/K$が \rm{Galois}拡大であるとは $L^{\aut_K(L)} = K$であること。
+
+  このときの $\aut_K(L)$をとくに $\gal (L/K)$と記し、 $L/K$の \galois 群という。
 \end{defi}
+
+\begin{rem}
+  $L^{\aut_K(L)}$は $K$を固定するような元で固定される $L$の元であるから $L^{\aut_K(L)} \supset K$は定義より明らか。
+  それ以外に固定される元が無いということ。
+
+  また、よくある \galois 拡大の定義は正規かつ分離な拡大というものでこれとの同値は後で示す。
+\end{rem}
+
+\galois 理論の基本定理を示すために準備を行う。
+
+\begin{lemm} \label{lemm:grpdedekind}
+
+  $S$:群 $L$:体とし、 $\sigma_1 , \dots , \sigma_n : S \longrightarrow L^\times$を相異なる群準同型とする。
+  このとき $c_1 , \cdots c_n \in L$に対し以下が成り立つ。
+  \[
+  c_1 \sigma_1 (x) + \cdots + c_n \sigma_n (x) = 0 \  ({}^\forall x \in S)
+  \Longrightarrow c_1 = \cdots = c_n = 0
+  \]
+
+\end{lemm}
+
+\begin{proof}
+  成り立たないと仮定し、ある $c_1 , \dots , c_n \in S$が成り立たないとするもののうち $n$が最小であるような最短の反例であるとする。
+  まずこのとき $n \leq 2$である。
+  $n = 1$のとき $c_1 \sigma_1 (x) = 0$であるが $\sigma_1 (x) \in L^\times = L - \{ 0 \}$から $c_1 = 0$となるからである。
+
+  相異なる群準同型より写像として異なるということは $\sigma_n \neq \sigma_1$より ${}^\exists x_0 \in S , \sigma_n (x_0) \neq \sigma_1 (x_0)$となる。
+  $x_0 x$を入れると準同型より
+
+  \begin{eqnarray}
+  c_1 \sigma_1 (x_0) \sigma_1 (x) + \cdots + c_n \sigma_n (x_0) \sigma_n (x) = 0 \label{eq:x_0x}
+  \end{eqnarray}
+
+  となる。これと $\sigma_n (x_0)$を式にかけたものは
+
+  \begin{eqnarray}
+    c_1 \sigma_n (x_0) \sigma_1 (x) + \cdots + c_n \sigma_n (x_0) \sigma_n (x) = 0 \label{eq:sigmax_0}
+  \end{eqnarray}
+
+  となりこれを辺々ひくと $c_n \sigma_n (x_0) \sigma_n (x)$が共通であるからそこが消えて、 $\sigma_1 (x_0) - \sigma_n (x_0) \neq 0$より
+
+  \[
+  c_1 ( \sigma_1 (x_0) - \sigma_n (x_0) ) \sigma_1 (x) + \cdots + c_{n-1} ( \sigma_{n-1} (x_0) - \sigma_n (x_0) ) \sigma_{n-1} (x) = 0
+  \]
+
+  となり $c_k ( \sigma_k (x_0) - \sigma_n (x_0) )$を新しい係数と見れば左辺は少なくとも全ての項が $0$になることは無いので $c_1 , \dots , c_n$の最短性に矛盾しているから $c_1 = \cdots = c_n = 0$である。
+
+\end{proof}
+
+\begin{lemm} \label{lemm:dedekind}
+  \rm{Dedekind}の補題
+
+  $M , L$:体とし、 $\sigma_1 , \dots , \sigma_n : M \longrightarrow L$が相異なる体の準同型とする。
+  このとき $c_1 , \dots , c_n \in L$に対し、以下が成り立つ。
+
+  \[
+  c_1 \sigma_1 (x) + \cdots + c_n \sigma_n (x) = 0 \  ({}^\forall x \in M)
+  \Longrightarrow c_1 = \cdots = c_n = 0
+  \]
+
+\end{lemm}
+
+\begin{proof}
+  乗法群に制限したものは$\sigma_i |_{M^\times} : M^\times \longrightarrow L^\times$でありこれは相異なる群準同型なので補題 \ref{lemm:grpdedekind}より成立。
+\end{proof}
+
+\begin{rem}
+  写像 $\Hom_体 (M,L) \longrightarrow \Hom_{加法群} (M,L)$を 体の準同型をその加法群の準同型とみるというものにする。
+  また、このとき $\Hom_{加法群} (M,L)$は $(\phi_1 + \phi_2)(x) = \phi_1 (x) + \phi_2 (x) , (c \phi)(x) = c (\phi (x)) \  c \in L$とすることで $L$の加法により$L$-ベクトル空間と見れる。
+  そしてこの写像でそれぞれの元は変わらず変わるのは始域と終域の演算なので単射であり像は一次独立となることを補題 \rm{\ref{lemm:dedekind}}は述べている。
+\end{rem}
+
+\begin{lemm}
+  \rm{Dedekind}の補題/$K$
+
+  $L/M , M/K$:拡大で $\sigma_1 , \dots , \sigma_n : M \longrightarrow L$を相異なる $K$上の体準同型 $(\sigma_i |_K = \mathrm{id}_K)$とする。
+  このとき $c_1 , \dots , c_n \in L$に対し、以下が成り立つ。
+
+  \[
+  c_1 \sigma_1 (x) + \cdots + c_n \sigma_n (x) = 0 \  ({}^\forall x \in M)
+  \Longrightarrow c_1 = \cdots = c_n = 0
+  \]
+\end{lemm}
+
+\begin{proof}
+  \rm{Dedekind}の補題から明らか。
+\end{proof}
+
+\begin{rem} \label{rem:dedekindrem}
+  これも \rm{\ref{lemm:dedekind}}と同様に $K$上の体準同型であることも考えれば写像 $\Hom_{Kの拡大} (M,L) \longrightarrow \Hom_{K-ベクトル空間} (M,L)$が単射で像は $L$上一次独立である。
+\end{rem}
+
+\subsection{Artinの定理}
+
+\begin{lemm} \label{lemm:2.4}
+  $M/K , L/K$:体の拡大として $M/K$が有限次拡大のとき $|\Hom_{Kの拡大} (M,L)|$は有限で
+  $|\Hom_{Kの拡大} (M,L)| \leq [M:K]$が成り立つ。
+\end{lemm}
+
+\begin{proof}
+  まず、 $\Hom_K (M,K) \otimes_K L \cong \Hom_K (M,L)$を示す。
+
+  $f \in \Hom_K(M,K) , l \in L$に対し $\varphi(f,l) : M \longrightarrow L , m \longmapsto f(m)l$とする。
+  このときこれは $f \in \Hom_K(M,K)$から以下のように $K$線形写像であるから $\varphi(f,l) \in \Hom_K(M,L)$である。
+
+  \begin{eqnarray*}
+    \varphi (f,l) (m_1 + m_2) & = & f(m_1 + m_2)l = (f(m_1) + f(m_2))l = f(m_1)l + f(m_2)l = \varphi (m_1) + \varphi (m_2) \\
+    \varphi (f,l) (km) & = & f(km)l = kf(m)l = k \varphi(m)
+  \end{eqnarray*}
+
+  そして $\phi : \Hom_K(M,K) \times L \longrightarrow \Hom_K(M,L) , (f,l) \longmapsto \phi(f,l) = \varphi(f,l)$
+  とすると $\phi$は以下のように $L$-双線形写像になる。
+
+  \begin{eqnarray*}
+    \phi(f_1 + f_2 , l) (m) & = & (f_1 + f_2)(m)l = f_1(m)l + f_2(m)l = \phi(f_1,l) + \phi(f_2,l) = (\phi(f_1,l) + \phi(f_2,l))(m) \\
+    \phi(f , l_1 + l_2) (m) & = & f(m)(l_1 + l_2) = f(m)l_1 + f(m)l_2 = \phi(f,l_1)(m) + \phi(f,l_2)(m) = (\phi(f,l_1) + \phi(f,l_2))(m) \\
+    \phi(kf , l) (m) & = & (kf)(m)l = k(f(m))l = k \phi(f,l)(m) \\
+    \phi(f,kl) (m) & = & f(m)kl = k(f(m))l = k \phi(f,l)(m)
+  \end{eqnarray*}
+
+  したがってテンソル積の普遍性から
+  $\theta : \Hom_K (M,K) \otimes_K L \longrightarrow \Hom_K(M,L)$であり
+  $\theta (f \otimes l) : M \longrightarrow L , m \longmapsto f(m)l$と定められたものが一意に定まる。
+
+  今、有限次拡大であるので $M$の基底を $(m_i)$、その双対空間 $\Hom_K(M,K)$の基底つまり双対基底を $(f_i)$、 $L$の基底を $(l_j)$とできる。
+  よって $z \in \Hom_K(M,K) \otimes_K L$は $z = \sum_{ij} a_ij (f_i \otimes l_j) , a_{ij} \in K$と書ける。
+  そして定義から $\theta(z)(m) = \sum_{ij} a_ij (f_i (m) l_j)$となる。
+  $m = m_i$とすると双対基底からクロネッカーのデルタから $f_i(m_j) = \delta_{ij}$となるので $\theta(z)(m_i) = \sum_j a_ij l_j$である。
+  $\theta (z) = 0$になるとき、全ての $(m_i)$において $0$になるので $(l_j)$が基底より一次独立を考えれば ${}^\forall i , \sum_j a_ij l_j = 0 \Leftrightarrow a_ij = 0$となるから $z = 0$より $\ker (\theta) = 0$より $\theta$は単射。
+
+  また、任意の $f \in \Hom_K(M,L)$に対して $z = \sum_i f_i \otimes f(m_i) $とおくと $\theta (z)(m) = \sum_i f_i (m) f(m_i)$から $m = m_i$とおけば双対基底より同様に $\theta (z)(m_i) = f(m_i)$であり $(m_i)$は基底なので $\theta (z) = f$となるから $\theta$は全射。
+
+  よって $\theta$は全単射であり、 $K$-双線形写像より $\theta$は同型写像となるので
+  $\Hom_K(M,K) \otimes_K L \cong \Hom_K(M,L)$が成り立つ。
+
+  次に$\Hom_K(M,K) \otimes_K L \cong L^n$を示す。
+
+  今 $[M:K] = n$とするとある基底を取れば $M$が $K$ベクトル空間より $M \cong K^n$とできるので $\Hom_K(M,K) \otimes_K L \cong \Hom_K(K^n,K) \otimes_K L$となる。
+  また、 $\Hom_K(K^n,K)$は $M = K^n$の双対空間なので基底を移せるので $\Hom_K(K^n,K) \cong K^n$より $\Hom_K(K^n,K) \otimes_K L \cong K^n \otimes_K L$となる。
+
+  そして $\phi : K^n \otimes_K L \longrightarrow L^n , (k_1 , \dots , k_n) \otimes l \longmapsto (k_1 l , \dots , k_n l)$とする。
+  これは $(k_1 l , \dots , k_n l) = (k'_1 l' , \dots , k'_n l') \Leftrightarrow {}^\forall i , k_i l = k'_i l$であり
+  $L$が体なので $l^{-1}$をかければ $k_i = k'_i$より $(k_1 , \dots , k_n) = (k'_1 , \dots , k'_n)$から $phi$は単射。
+  そして、任意の $(l_1 , \dots , l_n) \in L^n$に対して $k_i = l_i l^{-1}$ととれば $\phi ((k_1 , \dots , k_n) \otimes l) = (l_1 , \dots , l_n)$より全射。
+  構造も保たれるから $K^n \otimes_K L \cong L^n$となる。
+
+  したがって同型から、 $[M:K] = n = \dim_L(L^n) = \dim_L(K^n \otimes_K L) = \dim_L(\Hom_K(M,K) \otimes_K L) = \dim_L(\Hom_K(M,L))$より
+  $\dim_L(\Hom_K(M,L)) = [M:K]$となる。
+
+  そして補題 \rm{\ref{rem:dedekindrem}}から単射で一次独立であることから $\Hom_{Kの拡大}(M,L)$は $\Hom_K(M,L)$に埋め込めるから $|\Hom_{Kの拡大}(M,L)| \leq |\Hom_K(M,L)| = [M:K]$より示された。
+\end{proof}
+
+\begin{theo}
+  \rm{Artin}の定理
+
+  $L/K$が有限次拡大のとき
+  \begin{eqnarray*}
+    L/Kが \mathrm{Galois}拡大 \Leftrightarrow K = L^G となる部分群 G \subset \aut(L)が存在する。
+  \end{eqnarray*}
+  このとき $G = \gal(L/K) , [L:K] = |G|$が成り立つ。
+
+\end{theo}
+
+\begin{proof}
+  必要十分性を示す。
+
+  $(\Rightarrow)$
+
+  $G = \gal(L/K)$とすれば \galois 拡大の定義より成立。
+
+  $(\Leftarrow)$
+
+  $K = L^G$のとき $G$の元は $K$の元を固定するので $G \subset \aut_K(L)$であり、
+  \rm{\ref{rem:hougan}}により包含関係が逆になり $L^G \supset L^{\aut_K(L)}$となる。
+  $L^{\aut_K(L)}$は $K$の元で固定されるような元により固定される $L$の元なので $K$を含む。
+  したがって以下のようになる。
+
+  \[
+  K = L^G \supset L^{\aut_K(L)} \supset K
+  \]
+
+  より $K = L^G = L^{\aut_K(L)} = K$から $ K = L^{\aut_K(L)}$より $L/K$は \galois 拡大。
+
+  $L^G = L^{\aut_K(L)}$から $G = \aut_K(L)$とは言えないので以下のように示す。
+  まず $[L:K] = |G|$を示す。
+
+  補題 \rm{\ref{lemm:2.4}}から $G \subset \aut_K(L)$より
+  $|G| \leq |\aut_K(L)| = |\Hom_K(L,L)| \leq [L:K]$となるので $|G| \geq [L:K]$が言えればよい。
+
+  $|G| < [L:K]$と仮定する。
+
+  $G = \{ \sigma_1 , \dots , \sigma_m \} , L$の $K$上の基底を $(w_1 , \dots , w_n)$とする。
+  仮定より $m \leq n$なので $(n \times m)$の連立方程式系
+
+  \begin{eqnarray*}
+    \begin{cases}
+        \sigma_1(w_1) x_1 + \cdots + \sigma_1(w_n) x_n  =  0 \\
+        \vdots \\
+        \sigma_m(w_1) x_1 + \cdots + \sigma_m(w_n) x_n  =  0
+    \end{cases}
+  \end{eqnarray*}
+
+  が作られ、変数の数 $(n)$より式の数 $m$のほうが多いから非自明解が存在する。
+  その解を $(c_1 , \dots , c_n) \in L^n$としそのうち $0$が一番多い最短の解を考え添字を並び替え $0$の解を後ろにまとめ、 $0$でない解 $c_i , (1 \leq i \leq r)$で連立方程式系を以下のようにできる。
+
+  \begin{eqnarray} \label{eq:c}
+    \begin{cases}
+        c_1 \sigma_1(w_1) + \cdots + c_r \sigma_1(w_r) = 0 \\
+        \vdots \\
+        c_1 \sigma_m(w_1) + \cdots + c_r \sigma_m(w_r) = 0
+    \end{cases}
+  \end{eqnarray}
+
+  まず、 \rm{\ref{lemm:grpdedekind}}のときと同様に $r \leq 2$である。
+  また、 $c_r (\neq 0) \in L$で割って $c_r = 1$と置き直せる。
+  そして ${}^\exists c_i \in L - K$となる。
+  もし ${}^\forall c_i \in K$とすると $\sigma |_K = \rm{id}_K$より
+  $c_i \sigma (w_i) = \sigma(c_i w_i)$と、準同型より
+  $\sigma_1 (c_1 w_1 + \cdots + c_r w_r) = 0 \Rightarrow c_1 w_1 + \cdots c_r w_r = 0$となる。
+  そして $(w_i)$は基底だから一次独立より $c_1 = \cdots = c_r = 0$となりこれは非自明解であることに矛盾する。
+  よって $c_i$全てが $K$に入ることは無いから ${}^\exists c_i \in L - K$となりこれを $c_1$とおく。
+  このとき $K$に入っていないから ${}^\exists \sigma \in G , \sigma(c_1) \neq c_1$が成り立つ。
+
+  この $\sigma$を連立方程式全体に作用させると以下のようになる。
+
+  \begin{eqnarray*}
+    \begin{cases}
+        \sigma(c_1) \sigma(\sigma_1(w_1)) + \cdots + \sigma(c_r) \sigma(\sigma_1(w_r)) = 0 \\
+        \vdots \\
+        \sigma(c_1) \sigma(\sigma_m(w_1)) + \cdots + \sigma(c_r) \sigma(\sigma_m(w_r)) = 0
+    \end{cases}
+  \end{eqnarray*}
+
+  ここで $G$は有限なので $\sigma \sigma_i$は $i$を動かすことで $G$のすべての元を出し尽くすから、また添字を付け替えて方程式を並び替えて $\sigma \sigma_i$を $\sigma_i$として以下のようにして良い。
+
+  \begin{eqnarray} \label{eq:sigmac}
+    \begin{cases}
+        \sigma(c_1) \sigma_1(w_1) + \cdots + \sigma(c_r) \sigma_1(w_r) = 0 \\
+        \vdots \\
+        \sigma(c_1) \sigma_m(w_1) + \cdots + \sigma(c_r) \sigma_m(w_r) = 0
+    \end{cases}
+  \end{eqnarray}
+
+  $式(\ref{eq:c}) - 式(\ref{eq:sigmac})$とすると以下のようになる。
+
+  \begin{eqnarray*}
+    \begin{cases}
+        (c_1 - \sigma(c_1)) \sigma_1(w_1) + \cdots + (c_r - \sigma(c_r)) \sigma_1(w_r) = 0 \\
+        \vdots \\
+        (c_1 - \sigma(c_1)) \sigma_m(w_1) + \cdots + (c_r - \sigma(c_r)) \sigma_m(w_r) = 0
+    \end{cases}
+  \end{eqnarray*}
+
+  そして $c_1 - \sigma(c_1) \neq 0$と $c_r = 1$から $c_r - \sigma(c_r) = 1 - 1 = 0$より $r$の最短性に矛盾する。
+  よって $|G| < [L:K]$は不適であるから $|G| \geq [L:K]$なので $|G| = [L:K]$が成り立つ。
+
+  これより $G \subset \aut_K(L)$と一番外側の値が同じであるからその間の不等号も等号になるので $|G| = |\aut_K(L)| = [L:K]$より $G = \aut_K(L) = \gal(L/K)$も成り立つことがわかる。
+
+\end{proof}
 
 \end{document}

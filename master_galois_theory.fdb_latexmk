@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1542935809 "master_galois_theory.dvi" "master_galois_theory.pdf" "master_galois_theory" 1542935815
-  "master_galois_theory.dvi" 1542935808 9876 ccb63f1cb7db88d46d3c0a2bd39bd43e "latex"
+["dvipdf"] 1543043727 "master_galois_theory.dvi" "master_galois_theory.pdf" "master_galois_theory" 1543043731
+  "master_galois_theory.dvi" 1543043727 10720 49305d6070e311ee781cd91ca53db0dc "latex"
   (generated)
   "master_galois_theory.pdf"
-["latex"] 1542935797 "master_galois_theory.tex" "master_galois_theory.dvi" "master_galois_theory" 1542935815
+["latex"] 1543043720 "master_galois_theory.tex" "master_galois_theory.dvi" "master_galois_theory" 1543043731
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1519818042 856 7404843a5f798859944d7973a47821d5 ""
@@ -130,13 +130,14 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "master_galois_theory.aux" 1542935808 124 12b8539b9779029cf23faf2865331e19 ""
-  "master_galois_theory.tex" 1542935402 683 ae42c5d3baac66211547065b5227d968 ""
-  "master_galois_theory.toc" 1542935808 61 e28a82b7017d2ece4762407a2eee3ccb ""
-  "mymacros.sty" 1541305495 843 15cbf7776b2389fa281e4e9fb6db457d ""
-  "section1/galois_theory_section1.tex" 1542935748 3147 da30b6c4943433916706da5bf80bb952 ""
+  "master_galois_theory.aux" 1543043727 208 1f92e1a955eaac1becc21b2ffbc01fbb ""
+  "master_galois_theory.tex" 1543043662 714 0b50614d35847d4485b142fce03e7932 ""
+  "master_galois_theory.toc" 1543043727 127 c91a9db5d0a30d77c0f4cf058f3bdc6c ""
+  "mymacros.sty" 1543040987 909 f5ceee55ba127da17751eff9ae9c7f90 ""
+  "section1/galois_theory_section1.tex" 1543043699 6759 0c9b29e1d54ba22a3672ec2dffd13249 ""
+  "section2/galois_theory_section2.tex" 1543043702 157 690325630cd9e84fc2645bf876caff00 ""
   (generated)
-  "master_galois_theory.dvi"
+  "master_galois_theory.log"
   "master_galois_theory.aux"
   "master_galois_theory.toc"
-  "master_galois_theory.log"
+  "master_galois_theory.dvi"

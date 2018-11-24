@@ -1,9 +1,9 @@
 \documentclass[../master_galois_theory]{subfiles}
 \begin{document}
 
-\setcounter{section}{1}
+\setcounter{section}{0}
 
-\subsection{体の拡大}
+\section{体の拡大}
 
 以降の議論では特に述べない限り体は可換体とする。
 可換体は以下のように言い換えられる。
@@ -100,10 +100,64 @@ $K$:体とするとき $K^\times$:可逆元の集合とし、上の同値から�
 
   \begin{exam}
     $K(x)/K$とするとき $x$が不定元なのでこれは無限次拡大。
-    
+
     $K[x]/(f)$で $f = a_0 + a_1 x + \cdots + a_n x^n$で既約とすると
-    $a_n = 1$とできて、 $x^n \equiv -(a_0 + \cdots + a_{n-1} x^{n-1})$となり
+    $a_n = 1$とできて、 $x^n \equiv -(a_0 + \cdots + a_{n-1} x^{n-1}) , (\mod (f))$となり
     $n$次以上の多項式の次数を下げられるので結局基底は $1 , x , \cdots x^{n-1}$より $[K(x)/(f) : K] = n$となるのでこれは有限次拡大。
   \end{exam}
+
+  \begin{defi}
+    体 $L$に対しその自己同型写像の集合を
+    \[
+    \aut (L) := \{ 体の自己同型 | \sigma : L \longrightarrow L \}
+    \]
+    と書きこれは写像の合成について群になっている。
+    また、拡大 $L/K$に対して $K$の拡大体としての同型写像 $(K-同型写像)$の集合を
+    \[
+    \aut_K (L) := \{ \sigma \in \aut (L) | \sigma_K = \mathrm{id}_K \}
+    \]
+    と書きこれは $\aut (L)$の部分群になる。
+  \end{defi}
+
+  群になることは写像の結合法則、 $\mathrm{id}_L$が単位元、逆元は同型写像より逆写像を考えればよい。
+
+  \begin{defi}
+    $L/K$が拡大、 $K \subset M \subset L$で $M$が $L$の部分体であるとき $M$は $L/K$の\underline{中間体 $(\mathrm{intermediate \  field})$}という。
+    これを $L/M/K$とかくこともある。
+
+    また、 $L/M/K$のとき $\aut_K(L) \supset \aut_M(L)$が得られる。
+    一般に $\aut_K(M)$は包含関係が言えない。
+  \end{defi}
+
+  \begin{defi}
+    $L$:体 \  $H (\subset \aut (L))$:部分集合の２つに対し
+    \[
+    L^H := \{ x \in L | {}^\forall \sigma \in H , \sigma (x) = x \}
+    \]
+    は $L$の部分体になり、$L$の $H$による固定部分体という。
+    このような元を $H$により固定される元ともいう。
+  \end{defi}
+
+  部分体になることは $\sigma \in H \subset \aut(L)$は同型写像より加法乗法を保存し、 $1,0$は常に動かないことからわかる。
+
+  \begin{rem}
+    $H_1 \subset H_2 \subset \aut (L) \Longrightarrow L^{H_1} \supset L^{H_2}$が成り立つ。
+    これは $H_2$により固定される元は包含関係より $H_1$によっても固定されるからである。
+  \end{rem}
+
+  \begin{rem}
+    $L/M/K$のとき $[L:K] = [L:M][M:K]$が成り立つ。
+    何れかが無限次元であれば成立する。
+
+    有限次元の場合は次のようになる。
+    $L$を $M$上のベクトル空間と見たとき、その基底は $[L:M]$個でその係数は $M$の元であるから
+    $M$を $K$上のベクトル空間と見たときの $[M:K]$個の基底で書かれるため
+    $L$を $K$上のベクトル空間と見たときはその基底の積で書かれるからである。
+
+    一般に $V : M-\mathrm{vect.sp} , M/K$:拡大のとき $V$を $K$上のベクトル空間と見れて
+    $\dim_K(V) = \dim_M(V) \cdot [M:K]$となる。
+  \end{rem}
+
+\clearpage
 
 \end{document}

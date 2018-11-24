@@ -1,1 +1,2 @@
-\contentsline {subsection}{\numberline {1.1}体の拡大}{2}
+\contentsline {section}{\numberline {1}体の拡大}{2}
+\contentsline {section}{\numberline {2}Galois理論の基本定理}{3}

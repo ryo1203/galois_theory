@@ -1,5 +1,6 @@
 \contentsline {section}{\numberline {1}体の拡大}{2}
-\contentsline {section}{\numberline {2}Galois理論の基本定理}{5}
-\contentsline {subsection}{\numberline {2.1}Dedekindの補題}{5}
-\contentsline {subsection}{\numberline {2.2}Artinの定理}{6}
-\contentsline {subsection}{\numberline {2.3}Galois理論の基本定理}{9}
+\contentsline {section}{\numberline {2}Galois理論の基本定理}{4}
+\contentsline {subsection}{\numberline {2.1}Dedekindの補題}{4}
+\contentsline {subsection}{\numberline {2.2}Artinの定理}{5}
+\contentsline {subsection}{\numberline {2.3}Galois理論の基本定理}{8}
+\contentsline {section}{\numberline {3}代数方程式の可解性}{11}

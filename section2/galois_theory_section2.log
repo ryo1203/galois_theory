@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  24 NOV 2018 20:40
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  28 NOV 2018 11:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -506,26 +506,39 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 ]
-Overfull \hbox (4.99834pt too wide) in alignment at lines 128--133
+Overfull \hbox (4.99834pt too wide) in alignment at lines 130--135
  [][][] []
  []
 
 [2]
 
-LaTeX Warning: Reference `rem:hougan' on page 3 undefined on input line 188.
+LaTeX Warning: Reference `rem:hougan' on page 3 undefined on input line 190.
 
-[3] [4] [5] (./galois_theory_section2.aux)
+[3] [4]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 290.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 290.
+
+
+LaTeX Warning: Reference `lemm:extensiondegree' on page 5 undefined on input line 290.
+
+[5]
+
+LaTeX Warning: Reference `lemm:extensiondegree' on page 6 undefined on input line 386.
+
+[6] [7] (./galois_theory_section2.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14641 strings out of 493272
- 306901 string characters out of 6146850
- 367089 words of memory out of 5000000
- 18329 multiletter control sequences out of 15000+600000
- 14019 words of font info for 65 fonts, out of 8000000 for 9000
+ 14658 strings out of 493272
+ 307087 string characters out of 6146850
+ 367155 words of memory out of 5000000
+ 18344 multiletter control sequences out of 15000+600000
+ 15578 words of font info for 73 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,13n,84p,492b,277s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section2.dvi (5 pages, 30112 bytes).
+Output written on galois_theory_section2.dvi (7 pages, 47844 bytes).

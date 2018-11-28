@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1543056520 "master_galois_theory.dvi" "master_galois_theory.pdf" "master_galois_theory" 1543056527
-  "master_galois_theory.dvi" 1543056520 28604 f0cc8060fa928c7e469dc31f3b0d3b99 "latex"
+["dvipdf"] 1543372570 "master_galois_theory.dvi" "master_galois_theory.pdf" "master_galois_theory" 1543372579
+  "master_galois_theory.dvi" 1543372570 56540 2ccc9f8c36c78420fab848e71a04e817 "latex"
   (generated)
   "master_galois_theory.pdf"
-["latex"] 1543056512 "master_galois_theory.tex" "master_galois_theory.dvi" "master_galois_theory" 1543056527
+["latex"] 1543372559 "master_galois_theory.tex" "master_galois_theory.dvi" "master_galois_theory" 1543372578
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1519818042 856 7404843a5f798859944d7973a47821d5 ""
@@ -130,14 +130,14 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "master_galois_theory.aux" 1543056520 541 d24be67d9b220e2c91325f9ee0ea5ff0 ""
-  "master_galois_theory.tex" 1543043662 714 0b50614d35847d4485b142fce03e7932 ""
-  "master_galois_theory.toc" 1543056520 256 23c56b2fc114389cda504d5571819df7 ""
-  "mymacros.sty" 1543048084 979 9ff43759fa7df26ff7684231db426648 ""
-  "section1/galois_theory_section1.tex" 1543043755 6773 48cf4e9b7bc4cef7d35ebd95ad41d5b2 ""
-  "section2/galois_theory_section2.tex" 1543055994 9408 991b30fa6d697a3dcb5179c148acecf7 ""
+  "master_galois_theory.aux" 1543372570 897 82f26039b8fb0a62d35ce60d03e0e3d9 ""
+  "master_galois_theory.tex" 1543204110 744 a9e09f98be5cc0dabebaecead6173bb0 ""
+  "master_galois_theory.toc" 1543372570 332 5021c39f71d8a57b2ddc84efeea84455 ""
+  "mymacros.sty" 1543371363 1069 ec2b695f6730d2f32b8926a3f2cc18b6 ""
+  "section1/galois_theory_section1.tex" 1543367043 7512 3a80031a52433db8aff34ac732de41bf ""
+  "section2/galois_theory_section2.tex" 1543372400 25235 8ce0015c105b59755c7860a5406afc11 ""
   (generated)
-  "master_galois_theory.toc"
-  "master_galois_theory.aux"
   "master_galois_theory.log"
+  "master_galois_theory.aux"
   "master_galois_theory.dvi"
+  "master_galois_theory.toc"

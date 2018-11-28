@@ -112,6 +112,8 @@
 \end{lemm}
 
 \begin{proof}
+  以下では $\Hom_{Kの拡大}$を $\Hom_K$と書く。
+
   まず、 $\Hom_K (M,K) \otimes_K L \cong \Hom_K (M,L)$を示す。
 
   $f \in \Hom_K(M,K) , l \in L$に対し $\varphi(f,l) : M \longrightarrow L , m \longmapsto f(m)l$とする。
@@ -271,5 +273,187 @@
   これより $G \subset \aut_K(L)$と一番外側の値が同じであるからその間の不等号も等号になるので $|G| = |\aut_K(L)| = [L:K]$より $G = \aut_K(L) = \gal(L/K)$も成り立つことがわかる。
 
 \end{proof}
+
+\begin{corl} \label{corl:galoisgeq}
+  $L/K$:有限次拡大で $|\aut_K(L)| \geq [L:K]$ならば $L/K$は \galois 拡大。
+\end{corl}
+
+\begin{proof}
+  $G = \aut_K(L)$とおく。
+  Artinの定理から $K' = L^G$とすれば $G \subset \aut(L)$より $L/L^G$は \galois 拡大。
+  したがって $[L:L^G] = |G|$となる。
+  ここで $L^G$は $K$の元を固定するような元で固定される $L$の元なので $L^G \supset K$である。
+  よって $L/L^G , L/K , L^G/K$はともに体の拡大であるから $[L:K] = [L:L^G][L^G:K]$が成り立ち、 $[L:L^G] = |G|$と仮定 $|G| \geq [L:K]$より
+  $|G| \geq |G| [L^G:K] \Rightarrow [L^G:K] = 1$となる。
+  よって $|G| = |\aut_K(L)| = [L:L^G] = [L:K]$である。
+
+  補題 $(\rm{\ref{lemm:extensiondegree}})$より $L^G = K$となるので \galois 拡大の定義より $L/K$は \galois 拡大。
+\end{proof}
+
+\begin{rem} \label{rem:tokutyou}
+  $|\aut_K(L)| \leq [L:K]$は補題 \rm{\ref{lemm:2.4}}から $M = L$とすれば $|\aut_K(L)| = |\Hom_{Kの拡大}(L,L)| \leq [L,K]$より $L/K$が有限次拡大なら \galois 拡大に限らず常に成り立つ。
+
+  よって以下の \galois 拡大の特徴づけが言える。
+  \[
+  |\aut_K(L)| = [L/K] \Leftrightarrow L/K が \galois 拡大
+  \]
+\end{rem}
+
+\begin{corl} \label{corl:2.7}
+  $L/K$:有限次拡大のとき ${}^\forall L'/L (Lの拡大体)$で次が成り立つ。
+  $L/K$:\galois $\Rightarrow \aut_K(L) (=\gal(L/K)) \xlongrightarrow{\sim} \Hom_{Kの拡大} (L,L')$
+  つまり $\aut_K(L)$と $\Hom_K(L,L')$の間に同型写像が作れる。
+\end{corl}
+
+\begin{proof}
+  終域がより大きいほうが写像の行き先が増え、 $L'/L$から $\aut_K(L) = \Hom_{Kの拡大}(L,L) \subset \Hom_{Kの拡大}(L,L')$である。
+  そして $L/K$から $L'/K$も体の拡大であるので補題 \rm{\ref{lemm:2.4}}から
+  $MをL , LをL'$とみなすことで$|\Hom_K(L,L')| \leq [L:K]$となる。
+  また、 $L/K$が \galois 拡大より Artinの定理から $|\aut_K(L)| = [L:K]$なので
+  $[L:K] = |\aut_K(L)| = |\Hom_K(L,L)| \leq |\Hom_K(L,L')| = [L:K]$と包含関係より $\aut_K(L) = \Hom_K(L,L) = \Hom_K(L,L')$である。
+  よって $\aut_K(L)$と $\Hom_K(L,L')$の間には同型写像を作ることができる。
+\end{proof}
+
+\subsection{Galois理論の基本定理}
+
+\begin{theo}
+  \galois 理論の基本定理
+
+  $L/K$:有限次 \galois 拡大、 $G = \gal(L/K)$とおく。
+  このとき以下が成立する。
+
+  $(1)$
+  $L/K$の任意の中間体 $M$に対し $L/M$は \galois 拡大であり、次の $1:1$対応がある。
+
+  \begin{eqnarray*}
+    \{ L/Kの中間体 \} & \overset{1:1}{\longleftrightarrow} & \{ Gの部分群 \} \\
+    M & \longmapsto & \aut_M(L) = \gal(L/M) \\
+    L^H & \leftlongmapsto & H
+  \end{eqnarray*}
+
+  $(2)$
+  この対応で $M_i \longleftrightarrow H_i$のとき $(i = 1,2)$
+  \[
+  M_1 \subset M_2 \Leftrightarrow H_1 \supset H_2
+  \]
+
+  $(3)$
+  $M \longleftrightarrow H$のとき ${}^\forall \sigma \in G$に対し
+  \[
+  \sigma(M) \longleftrightarrow \sigma H \sigma^{-1}
+  \]
+
+  $(4)$
+  $M \longleftrightarrow H$のとき
+  \[
+  M/Kが \mathrm{Galois}拡大 \Longleftrightarrow H \lhd G (HがGの正規部分群)
+  \]
+  でありこのとき
+  \[
+  \gal(M/K) \cong G/H
+  \]
+
+\end{theo}
+
+\begin{proof}
+
+  ・$(1)$
+
+  両側から写像で写して戻したときにもとに戻ることを示す。
+
+  $H \longmapsto L^H \longmapsto \aut_{L^H}(L)$となるから $H = \aut_{L^H}(L)$を示す。
+  $M = L^H$とおくと Artinの定理から $M = L^H$となる $H \subset \aut(L)$が存在しているので $L/M = L/L^H$は \galois であり、 $H = \gal(L/M) = \gal(L/L^H)$となるので $H = \aut_{L^H}(L)$が言えた。
+
+  次に$M \longmapsto \aut_M(L) \longmapsto L^{\aut_M(L)}$となるから $M = L^{\aut_M(L)}$を示す。
+  $H = \aut_M(L)$とすると $L^H \supset M$は定義より明らかでそのことから係数がより大きな範囲で取れることより $[L:L^H] \leq [L:M]$となる。
+
+  $[L^H:K] \leq [M:K]$を示す。
+  仮定より $L/K$が、Artinの定理より $L/L^H$が \galois 拡大なので \rm{Rem} $(\mathrm{\ref{rem:tokutyou}})$から $[L:K] = |G| , [L:L^H] = |H|$で
+  $[L:K] = [L:L^H][L^H:K]$から $|G| = |H|[L^H:K]$となる。
+  そして $H$が $G$の部分群より指数を $(G:H)$と書くこととすれば $|G| = (G:H)|H|$であるから $(G:H) = [L^H:K]$が言える。
+  Lagrangeの定理から $r = (G:H)$としたとき $\phi , \varphi \in G$において同値関係 $\phi^{-1} \varphi \Leftrightarrow \phi \sim \varphi$による剰余類分割によって $G = \tau_1 H \cup \cdots \cup \tau_r H$とできる。
+  ここで $\tau_i \in G$が $M$に制限されたとしても $\tau_i|_M$は相異なるといえる。
+  これはもしある代表元同士、つまり同値ではない元において $\tau_i(x) = \tau_j(x) , {}^\forall x \in M$とすると自己同型写像であるから逆写像が考えられて $\tau_i^{-1}\tau_j|_M = \mathrm{id}_M$である。
+  よってこの写像は $M$の元を固定するので $\tau_i^{-1}\tau_j \in H = \aut_M(L)$となる。
+  これは同値関係の定義から $\tau_i \sim \tau_j$となるので同値ではない元を取ったことに矛盾する。
+  したがって代表元は $M$に制限しても全て相異なる。
+  このことから $M$に制限された $G$の元 $\tau|_M$は少なくとも $r = (G:H)$個あるため
+  補題 $(\mathrm{\ref{lemm:2.4}})$から $r = (G:H) =[L^H:K] \leq |\Hom_{Kの拡大}(M,L)| \leq [M:K]$であるので $[L^H:K] \leq [M:K]$が示された。
+
+  よっていま $[L^H:K] \leq [M:K] , [L:L^H] \leq [L:M]$が成り立っている。
+  そして $[L:K] = [L:L^H][L^H:K] = [L:M][M:K]$から１つ目の不等式より $1/[L:L^H] \leq 1/[L:M]$となるので $[L:L^H] \geq [L:M]$も成り立つ。
+  したがって $[L:L^H] = [L:M]$となる。
+  $L^H \supset M$で拡大次数が等しいので補題 $(\rm{\ref{lemm:extensiondegree}})$から $L^{\aut_M(L)} = L^H = M$となる。
+
+  よって両側から写像を送って戻したときにもとの元に戻ってくるためこの対応は $1:1$対応になっている。
+
+
+  $1:1$対応より任意の中間体 $M$に対して $M = L^H$となるような $G$の部分群 $H$が存在し、それは上の議論より $H = \aut_M(L)$となる。
+  したがって定義より $L/M$は \galois 拡大。
+  実際はこのような$H$が存在することだけで Artinの定理から $L/M$が \galois 拡大であることがわかる。
+
+  ・$(2)$
+
+  双方とも定義より固定する元固定される元を考えれば明らかであるがここでは一つ一つ示していく。
+
+  $(\Leftarrow)$
+
+  $M_1$の任意の元 $x$をとる。
+  $L/M_i$は \galois 拡大より $M_1 = L^{H_1} , M_2 = L^{H_2}$より ${}^\forall \sigma \in H_1 , \sigma (x) = x$である。
+  $H_1 \supset H_2$より ${}^\forall \sigma \in H_2 \subset H_1 , \sigma (x) = (x)$となるから $x \in L^{H_2} = M_2$となるので $M_1 \subset M_2$となり成り立つ。
+
+  $(\Rightarrow)$
+
+  $H_2$の任意の元 $\sigma$をとる。
+  $H_2 = \gal(L/M_2)$より ${}^\forall x \in M_2 , \sigma (x) = x$となり、
+  $M_1 \subset M_2$より ${}^\forall x \in M_1 \subset M_2 , \sigma (x) = x$である。
+  したがって $\sigma \in \gal(L/M_1) = H_1$より $H_1 \subset H_2$となり成り立つ。
+
+  ・$(3)$
+
+  ${}^\forall \sigma \in G$に対して $\sigma(M) \longmapsto \gal(L/\sigma(M)) , \sigma H \sigma^{-1} = \sigma \gal(L/M) \sigma^{-1}$より $1:1$対応から $\gal(L/\sigma(M)) = \sigma \gal(L/M) \sigma^{-1}$を示せばよい。
+
+  ${}^\forall \tau \in \gal(L/M)$に対して $\sigma \tau \sigma^{-1} \in \sigma H \sigma^{-1}$であり、 $\tau|_M = \mathrm{id}_M$から
+  ${}^\forall x \in M , \sigma \tau \sigma^{-1} (\sigma(x)) = \sigma \tau (x) = \sigma (x)$となる。
+  よって$\sigma \tau \sigma^{-1}$は $\sigma(M)$上恒等写像になるので $\sigma \tau \sigma^{-1} \in \gal(L/\sigma(M))$より $\tau$の任意性から
+  $\sigma \gal(L/M) \sigma^{-1} \subset \gal(L/\sigma(M))$である。
+
+  また、 $g = \sigma^{-1} , N = \sigma(M)$とおく。
+  このとき $\sigma^{-1} \gal(L/\sigma(M)) \sigma = g \gal(L/N) g^{-1}$となり、
+  これと $\gal(L/g(N))$に対して上と全く同じことを考えれば
+  $g \gal(L/N) g^{-1} \subset \gal(L/g(N))$となる。
+  そして左右から $g , g^{-1}$をかけて、 $g = \sigma{-1}$から $g(N) = M$より
+  $\gal(L/\sigma(M)) \subset \sigma \gal(L/M) \sigma^{-1}$である。
+
+  以上より $\gal(L/\sigma(M)) = \sigma \gal(L/M) \sigma^{-1}$が示されたのでこの対応が成り立つ。
+
+  ・$(4)$
+
+  ${}^\forall \sigma \in G$に対して $(1) , (3)$より $H \lhd G \Leftrightarrow \sigma H \sigma^{-1} = H \Leftrightarrow \sigma(M) = M$であるから
+  $\sigma(M) = M \Leftrightarrow M/K$が \galois 拡大を示せば良い。
+
+  $(\Rightarrow)$
+
+  ${}^\forall \sigma \in G , \sigma(M) = M$のとき $\sigma|_M : M \longrightarrow M$となるから $\sigma$は $M$の $K$上自己同型写像。
+  これより$\pi : G \longrightarrow \aut_K(M) , \sigma \longmapsto \sigma|_M$という写像が作れてこれは $G$の元を $M$に制限しているだけなので $G$の構造を保つから群準同型写像である。
+  $M \Leftrightarrow H$の対応があるから $\ker(\pi) = \{ \sigma \in G | \sigma|_M = \mathrm{id}_M \} = \aut_M(L) = H$より準同型定理から
+  $G/H \cong \im(\pi) \subset \aut_K(M)$となる。
+  よって $|G/H| = |\im(\pi)| \leq |\aut_K(M)|$と $(1)$の話から $|G/H| = (G:H) = [M:K]$なので $[M:K] \leq |\aut_K(M)|$となるため、系 $(\mathrm{\ref{corl:galoisgeq}})$から $M/K$は \galois 拡大である。
+
+  そして有限次 \galois 拡大より $[M:K] = |G/H| = |\aut_K(M)|$でこれらは有限であり、
+  自然な準同型$\theta : G/H \longrightarrow \aut_K(M) , \sigma H \longmapsto \sigma|_M$は
+  $\ker(\theta) = \{ \sigma H \in G/H | \sigma|_M = \mathrm{id}_M \} = \{ \sigma H | \sigma \in H \} = H$となるので単射。
+  したがって $\theta$は同型写像なので $\gal(M/K) \cong G/H$が示された。
+
+  $(\Leftarrow)$
+
+  $M/K$が \galois 拡大とすると $L/M$の拡大に対して系 $(\mathrm{\ref{corl:2.7}})$から $\aut_K(M) = \Hom_K(M,L)$となる。
+  よって $\Hom_K(M,L) \subset G$より ${}^\forall \sigma (\in G) : M \longrightarrow L$は $\sigma \in \Hom_K(M,L) = \aut_K(M)$だから
+  $K$上の $M$自己同型写像となるので $\sigma(M) = M$となる。
+
+\end{proof}
+
+\clearpage
+
 
 \end{document}

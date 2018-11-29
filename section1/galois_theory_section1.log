@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  28 NOV 2018 11:35
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  29 NOV 2018 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -131,7 +131,7 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@postskip=\skip48
 \thm@headsep=\skip49
 \dth@everypar=\toks27
-) (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+) (c:/w32tex/share/texmf-dist/tex/latex/braket/braket.sty) (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2018/03/22 version 4.13 text color boxes
  (c:/w32tex/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks28
@@ -141,12 +141,12 @@ Package: tcolorbox 2018/03/22 version 4.13 text color boxes
 \pgfutil@abb=\box45
  (c:/w32tex/share/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-)) (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+))
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(c:/w32tex/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/w32tex/share/texmf-dist/tex/latex/graphics/graphicx.sty
+ (c:/w32tex/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/w32tex/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
@@ -195,11 +195,11 @@ File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 Driver file for pgf: pgfsys-dvips.def
  (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvips.def
 File: pgfsys-dvips.def 2014/07/09  (rcs-revision 1.25)
- (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-postscript.def
+
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-postscript.def
 File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
 \pgf@objectcount=\count108
-)))
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count109
 \pgfsyssoftpath@bigbuffer@items=\count110
@@ -228,8 +228,8 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
 \pgfmath@stack@operation=\toks38
-) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count112
 )) (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
@@ -264,13 +264,13 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 ) (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen164
-) (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+)
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen165
 \pgf@pt@y=\dimen166
 \pgf@pt@temp=\dimen167
-)
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+) (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 ) (c:/w32tex/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
@@ -297,10 +297,10 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 ))) (c:/w32tex/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box51
-) (c:/w32tex/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(c:/w32tex/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+) (c:/w32tex/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen170
 \pgf@nodesepend=\dimen171
@@ -380,10 +380,10 @@ Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
 \mc@col@check@num=\count127
 ) (c:/w32tex/share/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
-) (c:/w32tex/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/w32tex/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+) (c:/w32tex/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/w32tex/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+ (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen181
 \pgffor@skip=\dimen182
 \pgffor@stack=\toks39
@@ -498,14 +498,14 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 22.
  [1
 
-] [2] [3] (./galois_theory_section1.aux) ) 
+] [2] (./galois_theory_section1.aux) ) 
 Here is how much of TeX's memory you used:
- 14637 strings out of 493272
- 306829 string characters out of 6146850
- 363072 words of memory out of 5000000
- 18325 multiletter control sequences out of 15000+600000
+ 14667 strings out of 493272
+ 307186 string characters out of 6146850
+ 363324 words of memory out of 5000000
+ 18351 multiletter control sequences out of 15000+600000
  12852 words of font info for 59 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,8n,84p,492b,261s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section1.dvi (3 pages, 15908 bytes).
+Output written on galois_theory_section1.dvi (2 pages, 15640 bytes).

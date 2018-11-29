@@ -37,6 +37,8 @@ INPUT c:/w32tex/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/w32tex/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/w32tex/share/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT c:/w32tex/share/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT c:/w32tex/share/texmf-dist/tex/latex/braket/braket.sty
+INPUT c:/w32tex/share/texmf-dist/tex/latex/braket/braket.sty
 INPUT c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 INPUT c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 INPUT c:/w32tex/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty

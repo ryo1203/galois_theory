@@ -233,4 +233,6 @@ INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT section3/galois_theory_section3.tex
 INPUT section3/galois_theory_section3.tex
+INPUT section4/galois_theory_section4.tex
+INPUT section4/galois_theory_section4.tex
 INPUT master_galois_theory.aux

@@ -4,3 +4,6 @@
 \contentsline {subsection}{\numberline {2.2}Artinの定理}{5}
 \contentsline {subsection}{\numberline {2.3}Galois理論の基本定理}{8}
 \contentsline {section}{\numberline {3}代数方程式の可解性}{11}
+\contentsline {section}{\numberline {4}標数 \ 素体}{13}
+\contentsline {subsection}{\numberline {4.1}標数 \ 素体}{13}
+\contentsline {subsection}{\numberline {4.2}Frobenius 自己準同型}{14}

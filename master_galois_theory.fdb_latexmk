@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1543485332 "master_galois_theory.dvi" "master_galois_theory.pdf" "master_galois_theory" 1543485338
-  "master_galois_theory.dvi" 1543485331 80352 1c88ea0c662983f9349028e61666977b "latex"
+["dvipdf"] 1543901379 "master_galois_theory.dvi" "master_galois_theory.pdf" "master_galois_theory" 1543901391
+  "master_galois_theory.dvi" 1543901378 86768 a624e4dd129c069935cd5a42a9a01e83 "latex"
   (generated)
   "master_galois_theory.pdf"
-["latex"] 1543485321 "master_galois_theory.tex" "master_galois_theory.dvi" "master_galois_theory" 1543485338
+["latex"] 1543901361 "master_galois_theory.tex" "master_galois_theory.dvi" "master_galois_theory" 1543901390
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1519818042 856 7404843a5f798859944d7973a47821d5 ""
@@ -131,16 +131,17 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "master_galois_theory.aux" 1543485331 1483 5b46af4cdae7e552db3be7ed05e7b6d0 ""
-  "master_galois_theory.tex" 1543481226 870 979e16ea20664000a11b856e9b87f863 ""
-  "master_galois_theory.toc" 1543485331 604 13a66f59297169ee5e7b4be285d8b8be ""
+  "master_galois_theory.aux" 1543901378 1637 9f427b80dc52efb3c6e9e54f8bc1e57c ""
+  "master_galois_theory.tex" 1543899314 913 728a9e95a5a6d1b023294e5234b69c44 ""
+  "master_galois_theory.toc" 1543901378 722 f22793ea056f4e02347c9f361a362062 ""
   "mymacros.sty" 1543485309 1104 d1bb5db69673f557c20b7ef8f9848470 ""
   "section1/galois_theory_section1.tex" 1543481855 7442 95a8279fdcbb37e4603e9d059fbc0cb8 ""
   "section2/galois_theory_section2.tex" 1543378568 25163 50bf75563eee4c0b03c431db0006f8c7 ""
   "section3/galois_theory_section3.tex" 1543380611 5733 2b5dcdc4b2a56b338e750710883e74dd ""
-  "section4/galois_theory_section4.tex" 1543481182 8870 e9af7bd21772f8568fca78cb9f518749 ""
+  "section4/galois_theory_section4.tex" 1543901312 9756 c33e6f6d42b28b7c887de7dfc66c4f33 ""
+  "section5/galois_theory_section5.tex" 1543901218 2949 71e635f96b8276f89e500d1e63c3c1c1 ""
   (generated)
-  "master_galois_theory.log"
   "master_galois_theory.toc"
   "master_galois_theory.aux"
+  "master_galois_theory.log"
   "master_galois_theory.dvi"

@@ -147,7 +147,23 @@
 \end{prop}
 
 \begin{proof}
-  系 $(\mathrm{\ref{corl:sotaiyuugen}})$より有限体 $K = \mathbb{F}_q$にたいして $\mathrm{Frobenius} \  \phi : \mathbb{F}_q \longrightarrow \mathbb{F}_q$は単射で有限集合より全射だから同型写像となるので有限体は完全体。
+  系 $(\mathrm{\ref{corl:sotaiyuugen}})$より有限体 $K = \mathbb{F}_q$にたいして
+  $\mathrm{Frobenius} \  \phi : \mathbb{F}_q \longrightarrow \mathbb{F}_q$は
+  体の準同型より単射で有限集合より全射だから同型写像となるので有限体は完全体。
 \end{proof}
+
+\begin{exam}
+  逆に完全体ではない例として以下のようなものがある。
+
+  $(\sum a_j X^j / \sum b_i X^i) \in K = \mathbb{F}_p(X) \  (X : 変数 , a_j , b_i \in \mathbb{F}_p , \sum b_i X^i \neq 0)$となっている
+  $\mathbb{F}_p$上の有理関数体 $K$を考える。
+  $\mathrm{Frobenius} \  \phi : K \longrightarrow K , a \longmapsto a^p$は
+  $p$乗準同型写像なのでまず $\mathbb{F}_p$は完全体より全単射であるから係数は $\mathbb{F}_p$の元全てを取るので像の有理関数体の係数は $\mathbb{F}_p$のままである。
+  そして準同型より$\phi(\sum a_j X^j / \sum b_i X^i) = \sum a_j^p (X^p)^j / \sum b_i^p (X^p)^i \in \im(\phi) = \mathbb{F}_p(X^p) \subset K$であるので
+  全射ではない。
+  したがって $K$は完全体ではない。
+\end{exam}
+
+\clearpage
 
 \end{document}

@@ -1,0 +1,57 @@
+\documentclass[../master_galois_theory]{subfiles}
+\begin{document}
+
+\setcounter{section}{4}
+
+\section{体上の代数}
+
+\subsection{K-代数}
+
+\begin{defi}
+  環 $A$の中心 $Z(A)$とは任意の $A$の元と可換な $A$の元でありつまり
+  $Z(A) := \{ x \in A | {}^\forall a \in A , ax = xa \}$となる集合であり
+  これは $A$の部分環を成す。
+\end{defi}
+
+\begin{proof}
+  部分環を成すことを示す。
+
+  結合則や分配則は $A$が環であることより保証される。
+  ${}^\forall a \in A$について
+  単位元は定義より $a1 = a = 1a , a0 = 0 = 0a$より中心に含まれる。
+  また、 ${}^\forall x , y \in Z(A) , a(x + y) = ax + ay = xa + ya = (x + y)a , a(xy) = (ax)y = (xa)y = x(ay) = x(ya) = (xy)a$より加法乗法について閉じているから $Z(A)$は $A$の部分環である。
+\end{proof}
+
+\begin{defi}
+  $K$:体とする。
+
+  このとき \underline{$K-$代数 \  $(K-\mathrm{algebra})$} $A$とは以下の同値な条件のうち一つを、すなわち全てを満たすような零環にならないものである。
+
+  $(1).$
+  単位的環であって環準同型 $\phi : K \longrightarrow A$が
+  与えられており $\im(\phi) \subset Z(A) = (Aの中心)$となるもの。
+
+  $(2).$
+  $K-$加群であり環としての構造を持ち、積が任意の $k \in K , x , y \in A$
+  にたいして $k(xy) = (kx)y = x(ky)$が成り立つような $K-$双線型となるもの。
+
+  とくに $K$倍できてそれが双線型であることより $K-$ベクトル空間とみなすこともできる。
+  そして $[A:K] := \dim_K(A)$を $A$の $K$上の次数という。
+
+\end{defi}
+
+\begin{proof}
+  両方共環であることは共通しているから $\im(\phi) \subset Z(A)$と $K-$加群であり積が上記のように成り立つことが同値であることを示せば良い。
+
+  まず $\phi$の始域は $K$:体なので $\ker(\phi) = 0$から $\phi$は単射。
+  よって $K$は $\im(\phi) \subset A$によって $A$に埋め込まれていると考えることができる。
+  このときスカラー乗法を $" \cdot " : K \times A \longrightarrow A , (k , a) \longmapsto \phi(k)a$とできて $ka := \phi(k)a$とすることで $K$が埋め込まれていることよりスカラー乗法が定義でき、これにより $K-$加群の構造を持つことができる。
+
+  また、 $\im(\phi) \subset Z(A)$より $A$の結合則から ${}^\forall a , b \in A , k(ab) = \phi(k)(ab) = (\phi(k)a)b = (ka)b = (a\phi(k))b = (ak)b = a(\phi(k)b) = a(kb)$より成り立つ。
+  双線型であることも埋め込まれていることから環 $A$の定義から明らか。
+
+  逆は環準同型 $\phi : K \longrightarrow A$を作って同様に埋め込まれていることと $k(xy) = (kx)y = x(ky)$より像は中心に含まれるので成り立つ。
+\end{proof}
+
+
+\end{document}

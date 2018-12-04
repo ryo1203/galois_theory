@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1543901331 "galois_theory_section4.dvi" "galois_theory_section4.pdf" "galois_theory_section4" 1543901339
-  "galois_theory_section4.dvi" 1543901331 20436 a2ea05e0bbdb6545f4581e2c2228a77f "latex"
+["dvipdf"] 1543901239 "galois_theory_section5.dvi" "galois_theory_section5.pdf" "galois_theory_section5" 1543901247
+  "galois_theory_section5.dvi" 1543901239 9660 1f242b2c5c007f9832400bf4acde8861 "latex"
   (generated)
-  "galois_theory_section4.pdf"
-["latex"] 1543901314 "galois_theory_section4.tex" "galois_theory_section4.dvi" "galois_theory_section4" 1543901339
+  "galois_theory_section5.pdf"
+["latex"] 1543901223 "galois_theory_section5.tex" "galois_theory_section5.dvi" "galois_theory_section5" 1543901246
   "../master_galois_theory.tex" 1543899314 913 728a9e95a5a6d1b023294e5234b69c44 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -122,10 +122,10 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section4.aux" 1543901331 463 5403880f14e097d179bbb2ba8e8f6133 ""
-  "galois_theory_section4.tex" 1543901312 9756 c33e6f6d42b28b7c887de7dfc66c4f33 ""
-  "mymacros.sty" 1543481198 1104 d1bb5db69673f557c20b7ef8f9848470 ""
+  "galois_theory_section5.aux" 1543901239 197 6f91dbffbaf578d054333a9968763bc7 ""
+  "galois_theory_section5.tex" 1543901218 2949 71e635f96b8276f89e500d1e63c3c1c1 ""
+  "mymacros.sty" 1543897775 1104 d1bb5db69673f557c20b7ef8f9848470 ""
   (generated)
-  "galois_theory_section4.dvi"
-  "galois_theory_section4.log"
-  "galois_theory_section4.aux"
+  "galois_theory_section5.log"
+  "galois_theory_section5.aux"
+  "galois_theory_section5.dvi"

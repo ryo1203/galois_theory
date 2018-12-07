@@ -23,34 +23,73 @@
 \end{proof}
 
 \begin{defi}
-  $K$:体とする。
+  $K$:体とする。 $(可換環でもよい)$
 
   このとき \underline{$K-$代数 \  $(K-\mathrm{algebra})$} $A$とは以下の同値な条件のうち一つを、すなわち全てを満たすような零環にならないものである。
 
   $(1).$
   単位的環であって環準同型 $\phi : K \longrightarrow A$が
   与えられており $\im(\phi) \subset Z(A) = (Aの中心)$となるもの。
+  $K$が体であれば $\im(\phi) = K \subset Z(A) \subset A$とみなすことができる
 
   $(2).$
   $K-$加群であり環としての構造を持ち、積が任意の $k \in K , x , y \in A$
   にたいして $k(xy) = (kx)y = x(ky)$が成り立つような $K-$双線型となるもの。
 
-  とくに $K$倍できてそれが双線型であることより $K-$ベクトル空間とみなすこともできる。
+  とくに $K$倍できてそれが双線型であり $K$が体であれば $K-$ベクトル空間とみなすこともできる。
   そして $[A:K] := \dim_K(A)$を $A$の $K$上の次数という。
+
+  $K-$代数 $A$を $K-alg , \phi : K \longrightarrow A$と書くときもある。
 
 \end{defi}
 
 \begin{proof}
   両方共環であることは共通しているから $\im(\phi) \subset Z(A)$と $K-$加群であり積が上記のように成り立つことが同値であることを示せば良い。
 
-  まず $\phi$の始域は $K$:体なので $\ker(\phi) = 0$から $\phi$は単射。
-  よって $K$は $\im(\phi) \subset A$によって $A$に埋め込まれていると考えることができる。
-  このときスカラー乗法を $" \cdot " : K \times A \longrightarrow A , (k , a) \longmapsto \phi(k)a$とできて $ka := \phi(k)a$とすることで $K$が埋め込まれていることよりスカラー乗法が定義でき、これにより $K-$加群の構造を持つことができる。
+  まずスカラー乗法を $" \cdot " : K \times A \longrightarrow A , (k , a) \longmapsto \phi(k)a$と定めれば $ka := \phi(k)a$とすることで $K$によるスカラー乗法が定義でき、これにより $K-$加群の構造を持つことができる。
 
   また、 $\im(\phi) \subset Z(A)$より $A$の結合則から ${}^\forall a , b \in A , k(ab) = \phi(k)(ab) = (\phi(k)a)b = (ka)b = (a\phi(k))b = (ak)b = a(\phi(k)b) = a(kb)$より成り立つ。
-  双線型であることも埋め込まれていることから環 $A$の定義から明らか。
+  双線型であることも環 $A$の定義から明らか。
 
-  逆は環準同型 $\phi : K \longrightarrow A$を作って同様に埋め込まれていることと $k(xy) = (kx)y = x(ky)$より像は中心に含まれるので成り立つ。
+  逆は環準同型 $\phi : K \longrightarrow A$を適切につくれば $k(xy) = (kx)y = x(ky)$より像は中心に含まれるので成り立つ。
+
+  $K$が体のとき \rm{Note} $(\mathrm{\ref{note:fieldtansya}})$から $\phi$が単射準同型より $K = \im(\phi)$と同一視できるため $K-$代数 $A$は実際に $K$を部分環として含んでいる。
+\end{proof}
+
+\begin{exam}
+  $K$を体としたときその多変数多項式環 $A := K[X_1 , \dots , X_n]$は可換環で $K$係数より $K-alg$である。
+  また、 $I$を $A$のイデアルとしたときその剰余環 $K[X_1 , \dots , X_n]/I$も同様の理由で $K-alg$である。
+
+  $L_i/K$を $K$のある体拡大とするときその拡大の直積 $A := L_1 \times \cdots \times L_n$はそれぞれの成分ごとに拡大体の演算によって $L_i/K$より $a \in K$倍を $(a , \dots , a) \in K \times \cdots \times K$と同一視することで $K-alg$とみなせる。
+
+  以上の2つはもともと可換な構造の上であったのでそのまま中心に埋め込めたが $A = \mathrm{M}_n(K)$とした行列環は非可換でありこのときは以降のように定めることで非可換な $K-alg$になる。
+  すなわち、
+  \begin{eqnarray*}
+    K & \longrightarrow & A \\
+    a & \longmapsto &
+    \begin{pmatrix}
+      a &  & \\
+        & \ddots & \\
+        &  & a
+    \end{pmatrix}
+  \end{eqnarray*}
+  となる環準同型でこの像は単位行列の定数倍なので $A$の中心に入るため $K-alg$になる。
+\end{exam}
+
+以下では $K-$代数は断らない限り全て可換であるとする。
+
+\begin{defi}
+  $K-alg , \phi : K \longrightarrow A , \psi : K \longrightarrow B$があるとする。
+  このとき $K-$代数の準同型 $\varphi : A \longrightarrow B$とは
+  環準同型であって $K-alg$としての構造と可換なもの、つまり $\psi = \varphi \circ \phi$となるもののこと。
+
+  これと同値なものとして $\varphi$が $K-$加群の準同型写像であることという定義でも良い。
+\end{defi}
+
+\begin{proof}
+  同値性を示す。
+
+  $\psi = \varphi \circ \phi$となっているとき ${}^\forall x , y \in A , \varphi(xy)$
 \end{proof}
 
 

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  4 DEC 2018 14:27
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  7 DEC 2018 14:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -503,16 +503,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 11.
  (c:/w32tex/share/texmf-dist/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1
+)
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 56.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 56.
 
-] (./galois_theory_section5.aux) ) 
+
+LaTeX Warning: Reference `note:fieldtansya' on page 1 undefined on input line 56.
+
+[1
+
+] [2] (./galois_theory_section5.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 14667 strings out of 493272
- 307181 string characters out of 6146850
- 361302 words of memory out of 5000000
- 18351 multiletter control sequences out of 15000+600000
- 14019 words of font info for 65 fonts, out of 8000000 for 9000
+ 14676 strings out of 493272
+ 307289 string characters out of 6146850
+ 364302 words of memory out of 5000000
+ 18358 multiletter control sequences out of 15000+600000
+ 15578 words of font info for 73 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,7n,84p,492b,177s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 63i,14n,84p,492b,279s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section5.dvi (1 page, 9660 bytes).
+Output written on galois_theory_section5.dvi (2 pages, 12708 bytes).

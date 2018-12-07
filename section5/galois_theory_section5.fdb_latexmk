@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1544161276 "galois_theory_section5.dvi" "galois_theory_section5.pdf" "galois_theory_section5" 1544161280
-  "galois_theory_section5.dvi" 1544161276 12708 156d6fdac7d8043c1e7147f33df7e5a0 "latex"
+["dvipdf"] 1544161713 "galois_theory_section5.dvi" "galois_theory_section5.pdf" "galois_theory_section5" 1544161717
+  "galois_theory_section5.dvi" 1544161712 13348 fe9b248bbeb2e4974c6bd5a591c90377 "latex"
   (generated)
   "galois_theory_section5.pdf"
-["latex"] 1544161267 "galois_theory_section5.tex" "galois_theory_section5.dvi" "galois_theory_section5" 1544161280
+["latex"] 1544161703 "galois_theory_section5.tex" "galois_theory_section5.dvi" "galois_theory_section5" 1544161717
   "../master_galois_theory.tex" 1543899314 913 728a9e95a5a6d1b023294e5234b69c44 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -124,8 +124,8 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section5.aux" 1544161276 197 6f91dbffbaf578d054333a9968763bc7 ""
-  "galois_theory_section5.tex" 1544161158 4960 7a89d39fed7c7e0d73fba5a8ba441487 ""
+  "galois_theory_section5.aux" 1544161712 197 6f91dbffbaf578d054333a9968763bc7 ""
+  "galois_theory_section5.tex" 1544161700 5422 8d157a0a51161b0df2e8a75a32a94517 ""
   "mymacros.sty" 1543897775 1104 d1bb5db69673f557c20b7ef8f9848470 ""
   (generated)
   "galois_theory_section5.aux"

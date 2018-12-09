@@ -212,4 +212,5 @@ INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 OUTPUT galois_theory_section5.dvi
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT galois_theory_section5.aux

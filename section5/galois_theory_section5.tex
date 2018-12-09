@@ -96,5 +96,61 @@
 
 \end{proof}
 
+\subsection{元の添加}
+
+\begin{defi}
+  $L/K:$体の拡大、 $S:L$の部分集合のとき、
+  $K(S) := (Sを含む最小のKの拡大体 \subset L)$
+  と定義し、これを $K$上 $S$で生成される部分体という。
+  $S = \{ a_1 , \dots , a_n\}$なら
+  $K(S) = K(a_1 , \dots , a_n)$とも書く。
+
+  $S,T$と２つの $L$の部分集合があるとき
+  その２つのを含む最小の $K$の拡大体は集合 $S \cup T$を含むと考えれば良いので
+  $K(S \cup T) = K(S)(T) = K(T)(S)$
+  となりこれを $K(S,T)$とも書く。
+\end{defi}
+
+\begin{defi}
+  $L/K$が有限生成とは $L = K(S)$となる有限集合 $S \subset L$が存在すること。
+
+  特に一元集合で生成されるとき $L/K$は\underline{単生、単元生成 \  $(\mathrm{monogenic})$}という。
+\end{defi}
+
+\begin{rem}
+  有限次拡大 $\Rightarrow$ 有限生成
+\end{rem}
+
+\begin{proof}
+  $[L:K] = n$とするとき
+  $L$の $K$上の基底を $\{ w_1 , \dots , w_n \}$とする。
+  $K(w_1 , \dots , w_n)$はこの基底を含む体なので $K$上の線形結合も含むこと
+  を考えれば
+  これは $L$と一致するから有限生成。
+\end{proof}
+
+ここで逆は成り立たない。
+$K(X) , X:$変数とするとこれは有理関数体で単生だが
+$1 , X , \cdots , X^n , \cdots$が全て異なるので
+$K$の無限次拡大となるような反例があるためである。
+
+\subsection{体の合成}
+
+\begin{defi}
+  $M_1/K , M_2/K:$体の拡大としたときこの２つの\underline{合成、合成体、合成拡大 \  $(\mathrm{a \  composite \  extension})$}とは三組 $(L,u_1,u_2)$で
+
+  \textbf{1.}
+  $L$は $K$の拡大体。
+
+  \textbf{2.}
+  $u_i : M_i \longrightarrow L$は $K$の拡大の準同型で
+  $L$は $u_1(M_1) \cup u_2(M_2)$により生成される。
+
+  となるようなもののことである。
+  したがって写像のとり方の自由性から $M_1/K , M_2/K$に対し
+  これらの合成はいくつもありえる。
+\end{defi}
+
+\clearpage
 
 \end{document}

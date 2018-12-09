@@ -9,3 +9,6 @@
 \contentsline {subsection}{\numberline {4.2}Frobenius 自己準同型}{14}
 \contentsline {section}{\numberline {5}体上の代数}{16}
 \contentsline {subsection}{\numberline {5.1}K-代数}{16}
+\contentsline {subsection}{\numberline {5.2}元の添加}{17}
+\contentsline {subsection}{\numberline {5.3}体の合成}{17}
+\contentsline {section}{\numberline {6}代数拡大}{19}

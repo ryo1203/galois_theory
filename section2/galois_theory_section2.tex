@@ -112,28 +112,22 @@
 \end{lemm}
 
 \begin{proof}
-  以下では $\Hom_{Kの拡大}$を $\Hom_K$と書く。
-
   まず、 $\Hom_K (M,K) \otimes_K L \cong \Hom_K (M,L)$を示す。
 
   $f \in \Hom_K(M,K) , l \in L$に対し $\varphi(f,l) : M \longrightarrow L , m \longmapsto f(m)l$とする。
   このときこれは $f \in \Hom_K(M,K)$から以下のように $K$線形写像であるから $\varphi(f,l) \in \Hom_K(M,L)$である。
-
   \begin{eqnarray*}
     \varphi (f,l) (m_1 + m_2) & = & f(m_1 + m_2)l = (f(m_1) + f(m_2))l = f(m_1)l + f(m_2)l = \varphi (m_1) + \varphi (m_2) \\
     \varphi (f,l) (km) & = & f(km)l = kf(m)l = k \varphi(m)
   \end{eqnarray*}
-
   そして $\phi : \Hom_K(M,K) \times L \longrightarrow \Hom_K(M,L) , (f,l) \longmapsto \phi(f,l) = \varphi(f,l)$
   とすると $\phi$は以下のように $L$-双線形写像になる。
-
   \begin{eqnarray*}
     \phi(f_1 + f_2 , l) (m) & = & (f_1 + f_2)(m)l = f_1(m)l + f_2(m)l = \phi(f_1,l) + \phi(f_2,l) = (\phi(f_1,l) + \phi(f_2,l))(m) \\
     \phi(f , l_1 + l_2) (m) & = & f(m)(l_1 + l_2) = f(m)l_1 + f(m)l_2 = \phi(f,l_1)(m) + \phi(f,l_2)(m) = (\phi(f,l_1) + \phi(f,l_2))(m) \\
     \phi(kf , l) (m) & = & (kf)(m)l = k(f(m))l = k \phi(f,l)(m) \\
     \phi(f,kl) (m) & = & f(m)kl = k(f(m))l = k \phi(f,l)(m)
   \end{eqnarray*}
-
   したがってテンソル積の普遍性から
   $\theta : \Hom_K (M,K) \otimes_K L \longrightarrow \Hom_K(M,L)$であり
   $\theta (f \otimes l) : M \longrightarrow L , m \longmapsto f(m)l$と定められたものが一意に定まる。
@@ -156,7 +150,7 @@
 
   そして $\phi : K^n \otimes_K L \longrightarrow L^n , (k_1 , \dots , k_n) \otimes l \longmapsto (k_1 l , \dots , k_n l)$とする。
   これは $(k_1 l , \dots , k_n l) = (k'_1 l' , \dots , k'_n l') \Leftrightarrow {}^\forall i , k_i l = k'_i l$であり
-  $L$が体なので $l^{-1}$をかければ $k_i = k'_i$より $(k_1 , \dots , k_n) = (k'_1 , \dots , k'_n)$から $phi$は単射。
+  $L$が体なので $l^{-1}$をかければ $k_i = k'_i$より $(k_1 , \dots , k_n) = (k'_1 , \dots , k'_n)$から $\phi$は単射。
   そして、任意の $(l_1 , \dots , l_n) \in L^n$に対して $k_i = l_i l^{-1}$ととれば $\phi ((k_1 , \dots , k_n) \otimes l) = (l_1 , \dots , l_n)$より全射。
   構造も保たれるから $K^n \otimes_K L \cong L^n$となる。
 

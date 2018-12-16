@@ -5,6 +5,73 @@
 
 \section{代数拡大}
 
+$K:$体、 $A:K-$代数とする。
 
+\begin{defi}
+  $x \in A$が $K$上\underline{代数的、代数的数 \  $(\mathrm{algebraic})$}とは
+  \[
+  {}^\exists f \  (\neq 0) \  \in K[X]:K係数多項式 \  s.t. \  f(x) = 0
+  \]
+  となることで
+  代数的でないときこれを\underline{超越的、超越的数 \  $(\mathrm{transcendental})$}という。
+\end{defi}
+
+\begin{prop}
+  $x \in A$に対して以下は同値
+
+  $(1)$ $1 , x , x^2 , \cdots$が $K$上一次独立ではない
+
+  $(2)$ $K[x]$が有限次元
+
+  $(3)$ $x$は $K$上代数的
+\end{prop}
+
+\begin{proof}
+  $3 \Rightarrow 1$
+
+  $x$が代数的なので、ある $f = \sum_{i=0}^n a_i X^i \in K[X] \  (0 \neq a_i \in K)$
+  において $f(x) = \sum_{i=0}^n a_i x^i = 0$より
+  $1 , x , x^2 , \cdots$は一次独立ではない。
+
+  $1 \Rightarrow 3$
+
+  一次独立でないのである有限な $m$で $\sum_{i=0}^m a_i x^i = 0$となる
+  全ては $0$ではない $a_i \in K$が存在するのでこれを $f = \sum_{i=0}^m a_i X^i$
+  とすれば $f \in K[X] , f(x) = 0$となるため $x$は $K$上代数的である。
+
+  $2 \Leftrightarrow 3$
+
+  $x \in A$に対し写像 $\phi : K[X] \longrightarrow A , X \longmapsto x$
+  は環準同型であり、
+  ${}^\exists f \in K[X] , \ker(\phi) = (f)$
+  となる。
+  このとき $x:$代数的 $\Leftrightarrow$ $f \neq 0$が定義より言える。
+  したがって環準同型定理より
+  $\im{\phi} = K[x] \cong K[X]/(f)$となる。
+  そして $K[X]/(f)$は $\deg(f) = n$以上の次数の多項式を割り算によりその次数以下にするから
+  $K[X]/(f) = \{ a_0 + a_1 x + \cdots + a_{n-1} x^{n-1} | a_i \in K \}$
+  で表せるので $K[x]$も同型より有限次元である。
+
+  とくに $1 , x , \cdots , x^{n-1}$は $n-1$次以下の $K[x]$の元が一次結合で
+  表わせ、一次独立であるから
+  $K$上の $K[x]$における基底となる。
+
+\end{proof}
+
+\begin{defi}
+  $x$が $K$上代数的数のとき $f(x) = 0$となる $f (\neq 0) \in K[X]$
+  のうち次数が最小で \rm{monic} $(最高次の係数が1)$であるものを
+  $x$の $K$における\underline{最小多項式 \  $(\mathrm{minimal \  polynomial})$}
+  という。
+  $\deg(f)$を $x$の次数ともいう。
+\end{defi}
+
+\begin{exam}
+  $a \in \mathbb{Q}$で平方数でないものにおいて
+  $\sqrt{a} \in \mathbb{C}$の $\mathbb{Q}$の
+  最小多項式は $X^2 - a \in \mathbb{Q}[X]$である。
+
+  $e , \pi$は $\mathbb{Q}$上超越的である。
+\end{exam}
 
 \end{document}

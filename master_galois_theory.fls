@@ -226,6 +226,8 @@ INPUT section1/galois_theory_section1.tex
 INPUT section1/galois_theory_section1.tex
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT c:/w32tex/share/texmf-dist/tex/latex/base/omscmr.fd
+INPUT c:/w32tex/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT section2/galois_theory_section2.tex
 INPUT section2/galois_theory_section2.tex
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm

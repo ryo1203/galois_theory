@@ -12,3 +12,5 @@
 \contentsline {subsection}{\numberline {5.2}元の添加}{17}
 \contentsline {subsection}{\numberline {5.3}体の合成}{17}
 \contentsline {section}{\numberline {6}代数拡大}{19}
+\contentsline {subsection}{\numberline {6.1}代数的、超越的}{19}
+\contentsline {subsection}{\numberline {6.2}代数拡大}{20}

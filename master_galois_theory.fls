@@ -242,4 +242,6 @@ INPUT section5/galois_theory_section5.tex
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT section6/galois_theory_section6.tex
 INPUT section6/galois_theory_section6.tex
+INPUT section7/galois_theory_section7.tex
+INPUT section7/galois_theory_section7.tex
 INPUT master_galois_theory.aux

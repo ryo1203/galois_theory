@@ -7,7 +7,7 @@
 
 \subsection{代数閉体}
 
-\begin{prop}
+\begin{prop} \label{prop7.1}
   体 $K$について次は同値。
 
   $(\mathrm{AC}1)$
@@ -23,5 +23,68 @@
     $K$の代数拡大は $K$のみ。
 \end{prop}
 
+\begin{proof}
+
+  $(1) \Rightarrow (2)$
+
+  一次の積に分解できればそれが根になるので明らか。
+
+  $(2) \Rightarrow (1)$
+
+  $f$のある根を $k \in K$とすると $f(X) = (X - k)g(X)$となる $g \in K[X]$がある。
+  この $g$に対しても同様なことをして繰り返せば
+  $f = (X - k_1)(X - k_2) \cdots (X - k_n)$と一次の積に分解できる。
+
+  $(1) \Leftrightarrow (3)$
+
+  $K$上の既約多項式はそれ以上 $K[X]$上で分解できない多項式なので全ての $f \in K[X] - K$が一次に分解できるので既約多項式は一次。
+  また、分解は既約多項式まで分解できるので一次の積に分解できる。
+
+  $(3) \Rightarrow (4)$
+
+  任意の代数拡大 $L/K$をとると
+  ${}^\forall x \in L$に対し最小多項式 $f \in K[X]$がある。
+  これは既約多項式なので $(3)$より $f(x) = x - k , k \in K$となっているから
+  $x = k \in K$より $L = K$なので代数拡大は $K$のみ。
+
+  $(4) \Rightarrow (1)$
+
+  任意の $f \in K[X] - K$における任意の既約成分を $g$とする。
+  $g$のある一つの根を $x$とするとこの元は $K$上代数的であるから
+  $[K(x):K] = \deg_K g$で有限次拡大なので
+  $K(x) \cong K[X]/(g)$は $K$上の代数拡大。
+  $(4)$よりこれは $K$なので $\deg_K g = \dim_K (K[X]/(g)) = \dim_K K = 1$
+  だから $\deg_K g = 1$より一次式になる。
+  よって任意の既約成分が一次式になるので $f = (一次の積)$となる。
+\end{proof}
+
+\begin{defi}
+  体$K$が上記の命題 $(\mathrm{\ref{prop7.1}})$の $(\mathrm{AC}1) \sim (\mathrm{AC}4)$を成り立たせる、つまり全てを満たすとき
+  $K$を\underline{代数閉体 \  $(\mathrm{algebraically \  closed})$}という。
+
+  相対的代数閉包とはことなり $K$を含む上の体が無い。
+\end{defi}
+
+\begin{exam}
+  代数学の基本定理は$\mathbb{C}$が代数閉体であることを述べている。
+\end{exam}
+
+\begin{prop}
+  $\Omega/K:$拡大、 $\Omega :$代数閉体とする。
+  このとき $K$の $\Omega$の中での相対的代数閉包 $\overline{K}$は代数閉体。
+\end{prop}
+
+\begin{proof}
+  $\overline{K}$が $(\mathrm{AC}2)$を満たすことを示す。
+
+  ${}^\forall f = \sum_{i=0}^n a_i X^i \in \barK[X] - \barK \subset \Omega[X] - \Omega$は
+  $\Omega$が代数閉体よりある根 $x \in \Omega$が存在する。
+  $a_i \in \barK$より $K$上代数的だからそれぞれの最小多項式の次数を考えれば
+  $K' = K(a_0 , \dots , a_n)$は $K$上有限次拡大。
+  $x$は $K'$上代数的より
+  $K'(x)$は $K'$上有限次拡大。
+  この有限次拡大を合わせれば $K(a_0 , \dots , a_n)(x)/K$は有限次拡大なので代数拡大。
+  よって $x$は $K$上代数的なので $x \in \barK$より $\barK$に少なくとも一つの根を持っている。
+\end{proof}
 
 \end{document}

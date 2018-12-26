@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  26 DEC 2018 18:43
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  26 DEC 2018 19:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -481,13 +481,13 @@ LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <10> not available
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 10.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 11.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 11.
+(Font)              scaled to size 9.60999pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 11.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 11.
+(Font)              scaled to size 9.60999pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -507,12 +507,12 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 ] (./galois_theory_section7.aux) ) 
 Here is how much of TeX's memory you used:
- 14667 strings out of 493272
- 307181 string characters out of 6146850
- 357302 words of memory out of 5000000
- 18351 multiletter control sequences out of 15000+600000
+ 14669 strings out of 493272
+ 307194 string characters out of 6146850
+ 363318 words of memory out of 5000000
+ 18353 multiletter control sequences out of 15000+600000
  14019 words of font info for 65 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,5n,84p,492b,177s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 63i,8n,84p,492b,177s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section7.dvi (1 page, 6072 bytes).
+Output written on galois_theory_section7.dvi (1 page, 10788 bytes).

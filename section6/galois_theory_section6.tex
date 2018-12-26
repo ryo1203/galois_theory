@@ -286,7 +286,7 @@ $K:$体、 $A:K-$代数とする。
   $x,y$の最小多項式をそれぞれ $f , g$とするとともに有限次。
   したがって $K(x,y) = K(x)(y)$は拡大次数が最小多項式の次数と等しいことから
   有限次拡大である。
-  よって代数拡大であるのでそこに含まれる元は代数的より示された。
+  よって $K$上の代数拡大であるのでそこに含まれる元は $K$上代数的。
 \end{proof}
 
 \begin{prop}
@@ -313,7 +313,7 @@ $K:$体、 $A:K-$代数とする。
   そして $K'$は $K$上有限次拡大であったので $K'[x]$は $K$上有限次拡大。
   したがって $\mathrm{Rem} (\mathrm{\ref{rem:6.4}})$より
   $K'[x]/K = K[a_1 , \dots , a_n , x]/K$は代数拡大なので
-  $x \in K'[x] \subset L$は $K$上代数的なので示された。
+  $x \in K'[x] \subset L$は $K$上代数的。
 \end{proof}
 
 \begin{prop}
@@ -347,5 +347,20 @@ $K:$体、 $A:K-$代数とする。
   上の定義における相対的代数閉包 $M$は体。
 \end{prop}
 
+\begin{proof}
+  補題 $(\mathrm{\ref{lemm:daisuuwa}})$より和と積について $M$は閉じている。
+
+  $K(x) \subset M$であり、 $K(x)$は $x$を含む最小の $L$の部分体より $x^{-1} , -x \in K(x) \subset M$なので逆元も存在する。
+\end{proof}
+
+\begin{exam}
+  $K$の $K(X) \  (Xは変数)$の中での相対的代数閉包は $X$は変数なので
+  それが含まれると $K$上代数的でなくなるため $K$である。
+
+  $\mathbb{R}$の $\mathbb{C}$の中での相対的代数閉包は $\mathbb{C}$と一致するが
+  $\mathbb{Q}$の $\mathbb{C}$の中での相対的代数閉包は一致せず、これを $\bar{\mathbb{Q}}$とかく。
+\end{exam}
+
+\clearpage
 
 \end{document}

@@ -1,15 +1,18 @@
 # Fdb version 3
-["dvipdf"] 1545821722 "galois_theory_section7.dvi" "galois_theory_section7.pdf" "galois_theory_section7" 1545821725
-  "galois_theory_section7.dvi" 1545821722 10788 adb5075f9a592e324bbb3a329bc23fce "latex"
+["dvipdf"] 1546083189 "galois_theory_section7.dvi" "galois_theory_section7.pdf" "galois_theory_section7" 1546083193
+  "galois_theory_section7.dvi" 1546083189 14128 aa17fda72a4f380eb7e6c1df03ee679e "latex"
   (generated)
   "galois_theory_section7.pdf"
-["latex"] 1545821717 "galois_theory_section7.tex" "galois_theory_section7.dvi" "galois_theory_section7" 1545821725
+["latex"] 1546083182 "galois_theory_section7.tex" "galois_theory_section7.dvi" "galois_theory_section7" 1546083193
   "../master_galois_theory.tex" 1545820697 999 8b311b431888314ba6610342d19eb1da ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1519818042 856 7404843a5f798859944d7973a47821d5 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1519818042 856 39c171483fe1bb7d0e1368980c0c205b ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm" 1233951852 1040 b84415f97d114011685943ade933dc71 ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm5.tfm" 1233951852 1040 a9d2074f3fa062d4d9046b92e2334d8c ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm" 1233951852 1040 82eb6630b094bff824fccca83ff507f9 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233951854 928 2dc8d444221b7a635bb58038579b861a ""
@@ -17,6 +20,8 @@
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1233951854 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1233951854 940 228d6584342e91276bf566bcf9716b83 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1136768653 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
@@ -81,6 +86,7 @@
   "c:/w32tex/share/texmf-dist/tex/latex/amscls/amsthm.sty" 1509462900 12604 3dec726c041422879dc3268237f09026 ""
   "c:/w32tex/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1358197772 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "c:/w32tex/share/texmf-dist/tex/latex/amsfonts/amssymb.sty" 1358197772 13829 94730e64147574077f8ecfea9bb69af4 ""
+  "c:/w32tex/share/texmf-dist/tex/latex/amsfonts/ueuf.fd" 1358197772 1047 4252767c0fde12e3ce9f914ef4bb1ea1 ""
   "c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd" 1358197772 961 6518c6525a34feb5e8250ffa91731cff ""
   "c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsb.fd" 1358197772 961 d02606146ba5601b5645f987c92e6193 ""
   "c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1522996966 2211 ca7ce284ab93c8eecdc6029dc5ccbd73 ""
@@ -122,10 +128,10 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section7.aux" 1545821722 254 cc5a6aec1d80e3182c70f8717e3aa0ee ""
-  "galois_theory_section7.tex" 1545821715 3598 2225a66b9274c48ac985229cb0a6aaf8 ""
+  "galois_theory_section7.aux" 1546083189 330 83b457e0de334dfdb1ad42bebef648c9 ""
+  "galois_theory_section7.tex" 1546083179 5837 28adb1c71c5e2e628b0ec7534584065e ""
   "mymacros.sty" 1545821596 1140 fb609da82334eecce8e442fae64b93ef ""
   (generated)
+  "galois_theory_section7.log"
   "galois_theory_section7.aux"
   "galois_theory_section7.dvi"
-  "galois_theory_section7.log"

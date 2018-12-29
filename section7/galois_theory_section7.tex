@@ -62,7 +62,7 @@
   体$K$が上記の命題 $(\mathrm{\ref{prop7.1}})$の $(\mathrm{AC}1) \sim (\mathrm{AC}4)$を成り立たせる、つまり全てを満たすとき
   $K$を\underline{代数閉体 \  $(\mathrm{algebraically \  closed})$}という。
 
-  相対的代数閉包とはことなり $K$を含む上の体が無い。
+  相対的代数閉包とはことなり $K$を含む上の体が最初からは無い。
 \end{defi}
 
 \begin{exam}
@@ -83,8 +83,58 @@
   $K' = K(a_0 , \dots , a_n)$は $K$上有限次拡大。
   $x$は $K'$上代数的より
   $K'(x)$は $K'$上有限次拡大。
-  この有限次拡大を合わせれば $K(a_0 , \dots , a_n)(x)/K$は有限次拡大なので代数拡大。
+  この有限次拡大を合わせれば $K(a_0 , \dots , a_n)(x)/K = K(a_0 , \dots , a_n , x)/K$は有限次拡大なので代数拡大。
   よって $x$は $K$上代数的なので $x \in \barK$より $\barK$に少なくとも一つの根を持っている。
 \end{proof}
+
+\begin{theo}
+  \rm{Steinitz}の定理
+
+  $L/K , \Omega/K:$拡大とし、 $L$は代数拡大、 $\Omega$は代数閉体とする。
+  このときある $K$の拡大の準同型写像 $\varphi : L \longrightarrow \Omega$が存在する。
+  $(任意の代数拡大は \Omega に埋め込める)$
+\end{theo}
+
+\begin{proof}
+  系 $(\mathrm{\ref{corl:scholium}})$から $\Omega' := (L \otimes_K \Omega)/\gm$は $L , \Omega$の拡大体である。
+
+  この拡大の準同型を $\phi : L \longrightarrow \Omega' , \psi : \Omega \longrightarrow \Omega'$とするとれは体の準同型より単射。
+  単射準同型なのでそれぞれの像において構造を保つことを考えれば
+  $\phi(L)$は $\phi(K)$上代数拡大、 $\psi(\Omega)$は代数閉体。
+  よって $\psi(K)$上代数的な元を $\psi(\Omega)$はすべて含む。
+  また写像が可換より $\psi(K) = \phi(K)$なので
+  $\psi(\Omega)$は $\phi(K)$上代数的な元をすべて含む。
+  よって $\phi(L) \subset \psi(\Omega)$で単射なので
+  $\psi^{-1}\phi : L \longrightarrow \Omega$となる体の準同型をつくれる。
+\end{proof}
+
+\subsection{分解体}
+
+\begin{defi}
+  $K:$体で $(f_i)_{i \in I}:$多項式の族 $(f_i \in K[X] - K)$に対し、
+  $K$の拡大体 $L$が $(f_i)_{i \in I}$の
+  \underline{最小分解体 \  $(\mathrm{minimal \  spilitting \  field})$}
+  $(もしくはここでは \mathrm{MS}体)$とは以下の条件を満たすものである。
+
+  $(1)$
+  ${}^\forall i \in I , f_i$は $L[X]$で一次の積に分解される。
+  $(ここではこの条件が成り立つものを分解体という)$
+
+  $(2)$
+  $L = K({}^\forall i \in I , {}^\forall f_i の根)$となる、
+  つまり $f_i$の根で $K$上生成される最小の体であること。
+\end{defi}
+
+\begin{rem}
+  $(f_i) = (f_1 , \dots , f_n)$のように有限個の多項式の場合、
+  $f = f_1 \cdots f_n$とすると
+  $(f_i)$の \rm{MS}体 $=$ $f$の \rm{MS}体である。
+\end{rem}
+
+\begin{prop}
+  ${}^\forall (f_i)_{i \in I}$に対しその \rm{MS}体は存在し、
+  それは $K$上の同型を除き一意的である。
+\end{prop}
+
 
 \end{document}

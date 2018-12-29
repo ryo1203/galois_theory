@@ -151,6 +151,26 @@ $K$の無限次拡大となるような反例があるためである。
   これらの合成はいくつもありえる。
 \end{defi}
 
+\begin{corl} \label{corl:scholium}
+  $M_1/K , M_2/K:$拡大で $(M_1 \otimes_K M_2)$の極大イデアルを $\gm$としたとき
+  $L = (M_1 \otimes_K M_2)/ \gm$は $K$の拡大でありかつ
+  $M_1 , M_2$を埋め込める。
+  またこれより $(M_1 \otimes_K M_2)$は $M_1-alg , M_2-alg$である
+\end{corl}
+
+\begin{proof}
+  拡大の準同型を $u_i : K \longrightarrow M_i$とする。
+  そして
+  $v_1 : M_1 \longrightarrow L , x \longmapsto u_1(x) \otimes 1 \mod \gm$と
+  $v_2 : M_2 \longrightarrow L , x \longmapsto 1 \otimes u_2(x) \mod \gm$を考える。
+  $(\mod \gm)$を除けば $M_1-alg , M_2-alg$であることがわかる。
+  これは体の準同型になるから単射でこれを拡大の準同型と取れば
+  $L/M_1 , L/M_2$は拡大になり、
+  $v_1 \circ u_1 = v_2 \circ u_2$を満たし $K$の拡大でもある。
+
+
+\end{proof}
+
 \clearpage
 
 \end{document}

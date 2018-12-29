@@ -16,3 +16,4 @@
 \contentsline {subsection}{\numberline {6.2}代数拡大}{20}
 \contentsline {section}{\numberline {7}代数閉体、分解体、代数閉包}{23}
 \contentsline {subsection}{\numberline {7.1}代数閉体}{23}
+\contentsline {subsection}{\numberline {7.2}分解体}{24}

@@ -132,9 +132,47 @@
 \end{rem}
 
 \begin{prop}
-  ${}^\forall (f_i)_{i \in I}$に対しその \rm{MS}体は存在し、
+  $K$上の多項式の族 ${}^\forall (f_i)_{i \in I}$に対しその \rm{MS}体は存在し、
   それは $K$上の同型を除き一意的である。
 \end{prop}
+
+\begin{proof}
+  $(f_i)_{i \in I} = (f)$のときを考える。
+  体上の多項式なので最高次の係数を $1$にしても一般性を失わない。
+  $f = X^n + \sum_{i = 1}^n a_i X^{n-i} , a_i \in K$とおき、
+  $A_i := K[X_1 , \dots , X_n]/ I$を考えるとこれは $K-alg$である。
+  ただしここで $I$とは $K[X_1 , \dots , X_n]$において
+  $s_k - (-1)^k a_k \  (k = 1 , \dots , n)$で生成されるイデアルとする。
+  $s_k$は $X_1 , \dots , X_n$の $k$次基本対称式でありつまり
+  $(X - X_1) \cdots (X - X_n) = X^n - s_1 X^{n-1} + \cdots + (-1)^n s_n$
+  を満たすものである。
+  $x_j := X_j \mod I = X_j + I$とおき、 $x_j$の $k$次基本対称式を上と同様に $t_k$とするとき
+  $t_k = s_k + I$であり、
+  $s_k - (-1)^k a_k \in I \Leftrightarrow s_k + I = (-1)^k a_k + I$
+  なので
+  \begin{eqnarray*}
+    (X - x_1) \cdots (X - x_n) & = & X^n - t_1 X^{n-1} + \cdots + (-1)^n t_n \\
+    & = & X^n + \sum_{i=1}^n (-1)^i t_i X^{n-i} \\
+    & = & X^n + \sum_{i=1}^n (-1)^i (s_i + I) X^{n-i} \\
+    & = & X^n + \sum_{i=1}^n (-1)^i ((-1)^k a_k + I) X^{n-i} \\
+    & = & X^n + \sum_{i=1}^n (a_k + I) X^{n-i} \\
+    & = & X^n + (a_1 + I) X^{n-1} + \cdots + (a_n + I)
+  \end{eqnarray*}
+  となる。
+  これより $f$は $A_i[X]$において $f = (X - x_1) \cdots (X - x_n)$と分解される。
+  $A_i$の任意の極大イデアル $\gm$に対し $L_i = A_i/\gm$とおくとこれは体で
+  標準的射像を考えれば$f$は $L[X]$上で一次の積に分解される。
+  $f$の根が $x_1 , \dots , x_n (= X_1 , \dots , X_n \mod I)$より
+  $A_i$の作り方からこの $L_i$は $(f)$の\rm{MS}体である。
+
+  一般の $(f_i)_{i \in I}$に対しては
+  $L := (\otimes_{i \in I} A_i) / (極大イデアル)$とするとこれは体で
+  $(f_i)$の \rm{MS}体なので存在性が示された。
+
+  一意性は定義 $(2)$より従う。
+\end{proof}
+
+\subsection{代数閉包}
 
 
 \end{document}

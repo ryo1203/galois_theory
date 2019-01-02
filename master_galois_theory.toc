@@ -17,3 +17,6 @@
 \contentsline {section}{\numberline {7}代数閉体、分解体、代数閉包}{23}
 \contentsline {subsection}{\numberline {7.1}代数閉体}{23}
 \contentsline {subsection}{\numberline {7.2}分解体}{24}
+\contentsline {subsection}{\numberline {7.3}代数閉包}{25}
+\contentsline {section}{\numberline {8}etale代数}{26}
+\contentsline {subsection}{\numberline {8.1}対角化}{26}

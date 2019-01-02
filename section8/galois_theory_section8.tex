@@ -1,0 +1,191 @@
+\documentclass[../master_galois_theory]{subfiles}
+\begin{document}
+
+\setcounter{section}{7}
+
+\section{etale代数}
+
+\subsection{対角化}
+
+以下ではとくに述べない限り $K$を可換体とする。
+
+\begin{theo} \label{theo:8.1}
+  $A:K-alg$と $L/K:$拡大としたときに
+  集合 $\mathscr{H} := \Hom_{K-alg}(A,L)$は
+  $L-$ベクトル空間 $\Hom_{K-vect.sp}(A,L)$
+  の中で $L$上一次独立。
+\end{theo}
+
+\begin{proof}
+  $A$を $K-vect.sp$として見ればこれは加法群であるので
+  \rm{Dedekind}の補題から従う。
+\end{proof}
+
+\begin{lemm} \label{lemm:dimension}
+  $\dim_L (\Hom_{K-vect.sp}(A,L)) = [\Hom_{K-vect.sp}(A,L):L] = [A:K]$が成り立つ。
+\end{lemm}
+
+\begin{proof}
+  $A_{(L)} := L \otimes_K A$としてその双対空間を $(A_{(L)})^* := \Hom_L(A_{(L)},L)$とする。
+  以下簡単のため $\Hom_{K-vect.sp}(A,L)$を $\Hom(A,L)$と書く。
+  $\overline{・} : (A_{(L)})^* \longrightarrow \Hom(A,L) , u \longmapsto \overline{u}$で
+  $\overline{u} : A \longrightarrow L , x \longmapsto \overline{u}(x) = u(1 \otimes x)$とすればこの $\overline{・}$は同型であり双対空間であることから
+  $\dim_L A_{(L)} = \dim_L (A_{(L)})^* = \dim_L \Hom(A,L)$である。
+  $\dim_L A_{(L)} = \dim_K A$より従う。
+\end{proof}
+
+\begin{corl} \label{corl:8.2}
+  上の状況において$h(L) (= h_A(L)) := |\Hom_{K-alg}(A,L)| \leq [A:K]$が成り立つ。
+\end{corl}
+
+\begin{proof}
+  $\Hom_{K-alg}(A,L)$は $\Hom_{K-vect.sp}(A,L)$で一次独立より
+  $h(L) \leq \dim_L (\Hom_{K-vect.sp}(A,L))$である。
+  補題 $(\mathrm{\ref{lemm:dimension}})$の $\dim_L (\Hom_{K-vect.sp}(A,L)) = [A:K]$より従う。
+\end{proof}
+
+\begin{defi}
+  $K-alg$の $A$が\underline{対角化可能 \  $(\mathrm{diagonalizable})$}とは
+  ${}^\exists n \geq 1 , A \cong K^n$であること。
+  とくに $n = [A:K]$である。
+  $K^n$は成分ごとの演算を行う直積代数である。
+\end{defi}
+
+\begin{proof}
+  $n = [A:K]$であることは $A$を $K-$ベクトル空間と見ることからわかる。
+\end{proof}
+
+\begin{defi}
+  $A$が拡大 $L/K$により\underline{対角化される \  $(\mathrm{diagonaled \  by \  L})$}とは
+  $L-alg$の $L \otimes_K A$が対角化可能であること。
+\end{defi}
+
+\begin{defi}
+  $A$が $K$上\underline{\rm{etale}}とは
+  ${}^\exists 拡大 L/K$により対角化されること。
+\end{defi}
+
+\begin{rem} \label{rem:kitei}
+  $(e_1 , \dots , e_n)$が $K^n (\cong A)$の標準基底とすると成分ごとの演算を行うから
+  $e_i^2 = e_i , e_i e_j = 0 (i \neq j) , e_1 + \cdots + e_n = 1_A$となる。
+\end{rem}
+
+\begin{prop} \label{prop:8.3}
+  有限次 $K-alg \  A$について次は同値
+  $(n = [A:K]とする)$
+
+  $(1)$
+  $A$は対角化可能。
+
+  $(2)$
+  $A$の $K$上の基底 $(e_1 , \dots , e_n)$で
+  $e_i^2 = e_i , e_i e_j = 0 (i \neq j)$
+  を満たすものが存在する。
+
+  $(3)$
+  $\Hom_{K-alg}(A,K)$は $\Hom_{K-vect.sp}(A,K)$を生成する。
+\end{prop}
+
+\begin{proof}
+  $(1) \Rightarrow (2)$は \rm{Rem} $(\mathrm{\ref{rem:kitei}})$より成立。
+
+  $(2) \Rightarrow (1)$
+
+  $A_i = K e_i$とすると $A_i \cong K$で
+  $A = \{ k_1 e_1 + \cdots + k_n e_n | k_i \in K \} = A_1 \times \cdots \times A_n \cong K^n$
+  より対角化可能。
+
+  $(3) \Rightarrow (1)$
+
+  有限次 $K-alg$なので $\Hom_{K-alg}(A,K) = \{ \pi_1 , \dots , \pi_n \}$とする。
+  これは定理 $(\mathrm{\ref{theo:8.1}})$より一次独立で仮定から全体を張るので
+  $\Hom_{K-vect.sp}(A,K)$の基底になる。
+  そしてそれを並べた $K-$代数の準同型 $\pi := (\pi_1 , \dots , \pi_n) : A \longrightarrow K^n , a \longmapsto (\pi_1 (a) , \dots , \pi_n (a))$とする。
+\end{proof}
+
+\begin{corl} \label{corl:8.4}
+  系 $(\mathrm{\ref{corl:8.2}})$における $|\Hom_{K-alg}(A,L)| \leq [A:K]$について
+  \[
+    |\Hom_{K-alg}(A,L)| = [A:K] \Leftrightarrow AはLで対角化される。
+  \]
+\end{corl}
+
+\begin{proof}
+  $\pi : \Hom_{K-vect.sp}(A,L) \longrightarrow \Hom_{L-vect.sp}(L \otimes_K A , L)
+  , u \longmapsto \pi u$とし、
+  $L-$線形写像で
+  $\pi u : A_{(L)} \longrightarrow L , (1 \otimes x) \longmapsto (\pi u)(1 \otimes x) := u(x)$とする。
+  $\pi$ は準同型で $\pi u = 0 \Rightarrow {}^\forall x \in A , u(x) = 0 \Leftrightarrow u = 0$で単射。
+  ${}^\forall v \in \Hom_{L-vect.sp}(A_{(L)} , L) , u(x) := v(1 \otimes x)$とおけば
+  $\pi u = v$となるので全射より $\pi$は同型なので
+  $\dim_L \Hom_{K-vect.sp}(A,L) = \dim_L \Hom_{L-vect.sp}(L \otimes_K A,L)$が成立する。
+
+  また、始域と終域を制限して $\pi : \Hom_{K-alg}(A,L) \longrightarrow \Hom_{L-alg}(L \otimes_K A , L)$でも同様に全単射になるから
+  $|\Hom_{K-alg}(A,L)| = |\Hom_{L-alg}(L \otimes_K A , L)|$である。
+
+  命題 $(\mathrm{\ref{prop:8.3}})$の $(1) \Leftrightarrow (3)$で
+  $A$を $L \otimes_K A$で置き換えて、
+  補題 $(\mathrm{\ref{lemm:dimension}})$も用いれば
+  \begin{eqnarray*}
+      AはLで対角化される & \Leftrightarrow & L \otimes_K A は対角化可能 \\
+      & \Leftrightarrow & \Hom_{L-alg}(A_{(L)} , L) は \Hom_{L-vect.sp}(A_{(L)},K)を生成する。(基底になる) \\
+      & \Leftrightarrow & |\Hom_{L-alg}(A_{(L)} , L)| = \dim_L \Hom_{L-vect.sp}(A_{(L)},K) \\
+      & \Leftrightarrow & |\Hom_{K-alg}(A,L)| = |\Hom_{L-alg}(A_{(L)} , L)| \\
+      & \  & = \dim_L \Hom_{L-v.s}(A,L) = \dim_L \Hom_{K-v.s}(A,L) = [A:K] \\
+      & \Leftrightarrow & |\Hom_{K-alg}(A,L)| = [A:K]
+  \end{eqnarray*}
+\end{proof}
+
+\begin{prop}
+  $K-alg \  A$について次は同値。
+
+  $(1)$
+  $A$は $K$上\rm{etale}である。
+  $(: \Leftrightarrow {}^\exists 拡大により対角化される)$
+
+  $(2)$
+  $A$は $K$の ${}^\exists $\underline{有限次}拡大により対角化される。
+
+  $(3)$
+  $A$は $K$の ${}^\forall $\underline{代数閉}な拡大により対角化される。
+
+  $(4)$
+  $A$は $K$の ${}^\exists $\underline{代数閉}な拡大により対角化される。
+\end{prop}
+
+\begin{proof}
+  $(3) \Rightarrow (4) \Rightarrow (1)$は明らか。
+
+  $(1) \Rightarrow (2) \Rightarrow (3)$を示す。
+
+  $(1) \Rightarrow (2)$
+
+  $(1) : \Leftrightarrow {}^\exists L/K$により対角化される。
+  系 $(\mathrm{\ref{corl:8.4}})$から
+  $|\Hom_{K-alg}(A,L)| = [A:K] = n$となる。
+  $\Hom_{K-alg}(A,L) = \{ \phi_1 , \dots , \phi_n \}$とすると
+  $\phi_i(A)$は $L$の部分体で対角化可能だから
+  $\phi_i(A) \otimes_K A \subset L \otimes_K A \cong K^n$より
+  $\phi_i(A)$は $K$上 $n$次以下。
+  よって$M := (\phi_i(A)たちの合成) (\subset L)$も $K$の有限次拡大となり、
+  $\im(\phi_i) \subset M$より終域を制限することができるから
+  $\Hom_{K-alg}(A,M) = \{ \phi_1 , \dots , \phi_n \}$である。
+  系 $(\mathrm{\ref{corl:8.4}})$より $|\Hom_{K-alg}(A,M)| = [A:K]$だから
+  $A$は $K$上有限次拡大の $M$で対角化されるから $(2)$が示された。
+
+  $(2) \Rightarrow (3)$
+
+  $A$はある有限次拡大 $M$で対角化されるとする。
+  有限次拡大より\rm{Rem} $(\ref{rem:6.4})$から $M$は代数拡大でもある。
+  また、$K$の任意の代数閉体 $\Omega$をとると定理 $(\mathrm{\ref{theo:7.3}}) (\mathrm{Steinitz}の定理)$から $M$は $\Omega$に埋め込める。
+  よって
+  $\Hom_{K-alg}(A,M) \subset \Hom_{K-alg}(A,\Omega)$である。
+  ここで対角化されるので系 $(\mathrm{\ref{corl:8.4}})$から
+  $|\Hom_{K-alg}(A,M)| = [A:K]$になることと
+  系 $(\mathrm{\ref{corl:8.2}})$から
+  $|\Hom_{K-alg}(A,\Omega)| \leq [A:K]$より
+  $|\Hom_{K-alg}(A,M)| = |\Hom_{K-alg}(A,\Omega)| = [A:K]$となる。
+  よって $A$は任意の代数閉体 $\Omega$で対角化される。
+\end{proof}
+
+\end{document}

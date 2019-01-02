@@ -87,7 +87,7 @@
   よって $x$は $K$上代数的なので $x \in \barK$より $\barK$に少なくとも一つの根を持っている。
 \end{proof}
 
-\begin{theo}
+\begin{theo} \label{theo:7.3}
   \rm{Steinitz}の定理
 
   $L/K , \Omega/K:$拡大とし、 $L$は代数拡大、 $\Omega$は代数閉体とする。
@@ -131,7 +131,7 @@
   $(f_i)$の \rm{MS}体 $=$ $f$の \rm{MS}体である。
 \end{rem}
 
-\begin{prop}
+\begin{prop} \label{prop:7.4}
   $K$上の多項式の族 ${}^\forall (f_i)_{i \in I}$に対しその \rm{MS}体は存在し、
   それは $K$上の同型を除き一意的である。
 \end{prop}
@@ -174,5 +174,36 @@
 
 \subsection{代数閉包}
 
+\begin{defi}
+  体 $K$の\underline{代数閉包 \  $(\mathrm{algebratic \  closure})$}とは
+  $K$の代数拡大であって代数閉体であるもののこと。
+  これを代数閉な拡大ともいう。
+
+  つまり、任意の元に対して最小多項式が存在して、さらに任意の多項式に対してその根が全て含まれる体である。
+\end{defi}
+
+\begin{prop} \label{prop:7.5}
+  \rm{Steinitz}の定理
+
+  任意の体に対しその代数閉包が存在してそれは $K$上の同型を除き一意的。
+\end{prop}
+
+\begin{proof}
+  $(f_i)_{i \in I} = K[X] - K$として命題 $(\mathrm{\ref{prop:7.4}})$を適用すればよい。
+\end{proof}
+
+\begin{corl}
+  $K , K' :$体、 $\Omega , \Omega' :$それらの代数閉包としたとき
+  同型 $\psi : K \xlongrightarrow{\sim} K'$に対し
+  それを延長する同型 $\phi : \Omega \xlongrightarrow{\sim} \Omega'$が存在する
+\end{corl}
+
+\begin{proof}
+  前述の命題 $(\mathrm{\ref{prop:7.5}})$の証明より
+  代数閉包は $(f_i)_{i \in I} = K[X] - K \cong K'[X] - K'$の \rm{MS}体なので
+  その一意性から同型 $\phi : \Omega \xlongrightarrow{\sim} \Omega'$が存在する。
+\end{proof}
+
+\clearpage
 
 \end{document}

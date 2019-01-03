@@ -188,4 +188,39 @@
   よって $A$は任意の代数閉体 $\Omega$で対角化される。
 \end{proof}
 
+\subsection{\rm{etale}代数の部分代数}
+
+以下では\rm{etale}代数$A = K^n$とし、
+その標準基底を $\{ e_1 , \dots , e_n \}$とする。
+
+\begin{prop}
+  $[n] := \{ 1 , \dots , n \}$でこれを共通部分が無いように
+  $[n] = I_1 \bigsqcup \cdots \bigsqcup I_r \  (I_j \neq \emptyset)$と分割する。
+  $I \subset [n]$に対して
+  $e_I := \sum_{i \in I} e_i$とする。
+  $[n] = I_1 \bigsqcup \cdots \bigsqcup I_r$に対し、
+  $A_{(I_1 , \dots , I_r)} := K e_{I_1} + \cdots + K e_{I_r}$は
+  $A$の部分 $K-alg$である。
+
+  そして $A$の部分 $K-alg$は $A_{(I_1 , \dots , I_r)}$のもので尽き、
+  とくに有限個である。
+\end{prop}
+
+\begin{proof}
+  $e_{I_j}$が $A_{(I_1 , \dots , I_r)}$の標準基底になること。
+
+  $A_{(I_1 , \dots , I_r)}$の定義より全体を張り、
+  一次独立性も保つ。
+  $e_i$は標準基底より打ち消し合って冪等元より $I_k \neq I_l$とするとき
+  \begin{eqnarray*}
+    e_{I_k}^2 = \left( \sum_{i \in I_k} e_i \right)^2 = \sum_{i \in I_k} e_i^2 = e_{I_k} \\
+    e_{I_k} e_{I_l} = \left( \sum_{i \in I_k} e_i \right) \left( \sum_{i \in I_l} e_i \right) = 0 \\
+    e_{I_1} + \cdots + e_{I_r} = \sum_{i \in [n]} e_i = 1 \\
+  \end{eqnarray*}
+  より標準基底になるのでそれで $K$上張られている $A_{(I_1 , \dots , I_r)}$は
+  $A$の部分 $K-alg$であり、命題 $(\mathrm{\ref{prop:8.3}})$の $(2)$から
+  対角化可能である。
+\end{proof}
+
+
 \end{document}

@@ -20,3 +20,4 @@
 \contentsline {subsection}{\numberline {7.3}代数閉包}{25}
 \contentsline {section}{\numberline {8}etale代数}{26}
 \contentsline {subsection}{\numberline {8.1}対角化}{26}
+\contentsline {subsection}{\numberline {8.2}\rm {etale}代数の部分代数}{28}

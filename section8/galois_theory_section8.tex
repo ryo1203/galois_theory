@@ -369,7 +369,7 @@
 
 \subsection{分離次数}
 
-$A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h(L) := |\Hom_{K-alg}(A,L)|$
+$A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h_A(L) := |\Hom_{K-alg}(A,L)|$
 とおく。
 このとき系 $(\mathrm{\ref{corl:8.2}})$より $h(L) \leq n = [A:K]$が成り立っている。
 
@@ -403,7 +403,7 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h(L) := |\Hom_{K-alg}(A,L
 \begin{defi}
   ・$K-alg \  A$が\underline{分離的}とは
   $[A:K]_s = [A:K]$となること。
-  
+
   ・とくに有限次拡大 $L/K$が\underline{分離的}とは $K-alg$として
   $L$が分離的であること。
 
@@ -423,5 +423,34 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h(L) := |\Hom_{K-alg}(A,L
   $C:$有限次 $L-alg$で $L/K$が有限次のとき
   $[C:K]_s = [C:L]_s [L:K]_s$
 \end{prop}
+
+\begin{proof}
+  $(1)$
+
+  $\Omega$を $K$の代数閉包とする。
+  定義より $[A \otimes_K B:K]_s = h_{A \otimes_K B}(\Omega) ,
+  [A:K]_s = h_A(\Omega) , [B:K]_s = h_B(\Omega)$である。
+  そして
+  \begin{eqnarray*}
+    * :  \Hom_{K-alg}(A , \Omega) \times \Hom_{K-alg}(B , \Omega)
+     & \longrightarrow &  \Hom_{K-alg}(A \otimes_K B , \Omega) \\
+     (v , u) & \longmapsto & v * u \\
+     v * u : A \otimes_K B & \longrightarrow & \Omega \\
+     a \otimes b & \longmapsto & v(a) u(b)
+  \end{eqnarray*}
+  と定める。
+  まず、 $v' * u' = v * u$のとき ${}^\forall a \otimes b \in A \otimes_K B , v'(a) u'(b) = v(a) u(b)$で $\Omega$の元だから $a \otimes b \neq 0$で
+  逆元が存在するから $v'(a) = v(a) , u'(b) = u(b)$より $(v',u') = (v,u)$なので単射。
+
+  $u_1 : A \longrightarrow A \otimes_K B , a \longmapsto u_1(a) = a \otimes 1$と
+  $u_2 : B \longrightarrow A \otimes_K B , b \longmapsto u_2(b) = 1 \otimes b$とすると
+  ${}^\forall a \otimes b (\in A \otimes_K B) = u_1(a) u_2(b)$となる。
+  任意の $w \in \Hom_{K-alg}(A \otimes_K B , \Omega)$に対し、
+  $v_i = w \circ u_i$とすると準同型より
+  $w(a \otimes b) = w(u_1(a) u_2(b)) = w \circ u_1(a) w \circ u_2(b) = v_1(a) v_2(b)$となる。
+  よって $w$に対して $v_1 \in \Hom_{K-alg}(A,\Omega) , v_2 \in \Hom_{K-alg}(B,\Omega)$をとれば $w = v_1 * v_2$となるので全射。
+  したがって $*$は全単射だから $h_{A \otimes_K B}(\Omega) = h_A(\Omega) h_B(\Omega)$より成立。
+
+\end{proof}
 
 \end{document}

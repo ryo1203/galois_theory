@@ -351,4 +351,65 @@
   よって $A \subset L \otimes_K A$の部分代数とイデアルも有限個。
 \end{proof}
 
+\begin{rem}
+  $\Hom_{K-alg}(A,L)$は $A$の素イデアルの集合 $\mathrm{Spec}(A)$の "$L-$有理点"の集合である。
+\end{rem}
+
+\begin{exam}
+  $A := K[X,Y]/(f)$で $f(X,Y) = X^3 + 1 - Y^2$とする。
+  このとき $\phi \in \Hom_{K-alg}(A,L)$を取り、
+  $x = X (\mod f) , y = Y (\mod f) , \phi(x) = a , \phi(y) = b$とする。
+  すると $A$で $f(X,Y) = 0_A$から $\phi(f) = f(a,b) = 0$より
+  この $a,b$が $f$の $L$上の有理点になる。
+  $\phi$は準同型より $x,y$の送り先 $a,b$のみで
+  $\phi (g(X,Y) + f \  (\in A)) = g(a,b)$と定まるので
+  $\Hom_{K-alg}(A,L) \cong \{ (a,b) \in L^2 | f(a,b) = 0 \}$
+  という同型が定まる。
+\end{exam}
+
+\subsection{分離次数}
+
+$A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h(L) := |\Hom_{K-alg}(A,L)|$
+とおく。
+このとき系 $(\mathrm{\ref{corl:8.2}})$より $h(L) \leq n = [A:K]$が成り立っている。
+
+\begin{lemm} \label{lemm:8.8}
+  $\Omega/K:$拡大、 $\Omega:$代数閉体とするとき
+  ${}^\forall L/K$に対し $h(L) \leq h(\Omega)$
+\end{lemm}
+
+\begin{proof}
+  $L': K$の相対的代数閉包とすると
+  ${}^\forall \phi \in \Hom_{K-alg}(A,L)$において
+  $A$の $K$上の基底を $(e_1 , \dots , e_n)$とする。
+  このとき${}^\forall x = a_1 e_1 + \cdots + a_n e_n \in A$と書けて
+  $\phi(x) = a_1 \phi(e_1) + \cdots + a_n \phi(e_n)$となる。
+  $\{ \phi(e_1) , \dots , \phi(e_n) \}$の部分集合が $\phi(A)$の基底になるので
+  $[\phi(A):K] \leq [A:K] = n$より $\phi(A)/K$は有限次拡大より代数拡大である。
+  よって $\phi(A) \subset L'$だから $\phi \in \Hom_{K-alg}(A,L')$なので
+  $h(L) = h(L')$になる。
+  定理 $(\mathrm{\ref{theo:7.3}})$より $L'$は代数閉体と見た $\Omega$に埋め込めるので終域が小さくなるから
+  $\Hom_{K-alg}(A,L) = \Hom_{K-alg}(A,L') \subset \Hom_{K-alg}(A,\Omega)$より
+  $h(L) \leq h(\Omega)$である。
+\end{proof}
+
+\begin{defi}
+  $[A:K]_s := \max_{L/K} h(L) = h(\Omega) \  (\Omega:Kの代数閉包 , 補題(\mathrm{\ref{lemm:8.8}})から言える。)$
+
+  を $A$の $K$上の\underline{分離次数 \  $(\mathrm{separable \  degree})$}という。
+  系 $(\mathrm{\ref{corl:8.2}})$から $[A:K]_s \leq [A:K]$が言える。
+\end{defi}
+
+\begin{defi}
+  ・$K-alg \  A$が\underline{分離的}とは
+  $[A:K]_s = [A:K]$となること。
+  系 $(\mathrm{\ref{corl:8.4}})$から $A$が有限次 $K-alg$のとき
+  これは $A$が $K$の代数閉包$\Omega$で対角化されることと同値。
+
+  ・とくに有限次拡大 $L/K$が\underline{分離的}とは $K-alg$として
+  $L$が分離的であること。
+
+  ・代数拡大 $L/K$が\underline{分離的}とは ${}^\forall$有限次部分体 $(中間体)$が分離的であること。
+\end{defi}
+
 \end{document}

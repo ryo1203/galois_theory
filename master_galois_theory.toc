@@ -1,23 +1,24 @@
-\contentsline {section}{\numberline {1}体の拡大}{2}
-\contentsline {section}{\numberline {2}Galois理論の基本定理}{4}
-\contentsline {subsection}{\numberline {2.1}Dedekindの補題}{4}
-\contentsline {subsection}{\numberline {2.2}Artinの定理}{5}
-\contentsline {subsection}{\numberline {2.3}Galois理論の基本定理}{8}
-\contentsline {section}{\numberline {3}代数方程式の可解性}{11}
-\contentsline {section}{\numberline {4}標数 \ 素体}{13}
-\contentsline {subsection}{\numberline {4.1}標数 \ 素体}{13}
-\contentsline {subsection}{\numberline {4.2}Frobenius 自己準同型}{14}
-\contentsline {section}{\numberline {5}体上の代数}{16}
-\contentsline {subsection}{\numberline {5.1}K-代数}{16}
-\contentsline {subsection}{\numberline {5.2}元の添加}{17}
-\contentsline {subsection}{\numberline {5.3}体の合成}{17}
-\contentsline {section}{\numberline {6}代数拡大}{19}
-\contentsline {subsection}{\numberline {6.1}代数的、超越的}{19}
-\contentsline {subsection}{\numberline {6.2}代数拡大}{20}
-\contentsline {section}{\numberline {7}代数閉体、分解体、代数閉包}{23}
-\contentsline {subsection}{\numberline {7.1}代数閉体}{23}
-\contentsline {subsection}{\numberline {7.2}分解体}{24}
-\contentsline {subsection}{\numberline {7.3}代数閉包}{25}
-\contentsline {section}{\numberline {8}etale代数}{26}
-\contentsline {subsection}{\numberline {8.1}対角化}{26}
-\contentsline {subsection}{\numberline {8.2}\rm {etale}代数の部分代数}{28}
+\contentsline {section}{\numberline {1}体の拡大}{3}
+\contentsline {section}{\numberline {2}Galois理論の基本定理}{5}
+\contentsline {subsection}{\numberline {2.1}Dedekindの補題}{5}
+\contentsline {subsection}{\numberline {2.2}Artinの定理}{6}
+\contentsline {subsection}{\numberline {2.3}Galois理論の基本定理}{9}
+\contentsline {section}{\numberline {3}代数方程式の可解性}{12}
+\contentsline {section}{\numberline {4}標数 \ 素体}{14}
+\contentsline {subsection}{\numberline {4.1}標数 \ 素体}{14}
+\contentsline {subsection}{\numberline {4.2}Frobenius 自己準同型}{15}
+\contentsline {section}{\numberline {5}体上の代数}{17}
+\contentsline {subsection}{\numberline {5.1}K-代数}{17}
+\contentsline {subsection}{\numberline {5.2}元の添加}{18}
+\contentsline {subsection}{\numberline {5.3}体の合成}{18}
+\contentsline {section}{\numberline {6}代数拡大}{20}
+\contentsline {subsection}{\numberline {6.1}代数的、超越的}{20}
+\contentsline {subsection}{\numberline {6.2}代数拡大}{21}
+\contentsline {section}{\numberline {7}代数閉体、分解体、代数閉包}{24}
+\contentsline {subsection}{\numberline {7.1}代数閉体}{24}
+\contentsline {subsection}{\numberline {7.2}分解体}{25}
+\contentsline {subsection}{\numberline {7.3}代数閉包}{26}
+\contentsline {section}{\numberline {8}etale代数}{27}
+\contentsline {subsection}{\numberline {8.1}対角化}{27}
+\contentsline {subsection}{\numberline {8.2}\rm {etale}代数の部分代数}{29}
+\contentsline {subsection}{\numberline {8.3}分離次数}{31}

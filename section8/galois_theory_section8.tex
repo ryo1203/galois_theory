@@ -193,7 +193,7 @@
 以下では\rm{etale}代数$A = K^n$とし、
 その標準基底を $\{ e_1 , \dots , e_n \}$とする。
 
-\begin{prop}
+\begin{prop} \label{prop:subalgebra}
   $[n] := \{ 1 , \dots , n \}$でこれを共通部分が無いように
   $[n] = I_1 \bigsqcup \cdots \bigsqcup I_r \  (I_j \neq \emptyset)$と分割する。
   $I \subset [n]$に対して
@@ -202,7 +202,8 @@
   $A_{(I_1 , \dots , I_r)} := K e_{I_1} + \cdots + K e_{I_r}$は
   $A$の部分 $K-alg$である。
 
-  そして $A$の部分 $K-alg$は $A_{(I_1 , \dots , I_r)}$のもので尽き、
+  そして $A$の任意の部分 $K-alg$は対角化可能で
+  $A_{(I_1 , \dots , I_r)}$のもので尽き、
   とくに有限個である。
 \end{prop}
 
@@ -220,7 +221,134 @@
   より標準基底になるのでそれで $K$上張られている $A_{(I_1 , \dots , I_r)}$は
   $A$の部分 $K-alg$であり、命題 $(\mathrm{\ref{prop:8.3}})$の $(2)$から
   対角化可能である。
+
+  また、 $B$を $A$の任意の部分代数とするとき
+  射影
+  \begin{eqnarray*}
+    v_i : A (= K^n) & \longrightarrow & K \\
+    \begin{pmatrix}
+      a_1 \\
+      \vdots \\
+      a_n
+    \end{pmatrix}
+    & \longmapsto & a_i
+  \end{eqnarray*}
+  の定義域を $B$に制限したものを考える。
+  これを再度 $v_i$とおくときこれは $v_i \in \Hom_{K-alg}(B,K)$である。
+  \begin{eqnarray*}
+    \alpha =
+    \begin{pmatrix}
+      a_1 \\
+      \vdots \\
+      a_n
+    \end{pmatrix}
+    \beta =
+    \begin{pmatrix}
+      b_1 \\
+      \vdots \\
+      b_n
+    \end{pmatrix}
+    \in B ,
+    k \in K
+  \end{eqnarray*}
+  とするとき
+  $v_i (\alpha + \beta) = a_i + b_i = v_i (\alpha) + v_i (\beta) ,
+  v_i (\alpha \beta) = a_i b_i = v_i (\alpha) v_i (\beta) ,
+  v_i (k \alpha) = k a_i = k v_i (\alpha) ,
+  v_i (1_{K^n}) = 1_K$
+  より $v_i \in \Hom_{K-alg}(B,K)$である。
+  そして定義より $v_i(e_j) = \delta_{ij}$なので
+  $\{ v_1 , \dots , v_n \}$は $\Hom_{K-vect.sp}(B,K)$を生成する。
+  つまり、 $f \in \Hom_{K-vect.sp}(B,K)$に対して
+  $v_i (c_1 e_1 + \cdots + c_n e_n) = c_i$より
+  $f = f(e_1)v_1 + \cdots + f(e_n)v_n$とすればよい。
+
+  したがって $\Hom_{K-alg}(B,K)$の元 $v_1 , \dots , v_n$が
+  $\Hom_{K-vect.sp}(B,K)$を生成するので
+  命題 $(\mathrm{\ref{prop:8.3}})$から任意の部分代数は対角化可能である。
+  また、基底として $(\varepsilon_1 , \dots , \varepsilon_m)$で
+  $\varepsilon_i^2 = \varepsilon , \varepsilon_i \varepsilon_j = 0 (i \neq j)$となるものが存在する。
+
+  この基底は $A$の元なので $e_1 , \dots , e_n$で作られるが
+  冪等性と総和が $1$になることを考えれば $e_{I_1} , \dots , e_{I_r}$で出し尽くされる。
+  したがって全ての部分代数は $A_{(I_1 , \dots , I_r)}$であり、
+  $[n]$の分割を考えれば部分代数は有限個。
 \end{proof}
 
+\begin{prop} \label{prop:ideal}
+  各 $I \subset [n]$に対し
+  $\ga_I := \sum_{i \in I}K e_i$
+  とするとこれは $A$のイデアルになる。
+  そして $A$のイデアルはこれに尽き、とくに有限個である。
+\end{prop}
+
+\begin{proof}
+  $\ga_I$は明らかに $A$のイデアルになる。
+
+  $A$のイデアル $\ga$が ${}^\forall i \in I , e_i \in \ga$で
+  ${}^\forall j \in J := [n] - I , e_j \notin \ga$となっているとする。
+  定義より明らかに $\ga_I \subset \ga$である。
+  $x = x_1 e_1 + \cdots + x_n e_n \in \ga , x_i \in K$と
+  $j \in J$に対して
+  $e_j \in A , x \in \ga$から $x e_j \in \ga$なので
+  $x e_j = x_1 e_1 e_j + \cdots + x_n e_n e_j = x_j e_j \in \ga$となる。
+  ここで $x_j = 0$のとき $x_j e_j = 0_{K^n} \in \ga$である。
+  $x_j \neq 0$のとき $x_j e_j \in \ga$とすると
+  $K$が体より $x_j^{-1}$が存在して、 $x_j^{-1} e_j \in A$であるから
+  イデアルより $x_j^{-1} e_j x_j e_j = e_j \in \ga$となり、これは矛盾。
+  したがって $x_j e_j \in \ga$であるときは $x_j = 0$である。
+  これより $x \in \ga$は $\sum_{i \in I} x_i e_i$とかけるから
+  $\ga \subset \ga_I$なので $\ga = \ga_I$。
+  任意のイデアルはそれが含んでいる標準基底によってのみ決まるから
+  $\ga_I$で全てであり $I$のとり方より有限個である。
+\end{proof}
+
+\begin{rem}
+  $A = K^n$のイデアル $\ga$はそれ自身は $K-alg$の構造を持つが、
+  一般に$A$の部分 $K-alg$ではない。
+
+  また、 $\ga = \ga_I$は $A$のイデアル $\gb = \ga_J = \ga_{[n] - I}$の商 $K-alg \  A/\gb$と同型である。
+\end{rem}
+
+\begin{proof}
+  $K-alg$の構造を持つことは
+  $\ga = \ga_I$で $I = \{ 1 , \dots , k (\neq n) \}$とすると
+  \begin{eqnarray*}
+    \phi : K & \longrightarrow & \ga \\
+    k & \longmapsto &
+    \begin{pmatrix}
+      k \\
+      \vdots \\
+      k \\
+      0 \\
+      \vdots \\
+      0
+    \end{pmatrix}
+  \end{eqnarray*}
+  とするとこれは環準同型で $K$が可換体より $\im(\phi) \subset (\ga の中心)$より
+  $K-alg$になる。
+  一般の $I$についても同様。
+
+  また、$\ga$の単位元 $1_\ga$は $(\underbrace{1 , \dots , 1}_{k} , 0 , \dots , 0)$
+  であり、これは $A$の単位元 $1_A = (1 , \dots , 1)$と一致しないので
+  $A$の部分 $K-alg$ではない。
+
+  $I = \{ 1 , \dots , k \}$として考える。
+  このとき $J = \{ k+1 , \dots , n \}$である。
+  $\psi : A \longrightarrow \ga , (a_1 , \dots , a_n) \longmapsto (a_1 , \dots , a_k)$とすると
+  これは $K-alg$準同型で全射であり、 $\ker(\psi) = (a_{k+1} , \dots , a_n) = \gb$であるから準同型定理より
+  $A/\gb \cong \ga$となるので示された。
+\end{proof}
+
+\begin{prop}
+  \rm{etale} $K-alg \  A$は部分 $K-alg$及びイデアルを有限個しか持たない。
+\end{prop}
+
+\begin{proof}
+  \rm{etale}より ${}^\exists L/K$により $L \otimes_K A \cong L^n$であるので
+  命題 $(\mathrm{\ref{prop:subalgebra}})(\mathrm{\ref{prop:ideal}})$より
+  $L \otimes_K A$の部分代数とイデアルは有限個。
+  よって $A \subset L \otimes_K A$の部分代数とイデアルも有限個。
+\end{proof}
 
 \end{document}

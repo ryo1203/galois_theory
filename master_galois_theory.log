@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  3 JAN 2019 19:27
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  4 JAN 2019 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -556,14 +556,14 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 
 ] [24] [25]) (./section8/galois_theory_section8.tex [26
 
-] [27]) [28] (./master_galois_theory.aux) ) 
+] [27] [28]) [29] (./master_galois_theory.aux) ) 
 Here is how much of TeX's memory you used:
- 14855 strings out of 493272
- 310710 string characters out of 6146850
+ 14857 strings out of 493272
+ 310739 string characters out of 6146850
  363429 words of memory out of 5000000
- 18490 multiletter control sequences out of 15000+600000
+ 18492 multiletter control sequences out of 15000+600000
  20605 words of font info for 93 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  54i,14n,82p,840b,357s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on master_galois_theory.dvi (28 pages, 153260 bytes).
+Output written on master_galois_theory.dvi (29 pages, 162520 bytes).

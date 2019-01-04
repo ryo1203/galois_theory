@@ -120,7 +120,7 @@
   $\pi u = v$となるので全射より $\pi$は同型なので
   $\dim_L \Hom_{K-vect.sp}(A,L) = \dim_L \Hom_{L-vect.sp}(L \otimes_K A,L)$が成立する。
 
-  また、始域と終域を制限して $\pi : \Hom_{K-alg}(A,L) \longrightarrow \Hom_{L-alg}(L \otimes_K A , L)$でも同様に全単射になるから
+  また、始域と終域を代数の準同型に制限して $\pi : \Hom_{K-alg}(A,L) \longrightarrow \Hom_{L-alg}(L \otimes_K A , L)$でも同様に全単射になるから
   $|\Hom_{K-alg}(A,L)| = |\Hom_{L-alg}(L \otimes_K A , L)|$である。
 
   命題 $(\mathrm{\ref{prop:8.3}})$の $(1) \Leftrightarrow (3)$で
@@ -131,7 +131,7 @@
       & \Leftrightarrow & \Hom_{L-alg}(A_{(L)} , L) は \Hom_{L-vect.sp}(A_{(L)},K)を生成する。(基底になる) \\
       & \Leftrightarrow & |\Hom_{L-alg}(A_{(L)} , L)| = \dim_L \Hom_{L-vect.sp}(A_{(L)},K) \\
       & \Leftrightarrow & |\Hom_{K-alg}(A,L)| = |\Hom_{L-alg}(A_{(L)} , L)| \\
-      & \  & = \dim_L \Hom_{L-v.s}(A,L) = \dim_L \Hom_{K-v.s}(A,L) = [A:K] \\
+      & \  & = \dim_L \Hom_{L-v.s}(A_{(L)},L) = \dim_L \Hom_{K-v.s}(A,L) = [A:K] \\
       & \Leftrightarrow & |\Hom_{K-alg}(A,L)| = [A:K]
   \end{eqnarray*}
 \end{proof}
@@ -403,13 +403,25 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h(L) := |\Hom_{K-alg}(A,L
 \begin{defi}
   ・$K-alg \  A$が\underline{分離的}とは
   $[A:K]_s = [A:K]$となること。
-  系 $(\mathrm{\ref{corl:8.4}})$から $A$が有限次 $K-alg$のとき
-  これは $A$が $K$の代数閉包$\Omega$で対角化されることと同値。
-
+  
   ・とくに有限次拡大 $L/K$が\underline{分離的}とは $K-alg$として
   $L$が分離的であること。
 
   ・代数拡大 $L/K$が\underline{分離的}とは ${}^\forall$有限次部分体 $(中間体)$が分離的であること。
 \end{defi}
+
+\begin{prop}
+  $A,B :$有限次 $K-alg$、 $L/K:$拡大、 $A_{(L)} = L \otimes_K A$とする。
+
+  $(1)$
+  $[A \otimes_K B:K]_s = [A:K]_s [B:K]_s$
+
+  $(2)$
+  $[A_{(L)}:L]_s = [A:K]_s$
+
+  $(3)$
+  $C:$有限次 $L-alg$で $L/K$が有限次のとき
+  $[C:K]_s = [C:L]_s [L:K]_s$
+\end{prop}
 
 \end{document}

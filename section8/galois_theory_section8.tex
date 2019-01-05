@@ -136,7 +136,7 @@
   \end{eqnarray*}
 \end{proof}
 
-\begin{prop}
+\begin{prop} \label{prop:8.5}
   $K-alg \  A$について次は同値。
 
   $(1)$
@@ -394,7 +394,7 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h_A(L) := |\Hom_{K-alg}(A
 \end{proof}
 
 \begin{defi}
-  $[A:K]_s := \max_{L/K} h(L) = h(\Omega) \  (\Omega:Kの代数閉包 , 補題(\mathrm{\ref{lemm:8.8}})から言える。)$
+  $[A:K]_s := \max_{L/K} h_A(L) = h_A(\Omega) \  (\Omega:Kの代数閉包 , 補題(\mathrm{\ref{lemm:8.8}})から言える。)$
 
   を $A$の $K$上の\underline{分離次数 \  $(\mathrm{separable \  degree})$}という。
   系 $(\mathrm{\ref{corl:8.2}})$から $[A:K]_s \leq [A:K]$が言える。
@@ -410,7 +410,7 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h_A(L) := |\Hom_{K-alg}(A
   ・代数拡大 $L/K$が\underline{分離的}とは ${}^\forall$有限次部分体 $(中間体)$が分離的であること。
 \end{defi}
 
-\begin{prop}
+\begin{prop} \label{prop:8.9}
   $A,B :$有限次 $K-alg$、 $L/K:$拡大、 $A_{(L)} = L \otimes_K A$とする。
 
   $(1)$
@@ -451,6 +451,97 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h_A(L) := |\Hom_{K-alg}(A
   よって $w$に対して $v_1 \in \Hom_{K-alg}(A,\Omega) , v_2 \in \Hom_{K-alg}(B,\Omega)$をとれば $w = v_1 * v_2$となるので全射。
   したがって $*$は全単射だから $h_{A \otimes_K B}(\Omega) = h_A(\Omega) h_B(\Omega)$より成立。
 
+  $(2)$
+
+  $\Hom_{K-alg}(A,\Omega)$と $\Hom_{L-alg}(L \otimes_K A , \Omega)$の間は
+  系 $(\mathrm{\ref{corl:8.4}})$での $\pi$を用いれば
+  $L$を $\Omega$として見てもよく、これは全単射であるから
+  $[L \otimes_K A : L]_s = [A:K]_s$が成り立つ。
+
+  $(3)$
+
+  $S = \Hom_{K-alg}(L,\Omega) , T = \Hom_{K-alg}(C,\Omega)$とする。
+  $\sigma \in S$に対して $T_\sigma = \{ f \in T | {}^\forall \alpha \in L , f(\alpha) = \sigma(\alpha) \}$とするとこれは以下で示されるように $T$を分割する。
+  $\sigma , \tau \in S$に対して $f \in T_\sigma \cap T_\tau$としたとき
+  ${}^\forall \alpha \in L , f(\alpha) = \sigma(\alpha) = \tau(\alpha)$より
+  $\sigma = \tau$から $T_\sigma = T_\tau$となる。
+  また、 ${}^\forall g \in T$に対して
+  $\sigma := g|_L$とすれば $\sigma(\alpha) = g(\alpha)$だから
+  $g \in T_\sigma$であるので確かに $T$を分割する。
+
+  $\sigma$は体の準同型より単射だから
+  $\Omega$の中に $\sigma(L)$として $L$を埋め込めるからその２つを同一視することで
+  $K$の代数閉包 $\Omega$を $L$の代数閉包と見ることもできる。
+  このとき ${}^\forall f \in T_\sigma$は定義より
+   ${}^\forall \alpha \in L , f(\alpha) = \sigma(\alpha) \in \sigma(L) \cong L$で $\sigma(L) \cong L$上恒等写像になる。
+   したがって $f \in \Hom_{L-alg}(C,\Omega)$より
+   $T_\sigma \subset \Hom_{L-alg}(C,\Omega)$である。
+   また、この $\sigma(L)$と $L$の同一視から
+   $\alpha \in L$は $\Omega$の中で
+   $\alpha = \sigma(\alpha) \in \sigma(L)$であるので
+   $\phi \in \Hom_{L-alg}(C,\Omega)$に対して
+   $\phi(\alpha) = \alpha = \sigma(\alpha)$より
+   $\phi \in T_\sigma$だから $\Hom_{L-alg}(C,\Omega) \subset T_\sigma$である。
+   これより $T_\sigma = \Hom_{L-alg}(C,\Omega)$から
+   $|T_\sigma| = [C:L]_s$となるので分割であることも考えれば
+   $|T| = [C:K]_s = \sum_{\sigma \in S} |T_\sigma| = |S||T_\sigma| = [C:L]_s [L:K]_s$より示された。
 \end{proof}
+
+\begin{note}
+  分離次数ではなく拡大次数でも $(1) \sim (3)$と同様のことが成り立つ。
+\end{note}
+
+\begin{prop} \label{prop:8.10}
+  $A :$有限次 $K-alg$について
+  \[
+  Aが K上分離的 \Leftrightarrow Aは K上 \mathrm{etale}
+  \]
+\end{prop}
+
+\begin{proof}
+  系 $(\mathrm{\ref{corl:8.4}})$と
+  命題 $(\mathrm{\ref{prop:8.5}})$から
+  \begin{eqnarray*}
+    Aが K上分離的 & \Leftrightarrow & [A:K]_s = [A:K] \\
+    & \Leftrightarrow & |\Hom_{K-alg}(A,\Omega)| = [A:K] \\
+    & \Leftrightarrow & Aはある Kの代数閉包 \Omega で対角化される。 \\
+    & \Leftrightarrow & Aは K上 \mathrm{etale}
+  \end{eqnarray*}
+\end{proof}
+
+\begin{corl}
+  次の $3$つが成り立つ
+
+  $(1)$
+  $A \otimes_K B$が $\mathrm{etale}/K$
+  $\Leftrightarrow A$と $B$がともに\rm{etale}
+
+  $(2)$
+  $A/K:\mathrm{etale} \Leftrightarrow A_{(L)}/L:\mathrm{etale}$
+
+  $(3)$
+  $C/L/K$のとき $C$が $K$上\rm{etale} $\Leftrightarrow$
+  $C$が $L$上\rm{etale}でかつ $L$が $K$上\rm{etale}
+\end{corl}
+
+\begin{proof}
+  代数が分離的であるときその分離次数は拡大次数と等しいという定義と
+  その拡大次数を常に超えないということから
+  命題 $(\mathrm{\ref{prop:8.9}})(\mathrm{\ref{prop:8.10}})$と
+  拡大次数について命題 $(\mathrm{\ref{prop:8.9}})$が成り立つことより
+  示される。
+\end{proof}
+
+\subsection{微分加群}
+
+\begin{defi}
+  $A/K$の微分加群 $\Omega_{A/K}$とは
+  $I := \ker(A \otimes_K A \longrightarrow A , a \otimes b \longmapsto ab)$としたとき
+  $\Omega_{A/K} := I/I^2$と定義される。
+  定義より $\Omega_{A/K} \subset B := A \otimes_K A /I^2$は明らか。
+  ここで $A \otimes_K A$を $a \longmapsto a \otimes 1$と見ることで $A$加群と考える。
+  そして $d : A \longrightarrow \Omega_{A/K} , a \longmapsto d(a) := 1 \otimes a - a \otimes 1 (\mod I^2)$とする。
+\end{defi}
+
 
 \end{document}

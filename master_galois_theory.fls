@@ -220,8 +220,8 @@ INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
-OUTPUT master_galois_theory.toc
 OUTPUT master_galois_theory.dvi
+OUTPUT master_galois_theory.toc
 INPUT section1/galois_theory_section1.tex
 INPUT section1/galois_theory_section1.tex
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm

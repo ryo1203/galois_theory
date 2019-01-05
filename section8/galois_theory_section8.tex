@@ -540,8 +540,44 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h_A(L) := |\Hom_{K-alg}(A
   $\Omega_{A/K} := I/I^2$と定義される。
   定義より $\Omega_{A/K} \subset B := A \otimes_K A /I^2$は明らか。
   ここで $A \otimes_K A$を $a \longmapsto a \otimes 1$と見ることで $A$加群と考える。
-  そして $d : A \longrightarrow \Omega_{A/K} , a \longmapsto d(a) := 1 \otimes a - a \otimes 1 (\mod I^2)$とする。
+  そして $d : A \longrightarrow \Omega_{A/K} , a \longmapsto d(a) (=da) := 1 \otimes a - a \otimes 1 (\mod I^2)$とする。
+  このとき $a , b \in A$と $k \in K$に対して
+  \begin{eqnarray*}
+    d(ab) & = & b d(a) + a d(b) \\
+    d(k) & = & 0
+  \end{eqnarray*}
+  が成り立つ。
+  実際、 $d(ab) = 1 \otimes ab - ab \otimes 1 = (1 \otimes a)(1 \otimes b) - (a \otimes 1)(b \otimes 1) = (1 \otimes b)(1 \otimes a - a \otimes 1) + (a \otimes 1)(1 \otimes b - b \otimes 1) + (1 \otimes b)(a \otimes 1) - (a \otimes 1)(1 \otimes b) = b d(a) + a d(b)$であり、
+  $d(k) = 1 \otimes k - k \otimes 1 = k(1 \otimes 1) - k(1 \otimes 1) = 0$より成立。
 \end{defi}
+
+\begin{exam}
+  $A = K[X]$とすると $\Omega_{A/K} = A \cdot dX (= d(X) = 1 \otimes X - X \otimes 1)$であり
+  $d : A \longrightarrow \Omega_{A/K} , f \longmapsto f' dX$となる
+\end{exam}
+
+\begin{exam} \label{exam:8.12}
+  $A = K[X]/(f)$のとき
+  $\Omega_{A/K} = A/(f') dX = K[X]/(f)/(f') dX = K[X]/(f,f') dX$となる。
+\end{exam}
+
+\begin{prop} \label{prop:8.12}
+  有限次 $K-alg \  A$について
+  \[
+  Aは K上で \mathrm{etale} \Leftrightarrow \Omega_{A/K} = 0
+  \]
+  が成り立つ。
+\end{prop}
+
+\begin{corl}
+  $A = K[X]/(f)$で $\mathrm{etale}/K$ $\Leftrightarrow (f,f') = 1 \  (fとその形式微分 f'によって作られるイデアルが 1_Kを含む \Leftrightarrow fとf'が互いに素)$
+\end{corl}
+
+\begin{proof}
+  例 $(\mathrm{\ref{exam:8.12}})$と命題 $(\mathrm{\ref{prop:8.12}})$から
+  $\Omega_{A/K} = 0 \Leftrightarrow  (f,f') = K[X] = 1$より成り立つ。
+\end{proof}
+
 
 
 \end{document}

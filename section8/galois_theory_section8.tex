@@ -583,6 +583,7 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h_A(L) := |\Hom_{K-alg}(A
 \begin{defi}
   可換環 $A$が\underline{被約 \  $(\mathrm{reduced})$}とは
   $0$以外の冪零元を持たないこと。 $(\Leftrightarrow a \neq 0 なら a^2 \neq 0)$
+  $K-alg \  A$が被約とはそれが可換環として被約であること。
 \end{defi}
 
 \begin{exam}
@@ -591,5 +592,67 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h_A(L) := |\Hom_{K-alg}(A
 
   図形的には重なっていないことと見ることができる。
 \end{exam}
+
+\begin{lemm} \label{lemm:idempotent}
+  可換環$A$に冪等元 $e (\neq 0 , 1)$が存在するとき
+  $A = A_1 \times A_2$となる $\{ 0 \} , A$ではない
+  部分環 $A_1 , A_2$が存在する。
+\end{lemm}
+
+\begin{proof}
+  $e' := 1 - e$とするとこれも
+  $(1 - e)(1 - e) = 1 - 2e + e^2 = 1 - e$より冪等元である。
+  また、 $e e' = e (1 - e) = e - e^2 = 0$をみたす。
+  $A_1 := Ae , A_2 := Ae'$とするとこれは 和と積について閉じているから
+  $A$の部分環になっていて以下の準同型写像を考える。
+  \begin{eqnarray*}
+    \phi : A & \longrightarrow & A_1 \times A_2 \\
+    x & \longmapsto & (ex , e'x)
+  \end{eqnarray*}
+  ここで $\phi(x) = 0 \Leftrightarrow ex = 0 \land e'x = (1 - e)x = 0 \Rightarrow (1 - e)x + ex = 0 \Rightarrow x = 0$より $\ker(\phi) = \{ 0 \}$から単射。
+  また、 ${}^\forall (ea , e'b)$に対して
+  $ea + e'b \in A$をとると
+  $\phi(ea + e'b) = (e(ea + e'b) , e'(ea + e'b) ) = (ea , e'b)$より全射。
+  したがって同型写像になるから $A \cong A_1 \times A_2 (= Ae \times Ae')$となる。
+\end{proof}
+
+\begin{prop}
+  有限次 $K-alg \  A$において次は同値。
+
+  $(1)$
+  $A$は被約。
+
+  $(2)$
+  $A$はある有限次体拡大 $L_i/K$により
+  $A \cong L_1 \times \cdots \times L_n$となる。
+\end{prop}
+
+\begin{proof}
+  $(2) \Rightarrow (1)$
+
+  体は被約であることより明らか。
+
+  $(1) \Rightarrow (2)$
+
+  $A$が体であれば $K$の拡大体と見ることで $L := A$で成立する。
+
+  $A$が体でないとして $A$の次元について帰納法を用いる。
+  $[A:K] = 1$のとき $A \cong K$から $K$が可換体より成立。
+  $[A_i:K] = m \leq n$の $K-alg \  A_i$について題意が満たされているとする。
+  $[A:K] = n$のとき
+  もし $A$が冪等元 $e (\neq 0 , 1)$を持っていれば
+  補題 $(\mathrm{\ref{lemm:idempotent}})$より
+  $A \cong A_1 \times A_2$となる $0$でも $A$でもない部分環が存在して
+  部分環であることから $[A_1:K] , [A_2:K] \leq [A:K]$となるので帰納法の仮定から
+  $A$は題意を満たす。
+
+  よって $A$が冪等元 $e (\neq 0 , 1)$を持っていることを示す。
+  $\ga (\neq (0) , (1))$は $A$のイデアルで
+  $K-$ベクトル空間としてみたときに次数が最小のものとする。
+  $\ga \neq (0)$より $0$でない $x \in \ga$がとれる。
+  $A$が被約より $x^2 \neq 0$なので $\ga^2 \neq \{ 0 \}$であり
+  $\ga^2 \subset \ga$を満たす。
+  そして $\ga$の次数の最小性から $\ga^2 = \ga$となる。
+\end{proof}
 
 \end{document}

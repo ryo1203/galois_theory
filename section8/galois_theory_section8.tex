@@ -616,6 +616,52 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h_A(L) := |\Hom_{K-alg}(A
   したがって同型写像になるから $A \cong A_1 \times A_2 (= Ae \times Ae')$となる。
 \end{proof}
 
+\begin{lemm} \label{lemm:determinant}
+  $M:$有限生成 $A$加群で $\ga$を $A$のイデアルとして
+  $\phi$を $M$の $A$加群の自己準同型であり $\phi(M) \subset \ga M$を満たすとする。
+  このとき $M$の生成系を $(x_1 , \dots , x_n)$として
+  $\phi$はある $a_i \in \ga$により
+  $\phi^n + a_1 \phi^{n-1} + \cdots + a_n = 0$となる。
+\end{lemm}
+
+\begin{proof}
+  定義から ${}^\forall i , \phi(x_i) \in \ga M$から
+  $\phi(x_i) = \sum_{j = 1}^n a_{ij} x_j$となる $a_{ij}$が存在するので以下の式変形で
+  \begin{eqnarray*}
+    \phi(x_i) - \sum_{j = 1}^n a_{ij} x_j & = & 0 \\
+    \sum_{j = 1}^n \delta_{ij} \phi(x_i) - a_{ij} x_j & = & 0 \\
+    \sum_{j = 1}^n (\delta_{ij} \phi - a_{ij}) x_j & = & 0
+  \end{eqnarray*}
+  となる。
+  ここで $n$次正方行列 $A := (\delta_{ij} \phi - a_{ij})$を考えることが出来て
+  これは $\vec{x} := {}^T(x_1 , \dots , x_n)$に対して
+  $A \vec{x} = 0$となる。
+  $\vec{x}$の元は $M$の生成系から $0$ではないのでこの連立方程式は
+  非自明解を持つからその行列式
+  $\det A = \det (\delta_{ij} \phi - a_{ij}) = 0$である。
+  この行列式は $\phi$の $n$次式になり、
+  $n$次部分は $A$の対角線上の積のみであるので $n$次の径数は $1$で
+  その他の係数は $a_{ij} \in \ga$の積の和だから
+  ある $a_i \in \ga$で
+  $\phi^n + a_1 \phi^{n-1} + \cdots + a_n = 0$となるので示された。
+\end{proof}
+
+\begin{corl} \label{corl:determinant}
+  $M$を有限生成 $A$加群として、
+  $\ga$を $\ga M = M$となる $A$のイデアルとする。
+  このとき $x M = 0$と $x \equiv 1 (\mod \ga)$となる $x \in A$が存在する。
+\end{corl}
+
+\begin{proof}
+  補題 $(\mathrm{\ref{lemm:determinant}})$で $\phi = \mathrm{id}_M$とすると
+  $\phi(M) = M = \ga M$から条件を満たしているので
+  $\phi^n + a_1 \phi^{n-1} + \cdots + a_n = 1 + a_1 + \cdots + a_n = 0$となる
+  $a_1 , \dots , a_n \in \ga$が存在する。
+  ここで $x = 1 + a_1 + \cdots + a_n$とおくと $x \in A$であり、
+  $x M = 0 M = 0$と
+  $a_1 + \cdots + a_n \in \ga$から $x \equiv 1 (\mod \ga)$となる。
+\end{proof}
+
 \begin{prop}
   有限次 $K-alg \  A$において次は同値。
 
@@ -653,6 +699,18 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h_A(L) := |\Hom_{K-alg}(A
   $A$が被約より $x^2 \neq 0$なので $\ga^2 \neq \{ 0 \}$であり
   $\ga^2 \subset \ga$を満たす。
   そして $\ga$の次数の最小性から $\ga^2 = \ga$となる。
+
+  $A$が有限次 $K-alg$よりそのイデアル $\ga$も有限生成であるので
+  系 $(\mathrm{\ref{corl:determinant}})$において $M = \ga$としてもよく、
+  $\ga$自身は $\ga \ga = \ga$を満たしているので
+  $x M = 0 , x \equiv 1 (\mod \ga)$となる $x \in A$が存在する。
+  $e := 1 - x$とすると $e \equiv 0 (\mod \ga)$より $e \in \ga$で
+  $(1 - e) \ga = 0$となる。
+  したがって ${}^\forall x \in \ga , (1 - e)x = 0 \Leftrightarrow ex = x$
+  となるから $x = e \in \ga$をとると $e^2 = e$から冪等元 $e$が存在して
+  $\ga = Ae$となる。
+  $\ga \neq (0) , (1)$から $e \neq 0 , 1$であるので
+  $A$は冪等元 $e (\neq 0 , 1)$を持っているので示された。
 \end{proof}
 
 \end{document}

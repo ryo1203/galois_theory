@@ -713,4 +713,30 @@ $A:$有限次 $K-alg$で ${}^\forall L/K$に対して $h_A(L) := |\Hom_{K-alg}(A
   $A$は冪等元 $e (\neq 0 , 1)$を持っているので示された。
 \end{proof}
 
+\begin{theo}
+  有限次 $K-alg \  A$について次は同値。
+
+  $(1)$
+  $A$は $K$上\rm{etale}。
+
+  $(2)$
+  ${}^\forall L/K$に対し $L \otimes_K A$は被約。
+  とくに、 $A$は被約。
+
+  $(3)$
+  $A \cong L_1 \times \cdots \times L_n , L_i/K$は有限次分離拡大。
+  分離拡大は次の章で説明する。
+\end{theo}
+
+\begin{proof}
+  $(1) \Rightarrow (2)$
+
+  $L$を $K$の任意の体拡大とし、その代数閉包を $\Omega$とおくと
+  $L \subset \Omega$より $L \otimes_K A$は $\Omega \otimes_K A$の
+  部分環と同型である。
+  また、 $A$は $K$上\rm{etale}より命題 $(\mathrm{\ref{prop:8.5}})$から
+  $\Omega$で対角化されるから $\Omega \otimes_K A \cong \Omega^n$となり、
+  これは体の直積代数から被約であるから $L \otimes_K A$も被約である。
+\end{proof}
+
 \end{document}

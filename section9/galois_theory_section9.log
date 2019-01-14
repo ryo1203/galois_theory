@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  14 JAN 2019 15:44
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  14 JAN 2019 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**galois_theory_section8.tex
-(./galois_theory_section8.tex
+**galois_theory_section9.tex
+(./galois_theory_section9.tex
 pLaTeX2e <2018-05-20> (based on LaTeX2e <2018-04-01> patch level 5)
 (c:/w32tex/share/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2012/05/23 Federico Garcia
@@ -436,8 +436,8 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 LaTeX Warning: Unused global option(s):
     [dvipdfmx].
 
-(./galois_theory_section8.aux)
-\openout1 = `galois_theory_section8.aux'.
+(./galois_theory_section9.aux)
+\openout1 = `galois_theory_section9.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
@@ -472,72 +472,16 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 8.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 8.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 10.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 10.
-LaTeX Font Info:    Try loading font information for U+msa on input line 10.
- (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 10.
- (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 10.
- (c:/w32tex/share/texmf-dist/tex/latex/jknappen/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <10> not available
-(Font)              Font shape `JT1/mc/m/n' tried instead on input line 12.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 12.
-LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <10> not available
-(Font)              Font shape `JY1/mc/m/n' tried instead on input line 12.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 12.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 12.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 12.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 12.
  [1
 
-]
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 179.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 179.
-
-
-LaTeX Warning: Reference `rem:6.4' on page 2 undefined on input line 179.
-
-
-LaTeX Warning: Reference `theo:7.3' on page 2 undefined on input line 180.
-
-[2] [3]
-LaTeX Font Info:    Try loading font information for U+euf on input line 280.
- (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [4]
-
-LaTeX Warning: Reference `theo:7.3' on page 5 undefined on input line 391.
-
-[5] [6] [7] [8] [9] (./galois_theory_section8.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+] (./galois_theory_section9.aux) ) 
 Here is how much of TeX's memory you used:
- 14708 strings out of 493272
- 307740 string characters out of 6146850
- 367489 words of memory out of 5000000
- 18384 multiletter control sequences out of 15000+600000
- 16286 words of font info for 76 fonts, out of 8000000 for 9000
+ 14621 strings out of 493272
+ 306387 string characters out of 6146850
+ 356308 words of memory out of 5000000
+ 18326 multiletter control sequences out of 15000+600000
+ 10706 words of font info for 48 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,13n,84p,492b,289s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 63i,5n,84p,492b,179s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section8.dvi (9 pages, 58564 bytes).
+Output written on galois_theory_section9.dvi (1 page, 5252 bytes).

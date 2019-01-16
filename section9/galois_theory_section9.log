@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  14 JAN 2019 15:42
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  16 JAN 2019 22:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -472,16 +472,63 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 8.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 8.
- [1
+LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <10> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 10.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <10> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 10.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 11.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 11.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 11.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 11.
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+ (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+ (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 11.
+ (c:/w32tex/share/texmf-dist/tex/latex/jknappen/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 21.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 21.
 
-] (./galois_theory_section9.aux) ) 
+
+LaTeX Warning: Reference `defi:separable' on page 1 undefined on input line 21.
+
+
+LaTeX Warning: Reference `corl:8.12' on page 1 undefined on input line 46.
+
+[1
+
+] [2] (./galois_theory_section9.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 14621 strings out of 493272
- 306387 string characters out of 6146850
- 356308 words of memory out of 5000000
- 18326 multiletter control sequences out of 15000+600000
- 10706 words of font info for 48 fonts, out of 8000000 for 9000
+ 14679 strings out of 493272
+ 307312 string characters out of 6146850
+ 363318 words of memory out of 5000000
+ 18361 multiletter control sequences out of 15000+600000
+ 15578 words of font info for 73 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,5n,84p,492b,179s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 63i,8n,84p,492b,248s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section9.dvi (1 page, 5252 bytes).
+Output written on galois_theory_section9.dvi (2 pages, 11380 bytes).

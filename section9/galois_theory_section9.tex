@@ -5,7 +5,112 @@
 
 \section{分離的代数拡大}
 
-\subsection{分離多項式}
+\subsection{多項式の分離性}
 
+\begin{prop}
+  代数拡大 $L/K$について次は同値。
+
+  $(1)$
+  $L/K:$分離的。
+
+  $(2)$
+  $L/K$の ${}^\forall$部分拡大 $M/K$は分離的。
+\end{prop}
+
+\begin{proof}
+  定義 $(\mathrm{\ref{defi:separable}})$から明らか。
+\end{proof}
+
+\begin{prop} \label{prop:9.2}
+  $f \in K[X] - K$について以下は同値。
+
+  $(1)$
+  $(f , f') = 1 \  (\Leftrightarrow f とその形式微分 f' が互いに素)$
+
+  $(2)$
+  $f$の判別式 $\mathrm{disc}(f) \neq 0 \  ( f = \prod_{i = 1}^n (X - \alpha_i) のとき \mathrm{dics}(f) := \prod_{i < j}(\alpha_i - \alpha_j)^2 と定義する)$
+
+  $(3)$
+  $K$のある拡大 $L$上で $f$は相異なる一次式の積になる。
+
+  $(4)$
+  $f$の任意の根は単根 $(重解でない)$
+
+  $(5)$
+  $K[X]/(f)$は $\mathrm{etale}/K \  (\Leftrightarrow K上分離的)$
+\end{prop}
+
+\begin{proof}
+  $(5) \Leftrightarrow (1)$
+
+  系 $(\mathrm{\ref{corl:8.12}})$で示した。
+
+  $(2) \Leftrightarrow (3) \Leftrightarrow (4)$
+
+  明らか。
+
+  $(1) \Rightarrow (2) \  (\deg f > 1のときを考える)$
+  対偶 $\mathrm{disc}(f) = 0 \Rightarrow (f,f') \neq 1$を示す。
+
+  $\mathrm{dics}(f) = 0$よりある $0 \leq i < j \leq n$があり
+  $\alpha_i = \alpha_j$となる。
+  $i = 1 , j = 2$としても一般性を失わない。
+  これは $f$の根なので $f = (X - \alpha_1)^2 Q(X)$となる $Q(X) \in K[X]$が存在する。
+  よって $f' = 2(X - \alpha_1)Q(X) + (X - \alpha_1)^2 Q'(X) = (X - \alpha_1)(2 Q(X) + (X - \alpha_1)^2 Q'(X))$となるから
+  $f , f'$は共通の $\alpha_1$という根を持つので互いに素でないから
+  $(f,f') \neq 1$となる。
+
+  $(2) \Rightarrow (1) \  (\deg f > 1のときを考える)$
+  対偶 $(f,f') \neq 1 \Rightarrow \mathrm{disc}(f) = 0$を示す。
+
+  $(f,f') \neq 1$よりある $\alpha$があってそれを
+  $f = (X - \alpha) Q_1(X) , f' = (X - \alpha) Q_2(X)$として共通根として持つ。
+  この二つから $f' = Q_1(X) + (X - \alpha)Q_1'(X) = (X - \alpha) Q_2(X)$より
+  $(X - \alpha)(Q_1'(X) - Q_2(X)) = Q_1(X)$となるから
+  $f = (X - \alpha)^2 (Q_1'(X) - Q_2(X))$より重根をもつ。
+  したがって根の差の積である $\mathrm{disc}(f) = 0$である。
+
+  $\deg f = 1$のときは $f$の根は $0$より常に $\mathrm{disc}(f) = 0$となるからこの命題には不適。
+\end{proof}
+
+\begin{defi}
+  これらが成り立つとき $f$を\underline{分離的}という。
+\end{defi}
+
+\begin{prop}
+  既約多項式 $f \in K[X]$について次は同値。
+
+  $(1)$
+  $f$は分離的。
+
+  $(2)$
+  $f$は $({}^\exists L に)$少なくとも一つの単根をもつ。
+
+  $(3)$
+  $f' \neq 0$
+
+  $(4)$
+  $\Char(K) = 0$か、または $\Char(K) = p > 0$で $f \notin K[X^p]$
+\end{prop}
+
+\begin{proof}
+  $(1) \Rightarrow (2)$は命題 $(\mathrm{\ref{prop:9.2}})$で示した。
+
+  $(2) \Rightarrow (3)$
+
+  $\alpha$を $f$の単根とする。
+  $f'(\alpha) = 0$とすると命題 $(\mathrm{\ref{prop:9.2}})$の $(2) \Rightarrow (1)$の証明より
+  $f = (X - \alpha)^2 Q(X)$となるから $\alpha$が単根に矛盾するので $f'(\alpha) \neq 0$である。
+  よって $f' \neq 0$
+
+  $(3) \Rightarrow (1)$
+
+  体上の多項式より $f$を\rm{monic}としてよい。
+  $\alpha$を $f$の任意の根とする。
+  $f$が既約多項式で\rm{monic}より $f$は最小多項式であるから
+  その次数の最小性と $f' \neq 0$より
+  $f'$は多項式で $f'(\alpha) \neq 0$であるから $\alpha$は単根。
+  これが任意の $f$の根について成り立つから $f$は分離的。
+\end{proof}
 
 \end{document}

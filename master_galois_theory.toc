@@ -26,3 +26,4 @@
 \contentsline {subsection}{\numberline {8.5}被約}{33}
 \contentsline {section}{\numberline {9}分離的代数拡大}{36}
 \contentsline {subsection}{\numberline {9.1}多項式の分離性}{36}
+\contentsline {subsection}{\numberline {9.2}元の分離性}{38}

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  16 JAN 2019 22:22
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  11 FEB 2019 16:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -517,18 +517,18 @@ LaTeX Warning: Reference `corl:8.12' on page 1 undefined on input line 46.
 
 [1
 
-] [2] (./galois_theory_section9.aux)
+] [2] [3] (./galois_theory_section9.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14679 strings out of 493272
- 307312 string characters out of 6146850
- 363318 words of memory out of 5000000
- 18361 multiletter control sequences out of 15000+600000
+ 14680 strings out of 493272
+ 307322 string characters out of 6146850
+ 365328 words of memory out of 5000000
+ 18362 multiletter control sequences out of 15000+600000
  15578 words of font info for 73 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,8n,84p,492b,248s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 63i,14n,84p,492b,271s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section9.dvi (2 pages, 11380 bytes).
+Output written on galois_theory_section9.dvi (3 pages, 16288 bytes).

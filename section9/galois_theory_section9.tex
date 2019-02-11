@@ -77,7 +77,7 @@
   これらが成り立つとき $f$を\underline{分離的}という。
 \end{defi}
 
-\begin{prop}
+\begin{prop} \label{prop:9.3}
   既約多項式 $f \in K[X]$について次は同値。
 
   $(1)$
@@ -111,6 +111,90 @@
   その次数の最小性と $f' \neq 0$より
   $f'$は多項式で $f'(\alpha) \neq 0$であるから $\alpha$は単根。
   これが任意の $f$の根について成り立つから $f$は分離的。
+
+  $(3) \Leftrightarrow (4)$
+
+  $f = \sum_{i=0}^n a_i X^i \in K[X]$について
+  \begin{eqnarray*}
+    f' & = & \sum_{i=0}^n a_i i X^{i-1} = 0 \\
+    & \Leftrightarrow &
+     \begin{cases}
+      a_1 = \cdots = a_n = 0 & (\Char(K) = 0) \\
+      a_i = 0 \  (p \nmid i) & (\Char(K) = p > 0)
+     \end{cases} \\
+    & \Leftrightarrow &
+    \begin{cases}
+      f = a_0 & (\Char(K) = 0) \\
+      f = \sum a_{pk} X^{pk} \in K[X^p] & (\Char(K) = p > 0)
+    \end{cases}
+  \end{eqnarray*}
+  より、 既約多項式は$f \in K[X]-K$で否定を考えれば成立。
 \end{proof}
+
+\begin{corl}
+  体 $K$について次は同値。
+
+  $(1)$
+  $K$は完全体
+
+  $(2)$
+  任意の既約多項式 $f \in K[X]$は分離的
+
+  $((3) {}^\forall L/K:代数拡大は分離的)$
+\end{corl}
+
+\begin{proof}
+  $(1) \Leftrightarrow (2)$のみ示す。
+
+  $\Char(K) = 0$のとき命題 $(\mathrm{\ref{prop:9.3}})$の
+  $(1) \Leftrightarrow (4)$から ${}^\forall$既約多項式 $f \in K[X]$は分離的。
+
+  $\Char(K) = p > 0$のとき
+  \[
+  Kが完全体 \Leftrightarrow {}^\forall f \in K[X^p] - K は可約
+  \]
+  を示す。
+  これより、既約ならば $f \notin K[X^p] - K$が言えて
+  命題 $(\mathrm{\ref{prop:9.3}})$の $(4) \Leftrightarrow (1)$より
+  既約ならば分離的が言える。
+
+  $(\Rightarrow)$
+
+  $f = \sum a_i X^{pi} \in K[X^p] - K$で
+  $K^p := \{ x^p | x \in K \} \  (p乗元の集合)$とする。
+  $K$が完全体なので $\mathrm{Frobenius}$が全射だから
+  $K = K^p$なので ${}^\forall a_i \in K$に対して
+  ${}^\exists b_i \in K , a_i = b_i^p \in K^p = K$である。
+  したがって $\Char(K) = p > 0$に注意すれば
+  $f = \sum b_i^p X^{pi} = (\sum b_i X^i)^p$より
+  $\sum b_i X^i \in K[X]$で分解できるから $f$は可約。
+
+  $(\Leftarrow)$
+  対偶の $K:非完全 \Rightarrow {}^\exists f \in K[X^p] - K は既約$を示す。
+
+  $K:$非完全とする。
+  このとき $K^p \neq K$から ${}^\exists a \in K^\times - K^p$が取れる。
+  ここで $f = X^p 0 a \in K[X]$は既約になる。
+
+  $b$を $f$の根 $(b^p = a)$とし、
+  $g$を $b$の $K$上の最小多項式とする。
+  最小性から $g \mid f$で $\Char(K) = p > 0$より
+  $f = (X - b)^p$となるから
+  $g = (X - b)^d \  (d^e = p)$と書ける。
+  $f = g^e$の形になり、 $p$が素数から
+  $d = p$または $d = 1$になる。
+  $d = 1$とすると $g \in K[X]$より $b \in K$であり、 $a = b^p \in K^p$から
+  $a \in K^\times - K^p$に矛盾する。
+  よって $d = p$で $f = g$となるから $f$は既約。
+  これより既約な $f \in K[K^p] - K$が存在するので対偶が示された。
+\end{proof}
+
+\subsection{元の分離性}
+
+\begin{defi}
+  $L/K:$拡大としたとき、
+  $K$上代数的な元 $x \in L$が\underline{$K$上分離的}とは
+  $K(x)/K$が分離的であること。
+\end{defi}
 
 \end{document}

@@ -194,7 +194,58 @@
 \begin{defi}
   $L/K:$拡大としたとき、
   $K$上代数的な元 $x \in L$が\underline{$K$上分離的}とは
-  $K(x)/K$が分離的であること。
+  体の拡大$K(x)/K$が分離的であること。
 \end{defi}
+
+\begin{prop} \label{prop:9.5}
+  $x \in L:K$上代数的な元、 $f:x$の最小多項式とするとき、次は同値。
+
+  $(1)$
+  $x$は $K$上分離的。
+
+  $(2)$
+  $f$は分離多項式。
+
+  $(3)$
+  $x$は $f$の単根。
+
+  $(4)$
+  $K[X]/(f)$は $K$上\rm{etale} $(\Leftrightarrow K上分離的)$
+\end{prop}
+
+\begin{proof}
+  $x$が $K$上代数的なので命題 $(\mathrm{\ref{prop:6.7}})$から
+  $K(x) = K[X]/(f)$となる。
+
+  $x$が $K$上分離的なとき定義から $K(x)/K$が分離的なので
+  $K[X]/(f)$が $K$上分離的である。
+  そして命題 $(\mathrm{\ref{prop:9.2}})$の $(5) \Leftrightarrow (4)$より $f$の任意の根は単根より $x$は $f$の単根であり、
+  $f$は分離多項式である。
+\end{proof}
+
+\begin{corl} \label{corl:9.6}
+  $x \in L$が ${}^\exists g \in K[X]$の単根ならば $x$は $K$上分離的。
+\end{corl}
+
+\begin{proof}
+  $x$の最小多項式を $f$としたとき
+  最小性から $f \mid g$より $f = gh$となる $h \in K[X]$が存在する。
+  このとき $h$が $x$を根として持っているとすると $f$の最小性に矛盾するから
+  $h(x) \neq 0$である。
+  したがって $f = gh$は $x$を単根としてもつので命題 $(\mathrm{\ref{prop:9.5}})$から $x$は $K$上分離的。
+\end{proof}
+
+\begin{corl}
+  $x \in L$が $K$上分離的ならば $L/K$の任意の中間体 $M$でも分離的。
+\end{corl}
+
+\begin{proof}
+  $x$の $M$上の最小多項式を $f_M$とし、
+  $K$上の最小多項式を $f_K$とする。
+  このとき $K[X] \subset M[X]$から $M[X]$上で $f_M \mid f_K$となる。
+  $x$は $K$上分離的なので $f_K$の単根であるから
+  系 $(\mathrm{\ref{corl:9.6}})$で $g = f_K \in M[X]$と見れば
+  $x$は $M$上分離的である。
+\end{proof}
 
 \end{document}

@@ -248,4 +248,90 @@
   $x$は $M$上分離的である。
 \end{proof}
 
+\begin{prop} \label{prop:7.3.6}
+  拡大$L/K$について以下は同値。
+
+  $(1)$
+  $L$は $K$上代数的かつ分離的。
+
+  $(2)$
+  $L$の任意の元 $x$は $K$上代数的かつ分離的。
+
+  $(3)$
+  $L$は $K$上代数的かつ分離的な元のある部分集合 $S (\subset L)$によって $K$上生成される。
+  $(L = K(S)となる)$
+\end{prop}
+
+\begin{proof}
+  $(1) \Rightarrow (2)$
+  $L/K$が代数的なので $L$の任意の元は $K$上代数的。
+  分離的であることから、 $L/K$の任意の有限次部分拡大が分離的である。
+  ${}^\forall x \in L$は代数的元なので
+  命題 $(\mathrm{\ref{prop:6.7}})$より $K(x)/K$は有限次部分拡大。
+  したがって $K(x)/K$が分離的だから定義より $x$は分離的。
+
+  $(2) \Rightarrow (3)$
+  仮定より $L$の任意の元は $K$上代数的かつ分離的なので
+  $S = L$ととれて、 $K(L) = L$より成立する。
+
+  $(3) \Rightarrow (1)$
+  任意の $x \in L$は $S$のある有限部分集合 $S'$によって
+  $x \in K(S')$となり、 $K(S')$は有限次拡大より $x$は $K$上代数的。
+  よって $L$は $K$上代数的。
+  $M$を任意の $K$の有限次部分拡大とする。
+  このとき有限次拡大なので系 $(\mathrm{\ref{corl:6.8}})$から
+  $M = K(x_1 , \dots , x_m)$となる元 $\{ x_1 , \dots , x_m \}$がある。
+  仮定より $x_i \in S$は分離的かつ代数的なのでその最小多項式を $f_i$としたとき、
+  命題 $(\mathrm{\ref{prop:9.5}})$から
+  $K(x_i) \cong K[X]/(f)$は $K$上\rm{etale}である。
+  したがって系 $(\mathrm{\ref{corl:8.9}})$より
+  $K(x_1) \otimes \cdots \otimes K(x_m)$も $K$上\rm{etale}である。
+  そして、 $M$は\rm{Rem} $(\mathrm{\ref{rem:quotientalgebra}})$より
+  $K(x_1) \otimes \cdots \otimes K(x_m)$の商 $K-alg$の部分代数と同型。
+  したがって $M$も\rm{etale}より $M$は分離的であるので任意の有限次部分拡大が分離的なので
+  $L/K$は代数的かつ分離的。
+\end{proof}
+
+\begin{corl} \label{corl:separable}
+  代数拡大$L/K$において次は同値。
+
+  $(1)$
+  $L/K$は分離的。
+
+  $(2)$
+  ${}^\forall x \in L$は $K$上の最小多項式の単根。
+\end{corl}
+
+\begin{proof}
+  命題 $(\mathrm{\ref{prop:7.3.6}})$の $(1) \Leftrightarrow (2)$から成立する。
+\end{proof}
+
+\begin{prop}
+  $(1)$
+  $L/K$がある集合 $S$によって $L = K(S)$とするとき
+  \[
+    Sの任意の元が K上分離的 \Rightarrow
+    L/K は分離的
+  \]
+
+  $(2)$
+  $L_1/K , L_2/K \  (\subset {}^\exists L)$に対して
+  $L_1 , L_2$の合成体を $L_1 L_2$とすると、
+  \[
+  L_1 L_2 / Kが分離的 \Leftrightarrow L_1/K , L_2/Kがともに分離的
+  \]
+
+  $(3)$
+  $L/M/K$のとき
+  \[
+  L/Kが分離的 \Leftrightarrow L/M , M/Kが分離的
+  \]
+
+  $(4)$
+  $L/K , K'/K$についてその合成体 $L' := L K'$について
+  \[
+  L/Kが分離的 \Rightarrow L'/K'が分離的
+  \]
+\end{prop}
+
 \end{document}

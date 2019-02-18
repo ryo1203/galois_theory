@@ -235,7 +235,7 @@
   したがって $f = gh$は $x$を単根としてもつので命題 $(\mathrm{\ref{prop:9.5}})$から $x$は $K$上分離的。
 \end{proof}
 
-\begin{corl}
+\begin{corl} \label{corl:9.7}
   $x \in L$が $K$上分離的ならば $L/K$の任意の中間体 $M$でも分離的。
 \end{corl}
 
@@ -310,7 +310,7 @@
   $(1)$
   $L/K$がある集合 $S$によって $L = K(S)$とするとき
   \[
-    Sの任意の元が K上分離的 \Rightarrow
+    Sの任意の元が K上代数的かつ分離的 \Rightarrow
     L/K は分離的
   \]
 
@@ -322,16 +322,63 @@
   \]
 
   $(3)$
-  $L/M/K$のとき
+  $L/M/K$で $L/K:$代数拡大のとき
   \[
   L/Kが分離的 \Leftrightarrow L/M , M/Kが分離的
   \]
 
   $(4)$
-  $L/K , K'/K$についてその合成体 $L' := L K'$について
+  $L/K , K'/K$とその合成体 $L' := L K' = K'(L)$について
+  $L/K$が代数的であるとき
   \[
   L/Kが分離的 \Rightarrow L'/K'が分離的
   \]
 \end{prop}
+
+\begin{proof}
+  $(1)$
+
+  $S$の元は代数的かつ分離的で $L$は $K$上 $S$で生成されるから
+  命題 $(\mathrm{\ref{prop:7.3.6}})$の $(3) \Leftrightarrow (1)$から成立。
+
+  $(2)$
+
+  $(3)$
+
+  $(\Rightarrow)$
+  $L/K$が分離的より、 ${}^\forall x \in L$は $K$上分離的。
+  したがって ${}^\forall x \in M \subset L$も $K$上分離的であるから
+  $M$は $K$上分離的。
+  また、系 $(\mathrm{\ref{corl:9.7}})$より
+  ${}^\forall x \in L$は $M$上分離的でもあるので $L$は $M$上分離的。
+
+  $(\Leftarrow)$
+  まず、命題 $(\mathrm{\ref{prop:6.9}})$より、 $L/M , M/K$は代数拡大。
+  ${}^\forall x \in L$をとると $M$上代数的かつ分離的より最小多項式 $f = \sum_{i=0}^n a_i X^i \in M[X]$があり、これは分離多項式である。
+  $M' := K(a_1 , \dots , a_n)$とすると $f \in M'[X]$であり、 $x$の最小多項式のままである。
+  $L' := M'(x) (= K(x , a_1 , \dots , a_n))$とすると、
+  命題 $(\mathrm{\ref{6.7}})$と $f \in M'[X]$から、
+  $L' = M'[X]/(f)$は有限次拡大で、 $x$は最小多項式 $f$の単根だから
+  命題 $(\mathrm{\ref{prop:9.5}})$より、 $L'$は $M'$上分離的。
+  また、 $M'/K$は $M/K$が分離的より定義から分離的。
+  よって $L'/M , M'/K$が有限次拡大かつ分離的であることから
+  系 $(\mathrm{\ref{corl:8.9}})$の $(3)$から
+  $[L':K] = [L':M'][M':K] = [L':M']_s [M':K]_s = [L':K]_s$となるので
+  $L'/K$も分離的。
+  したがって $x \in L'$は $K$上分離的であるから
+  元の任意性より $L$は $K$上分離的。
+
+  $(4)$
+
+  $L/K$が代数的より、 ${}^\forall x \in L$は $K$上代数的であるが、
+  $K \subset K'$より $K'$上代数的でもある。
+  また、 $x$の $K$上の最小多項式を $f$とすると
+  $f \in K[X] \subset K'[X]$で、 $L/K$が分離的から
+  $x$は $f$の単根なので系 $(\mathrm{\ref{corl:9.6}})$より
+  $x$は $K'$上分離的。
+  したがって $L$は $K'$上分離的かつ代数的な元の集合なので
+  命題 $(\mathrm{\ref{prop:7.3.6}})$の $(3) \Leftrightarrow (1)$から
+  $L' = K'(L)$は $K'$上代数的かつ分離的。
+\end{proof}
 
 \end{document}

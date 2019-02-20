@@ -27,3 +27,4 @@
 \contentsline {section}{\numberline {9}分離的代数拡大}{36}{section.9}
 \contentsline {subsection}{\numberline {9.1}多項式の分離性}{36}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}元の分離性}{38}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}原始元}{40}{subsection.9.3}

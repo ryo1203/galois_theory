@@ -433,7 +433,111 @@
   また、 $E_{f_M}[x] = L$より、 $f_M \in E_{f_M}[X] , f_M(x) = 0$から
   $[L:E_{f_M}] \leq \deg(f_M) = [L:M]$となるので $M \subset E_{f_M}$である。
   したがって $M = E_{f_M}$となり $E_g$の形で書けるから中間体は高々 $2^n$個の有限個しか持たない。
+
+  $(2) \Rightarrow (1)$
+
+  まず原始元の最小多項式の存在性のため、
+  $L/K$が代数拡大であることを背理法により示す。
+  $L/K$が超越元 $x$を持つと仮定する。
+  このとき命題 $(\mathrm{\ref{prop:yuugenzigen}})$の $(3) \Leftrightarrow (1)$の否定から
+  $1 , x , x^2 , \cdots$は一次独立である。
+  したがってその部分集合 $1 , x^2 , (x^2)^2 , \cdots$も一次独立より
+  $x^2$も $K$上超越元である。
+  ここで $K(x) = K(x^2)$と仮定すると、
+  $x = f(x^2)/g(x^2)$となる $f(X) , g(X) (\neq 0) \in K[X]$が
+  存在するから、 $x$が $X g(X^2) - f(X^2) \in K[X]$の根になる。
+  $X g(X^2)$は奇数次、 $f(X^2)$は偶数次より $X g(X^2) - f(X^2)$となるから
+  これは $x$を根にもつ $0$でない $K$上多項式になるため $x$の超越性に矛盾する。
+  よって $K(x) \neq K(x^2)$であるから $K(x^2) \subsetneq K(x)$である。
+  これを繰り返せば
+  \[
+  K \subset \cdots \subsetneq K(x^3) \subsetneq K(x^2) \subsetneq K(x) \subset L
+  \]
+  となり無限個の中間体が存在してしまうのでこれは仮定に矛盾するから
+  $L/K$は超越元を持たないから代数拡大である。
+
+  さらに、 $L/K$は有限生成であることを背理法により示す。
+  有限生成でないとすると $\alpha_i \in L$により
+  \[
+  K \subsetneq K(\alpha_1) \subsetneq K(\alpha_1 , \alpha_2) \subsetneq \cdots \subsetneq K(\alpha_1 , \dots , \alpha_n) \subsetneq \cdots \subset L
+  \]
+  として無限個の中間体が存在してしまうので仮定に矛盾するから
+  $L/K$は有限生成。
+  以上より $L/K$は有限次元代数拡大である。
+
+  単拡大であることを示す。
+
+  ・ $K$が有限体のとき
+
+  系 $(\mathrm{\ref{corl:sotaiyuugen}})$からある素数 $p$と正整数 $f = [K:F_p]$があり、 $q = p^f$として、
+  $K \cong F_q (位数 q = p^f の有限体)$となる。
+  $L/K$は有限次拡大より拡大次数を $e$とすると、
+  $L \cong F_{q^e}$とできる。
+  $F_{q^e}$の乗法群 $F_{q^e}^\times$は
+  位数 $q^e - 1$の巡回群になるので $F_{q^e}^\times$は位数 $q^e-1$の
+  元 $\zeta \in F_{q^e}^\times$を持つ。
+  したがって $F_{q^e}^\times = \{ 1 , \zeta , \dots , \zeta^{q^e-2} \}$から、
+  $F_{q^e} = \{ 0 , 1 , \zeta , \dots , \zeta^{q^e-2} \}$となる。
+  よって $F_{q^e} \subset F_q(\zeta) \subset F_{q^e}$から
+  $L = F_{q^e} = F_q(\zeta) = K(\zeta)$より原始元 $\zeta$が存在する。
+
+  ・ $K$が無限体のとき
+
+  ${}^\forall \alpha \in L$について有限次拡大より
+  $[K(\alpha):K] \leq [L:K] \leq \infty$なので
+  $\{ [K(\alpha):K] | \alpha \in L \}$は正整数の有界集合。
+  したがってある $\alpha_0 \in L$が存在して、
+  ${}^\forall \alpha \in L$で $[K(\alpha):K] \leq [K(\alpha_0):K]$となる。
+  ここで任意に $\beta \in L$を一つ定める。
+  ${}^\forall c \in K$について $M_c := K(c \alpha_0 + \beta)$とする。
+  これは $L/K$の中間体より有限個しかないが $K$が無限体より、 $c$は無限個とれるのである異なる $c_1 , c_2 \in K$で
+  $M := M_{c_1} = M_{c_2}$となる。
+  このとき $c_1 , c_2 \in K \subset M$から $c_1 - c_2 \in M , c_1 - c_2 \neq 0$より $(c_1 - c_2)^{-1} \in M$が存在する。
+  また、 $(c_1 \alpha_0 + \beta) - (c_2 \alpha_0 + \beta) = (c_1 - c_2) \alpha_0 \in M$なので $(c_1 - c_2)^{-1}$をかけても $M$に含まれているので
+  $\alpha_0 \in M$となる。
+  そして $c_1 \alpha_0 \in M$にもなるので
+  $\beta = (c_1 \alpha_0 + \beta) - c_1 \alpha_0 \in M$である。
+  これより、 $K(\alpha_0) \subset M = K(c_1 \alpha_0 + \beta)$で
+  $[K(\alpha_0):K] \leq [K(c_1 \alpha_0 + \beta):K]$となるが
+  $\alpha_0$の定義から $[K(\alpha_0):K] = [K(c_1 \alpha_0 + \beta):K]$で
+  $K(\alpha_0) = K(c_1 \alpha_0 + \beta) = M$である。
+  そして任意にとった $\beta \in L$が $M = K(\alpha_0)$に含まれるので
+  $L = K(\alpha_0)$となるから $L/K$は原始元 $\alpha_0$をもつ。
 \end{proof}
 
+\begin{exam}
+  $L := F_p(X,Y) , K := F_p(X^p , Y^p)$とする。
+  この中間体として $K(f_i) , f_i := X + g_i Y , g_i \in F_p(X,Y)$をとると、
+  $g_i \neq g_j \Rightarrow K(f_i) \neq K(f_j)$となり、
+  $g_i$のとり方は無限個あるので $L/K$の中間体は無限個あるから
+  $L/K$に原始元は存在しない。
+\end{exam}
+
+\begin{exam}
+  $\mathbb{Q}(\sqrt{2} , \sqrt{3})/\mathbb{Q}$は
+  $\mathbb{Q}(\sqrt{2} + \sqrt{3})/\mathbb{Q}$ともできるので原始元が存在するから中間体は有限個。
+\end{exam}
+
+\subsection{分離閉体、分離閉包}
+
+\begin{defi}
+  $L/K:$拡大に対して $K$の $L$の中での\underline{相対的分離 $(代数)$閉包 \  $(\mathrm{relative \  separable \  (algebraic) \  closure})$} $L_s$とは
+  \[
+  L_s := \{ x \in L | xは K上分離的 \}
+  \]
+  となるもの。
+  これは命題 $(\mathrm{\ref{prop:7.3.6}})$の $(2) \Leftrightarrow (1)$より $K$上代数的かつ分離的な拡大で
+  $L$に含まれる代数的かつ分離的な拡大のうち最大のもの。
+\end{defi}
+
+\begin{defi}
+  体 $\Omega$が\underline{分離閉体 \  $(\mathrm{separably \  closed})$}
+  とはその分離的代数拡大は $\Omega$のみであること。
+\end{defi}
+
+\begin{defi}
+  $\Omega$が体 $K$の\underline{分離閉包 \  $(\mathrm{separable \  closure})$}とは
+  $K$の代数拡大で分離閉体であること。
+\end{defi}
 
 \end{document}

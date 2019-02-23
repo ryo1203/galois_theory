@@ -306,7 +306,7 @@
   命題 $(\mathrm{\ref{prop:7.3.6}})$の $(1) \Leftrightarrow (2)$から成立する。
 \end{proof}
 
-\begin{prop}
+\begin{prop} \label{prop:9.9}
   $(1)$
   $L/K$がある集合 $S$によって $L = K(S)$とするとき
   \[
@@ -538,6 +538,88 @@
 \begin{defi}
   $\Omega$が体 $K$の\underline{分離閉包 \  $(\mathrm{separable \  closure})$}とは
   $K$の代数拡大で分離閉体であること。
+  $K$上分離閉な拡大ともいう。
 \end{defi}
+
+\begin{prop} \label{prop:9.11}
+  $\Omega:K$上代数閉な拡大とするとき
+
+  $(1)$
+  $\Omega_s$は $K$の分離閉包。
+
+  $(2)$
+  $K$の分離閉包は $K$上の同型を除き一意的
+\end{prop}
+
+\begin{proof}
+  $(1)$
+  $L$を $\Omega_s$の分離的代数拡大とする。
+  $\Omega_s$は $K$上代数的な元の集合でもあるので
+  $\Omega$が $K$上の代数閉包より 拡大 $\Omega/\Omega_s$がつくれる。
+  $L/\Omega_s$は代数拡大で $\Omega$は代数閉体なので命題 $(\mathrm{\ref{theo:7.3}})$から
+  $\Omega_s-$準同型 $u : L \longrightarrow \Omega$が存在し、
+  $\Omega$の中に $L$を $u(L)$として埋め込める。
+  このとき $\Omega$の中で
+  $u(L)/\Omega_s , \Omega_s/K$はともに分離的なので
+  命題 $(\mathrm{\ref{prop:9.9}})$の $(3)$より
+  $u(L)/K$は分離的で $u$は $\Omega_s-$準同型から
+  $K-$準同型でもあるので構造を保存するから $u(L)/K$は代数拡大。
+  したがって $u(L)/K$は代数的かつ分離的な拡大であり $\Omega_s \subset u(L)$なので相対的分離閉包の最大性から $\Omega_s = u(L)$となる。
+  これより $u$の終域を制限して $\Omega_s-$準同型 $u:L \longrightarrow \Omega_s$とできる。
+  これは体の準同型から単射であり、 $u(L) = \Omega_s$より全射なので同型なので
+  $L \cong \Omega_s$となる。
+  そして、 $L$は $\Omega_s$の拡大なので $\Omega_s \subset L$から
+  $L = \Omega_s$となる。
+  $\Omega_s$の任意の分離的代数拡大は $\Omega_s$だけであることが示されたので$\Omega_s$は分離閉体である。
+  相対的分離閉包の定義から $K$の代数拡大でもあるので $K$の分離閉包である。
+
+  $(2)$
+  $E$を $K$の分離閉包とする。
+  $E$は $K$の代数拡大より $\Omega$が $K$の代数閉包より
+  定理 $(\mathrm{\ref{theo:7.3}})$から
+  $K-$準同型 $v:E \longrightarrow \Omega$が存在して
+  $E$を $\Omega$に $v(E)$として埋め込める。
+  $v$は構造を保存するから $v(E)$は $K$の分離閉包なので分離的代数拡大になっているから $\Omega_s$の最大性より $v(E) \subset \Omega_s$であり、
+  $v(E)$は $\Omega_s/K$の中間体となっている。
+  $\Omega_s/K$が分離的より命題 $(\mathrm{\ref{prop:9.9}})$の $(3)$
+  から $\Omega_s/v(E)$は分離的。
+  $v(E)$が $K$の分離閉包より分離閉体だから $v(E)$の分離拡大はそれ自身だけなので $v(E) = \Omega_s$である。
+  $E \subset \Omega_s$は一般に言えていないので $E = \Omega_s$とはならない。
+  これより、 $v$の終域を制限した $K-$準同型 $v:E \longrightarrow \Omega_s$は同型写像になるので
+  任意の $K$の分離閉包は $\Omega_s$と同型になるから同型を除いて一意的に定まる。
+\end{proof}
+
+\begin{corl}
+  $L/K:$分離的代数拡大、 $E/K:$分離閉な拡大としたとき
+  ある$K-$準同型 $\phi:L \longrightarrow E$が存在する。
+  $(任意の分離的代数拡大は分離閉体 E に埋め込める)$
+
+  定理 $(\mathrm{\ref{theo:7.3}})$の代数閉体のときと同じである。
+\end{corl}
+
+\begin{proof}
+  $\Omega$を $E$の代数閉包とすると
+  $K$の $\Omega$の中での相対的分離閉包 $\Omega_s$は
+  $K$上分離的な元の集合なので $\Omega_s \subset E$である。
+  $\Omega$は $K$上代数閉でもあるので
+  命題 $(\mathrm{\ref{prop:9.11}})$の $(1)$より
+  $\Omega_s$は $K$の分離閉包となるから $(2)$と
+  $\Omega_s \subset E$から同型より更に、
+  $\Omega_s = E$となる。
+  また、 $\Omega$は $K$の代数閉包であるから
+  $L/K$が代数拡大より定理 $(\mathrm{\ref{theo:7.3}})$から
+  $K-$準同型 $v:L \longrightarrow \Omega$が存在する。
+  $v$は構造を保存するから $v(L)$は $K$上分離的かつ代数的であるから、
+  $v(L) \subset \Omega_s = E$である。
+  したがって $K-$準同型 $v:L \longrightarrow E$が存在する。
+\end{proof}
+
+\subsection{非分離次数}
+
+\begin{defi}
+  $L/K$とその $K$の $L$の中での相対的分離閉包 $L_s$について
+  $[L:K]_i := [L:L_s]$を $L/K$の\underline{非分離次数 \  $(\mathrm{inseparable \  degree})$}という。
+\end{defi}
+
 
 \end{document}

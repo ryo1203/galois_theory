@@ -75,6 +75,7 @@
 
 \begin{defi}
   これらが成り立つとき $f$を\underline{分離的}という。
+  そうでないとき非分離的という。
 \end{defi}
 
 \begin{prop} \label{prop:9.3}
@@ -131,7 +132,7 @@
   より、 既約多項式は$f \in K[X]-K$で否定を考えれば成立。
 \end{proof}
 
-\begin{corl}
+\begin{corl} \label{corl:9.4}
   体 $K$について次は同値。
 
   $(1)$
@@ -195,6 +196,7 @@
   $L/K:$拡大としたとき、
   $K$上代数的な元 $x \in L$が\underline{$K$上分離的}とは
   体の拡大$K(x)/K$が分離的であること。
+  そうでないとき非分離的という。
 \end{defi}
 
 \begin{prop} \label{prop:9.5}
@@ -621,5 +623,69 @@
   $[L:K]_i := [L:L_s]$を $L/K$の\underline{非分離次数 \  $(\mathrm{inseparable \  degree})$}という。
 \end{defi}
 
+\begin{lemm} \label{lemm:bunriminimalpolynomial}
+  有限次拡大 $L/K$とその相対的分離閉包 $L_s$について
+  $x \in L - L_s$の $L_s$上の最小多項式 $f \in L_s[X]$は
+  ある素数 $p$と正整数 $e$と $y \in L_s$で
+  $f = X^{p^e} - y$と書ける。
+\end{lemm}
+
+\begin{proof}
+  $L/K$が有限次拡大より代数拡大である。
+  $\Char(K) = 0$のとき $K$は完全体より系 $(\mathrm{\ref{corl:9.4}})$の
+  $(1) \Leftrightarrow (3)$から
+  その任意の代数拡大 $L/K$は分離的なので $L = L_s$となる。
+  したがって $L - L_s = \emptyset$より補題は成立する。
+
+  $\Char(K) = p > 0$のときのみを考える。
+  $f$の根 $x$は $K$上分離的な元の集合の $L_s$に含まれないので非分離的な元である。
+  したがって $f$は非分離的なので
+  命題 $(\mathrm{\ref{prop:9.3}})$の $(1) \Leftrightarrow (4)$
+  から $\Char(K) = p > 0$で考えていることに注意すれば
+  $f \in L_s[X^p]$である。
+  よって $f = g_1(X^p) , g_1 \in L_s[X]$となる
+  $g_1$が存在する。
+  もし $g_1$が非分離的であるとまた $f$と同様に
+  $g_1 \in L_s[X^p]$となるから $g_1 = g_2(X^p) , g_2 \in L_s[X]$となる
+  $g_2$が存在し、 $f  = g_2(X^{p^2})$となる。
+  これを $g_n$と $g_{n+1}$に帰納的に繰り返せば $f , g_i$が有限次よりあるところで分離的な多項式になり止まるのでこれを $g_e = g$とおくと
+  $f = g(X^p) , g \in L_s[X] , e \in \mathbb{Z}$と書ける。
+  $f$は $x$を根として持つので $f(x) = g(x^{p^e}) = 0$より $g$の根でもある。
+  この $g$の根を $y$とすると $y$は $L_s$上分離的で $y = x^{p^e} \in L$である。
+  もし $\deg(g) > 1$ならば
+\end{proof}
+
+\begin{prop}
+  有限次拡大 $L/K$について
+  \[
+  [L:K]_s = [L_s:K]
+  \]
+  がなりたつ。
+\end{prop}
+
+\begin{proof}
+  $\Omega$を $K$の代数閉包とする。
+  $L_s/K$は命題 $(\mathrm{\ref{prop:7.3.6}})$の $(2) \Leftrightarrow (1)$より分離的なので
+  $[L_s:K]_s = [L_s:K] = |\Hom_K(L_s,\Omega)|$となる。
+  そして、$[L:K]_s = |\Hom_K(L,\Omega)|$であるから
+  定義域を制限する写像
+  $\Hom_K(L_s,\Omega) \longrightarrow \Hom_K(L,\Omega)$が全単射であることを示せば
+  $[L:K]_s = [L_s:K]$となることが示される。
+
+  ・全射性
+
+  ${}^\forall \phi \in \Hom_K(L_s,\Omega)$の
+  $L$への拡張を $\tilde{\phi} \in \Hom_K(L,\Omega)$とする。
+  補題 $(\mathrm{\ref{lemm:bunriminimalpolynomial}})$から
+  $x \in L - L_s$の $L_s$上の最小多項式がある素数 $p$と $n \in \mathbb{Z}$と $a \in L_s$で $X^{p^n} - a$の形になる。
+  よって $\tilde{\phi}(x)^{p^n} = \tilde{\phi}(x^{p^n}) = \tilde{\phi}(a) = \phi(a)$より
+  $\tilde{\phi}(x) = \phi(a)^{1/p^n}$と定まる。
+  この $\tilde{\phi}$をとればいいので全射
+
+  ・単射性
+
+  $\phi \in \Hom_K(L_s,\Omega)$の $\tilde{\phi} \in \Hom_K(L,\Omega)$への延長は $\tilde{\phi}(x) = \phi(a)^{1/p^n}$より
+  $\phi$に依るので一意的なので単射。
+\end{proof}
 
 \end{document}

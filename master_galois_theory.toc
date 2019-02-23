@@ -29,3 +29,4 @@
 \contentsline {subsection}{\numberline {9.2}元の分離性}{38}{subsection.9.2}
 \contentsline {subsection}{\numberline {9.3}原始元}{40}{subsection.9.3}
 \contentsline {subsection}{\numberline {9.4}分離閉体、分離閉包}{41}{subsection.9.4}
+\contentsline {subsection}{\numberline {9.5}非分離次数}{42}{subsection.9.5}

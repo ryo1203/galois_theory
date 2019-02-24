@@ -280,18 +280,25 @@
   任意の $x \in L$は $S$のある有限部分集合 $S'$によって
   $x \in K(S')$となり、 $K(S')$は有限次拡大より $x$は $K$上代数的。
   よって $L$は $K$上代数的。
-  $M$を任意の $K$の有限次部分拡大とする。
-  このとき有限次拡大なので系 $(\mathrm{\ref{corl:6.8}})$から
-  $M = K(x_1 , \dots , x_m)$となる元 $\{ x_1 , \dots , x_m \}$がある。
-  仮定より $x_i \in S$は分離的かつ代数的なのでその最小多項式を $f_i$としたとき、
-  命題 $(\mathrm{\ref{prop:9.5}})$から
-  $K(x_i) \cong K[X]/(f)$は $K$上\rm{etale}である。
-  したがって系 $(\mathrm{\ref{corl:8.9}})$より
-  $K(x_1) \otimes \cdots \otimes K(x_m)$も $K$上\rm{etale}である。
-  そして、 $M$は\rm{Rem} $(\mathrm{\ref{rem:quotientalgebra}})$より
-  $K(x_1) \otimes \cdots \otimes K(x_m)$の商 $K-alg$の部分代数と同型。
-  したがって $M$も\rm{etale}より $M$は分離的であるので任意の有限次部分拡大が分離的なので
-  $L/K$は代数的かつ分離的。
+  $S' = \{ \alpha_1 , \dots , \alpha_n \}$となっている時を考えれば良い。
+  $L' = K(S') (= K(\alpha_1 , \dots , \alpha_n))$とおくと $\alpha_i \in L$は $K$上代数的なので命題 $(\mathrm{\ref{prop:6.7}})$から
+  $L'/K$は有限次拡大より代数的である。
+  $K_0 := K , K_n := L'$として、 $K_{i+1} := K_i(\alpha_{i+1}) , 0 \leq i \leq n-1$と定めると拡大の列
+  \[
+  K_0 \subset K_1 \subset K_2 \subset \cdots \subset K_n
+  \]
+  が作られる。
+  $\alpha_{i+1}$は $K$上分離的なので系 $(\mathrm{\ref{corl:9.7}})$から
+  $K_n/K_0$の中間体である $K_i$上分離的になる。
+  よって定義から $K_i(\alpha_i)/K_i = K_{i+1}/K_i$は分離的であるので
+  $[K_{i+1}:K_i]_s = [K_{i+1}:K_i]$となり、
+  $L'/K$が有限次より $[K_{i+1}:K_i]$も有限だから
+  命題 $(\mathrm{\ref{prop:8.9}})$の $(3)$を繰り返し用いれば
+  \begin{eqnarray*}
+    [L':K] = [K_n:K_0] & = & \prod_{i=0}^{n-1} [K_{i+1}:K_i] \\
+    & = & \prod_{i=0}^{n-1} [K_{i+1}:K_i]_s = [K_n:K_0]_s = [L':K]_s
+  \end{eqnarray*}
+  となり $L'/K$は分離的である。
 \end{proof}
 
 \begin{corl} \label{corl:separable}
@@ -368,7 +375,7 @@
   ${}^\forall x \in L$をとると $M$上代数的かつ分離的より最小多項式 $f = \sum_{i=0}^n a_i X^i \in M[X]$があり、これは分離多項式である。
   $M' := K(a_1 , \dots , a_n)$とすると $f \in M'[X]$であり、 $x$の最小多項式のままである。
   $L' := M'(x) (= K(x , a_1 , \dots , a_n))$とすると、
-  命題 $(\mathrm{\ref{6.7}})$と $f \in M'[X]$から、
+  命題 $(\mathrm{\ref{prop:6.7}})$と $f \in M'[X]$から、
   $L' = M'[X]/(f)$は有限次拡大で、 $x$は最小多項式 $f$の単根だから
   命題 $(\mathrm{\ref{prop:9.5}})$より、 $L'$は $M'$上分離的。
   また、 $M'/K$は $M/K$が分離的より定義から分離的。
@@ -399,7 +406,7 @@
   \underline{原始元 \  $(\mathrm{primitive \  element})$}とは
   $L = K[x] (=K[X]/(f) = K(x))$となること。
   ただし $f$は $x$の $K$上の最小多項式である。
-  定理 $(\mathrm{\ref{prop6.7}})$から $L/K$が原始元を持つためには有限次拡大であることが必要である。
+  定理 $(\mathrm{\ref{prop:6.7}})$から $L/K$が原始元を持つためには有限次拡大であることが必要である。
 \end{defi}
 
 \begin{theo}
@@ -649,10 +656,28 @@
   $g_1 \in L_s[X^p]$となるから $g_1 = g_2(X^p) , g_2 \in L_s[X]$となる
   $g_2$が存在し、 $f  = g_2(X^{p^2})$となる。
   これを $g_n$と $g_{n+1}$に帰納的に繰り返せば $f , g_i$が有限次よりあるところで分離的な多項式になり止まるのでこれを $g_e = g$とおくと
-  $f = g(X^p) , g \in L_s[X] , e \in \mathbb{Z}$と書ける。
+  $f = g(X^{p^e}) , g \in L_s[X] , e \in \mathbb{Z}$と書ける。
+  $f \in L_s[X^p]$より $\deg(f) = p^{e'}$とおけるので
+  $p^e \cdot \deg(g) = \deg(f) = p^{e'}$が成り立つ。
+
   $f$は $x$を根として持つので $f(x) = g(x^{p^e}) = 0$より $g$の根でもある。
   この $g$の根を $y$とすると $y$は $L_s$上分離的で $y = x^{p^e} \in L$である。
-  もし $\deg(g) > 1$ならば
+  $L_s$上分離的な元なので定義より $L_s(y)/L_s$が分離的となるが
+  $L_s$は命題 $(\mathrm{\ref{prop:9.11}})$の $(1)$より分離閉体なので
+  $L_s(y) = L_s$とならなくてはならない。
+  したがって $y \in L_s$である。
+  ここで $h(X) = X^{p^e} - y$とすると $h(X) \in L_s[X]$であり、
+  $\Char(K) = p > 0$より $(X - x)^{p^e} = X^{p^e} - x^{p^e} = X^{p^e} - y = h(X)$から
+  $h(X)$は $x$を根にもつ $L_s$上の多項式となる。
+
+  このとき $\deg(g) > 1$と仮定すると
+  $p^e \cdot \deg(g) = p^{e'}$の等式より
+  $p^{e'-e} = \deg(g) > 1$から $e' > e$となるから
+  $\deg(h) = p^e < p^{e'} = \deg(f)$となる。
+  しかしこれは $f$の最小性に矛盾するから $\deg(g) = 1$である。
+  したがって $g(X) = X - y$より $f(X) = g(X^{p^e}) = X^{p^e} - y$となるので $x \in L - L_s$の最小多項式は $x^{p^e} = y$となる
+  $y \in L_s$によって $X^{p^e} - y$とかける。
+
 \end{proof}
 
 \begin{prop}
@@ -687,5 +712,7 @@
   $\phi \in \Hom_K(L_s,\Omega)$の $\tilde{\phi} \in \Hom_K(L,\Omega)$への延長は $\tilde{\phi}(x) = \phi(a)^{1/p^n}$より
   $\phi$に依るので一意的なので単射。
 \end{proof}
+
+\clearpage
 
 \end{document}

@@ -13,8 +13,17 @@
     a & \longmapsto & xa
   \end{eqnarray*}
   は $A$が $K-alg$より $K-$線形写像になる。
-  よってある $A$の基底によって $\dim_K(A) = n$のとき
-  行列 $T_x : K^n \longrightarrow K^n$にできる。
+  よって $\dim_K(A) = n$のときある $A$の基底 $\{ e_1 , \dots , e_n \}$により、 $T_x = (t_{ij})_{i,j = 1 , \dots , n}$とおいたとき
+  行列表示は
+  \begin{eqnarray*}
+    T_x (e_j) = x e_j = \sum_{i=1}^n t_{ij} e_i
+  \end{eqnarray*}
+  を満たすような $t_{ij} \in K$で作られてこれにより
+  行列 $T_x : K^n \longrightarrow K^n$にできて行列の記法で
+  \begin{eqnarray*}
+    x(e_1 , \cdots , e_n) = (e_1 , \cdots , e_n) T_x
+  \end{eqnarray*}
+  と書くことができる。
 
   この行列 $T_x$について
   $x$の\underline{トレース $(\mathrm{trace})$} $\Tr_{A/K}(x)$と
@@ -50,9 +59,9 @@
   \begin{eqnarray*}
     T_x =
     \begin{pmatrix}
-      x &  &   \\
+      x &        &   \\
         & \ddots &  \\
-        &  &  x
+        &        &  x
     \end{pmatrix}
   \end{eqnarray*}
   と書ける。
@@ -60,5 +69,108 @@
   $\Tr_{A/K}(x) = nx , \N_{A/K}(x) = x^n$
   となる。
 \end{exam}
+
+\begin{exam}
+  $A := K[X]/(f)$で $f = X^n + a_1 X^{n-1} + \cdots + a_n \in K[X]$とする。
+  $x := X + (f) \in A$についてその $x$倍写像 $T_x$は
+  \begin{eqnarray*}
+    T_x =
+    \begin{pmatrix}
+      0 &        &   & - a_n \\
+      1 & \ddots &   & \vdots \\
+        & \ddots & 0 & \vdots \\
+        &        & 1 & - a_1
+    \end{pmatrix}
+  \end{eqnarray*}
+  と書けるから
+  $\Tr_{A/K}(x) = -a_1 , \N_{A/K}(x) = (-1)^n a_n$となる。
+\end{exam}
+
+\begin{proof}
+  $x \in A$はその定義から $f$の根になっている。
+  命題 $(\mathrm{\ref{prop:6.1}})$の $(2)$より
+  $\{ 1 , x , \dots , x^{n-1} \}$は $A$の基底になっているので
+  この基底を用いて $T_x$を行列表示にする。
+  $T_x := (t_{ij})_{i,j = 1 , \dots , n}$は $x$の指数を考えれば
+  \begin{eqnarray*}
+    T_x(x^j) = \sum_{i=0}^{n-1} t_{i+1 j+1} x^i \  (0 \leq j \leq n-1)
+  \end{eqnarray*}
+  とできる。
+  $T_x(x^j) = x^{j+1} \  (0 \leq j \leq n-1)$より $1 \leq j+1 \leq n-1$のとき
+  \begin{eqnarray*}
+    t_{i+1 j+1} =
+    \begin{cases}
+      1 & (j+1 = i) \\
+      0 & (j+1 \neq i)
+    \end{cases}
+  \end{eqnarray*}
+  $j+1 = n$のとき $x \cdot x^{n-1} = x^n = X^n + (f) = -a_1 X^{n-1} - \cdots -a_n + (f) = -a_1 x^{n-1} - \cdots -a_n$であるので
+  \begin{eqnarray*}
+    T_x(x^{n-1}) = x^n & = & -a_1 x^{n-1} -a_2 x^{n-2} - \cdots -a_n \\
+    = \sum_{i=0}^{n-1} t_{i+1 n} x^i & = & t_{n n} x^{n-1} + t_{n-1 n} x^{n-2} + \cdots + t_{1 n}
+  \end{eqnarray*}
+  より $t_{n-k n} = -a_{k+1}$となる。
+  よって $T_x$は上記の形になる。
+
+  $\Tr_{A/K}(x) = \Tr(T_x) = -a_1$は明らか。
+  $\N_{A/K}(x) = \det(T_x)$は $n$列をとなりの列と順番に入れ替えていけば
+  入れ替えるごとに $-1$倍されて $1$列まで移動させれば
+  行列式の性質より $\det(T_x) = (-1)^{n-1} (-a_n) \det(E_n) = (-1)^n a_n$となる。
+\end{proof}
+
+\begin{prop}
+  体拡大 $L/K$について
+  $x$倍写像を作る対応 $R$を $L$の $K$上の基底 $\{ e_1 , \dots , e_n \}$によって $T_x \in M_n(K)$で考えると
+  \begin{eqnarray*}
+    R : L & \longrightarrow & M_n(K) \\
+    x & \longmapsto & T_x
+  \end{eqnarray*}
+  は $T_x$の成分の定まり方より写像であり、単射環準同型になる。
+  この $K$上の写像 $R$を基底 $\{ e_1 , \dots , e_n \}$に関する
+  $A/K$の\underline{正則表現}という。
+\end{prop}
+
+\begin{proof}
+  $T_x , T_y , T_{x + y} , T_{cx} , T_{xy} \in M_n(K) \  (x , y \in A \  c \in K)$についてこれはそれぞれ
+  \begin{eqnarray*}
+    x(e_1 , \cdots , e_n) & = & (e_1 , \cdots , e_n) T_x \\
+    y(e_1 , \cdots , e_n) & = & (e_1 , \cdots , e_n) T_y \\
+    (x + y)(e_1 , \cdots , e_n) & = & (e_1 , \cdots , e_n) T_{x + y} \\
+    cx(e_1 , \cdots , e_n) & = & (e_1 , \cdots , e_n) T_{cx} \\
+    xy(e_1 , \cdots , e_n) & = & (e_1 , \cdots , e_n) T_{xy}
+  \end{eqnarray*}
+  を満たしている。
+  それぞれ演算結果が等しくなることを考えれば
+  \begin{eqnarray*}
+    T_{x + y} & = & T_x + T_y \\
+    T_{cx} & = & c T_x \\
+    T_{xy} & = & T_x T_y
+  \end{eqnarray*}
+  を満たすので $R : L \longrightarrow M_n(K)$は環準同型である。
+
+  また、 $e_j$が基底なので
+  $R(x) = T_x = 0 \Leftrightarrow t_ij = 0 ({}^\forall i , j) \Leftrightarrow x e_j = 0 ({}^\forall j) \Leftrightarrow x = 0$
+  が成り立つから $\ker(R) = \{ 0 \}$より $R$は単射。
+\end{proof}
+
+\begin{prop}
+  $L/K:n$次分離拡大、 $\Omega:K$の代数閉包、 $\sigma_i \in \Hom_{K}(L,\Omega) , (1 \leq i \leq n = [L:K] = [L:K]_s (分離拡大より))$とする。
+  このとき $L$の $n$個の元 $e_1 , \dots , e_n$について次は同値。
+
+  $(1)$
+  $e_1 , \dots , e_n$は $L/K$の基底。
+
+  $(2)$
+  \begin{eqnarray*}
+    \det(\sigma_i(e_j)) =
+    \begin{vmatrix}
+      \sigma_1(e_1) & \cdots & \sigma_1(e_n) \\
+      \sigma_2(e_1) & \cdots & \sigma_2(e_n) \\
+      \vdots        &        & \vdots        \\
+      \sigma_n(e_1) & \cdots & \sigma_n(e_n)
+    \end{vmatrix}
+    \neq 0
+  \end{eqnarray*}
+\end{prop}
 
 \end{document}

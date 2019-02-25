@@ -31,3 +31,5 @@
 \contentsline {subsection}{\numberline {9.4}分離閉体、分離閉包}{41}{subsection.9.4}
 \contentsline {subsection}{\numberline {9.5}非分離次数}{42}{subsection.9.5}
 \contentsline {section}{\numberline {10}ノルムとトレース}{44}{section.10}
+\contentsline {subsection}{\numberline {10.1}ノルムとトレース}{44}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}正則表現}{45}{subsection.10.2}

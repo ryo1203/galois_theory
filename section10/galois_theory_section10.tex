@@ -124,13 +124,13 @@
 
 \begin{prop}
   体拡大 $L/K$について
-  $x$倍写像を作る対応 $R$を $L$の $K$上の基底 $\{ e_1 , \dots , e_n \}$によって $T_x \in M_n(K)$で考えると
+  $x$倍写像を作る対応 $T$を $L$の $K$上の基底 $\{ e_1 , \dots , e_n \}$によって $T_x \in M_n(K)$で考えると
   \begin{eqnarray*}
-    R : L & \longrightarrow & M_n(K) \\
+    T : L & \longrightarrow & M_n(K) \\
     x & \longmapsto & T_x
   \end{eqnarray*}
   は $T_x$の成分の定まり方より写像であり、単射環準同型になる。
-  この $K$上の写像 $R$を基底 $\{ e_1 , \dots , e_n \}$に関する
+  この $K$上の写像 $T$を基底 $\{ e_1 , \dots , e_n \}$に関する
   $A/K$の\underline{正則表現}という。
 \end{prop}
 
@@ -150,14 +150,14 @@
     T_{cx} & = & c T_x \\
     T_{xy} & = & T_x T_y
   \end{eqnarray*}
-  を満たすので $R : L \longrightarrow M_n(K)$は環準同型である。
+  を満たすので $T : L \longrightarrow M_n(K)$は環準同型である。
 
   また、 $e_j$が基底なので
-  $R(x) = T_x = 0 \Leftrightarrow t_ij = 0 ({}^\forall i , j) \Leftrightarrow x e_j = 0 ({}^\forall j) \Leftrightarrow x = 0$
-  が成り立つから $\ker(R) = \{ 0 \}$より $R$は単射。
+  $T(x) = T_x = 0 \Leftrightarrow t_ij = 0 ({}^\forall i , j) \Leftrightarrow x e_j = 0 ({}^\forall j) \Leftrightarrow x = 0$
+  が成り立つから $\ker(T) = \{ 0 \}$より $T$は単射。
 \end{proof}
 
-\begin{prop}
+\begin{prop} \label{prop:2.60}
   $L/K:n$次分離拡大、 $\Omega:K$の代数閉包、 $\sigma_i \in \Hom_{K}(L,\Omega) , (1 \leq i \leq n = [L:K] = [L:K]_s (分離拡大より))$とする。
   このとき $L$の $n$個の元 $e_1 , \dots , e_n$について次は同値。
 
@@ -176,5 +176,105 @@
     \neq 0
   \end{eqnarray*}
 \end{prop}
+
+\begin{proof}
+  $(1) \Rightarrow (2)$
+
+  $\det(\sigma_i(e_j)) = 0$と仮定すると $X = (\sigma_i(e_j))$とおいたとき $\vec{x} X = 0$は非自明解 $(c_1 , \dots , c_n) \in \Omega^n$をもつ。
+  つまり $\sum_{i=1}^n c_i \sigma_i(e_j) = 0 \  (1 \leq j \leq n)$となるものが存在している。
+  このとき任意の元 $\alpha \in L$に対して、
+  基底であることより $\alpha = \sum_{i=1}^n a_i e_i$となる
+  $a_i \in K$が存在する。
+  このとき $\sigma_i$は $K$を動かさないので
+  \begin{eqnarray*}
+    \sum_{i=1}^n c_i \sigma_i(\alpha) & = & \sum_{i=1}^n c_i \sigma_i \left( \sum_{i=1}^n a_i e_i \right) \\
+    & = & \sum_{i=1}^n c_i \sum_{j=1}^n a_j \sigma_i (e_j) \\
+    & = & \sum_{j=1}^n a_j \sum_{i=1}^n c_i \sigma_i (e_j) \\
+    & = & \sum_{j=1}^n a_j \cdot 0 \\
+    & = & 0
+ \end{eqnarray*}
+ となるが $c_i$は全ては $0$で無いので\rm{Dedekind}の補題
+ $(\mathrm{\ref{lemm:2.3}})$に矛盾する。
+ よって $\det(\sigma_i(e_j)) \neq 0$
+
+ $(2) \Rightarrow (1)$
+
+ $(2)$を満たすような $e_1 , \dots , e_n$が一次独立であることを示す。
+ $c_1 e_1 + \cdots + c_n e_n = 0$となる $c_i \in K$をとる。
+ 全体に $\sigma_j$をかけると
+ $\sum_{i=1}^n c_i \sigma_j (e_i) = 0$であるから
+ \begin{eqnarray*}
+   \begin{pmatrix}
+     \sigma_1 (e_1) & \cdots & \sigma_1 (e_n) \\
+     \vdots         &        & \vdots         \\
+     \sigma_n (e_1) & \cdots & \sigma_n (e_n)
+   \end{pmatrix}
+   \begin{pmatrix}
+     c_1 \\
+     \vdots \\
+     c_n
+   \end{pmatrix}
+   = 0
+ \end{eqnarray*}
+ となる。
+ ここで仮定より $\det(\sigma_i(e_j)) \neq 0$なのでこの連立方程式は
+ 自明解のみをもつから $c_1 = \cdots = c_n = 0$であるので
+ $e_1 , \cdots , e_n$は一次独立。
+ $L/K$は $n$次拡大なので基底の個数は $n$個だからこの $e_1 , \cdots , e_n$
+ が基底になる。
+\end{proof}
+
+\begin{prop} \label{prop:2.61}
+  $L/K:n$次分離拡大、 $\Omega$を $K$の代数閉包、
+  $\sigma_i : L \longrightarrow \Omega , \alpha \longmapsto \alpha^{\sigma_i} (= \alpha^{(i)}) := \sigma_i(\alpha) , \sigma_i \in \Hom_K(L,\Omega)$
+  としたとき $\alpha \in L$について
+  \begin{eqnarray*}
+    \Tr_{L/K}(\alpha) & = & \sum_{i=1}^n \alpha^{(i)} = \sum_{i=1}^n \alpha^{\sigma_i} \\
+    \N_{L/K}(\alpha) & = & \prod_{i=1}^n \alpha^{(i)} = \prod_{i=1}^n \alpha^{\sigma_i}
+  \end{eqnarray*}
+  となる。
+\end{prop}
+
+\begin{proof}
+  $L/K$の基底を $e_1 , \dots , e_n$とする。
+  任意の $\alpha \in L$についてこの基底による正則表現
+  $T : L \longrightarrow M_n(K) , \alpha \longmapsto T_\alpha$は
+  $\alpha (e_1 , \cdots , e_n) = (e_1 , \cdots , e_n) T_\alpha$を満たす。
+  これに $\sigma_i$をかけると $\sigma_i(T_\alpha) = T_\alpha$であり、
+  $\alpha^{(i)} (e_1^{(i)} , \cdots , e_n^{(i)}) = (e_1^{(i)} , \cdots , e_n^{(i)}) T_\alpha$となる。
+  これは
+  \begin{eqnarray*}
+    T_\alpha^\circ :=
+    \begin{pmatrix}
+      \alpha^{(1)} &        & \\
+                   & \ddots & \\
+                   &        & \alpha^{(n)}
+    \end{pmatrix}
+    \\
+  \end{eqnarray*}
+  と $M := (e_j^{(i)})_{i , j = 1 , \dots , n}$によって
+  $T_\alpha^\circ M = M T_\alpha$となる。
+  命題 $(\mathrm{\ref{prop:2.60}})$の $(1) \Rightarrow (2)$より
+  $\det(M) \neq 0$なので正則行列より $M^{-1}$が存在するから
+  $T_\alpha = M^{-1} T_\alpha^\circ M$とできる。
+  したがって $\Tr$と $\det$の性質から
+  \begin{eqnarray*}
+    \Tr_{L/K}(\alpha) & = & \Tr(T_\alpha) = \Tr(M^{-1} T_\alpha^\circ M) = \Tr(T_\alpha^\circ) = \sum_{i=1}^n \alpha^{(i)} = \sum_{i=1}^n \alpha^{\sigma_i} \\
+    \N_{L/K}(\alpha) & = & \det(T_\alpha) = \det(M^{-1} T_\alpha^\circ M) = \det(T_\alpha^\circ) = \prod_{i=1}^n \alpha^{(i)} = \prod_{i=1}^n \alpha^{\alpha_i}
+  \end{eqnarray*}
+  が成り立つ。
+\end{proof}
+
+\begin{corl}
+  $L/K$が有限次分離拡大なら $\Tr_{L/K}(\alpha) \neq 0$となる $\alpha \in L$が存在する。
+\end{corl}
+
+\begin{proof}
+  任意の $\alpha \in L$について命題 $(\mathrm{\ref{prop:2.61}})$から
+  $\Tr_{L/K}(\alpha) = \sum_{i=1}^n \alpha^{(i)}$であり、
+  これが $0$に等しいとすると
+  命題 $(\mathrm{\ref{lemm2.3}})$に矛盾するから
+  ある $\alpha \in L$で $\Tr_{L/K}(\alpha) \neq 0$となる。
+\end{proof}
 
 \end{document}

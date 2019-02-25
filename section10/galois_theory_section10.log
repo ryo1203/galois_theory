@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  25 FEB 2019 17:15
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  26 FEB 2019 00:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -638,12 +638,20 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 
 LaTeX Warning: Reference `prop:6.1' on page 2 undefined on input line 93.
 
-[2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
+[2]
+
+LaTeX Warning: Reference `lemm:2.3' on page 3 undefined on input line 197.
+
+[3]
+
+LaTeX Warning: Reference `lemm2.3' on page 4 undefined on input line 276.
+
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
  (./galois_theory_section10.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 180.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 280.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
 Package rerunfilecheck Info: File `galois_theory_section10.out' has not changed.
 (rerunfilecheck)             Checksum: BEDA29F08CDA2B24213041872D07FB7F;252.
 
@@ -652,12 +660,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18944 strings out of 493272
- 370994 string characters out of 6146850
- 456182 words of memory out of 5000000
- 22574 multiletter control sequences out of 15000+600000
+ 18948 strings out of 493272
+ 371035 string characters out of 6146850
+ 456232 words of memory out of 5000000
+ 22578 multiletter control sequences out of 15000+600000
  15578 words of font info for 73 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,14n,84p,493b,456s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section10.dvi (3 pages, 17744 bytes).
+Output written on galois_theory_section10.dvi (4 pages, 25880 bytes).

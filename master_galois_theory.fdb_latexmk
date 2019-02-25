@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1551082552 "master_galois_theory.dvi" "master_galois_theory.pdf" "master_galois_theory" 1551082558
-  "master_galois_theory.dvi" 1551082552 291828 5f1e71d3ef6048517cdd7910b4ca43a6 "latex"
+["dvipdf"] 1551110146 "master_galois_theory.dvi" "master_galois_theory.pdf" "master_galois_theory" 1551110154
+  "master_galois_theory.dvi" 1551110146 300084 6a83879e1dda195399d53512002b5c4e "latex"
   (generated)
   "master_galois_theory.pdf"
-["latex"] 1551082543 "master_galois_theory.tex" "master_galois_theory.dvi" "master_galois_theory" 1551082557
+["latex"] 1551110134 "master_galois_theory.tex" "master_galois_theory.dvi" "master_galois_theory" 1551110153
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -21,6 +21,8 @@
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1233951854 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1233951854 940 228d6584342e91276bf566bcf9716b83 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1136768653 1532 9162035f4e7176612125649e348e2195 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -151,14 +153,14 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "master_galois_theory.aux" 1551082552 7416 b0b1ef148f5468e49353de4465a2eed4 ""
-  "master_galois_theory.out" 1551082552 2251 28fd94696af634d88d4a823d95474b2a ""
+  "master_galois_theory.aux" 1551110146 7556 5ed18313f36b2edb96c909361d00faee ""
+  "master_galois_theory.out" 1551110146 2251 28fd94696af634d88d4a823d95474b2a ""
   "master_galois_theory.tex" 1550984253 1187 de9cc76031cbb4f24ce5d3e768bbd4d0 ""
-  "master_galois_theory.toc" 1551082552 2804 76a0c3d470effdfc495e5aaff3a28854 ""
+  "master_galois_theory.toc" 1551110146 2804 76a0c3d470effdfc495e5aaff3a28854 ""
   "mymacros.sty" 1550988012 1202 3597767b829ed0b686edddc151a43cf1 ""
   "section1/galois_theory_section1.tex" 1545460941 7470 e7d460eacf2f4f4bdab1b03395516d87 ""
-  "section10/galois_theory_section10.tex" 1551082496 6647 8d2dbffb2d42e469ba0f1796f211cd21 ""
-  "section2/galois_theory_section2.tex" 1544353898 25094 70dd660132bf75ce99a67b6082e5b677 ""
+  "section10/galois_theory_section10.tex" 1551108424 11118 17ae4c9c1da63c55df6f2f22611232a2 ""
+  "section2/galois_theory_section2.tex" 1551104794 25111 12465df3e5f20c60bbd697fcb256a257 ""
   "section3/galois_theory_section3.tex" 1543380611 5733 2b5dcdc4b2a56b338e750710883e74dd ""
   "section4/galois_theory_section4.tex" 1546312394 9759 be82505840fe010ff73340065f57dbd4 ""
   "section5/galois_theory_section5.tex" 1546579557 8397 da0e31888dfd28df69dd39fbdd78abe8 ""
@@ -167,8 +169,8 @@
   "section8/galois_theory_section8.tex" 1550903001 32992 1afb3977eeb2974ce695674b8ff801cd ""
   "section9/galois_theory_section9.tex" 1550984399 31190 4c85bf8d431c55afc184de4f4780ba47 ""
   (generated)
-  "master_galois_theory.toc"
   "master_galois_theory.out"
-  "master_galois_theory.dvi"
   "master_galois_theory.aux"
   "master_galois_theory.log"
+  "master_galois_theory.toc"
+  "master_galois_theory.dvi"

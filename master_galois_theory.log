@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  26 FEB 2019 16:18
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  26 FEB 2019 16:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -698,26 +698,28 @@ LaTeX Warning: Reference `lemm2.3' on page 47 undefined on input line 288.
 
 LaTeX Warning: Reference `9.13' on page 48 undefined on input line 356.
 
-[48]) [49]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
+[48] [49]) (./section11/galois_theory_section11.tex) [50
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./master_galois_theory.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 41.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 42.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `master_galois_theory.out' has not changed.
-(rerunfilecheck)             Checksum: 2F8DC8EA518D64194AB6669E6FF5F88C;2342.
+(rerunfilecheck)             Checksum: B209243A158C66D78FC0543E0B8B47C1;2482.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19184 strings out of 493272
- 375312 string characters out of 6146850
- 456077 words of memory out of 5000000
- 22757 multiletter control sequences out of 15000+600000
+ 19189 strings out of 493272
+ 375433 string characters out of 6146850
+ 456218 words of memory out of 5000000
+ 22758 multiletter control sequences out of 15000+600000
  22164 words of font info for 101 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  54i,14n,82p,840b,568s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on master_galois_theory.dvi (49 pages, 314260 bytes).
+Output written on master_galois_theory.dvi (50 pages, 315756 bytes).

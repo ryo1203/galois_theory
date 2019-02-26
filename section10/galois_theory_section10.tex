@@ -48,7 +48,7 @@
   は群準同型になる。
 \end{defi}
 
-\begin{exam}
+\begin{exam} \label{exam:tracenorm1}
   $x \in K$のとき $n := [A:K]$として、
   $A$の基底を $\{ e_1 , \dots , e_n \}$とする。
   $T_x = (t_{ij})_{i,j = 1 , \dots , n}$とおいたとき
@@ -72,7 +72,7 @@
   となる。
 \end{exam}
 
-\begin{exam}
+\begin{exam} \label{exam:tracenorm2}
   $A := K[X]/(f)$で $f = X^n + a_1 X^{n-1} + \cdots + a_n \in K[X]$とする。
   $x := X + (f) \in A$についてその $x$倍写像 $T_x$は
   \begin{eqnarray*}
@@ -119,6 +119,16 @@
   入れ替えるごとに $-1$倍されて $1$列まで移動させれば
   行列式の性質より $\det(T_x) = (-1)^{n-1} (-a_n) \det(E_n) = (-1)^n a_n$となる。
 \end{proof}
+
+\begin{fact}
+  $L/M/K$に対し、 $\Tr , \N$は推移的。
+  つまり、
+  \begin{eqnarray*}
+    \Tr_{L/K} & = & \Tr_{M/K} \circ \Tr_{L/M} \\
+    \N_{L/K} & = & \N_{M/K} \circ \N_{L/M}
+  \end{eqnarray*}
+  が成り立つ。
+\end{fact}
 
 \subsection{正則表現}
 
@@ -265,7 +275,7 @@
   が成り立つ。
 \end{proof}
 
-\begin{corl}
+\begin{corl} \label{corl:bunritracenorm}
   $L/K$が有限次分離拡大なら $\Tr_{L/K}(\alpha) \neq 0$となる $\alpha \in L$が存在する。
 \end{corl}
 
@@ -275,6 +285,148 @@
   これが $0$に等しいとすると
   命題 $(\mathrm{\ref{lemm2.3}})$に矛盾するから
   ある $\alpha \in L$で $\Tr_{L/K}(\alpha) \neq 0$となる。
+\end{proof}
+
+\begin{lemm} \label{lemm:hibunritracenorm}
+  $L/K$を標数 $p > 0$の有限次純非分離拡大とする。
+  このとき $\alpha \in L$について以下が成立する。
+  \begin{eqnarray*}
+    \Tr_{L/K}(\alpha) & = & [L:K]\alpha \\
+    \N_{L/K}(\alpha) & = & \alpha^{[L:K]}
+  \end{eqnarray*}
+  とくに $[L:K] > 1$のとき $\Tr_{L/K}(\alpha) = 0$である。
+\end{lemm}
+
+\begin{proof}
+  標数 $p > 0$の体の有限次拡大なので $[L:K] = p^e , [L:K(\alpha)] = p^f , [K(\alpha):K] = p^g , f + g = e$とする。
+  $\Char(K) = p > 0$の純非分離拡大なので $K = L_s$から、補題 $(\mathrm{\ref{lemm:bunriminimalpolynomial}})$より
+  $\alpha$の最小多項式 $f(X) \in K[X]$が存在して
+  命題 $(\mathrm{\ref{prop:6.7}})$より次数は $p^g = [K(\alpha):K]$なので
+  $f = X^{p^g} - \alpha^{p^g} = (X - \alpha)^{p^g}$とかける。
+  $\Tr$と $\N$の推移律から
+  \begin{eqnarray*}
+    \Tr_{L/K}(\alpha) & = & \Tr_{K(\alpha)/K}(\Tr_{L/K(\alpha)}(\alpha)) \\
+    \N_{L/K}(\alpha) & = & \N_{K(\alpha)/K}(\N_{L/K(\alpha)}(\alpha))
+  \end{eqnarray*}
+  である。
+  $\alpha \in K(\alpha)$より例 $(\mathrm{\ref{exam:tracenorm1}})$から
+  $\Tr_{L/K(\alpha)}(\alpha) = [L:K(\alpha)](\alpha) ,
+  \N_{L/K(\alpha)}(\alpha) = \alpha^{[L:K(\alpha)]}$
+  であることと
+  $\Tr$が準同型で $\N$が乗法的であることより
+  \begin{eqnarray*}
+    \Tr_{L/K}(\alpha) & = & \Tr_{K(\alpha)/K}([L:K(\alpha)]\alpha) =
+    [L:K(\alpha)] \Tr_{K(\alpha)/K}(\alpha) = p^f \Tr_{K(\alpha)/K}(\alpha)\\
+    \N_{L/K}(\alpha) & = & \N_{K(\alpha)/K}(\alpha^{[L:K(\alpha)]}) =
+    (\N_{K(\alpha)/K}(\alpha))^{[L:K(\alpha)]} = \N_{K(\alpha)/K}(\alpha)^{p^f}
+  \end{eqnarray*}
+  となる。
+  また、 $K(\alpha) = K[X]/(f)$より例 $(\mathrm{\ref{exam:tracenorm2}})$
+  から $f = X^n + a_1 X^{n-1} + \cdots + a_n$のとき
+  $\Tr_{K(\alpha)/K}(\alpha) = -a_1 , \N_{K(\alpha)/K}(\alpha) = (-1)^n a_n$
+  である。
+  二項定理より
+  $f = (X - \alpha)^{p^g} = X^{p^g} - p^g X^{n-1} \alpha + \cdots + (-\alpha)^{p^g}$
+  なので $a_1 = -p^g \alpha , a_n = (-\alpha)^{p^g}$であるのでこれを代入すれば
+  \begin{eqnarray*}
+    \Tr_{L/K}(\alpha) & = & p^f \cdot -(-p^g \alpha) = p^{f + g} \alpha = p^e \alpha = [L:K] \alpha \\
+    \N_{L/K}(\alpha) & = & ((-1)^{p^g} (-\alpha)^{p^g})^{p^f} = ((-1)^{2p^g} \alpha^{p^g})^{p^f} = \alpha^{p^e} = \alpha^{[L:K]}
+  \end{eqnarray*}
+  となり、示された。
+  $[L:K] = p^e$より $[L:K] > 1$では $p$の冪なので $\Char(K) = p > 0$より
+  $\Tr_{L/K}(\alpha) = 0$である。
+\end{proof}
+
+\begin{lemm} \label{lemm:yuugenzitracenorm}
+  有限次拡大 $L/K$に対して、$K$の代数閉包を $\Omega$とし
+  $\sigma_i \in \Hom_K(L,\Omega) , 1 \leq i \leq s := [L:K]_s$とする。
+  このとき ${}^\forall \alpha \in L$に対して
+  \begin{eqnarray*}
+    \Tr_{L/K}(\alpha) & = & [L:K]_i \sum_{i=1}^s \alpha^{\sigma_i} \\
+    \N_{L/K}(\alpha) & = & \left( \prod_{i=1}^s \alpha^{\sigma_i} \right)^{[L:K]_i}
+  \end{eqnarray*}
+  となる。
+  $(命題 (\mathrm{\ref{prop:2.61}})では有限次分離拡大であったがより一般に有限次拡大で述べている)$
+\end{lemm}
+
+\begin{proof}
+  定義より $[L:K]_i = [L:L_s] , s = [L:K]_s = |\Hom_K(L,\Omega)|$である。
+  命題 $(\mathrm{\ref{9.13}})$から $s = [L:K]_s = [L_s:K]$となっていて
+  その証明から $\Hom_K(L_s,\Omega)$と $\Hom_K(L,\Omega)$の間の定義域を制限する写像が全単射であるから
+  $\sigma_i \in \Hom_K(L,\Omega)$に対して $\sigma_i|_{L_s} \in \Hom_K(L_s,\Omega)$が全部で $s$個ある。
+  このとき ${}^\forall \alpha \in L$に対して
+  $L/L_s$は定義から純非分離拡大なので命題 $(\mathrm{\ref{lemm:hibunritracenorm}})$から
+  \begin{eqnarray*}
+    \Tr_{L/L_s}(\alpha) & = & [L:L_s] \alpha = [L:K]_i \alpha \\
+    \N_{L/L_s}(\alpha) & = & \alpha^{[L:L_s]} = \alpha^{[L:K]_i}
+  \end{eqnarray*}
+  となる。
+  $\Tr_{L/L_s} , \N_{L/L_s}$はともに $L \longrightarrow L_s$の写像なので
+  $[L:K]_i \alpha , \alpha^{[L:K]_i} \in L_s$である。
+
+  命題 $(\mathrm{\ref{prop:2.61}})$から $\Tr_{L_s/K} , \N_{L_s/K}$について
+  $\sigma_i|_{L_s} : L_s \longrightarrow \Omega , 1 \leq i \leq s$より
+  \begin{eqnarray*}
+    \Tr_{L_s/K}(\beta) & = & \sum_{i=1}^s \beta^{\sigma_i|_{L_s}} = \sum_{i=1}^s \beta^{\sigma_i} \\
+    \N_{L_s/K}(\gamma) & = & \prod_{i=1}^s \gamma^{\sigma_i|_{L_s}} = \prod_{i=1}^s \gamma^{\sigma_i}
+  \end{eqnarray*}
+  となる。
+  $\beta := [L:K]_i \alpha , \gamma := \alpha^{[L:K]_i}$とすれば推移律より
+  \begin{eqnarray*}
+    \Tr_{L/K}(\alpha)
+    & = & \Tr_{L_s/K}(\Tr_{L/L_s}(\alpha))
+    = \Tr_{L_s/K}(\beta)
+    = \sum_{i=1}^s \beta^{\sigma}
+    = \sum_{i=1}^s [L:K]_i \alpha^{\sigma_i}
+    = [L:K]_i \sum_{i=1}^s \alpha^{\sigma_i} \\
+    \N_{L/K}(\alpha)
+    & = & \N_{L_s/K}(\N_{L/L_s}(\alpha))
+    = \N_{L_s/K}(\gamma)
+    = \prod_{i=1}^s \gamma^{\sigma_i}
+    = \prod_{i=1}^s \left( \alpha^{[L:K]_i} \right)^{\sigma_i}
+    = \left( \prod_{i=1}^s \alpha^{\sigma_i} \right)^{[L:K]_i}
+  \end{eqnarray*}
+  となり成立する。
+\end{proof}
+
+\begin{corl} \label{corl:yuugenzitracenorm}
+  $L/K$を有限次非分離拡大で $[L:K] > 1$とすれば任意の $\alpha \in L$について
+  $\Tr_{L/K}(\alpha) = 0$となる。
+
+  $(補題 (\mathrm{\ref{lemm:hibunritracenorm}})は純非分離拡大のみだったが一般の非分離拡大で成り立つことを述べている)$
+\end{corl}
+
+\begin{proof}
+  $\Char(K) = 0$は分離拡大なので $\Char(K) = p > 0$とする。
+  このとき $[L:K] > 1$から $[L:K] = p^e \  (e \in \mathbb{Z}^+)$であるから
+  $[L:K]_i = [L:L_s] = p^f \  (f \in \mathbb{Z}^+)$となる。
+  補題 $(\mathrm{\ref{lemm:yuugenzitracenorm}})$より任意の $\alpha \in L$で
+  $\Tr_{L/K}(\alpha) = [L:K]_i \sum_{i=1}^s \alpha^{\sigma_i} = p^f \sum_{i=1}^s \alpha^{\sigma_i}$となる。
+  これは $\Char(K) = p > 0$より $0$になるので示された。
+\end{proof}
+
+\begin{prop}
+  有限次拡大 $L/K$について以下は同値
+
+  $(1)$
+  $L/K$は分離拡大。
+
+  $(2)$
+  $\Tr_{L/K}(\alpha) \neq 0$となる $\alpha \in L$が存在する。
+\end{prop}
+
+\begin{proof}
+  $(1) \Rightarrow (2)$
+
+  系 $(\mathrm{\ref{corl:bunritracenorm}})$で示した。
+
+  $(2) \Rightarrow (1)$
+
+  $[L:K] > 1$のとき
+  系 $(\mathrm{\ref{corl:yuugenzitracenorm}})$の対偶をとればよい。
+  $[L:K] = 1$のとき $L_s$は $K \subset L_s \subset L$であり、
+  $L = K$から $L_s = L$なので $L/K = L_s/K$は分離拡大。
+
 \end{proof}
 
 \end{document}

@@ -540,6 +540,11 @@
 \end{defi}
 
 \begin{defi}
+  $L/K$が代数拡大とする。
+  $L_s = K$となるときこの拡大を\underline{純非分離拡大}という。
+\end{defi}
+
+\begin{defi}
   体 $\Omega$が\underline{分離閉体 \  $(\mathrm{separably \  closed})$}
   とはその分離的代数拡大は $\Omega$のみであること。
 \end{defi}
@@ -633,7 +638,7 @@
 \begin{lemm} \label{lemm:bunriminimalpolynomial}
   有限次拡大 $L/K$とその相対的分離閉包 $L_s$について
   $x \in L - L_s$の $L_s$上の最小多項式 $f \in L_s[X]$は
-  ある素数 $p$と正整数 $e$と $y \in L_s$で
+  ある素数 $p$と正整数 $e$と $y = x^{p^e} \in L_s$で
   $f = X^{p^e} - y$と書ける。
 \end{lemm}
 
@@ -680,7 +685,7 @@
 
 \end{proof}
 
-\begin{prop}
+\begin{prop} \label{prop:9.13}
   有限次拡大 $L/K$について
   \[
   [L:K]_s = [L_s:K]

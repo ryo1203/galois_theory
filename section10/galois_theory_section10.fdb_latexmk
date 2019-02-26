@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1551165051 "galois_theory_section10.dvi" "galois_theory_section10.pdf" "galois_theory_section10" 1551165056
-  "galois_theory_section10.dvi" 1551165051 38700 bb172d1bb72ad8dfec077546f197eb09 "latex"
+["dvipdf"] 1551165455 "galois_theory_section10.dvi" "galois_theory_section10.pdf" "galois_theory_section10" 1551165460
+  "galois_theory_section10.dvi" 1551165455 38908 ba38c7c862a1da20214cda42a3cb0de3 "latex"
   (generated)
   "galois_theory_section10.pdf"
-["latex"] 1551165039 "galois_theory_section10.tex" "galois_theory_section10.dvi" "galois_theory_section10" 1551165056
+["latex"] 1551165443 "galois_theory_section10.tex" "galois_theory_section10.dvi" "galois_theory_section10" 1551165460
   "../master_galois_theory.tex" 1550984253 1187 de9cc76031cbb4f24ce5d3e768bbd4d0 ""
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -138,12 +138,12 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section10.aux" 1551165051 1410 a617e86e393590918cacdc3181b6726d ""
-  "galois_theory_section10.out" 1551165051 252 beda29f08cda2b24213041872d07fb7f ""
-  "galois_theory_section10.tex" 1551165038 18136 247b5844851fb4dea74d4342c252de0e ""
+  "galois_theory_section10.aux" 1551165455 1534 bba1ec0b450ee632f278f3593a39f1a1 ""
+  "galois_theory_section10.out" 1551165455 342 842ef3d8ccbf032a7dfc3ed5ad6cd7c1 ""
+  "galois_theory_section10.tex" 1551165422 18192 2973d757ed0eebd659fd8c77c4164431 ""
   "mymacros.sty" 1550984889 1202 3597767b829ed0b686edddc151a43cf1 ""
   (generated)
   "galois_theory_section10.log"
-  "galois_theory_section10.out"
   "galois_theory_section10.dvi"
   "galois_theory_section10.aux"
+  "galois_theory_section10.out"

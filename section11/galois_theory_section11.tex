@@ -24,7 +24,7 @@
   一般の共役の定義にも適している。
 \end{exam}
 
-\begin{prop}
+\begin{prop} \label{prop:conjugate}
   $K$の代数閉包 $\Omega$とし、
   $x , y \in \Omega$をとる。
   このとき次は同値。
@@ -78,6 +78,21 @@
   $\tilde{v}(x) = v(x) = y$より定義から $x$と $y$は $K$上共役。
 \end{proof}
 
+\begin{corl}
+  $x \in K$の最小多項式 $f \in K[X]$で $\sigma \in \aut_K(\Omega)$とする。
+  このとき
+  \begin{eqnarray*}
+    g(X) := \prod_{\sigma \in \aut_K(\Omega)} (X - \sigma(x))
+  \end{eqnarray*}
+  は $\Omega$において $f$を割る。
+  \end{corl}
+
+\begin{proof}
+  命題 $(\mathrm{\ref{prop:conjugate}})$の $(1) \Leftrightarrow (3)$
+  より $f$は $x$の共役元を根としてすべて含むので $\Omega$において
+  $f$が一次因子の積に分解できることより $g$は $f$を割る。
+\end{proof}
+
 \begin{defi}
   代数拡大 $L/K$が\underline{正規 \  $(\mathrm{normal})$}もしくは
   \underline{準\rm{Galois} \  $(\mathrm{quasi-galois})$}であるとは
@@ -91,5 +106,67 @@
 
   とくに代数閉包 $\Omega/K$は代数閉体の同値条件の命題 $(\mathrm{\ref{prop:7.1}})$の $(\mathrm{AC}1)$から正規拡大である。
 \end{defi}
+
+\begin{prop}
+  代数拡大 $L/K$と代数閉包 $\Omega/K$について次は同値。
+
+  $(1)$
+  $L/K$は正規。
+
+  $(2)$
+  ${}^\forall x \in L$に対してその任意の共役は $L$に含まれる。
+
+  $(3)$
+  ${}^\forall \sigma \in \aut_K(\Omega) , \sigma(L) = L$となる。
+
+  $(4)$
+  ${}^\forall \phi \in \Hom_K(L,\Omega) , \phi(L) = L$となる。
+
+  $(5)$
+  $L$はある $K$上の多項式族 $(f_i)_{i \in I}$の最小分解体。
+\end{prop}
+
+\begin{proof}
+  $(1) \Rightarrow (2)$
+
+  $x \in L$の最小多項式 $f \in K[X]$をとる。
+  $L/K$が正規で $x$が $L$での $f$の根なので
+  $f$は $L[X]$上で一次因子の積に分解できる。
+  よって $f$の根はすべて $L$に含まれている。
+  ここで命題 $(\mathrm{\ref{prop:conjugate}})$の $(1) \Leftrightarrow (3)$より
+  $x$の任意の共役元も最小多項式は $f$なので $f$の根であるからそれは $L$に含まれる。
+
+  $(2) \Rightarrow (1)$
+
+  ${}^\forall x \in L$について $L/K$が代数拡大より最小多項式 $f \in K[X]$がある。
+  $f$の他の根 $a_i \in \Omega/K , 1 \leq i \leq n := \deg(f)$も
+  $f$を最小多項式として持っているから命題 $(\mathrm{\ref{prop:conjugate}})$
+  の $(1) \Leftrightarrow (3)$より $a_i$は $x$の共役元である。
+  したがって $a_i \in L$であるから $f$は $L[X]$で $f = \prod_{i=1}^n (X - a_i)$と一次因子の積に分解できるので $L/K$は正規拡大。
+
+  $(1) \Rightarrow (5)$
+
+  ${}^\forall x \in L$の $K$上の最小多項式の族 $(f_i)_{i \in I}$をとり、
+  この最小分解体を $M$とする。
+  このとき $M[X]$では $f_i$はすべて一次因子の積に分解できるから
+  $M \subset L$であり、 $x \in M$でもあるので $M = L$より
+  $L$は $(f_i)_{i \in I}$の最小分解体である。
+
+  $(5) \Rightarrow (3)$
+
+  $L$が $(f_i)_{i \in I}$の最小分解体であるとする。
+  $f_i$の根を $\alpha_{ij} \in \Omega/K , 1 \leq j \leq n := \deg(f_i)$
+  とする。
+  この根の集合を $R_i$とおくとき最小分解体の定義から $L = K(\cup_{i \in I} R_i)$
+  とかける。
+  ${}^\forall \sigma \in \aut_K(\Omega)$をとったときこれは $K$を動かさない。
+  また、 $\alpha_{ij}$の最小多項式はすべて $f_i$なのでそれぞれ共役であり
+  体の準同型から単射なので $\sigma(R_i) = R_i$となる。
+  したがって $\sigma(L) = \sigma(K(\cup_{i \in I}R_i)) = K(\cup_{i \in I}R_i) = L$より成立。
+
+  $(4) \Rightarrow (3)$
+
+
+\end{proof}
 
 \end{document}

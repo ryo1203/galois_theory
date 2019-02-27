@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  26 FEB 2019 16:23
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  27 FEB 2019 14:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -685,20 +685,35 @@ Overfull \hbox (22.28058pt too wide) in paragraph at lines 533--534
 
 [41] [42] [43]) (./section10/galois_theory_section10.tex [44
 
-] [45] [46]
+] [45] [46] [47] [48] [49]) (./section11/galois_theory_section11.tex
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 288.
+(Font)              scaled to size 6.72699pt on input line 62.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 288.
+(Font)              scaled to size 4.805pt on input line 62.
 
 
-LaTeX Warning: Reference `lemm2.3' on page 47 undefined on input line 288.
+LaTeX Warning: Reference `prop:6,7' on page 50 undefined on input line 62.
 
-[47]
+LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <7> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 92.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 92.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <7> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 92.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 92.
+LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <5> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 92.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 92.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <5> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 92.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 92.
 
-LaTeX Warning: Reference `9.13' on page 48 undefined on input line 356.
+LaTeX Warning: Reference `prop:7.1' on page 50 undefined on input line 92.
 
-[48] [49]) (./section11/galois_theory_section11.tex) [50
+) [50
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
@@ -714,12 +729,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19189 strings out of 493272
- 375433 string characters out of 6146850
- 456218 words of memory out of 5000000
- 22758 multiletter control sequences out of 15000+600000
- 22164 words of font info for 101 fonts, out of 8000000 for 9000
+ 19197 strings out of 493272
+ 375533 string characters out of 6146850
+ 456245 words of memory out of 5000000
+ 22765 multiletter control sequences out of 15000+600000
+ 22862 words of font info for 103 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  54i,14n,82p,840b,568s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on master_galois_theory.dvi (50 pages, 315756 bytes).
+Output written on master_galois_theory.dvi (50 pages, 321592 bytes).

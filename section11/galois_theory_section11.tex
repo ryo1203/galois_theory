@@ -7,4 +7,89 @@
 
 \subsection{正規と共役}
 
+\begin{defi}
+  $\Omega := \barK : K$の代数閉包とする。
+  $L/K , M/K (L , M \subset \Omega)$が $K$上\underline{共役 \  $(\mathrm{conjugate})$}とはある $\sigma \in \aut_K(\Omega)$
+  があって $\sigma (L) = M$となること。
+
+  $x , y \in \Omega$が $K$上\underline{共役 \  $(\mathrm{conjugate})$}とは
+  ある $\sigma \in \aut_K(\Omega)$があって $\sigma(x) = y$となること。
+\end{defi}
+
+\begin{exam}
+  $z , \overline{z} \in \mathbb{C}$は $\mathbb{R}$の代数閉包であり、
+  $G = \aut_{\mathbb{R}}(\mathbb{C}) := \{ \mathrm{Id}_{\mathbb{R}} , \sigma \} , \sigma(z) = \overline{z}$とする。
+  このとき $G$の固定体 $\mathbb{R}^G = \mathbb{R}$となるので $\mathbb{C}/\mathbb{R}$は\rm{Galois}である。
+  この $\sigma$は複素共役をとる写像であるが $\sigma(z) = \overline{z}$より
+  一般の共役の定義にも適している。
+\end{exam}
+
+\begin{prop}
+  $K$の代数閉包 $\Omega$とし、
+  $x , y \in \Omega$をとる。
+  このとき次は同値。
+
+  $(1)$
+  $x$と $y$は $K$上共役。
+
+  $(2)$
+  $K-$同型写像 $v : K(x) \longrightarrow K(y)$で
+  $v(x) = y$となるものが存在する。
+
+  $(3)$
+  $x$と $y$の $K$上の最小多項式は同じ。
+\end{prop}
+
+\begin{proof}
+  $(1) \Rightarrow (3)$
+
+  $x$の最小多項式を $f \in K[X]$とする。
+  $x$と $y$は共役なのである $\sigma \in \aut_K(\Omega)$が存在して
+  $\sigma(x) = y$となる。
+  $\sigma$は $K-$自己準同型より $K$の元を動かさないので $f$の係数を動かさない。
+  よって $f(y) = f(\sigma(x)) = \sigma(f(x)) = \sigma(0) = 0$より
+  $f$は $y$を根にもつ。
+  $y$の最小多項式を $g \in K[X]$とする。
+  $f \neq g$と仮定すると $\deg(g)$の最小性から $g|f$より
+  $f = gh$となる $h \in K[X] , \deg(h) > 0$が存在する。
+  このとき $f(x) = g(x)h(x) = 0$となり $f$より次数の低い $g$または $h$が $x$を
+  根にもつ。
+  これは $\deg(f)$の最小性に矛盾するから $f = g$より $x$と $y$の最小多項式は一致する。
+
+  $(3) \Rightarrow (2)$
+
+  $x$と $y$の最小多項式を $f \in K[X]$とする。
+  このとき命題 $(\mathrm{\ref{prop:6,7}})$より
+  $K(x) \cong K[X]/(f) \cong K(y)$であり、
+  \begin{eqnarray*}
+    K(x) \longrightarrow & K[X]/(f) & \longrightarrow K(y) \\
+    x \longmapsto & X + (f) & \longmapsto y
+  \end{eqnarray*}
+  となる同型写像が作れる。
+  したがって $v : K(x) \longrightarrow K(y) , x \longmapsto v(y)$
+  となる $K-$同型写像が存在する。
+
+  $(2) \Rightarrow (1)$
+
+  $\Omega$は $K(x) , K(y)$の代数閉包でもあるので
+  系 $(\mathrm{\ref{corl:7.6}})$から $K-$同型 $v : K(x) \longrightarrow K(y)$を
+  $\tilde{v} : \Omega \longrightarrow \Omega$に延長できる。
+  これは $K-$自己準同型なので $\tilde{v} \in \aut_K(\Omega)$で
+  $\tilde{v}(x) = v(x) = y$より定義から $x$と $y$は $K$上共役。
+\end{proof}
+
+\begin{defi}
+  代数拡大 $L/K$が\underline{正規 \  $(\mathrm{normal})$}もしくは
+  \underline{準\rm{Galois} \  $(\mathrm{quasi-galois})$}であるとは
+  任意の既約多項式 $f \in K[X]$が根を $L$内に一つもてば
+  $d$は $L[X]$において一次因子の積に分解することができる。
+  $(すべて同じ体の中に根をもつ)$
+
+  $\Leftrightarrow$
+  ${}^\forall x \in L$に対してその最小多項式 $f \in K[X]$は $L[X]$において
+  一次因子の積に分解できる。
+
+  とくに代数閉包 $\Omega/K$は代数閉体の同値条件の命題 $(\mathrm{\ref{prop:7.1}})$の $(\mathrm{AC}1)$から正規拡大である。
+\end{defi}
+
 \end{document}

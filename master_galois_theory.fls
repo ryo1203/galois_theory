@@ -291,6 +291,8 @@ INPUT section9/galois_theory_section9.tex
 INPUT section9/galois_theory_section9.tex
 INPUT section10/galois_theory_section10.tex
 INPUT section10/galois_theory_section10.tex
+INPUT section11/galois_theory_section11.tex
+INPUT section11/galois_theory_section11.tex
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
@@ -299,8 +301,8 @@ INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
-INPUT section11/galois_theory_section11.tex
-INPUT section11/galois_theory_section11.tex
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT master_galois_theory.aux
 INPUT ./master_galois_theory.out
 INPUT ./master_galois_theory.out

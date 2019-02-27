@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  26 FEB 2019 16:22
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  26 FEB 2019 16:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -644,7 +644,7 @@ LaTeX Warning: Reference `lemm:2.3' on page 3 undefined on input line 209.
 
 [3]
 
-LaTeX Warning: Reference `lemm2.3' on page 4 undefined on input line 288.
+LaTeX Warning: Reference `lemm:2.3' on page 4 undefined on input line 288.
 
 [4]
 
@@ -654,7 +654,7 @@ LaTeX Warning: Reference `lemm:bunriminimalpolynomial' on page 5 undefined on in
 LaTeX Warning: Reference `prop:6.7' on page 5 undefined on input line 306.
 
 
-LaTeX Warning: Reference `9.13' on page 5 undefined on input line 356.
+LaTeX Warning: Reference `prop:9.13' on page 5 undefined on input line 356.
 
 [5] [6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
@@ -670,10 +670,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18957 strings out of 493272
- 371206 string characters out of 6146850
+ 18956 strings out of 493272
+ 371202 string characters out of 6146850
  456394 words of memory out of 5000000
- 22587 multiletter control sequences out of 15000+600000
+ 22586 multiletter control sequences out of 15000+600000
  15578 words of font info for 73 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,14n,84p,493b,456s stack positions out of 5000i,500n,10000p,500000b,80000s

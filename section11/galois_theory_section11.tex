@@ -5,7 +5,7 @@
 
 \section{正規拡大 \  (準Galois拡大)}
 
-\subsection{正規と共役}
+\subsection{共役}
 
 \begin{defi}
   $\Omega := \barK : K$の代数閉包とする。
@@ -93,6 +93,8 @@
   $f$が一次因子の積に分解できることより $g$は $f$を割る。
 \end{proof}
 
+\subsection{正規}
+
 \begin{defi}
   代数拡大 $L/K$が\underline{正規 \  $(\mathrm{normal})$}もしくは
   \underline{準\rm{Galois} \  $(\mathrm{quasi-galois})$}であるとは
@@ -107,7 +109,7 @@
   とくに代数閉包 $\Omega/K$は代数閉体の同値条件の命題 $(\mathrm{\ref{prop:7.1}})$の $(\mathrm{AC}1)$から正規拡大である。
 \end{defi}
 
-\begin{prop}
+\begin{prop} \label{prop:11.1}
   代数拡大 $L/K$と代数閉包 $\Omega/K$について次は同値。
 
   $(1)$
@@ -164,9 +166,62 @@
   体の準同型から単射なので $\sigma(R_i) = R_i$となる。
   したがって $\sigma(L) = \sigma(K(\cup_{i \in I}R_i)) = K(\cup_{i \in I}R_i) = L$より成立。
 
+  $(3) \Rightarrow (2)$
+
+  ${}^\forall x \in L$に対してその共役は任意の $\sigma \in \aut_K(\Omega)$による $\sigma(x)$であるが仮定より $\sigma(L) = L$より $\sigma(x) \in L$となる。
+  したがって任意の元のすべての共役は $L$に含まれるので成立。
+
   $(4) \Rightarrow (3)$
 
+  ${}^\forall \sigma \in \aut_K(\Omega)$をとる。
+  このとき $\sigma|_L \in \Hom_K(L,\Omega)$なので仮定より
+  $\sigma|_L(L) = L$で $\sigma|_L(L) = \sigma(L)$より成立。
 
+  $(3) \Rightarrow (4)$
+
+  $\phi \in \Hom_K(L,\Omega)$にたいして $L , \phi(L)$は $K$の代数拡大
+  なので定理 $(\mathrm{\ref{theo:7.3}})$から
+  代数閉包 $\Omega$に埋め込めるので $\Omega$はこれらの代数閉包でもある。
+  $\phi$は体の準同型より単射なので $\phi : L \longrightarrow \phi(L)$は全単射
+  となっているから $L \cong \phi(L)$になっていて系 $(\mathrm{\ref{corl:7.6}})$
+  よりこれを延長する $\sigma : \Omega \longrightarrow \Omega$が存在する。
+  したがって仮定より $\sigma(L) = L$であり、 $\sigma|_L = \phi$なので
+  $\phi(L) = \sigma|_L(L) = \sigma(L) = L$より成立。
 \end{proof}
+
+\begin{corl} \label{corl:11.2}
+  $L/K:$有限次拡大のとき
+  \begin{eqnarray*}
+    L/K:正規 \Leftrightarrow [L:K]_s = h_L(L) (:= |\Hom_K(L,L)|)
+  \end{eqnarray*}
+  が成り立つ。
+\end{corl}
+
+\begin{proof}
+  系 $(\mathrm{\ref{corl:8.2}})$より $[L:K]_s \leq [L:K]$より
+  $L/K$が有限次拡大なので $[L:K]_s$も有限。
+  $L \subset \Omega$から一般に $\aut_K(L) \subset \Hom_K(L,\Omega)$である。
+  体の準同型は単射なので $\Hom_K(L,L) = \aut_K(L)$とも書ける
+
+  $(\Rightarrow)$
+
+  命題 $(\mathrm{\ref{prop:11.1}})$の $(1) \Leftrightarrow (4)$から
+  ${}^\forall \sigma \in \Hom_K(L,\Omega)$をとると $\sigma(L) = L$と
+  なっているので $\sigma \in \aut_K(L)$である。
+  よって $\Hom_K(L,\Omega) \subset \aut_K(L)$であるので、
+  一般に $\aut_K(L) \subset \Hom_K(L,\Omega)$が成り立つことを考えれば
+  $\aut_K(L) = \Hom_K(L,\Omega)$だから
+  $h_L(L) = [L:K]_s$である。
+
+  $(\Leftarrow)$
+
+  $h_L(L) = [L:K]_s$が有限で成り立っていて $\aut_K(L) \subset \Hom_K(L,\Omega)$より $\aut_K(L) = \Hom_K(L,\Omega)$である。
+  ${}^\forall \sigma \in \Hom_K(L,\Omega)$をとると
+  $\sigma \in \aut_K(L)$なので $\sigma(L) = L$を満たすから
+  命題 $(\mathrm{\ref{prop:11.1}})$の $(1) \Leftrightarrow (4)$から
+  $L/K$は正規。
+\end{proof}
+
+\clearpage
 
 \end{document}

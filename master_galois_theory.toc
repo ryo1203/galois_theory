@@ -35,4 +35,5 @@
 \contentsline {subsection}{\numberline {10.2}正則表現}{45}{subsection.10.2}
 \contentsline {subsection}{\numberline {10.3}分離拡大のノルムとトレース}{46}{subsection.10.3}
 \contentsline {section}{\numberline {11}正規拡大 \ (準Galois拡大)}{50}{section.11}
-\contentsline {subsection}{\numberline {11.1}正規と共役}{50}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.1}共役}{50}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}正規}{51}{subsection.11.2}

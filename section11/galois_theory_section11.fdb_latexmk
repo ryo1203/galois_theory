@@ -1,10 +1,10 @@
 # Fdb version 3
-["dvipdf"] 1551332131 "galois_theory_section11.dvi" "galois_theory_section11.pdf" "galois_theory_section11" 1551332137
-  "galois_theory_section11.dvi" 1551332130 21416 3716126a66912a2917f5460ad5d900d4 "latex"
+["dvipdf"] 1551444074 "galois_theory_section11.dvi" "galois_theory_section11.pdf" "galois_theory_section11" 1551444078
+  "galois_theory_section11.dvi" 1551444073 21412 0539c1eae2f252cea615bbcd8056b3bb "latex"
   (generated)
   "galois_theory_section11.pdf"
-["latex"] 1551332115 "galois_theory_section11.tex" "galois_theory_section11.dvi" "galois_theory_section11" 1551332137
-  "../master_galois_theory.tex" 1551165706 1232 f0da5d9855c7d9de5a56a39efc1f3a38 ""
+["latex"] 1551444063 "galois_theory_section11.tex" "galois_theory_section11.dvi" "galois_theory_section11" 1551444078
+  "../master_galois_theory.tex" 1551443654 1277 68e6a3610ccdf7db110b52af15346d85 ""
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -139,12 +139,12 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section11.aux" 1551332130 1100 a2cba831cc44a313fe9a3d5367c6f684 ""
-  "galois_theory_section11.out" 1551332130 240 9852a65aba72628fe6342cd4bfef31a1 ""
-  "galois_theory_section11.tex" 1551332097 9723 1dac195c4d1c78dddde6da6e9ef63bef ""
+  "galois_theory_section11.aux" 1551444073 1149 3268cb134c9c984a284c99130f71c0b2 ""
+  "galois_theory_section11.out" 1551444073 240 9852a65aba72628fe6342cd4bfef31a1 ""
+  "galois_theory_section11.tex" 1551444044 9731 01633b81ada0c79cfa84223006ed597e ""
   "mymacros.sty" 1551165650 1202 3597767b829ed0b686edddc151a43cf1 ""
   (generated)
   "galois_theory_section11.out"
-  "galois_theory_section11.dvi"
-  "galois_theory_section11.aux"
   "galois_theory_section11.log"
+  "galois_theory_section11.aux"
+  "galois_theory_section11.dvi"

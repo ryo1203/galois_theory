@@ -303,6 +303,8 @@ INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT section12/galois_theory_section12.tex
+INPUT section12/galois_theory_section12.tex
 INPUT master_galois_theory.aux
 INPUT ./master_galois_theory.out
 INPUT ./master_galois_theory.out

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  26 FEB 2019 14:13
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  1 MAR 2019 21:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -693,7 +693,7 @@ LaTeX Warning: Reference `prop:yuugenzigen' on page 5 undefined on input line 45
 LaTeX Warning: Reference `corl:sotaiyuugen' on page 6 undefined on input line 481.
 
 
-Overfull \hbox (22.28058pt too wide) in paragraph at lines 533--534
+Overfull \hbox (18.70284pt too wide) in paragraph at lines 533--534
 [][]\JY1/gt/m/n/10 定義 \OT1/cmr/bx/n/10 9.17. []$\OML/cmm/m/it/10 L=K \OT1/cmr/m/n/10 :$ \JY1/mc/m/n/10 拡大に対して $\OML/cmm/m/it/10 K$ \JY1/mc/m/n/10 の $\OML/cmm/m/it/10 L$ \JY1/mc/m/n/10 の中での[]$[]$[]
  []
 
@@ -724,12 +724,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18970 strings out of 493272
- 371306 string characters out of 6146850
- 453456 words of memory out of 5000000
- 22599 multiletter control sequences out of 15000+600000
+ 18971 strings out of 493272
+ 371317 string characters out of 6146850
+ 453482 words of memory out of 5000000
+ 22600 multiletter control sequences out of 15000+600000
  16276 words of font info for 75 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,14n,84p,492b,437s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section9.dvi (8 pages, 60792 bytes).
+Output written on galois_theory_section9.dvi (8 pages, 60808 bytes).

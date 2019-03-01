@@ -37,3 +37,6 @@
 \contentsline {section}{\numberline {11}正規拡大 \ (準Galois拡大)}{50}{section.11}
 \contentsline {subsection}{\numberline {11.1}共役}{50}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}正規}{51}{subsection.11.2}
+\contentsline {section}{\numberline {12}Galois拡大再論}{53}{section.12}
+\contentsline {subsection}{\numberline {12.1}Galois拡大}{53}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}多項式のGalois群}{54}{subsection.12.2}

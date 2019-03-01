@@ -7,6 +7,109 @@
 
 \subsection{Galois拡大}
 
+\begin{prop} \label{prop:12.1}
+  代数拡大 $L/K$について次は同値
 
+  $(1)$
+  $L/K$は\rm{Galois}
+
+  $(2)$
+  $L/K$は正規かつ分離的
+
+  $(2)'$
+  ${}^\forall x \in L$に対し、その最小多項式は分離的かつ
+  $L[X]$において一次因子の積に分解される。
+
+  $(3)$
+  $L/K$はある分離多項式族 $(f_i)_{i \in I}$の最小分解体
+
+  さらに、 $L/K$が有限次なら次も同値
+
+  $(4)$
+  $[L:K] = h_L(L) (:= |\aut_K(L)|)$
+\end{prop}
+
+\begin{proof}
+  $\Omega$を $K$の代数閉包とする。
+
+  $(2) \Leftrightarrow (2)'$は正規の定義 $(\mathrm{\ref{defi:normal}})$と系 $(\mathrm{\ref{corl:separable}})$
+  と多項式の分離性の定義 $(\mathrm{\ref{prop:9.2}})$から明らか。
+
+  $(1) \Rightarrow (2)$
+
+  ${}^\forall x \in L$とその最小多項式 $f \in K[X]$をとる。
+  また、 $Y_x := \{ \sigma(x) | \sigma \in \aut_K(L) \}$
+  と定めるとこれは $x$の $\Omega$における共役元の集合の部分集合になり、
+  $\sigma \in \aut_K(L)$から $Y \subset L$である。
+  命題 $(\mathrm{\ref{prop:conjugate}})$の $(1) \Leftrightarrow (3)$から
+  $x$の共役元はすべて $f$の根なので高々 $\deg(f)$個しかないので $Y_x$は有限集合。
+  $g := \prod_{y \in Y_x}(X - y) , n := \deg(g)$とする。
+  $y$はすべて異なるから単根なので $g$は分離的である。
+  また、 $y$は $x$の共役元より $f$の根でもあるから $g$のすべての根は $f$の根より
+  $g|f$となる。
+
+  $y \in Y_x \subset L$よりその元から作られる基本対称式は $L$に含まれるので
+  $g = \sum_{i=1}^n a_i X^i , a_i \in L$と書ける。
+  $\sigma g = \sum_{i=1}^n \sigma(a_i) X^i$とすると係数だけに $\sigma$をかけているから $(\sigma g)(X) = \prod_{y \in Y_x}(X - \sigma(y))$となる。
+  ここで $y \in Y_x$より $y = \tau(x) , \tau \in \aut_K(L)$となるものが存在する。
+  $\aut_K(L)$は自己同型写像であるから $\sigma \circ \tau \in \aut_K(L)$より $\sigma(y) = \sigma \circ \tau(x)) \in Y_x$となる。
+  ここで $Y_x$は有限集合であることと $\sigma$は体の準同型より単射なので
+  それぞれの $y$は $\sigma$によりそれぞれ異なる $Y_x$の元に行く。
+  したがって $(\sigma g)(X) = \prod_{y \in Y_x}(X - y) = g(X)$となるから
+  $a_i$は ${}^\forall \sigma \in \aut_K(L)$によって動かされない。
+  $L/K$が\rm{Galois}より $L^{\aut_K(L)} = K$より $a_i \in K$であるから
+  $g \in K[X]$である。
+
+  $g , f \in K[X]$で $g|f$より $f$の最小性から $f = g$なので
+  任意の $x \in L$の最小多項式は
+  $f = \prod_{y \in Y_x}(X - y)$と $L[X]$上で一次因子の積に分解されるので
+  $L/K$は正規。
+  また、 $g (= f)$は分離的でもあったので任意の最小多項式が分離的より
+  系 $(\mathrm{\ref{corl:separable}})$より $L/K$は分離的であるので
+  $L/K$は正規かつ分離的。
+
+  $(2) \Rightarrow (1)$
+
+  $L = K$のとき $L^{\aut_K(L)} = K^{\aut_K(K)} = K$で成立。
+  $L \neq K$のとき $L \supsetneq K$であるから ${}^\forall x \in L - K$をとる。
+  これがある $\sigma \in \aut_K(L)$で $\sigma(x) \neq x$となればよい。
+
+  $x$の最小多項式を $f \in K[X]$とすると $x \in L - K$より $\deg(f) > 1$であり、
+  仮定から $L/K$が分離的より系 $(\mathrm{\ref{corl:separable}})$から $f$が単根を持つので
+  定義より分離的だから $f(y) = 0$で $y \neq x$であるような元 $y \in \Omega$が存在する。
+  $y$の $K$上の最小多項式も $f$なので命題 $(\mathrm{\ref{prop:conjugate}})$の
+  $(2) \Leftrightarrow (3)$から $\sigma(x) = y$となるような $\sigma \in \aut_K(\Omega)$が存在する。
+  仮定から $L/K$は正規なので命題 $(\mathrm{\ref{prop:11.1}})$の $(1) \Leftrightarrow (3)$から $\sigma(L) = L$より
+  $\sigma|_L \in \aut_K(L)$となる。
+  この $\sigma$により $\sigma(x) = y \neq x$なので $x$は固定されないから
+  固定されるのは $K$の元のみなので $L^{\aut_K(L)} = K$となり
+  定義より $L/K$は\rm{Galois}である。
+
+  $(2) \Leftrightarrow (3)$
+
+  命題 $(\mathrm{\ref{prop:11.1}})$の $(1) \Leftrightarrow (5)$より
+  「規 $\Leftrightarrow$ある多項式族 $(f_i)_{i \in I}$の最小分解体」が言えている。
+  その多項式族は ${}^\forall x \in L$の最小多項式の族であったので
+  系 $(\mathrm{\ref{corl:separable}})$より
+  「分離的 $\Leftrightarrow$多項式族のすべての多項式が分離的」が言えている。
+
+  $(2) \Leftrightarrow (4)$
+
+  有限次拡大のとき系 $(\mathrm{\ref{corl:11.2}})$から
+  「正規 $\Leftrightarrow [L:K]_s = h_L(L)$」が言えている。
+  定義より「分離的 $\Leftrightarrow [L:K] = [L:K]_s$」なので
+  「正規かつ分離的 $\Leftrightarrow [L:K] = [L:K]_s = h_L(L)$」となり示された。
+\end{proof}
+
+\subsection{多項式のGalois群}
+
+\begin{defi}
+  $K:$体、 $f \in K[X] - K:$分離多項式、 $L_f:f$の $K$上の最小分解体とするとき
+  その根をすべて添加しているので命題 $(\mathrm{\ref{prop:6.7}})$から
+  $L_f/K$は有限次だから
+  命題 $(\mathrm{\ref{prop:12.1}})$の $(1) \Leftrightarrow (3)$から
+  $L_f/K$は有限次\rm{Galois}拡大である。
+  このとき $\gal(L_f/K)$を\underline{$f$の $K$上の\rm{Galois}群}という。
+\end{defi}
 
 \end{document}

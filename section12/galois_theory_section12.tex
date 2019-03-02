@@ -103,7 +103,7 @@
 
 \subsection{多項式のGalois群}
 
-\begin{defi}
+\begin{defi} \label{defi:galoispolynomial}
   $K:$体、 $f \in K[X] - K:$分離多項式、 $L_f:f$の $K$上の最小分解体とするとき
   その根をすべて添加しているので命題 $(\mathrm{\ref{prop:6.7}})$から
   $L_f/K$は有限次だから
@@ -111,5 +111,144 @@
   $L_f/K$は有限次\rm{Galois}拡大である。
   このとき $\gal(L_f/K)$を\underline{$f$の $K$上の\rm{Galois}群}という。
 \end{defi}
+
+\begin{prop} \label{prop:galoispolynomial}
+  分離多項式 $f \in K[X] - K$にたいしてその最小分解体 $L_f$を考える。
+  $\Omega$を $K$の代数閉包で $L_f$を含むもの、
+  $W := \{ x \in \Omega | fの根 \}$とする。
+  $f$は分離多項式なので $|W| = n := \deg(f)$となる。
+  このとき $\gal(L_f/K)$は $W$に作用し、根の置換を引き起こす。
+  したがって $W$の自己同型写像の群、つまり $W$の置換群を $\mathfrak{S}_W$とするとき $|W| = n$から $n$次対称群 $\mathfrak{S}_n$でもあり、
+  \begin{eqnarray*}
+    \gal(L_f/K) & \longrightarrow & \mathfrak{S}_W (= \mathfrak{S}_n) \\
+    \sigma & \longmapsto & \sigma|_W
+  \end{eqnarray*}
+  という単射群準同型が存在する。 $(\mathfrak{S}_W に \gal(L_f/K)は埋め込める)$
+
+  とくに $|\gal(L_f/K)| = [L_f:K] \leq n!$である。
+\end{prop}
+
+\begin{proof}
+  ${}^\forall \sigma \in \gal(L_f/K) = \aut_K(L_f)$は
+  $f(\sigma(x)) = \sigma(f(x)) = 0$より $\sigma(x) \in W$
+  だから $\sigma(W) \subset W$なので
+  \begin{eqnarray*}
+    \sigma|_W : W & \longrightarrow & W \\
+    x & \longmapsto & \sigma(x)
+  \end{eqnarray*}
+  となり $\sigma$は体の準同型より単射であって $|W| = n$で有限集合なので
+  これは全単射である。
+  したがって $\sigma|_W$は $W$上の全単射写像の群である $\mathfrak{S}_W$の元となる。
+  $\sigma = \tau \in \gal(L_f/K)$のとき、 $\sigma|_W = \tau|_W$であるので
+  $\gal(L_f/K) \longrightarrow \mathfrak{S}_W , \sigma \longmapsto \sigma|_W$は写像になっている。
+  また、 $\sigma|_W = \tau|_W$のとき、
+   $\aut_K(L_f)$の元としての $\sigma , \tau$は $K$を動かさないので
+   最小分解体の定義から $L_f = K(W)$なので $W$の動かし方で定まるから $\sigma = \tau$である。
+   したがって制限写像 $\gal(L_f/K) \longrightarrow \mathfrak{S}_W$は単射である。
+
+   $L_f/K$は定義 $(\mathrm{\ref{defi:galoispolynomial}})$から有限次\rm{Galois}なので
+   命題 $(\mathrm{\ref{prop:12.1}})$の $(1) \Leftrightarrow (4)$から
+   $[L_f:K] = h_{L_f}(L_f) = |\aut_K(L_f)| = |\gal(L_f/K)|$である。
+   ここで上述のことから $\gal(L_f/K)$は $\mathfrak{S}_W = \mathfrak{S}_n$に
+   埋め込めるから $|\gal(L_f/K)| = [L_f:K] \leq |\mathfrak{S}_n| = n!$より示された。
+\end{proof}
+
+\begin{corl}
+  一般の $n$次多項式 $f \in K[X]$の最小分解体 $L$の拡大次数は $n!$以下である。
+\end{corl}
+
+\begin{proof}
+  命題 $(\mathrm{\ref{prop:galoispolynomial}})$で $f$は分離多項式とは限らないので
+  $|W| \leq n$であるから $|\mathfrak{S}_W| \leq |\mathfrak{S}_n|$である。
+  埋め込むことは同様にできるから $\gal(L_f/K)$を $\aut_K(L)$として
+  $|\aut_K(L)| \leq |\mathfrak{S}_W| \leq |\mathfrak{S}_n| = n!$より成立。
+\end{proof}
+
+\begin{prop}
+  分離多項式 $f \in K[X] - K$の根の集合 $W$とその元 $x , y \in W$に対して以下は同値。
+
+  $(1)$
+  $x$と $y$は $K$上共役。
+
+  $(2)$
+  $x$と $y$は同じ $\gal(L_f/K)-$軌道上に属する。
+
+  $(3)$
+  $x$と $y$は $f$の同じ既約成分の根。
+
+  とくに $f$が既約であるためには $W \neq \emptyset$かつ $\gal(L_f/K)$が $W$に推移的に作用することが必要十分である。
+  $(群 Gが集合 Xに推移的に作用するとは G-軌道 G(x) := \{ \sigma(x) | \sigma \in G \} とするとき G(x) = Xとなること)$
+\end{prop}
+
+\begin{proof}
+  $\Omega$を $K$の代数閉包とする。
+
+  $(1) \Leftrightarrow (2)$
+
+  $f$が分離的なので $L_f/K$は有限次\rm{Galois}拡大であるから正規なので
+  $\sigma \in \aut_K(\Omega) , \sigma(L_f) = L_f$を満たすから
+  $\sigma|_{L_f} \in \aut_K(L_f) = \gal(L_f/K)$となる。
+  また、 $\sigma \in \gal(L_f/K)$は系 $(\mathrm{\ref{corl:7.6}})$より
+  $\tilde{\sigma} \in \aut_K(\Omega)$に拡張できる。
+  これより
+  \begin{eqnarray*}
+    xと yが K上共役 & \Leftrightarrow & {}^\exists \sigma \in \aut_K(\Omega)
+    , x = \sigma(y) \\
+    & \Leftrightarrow & y \in \{ \sigma(x) | \sigma \in \gal(L_f/K) \} \\
+    & \Leftrightarrow & yは xの \gal(L_f/K)-軌道に含まれる
+  \end{eqnarray*}
+  となる。
+
+$(1) \Leftrightarrow (3)$
+
+命題 $(\mathrm{\ref{prop:conjugate}})$の $(1) \Leftrightarrow (3)$より
+$x$と $y$が $K$上共役 $\Leftrightarrow $ $x$と $y$の $K$上の最小多項式は同じ
+なのでその最小多項式を $g \in K[X] - K$とすれば $g$は $f$の既約成分であるので
+示された。
+
+もし $\gal(L_f/K)$が $W (\neq \emptyset)$に推移的に作用するとすると、ある $f$の根 $x$に対して
+その $\gal(L_f/K)-$軌道は $W$に一致するので任意の $f$の根は $(2) \Leftrightarrow (3)$から $f$の同じ既約成分の根になる。
+したがって $f$の根はすべて $f$の既約成分の根になるから $f$は既約。
+$f$が既約であるとき $(2) \Leftrightarrow (3)$から
+すべての根はある $f$の根 $x$と同じ $\gal(L_f/K)-$軌道上に属するから
+$W \subset \gal(L_f/K)-$軌道である。
+また、 $x$の軌道はすべて $f$の根になるから $W \supset \gal(L_f/K)-$軌道より
+$W = \gal(L_f/K)-$軌道となり推移的である。
+\end{proof}
+
+\begin{exam}
+  $K:$体、 $L := K(T_1 , \dots , T_n) : n$変数の有理関数体とする。
+  $G := \mathfrak{S}_n$として $T_i$の添字の置換とする。
+  つまり、 $\sigma \in G$と $f = f(T_1 , \dots , T_n) \in L$に対して、
+  $\sigma f := f(T_{\sigma(1)} , \dots , T_{\sigma(n)})$と作用させることとする。
+  このとき、 $G$の元は $T_i$を写し、 $K$の元は動かさないので $L$の体の自己同型とみなせるので $G \subset \aut_{体}(L)$となる。
+
+  $M := L^G$とおくとこれは $T_1 , \dots , T_n$の対称有理式の集合になる。
+  このとき $L/M$が\rm{Galois}となって、 $G = \gal(L/M)$を満たす。
+  とくに $[L:M] = n!$となる。
+\end{exam}
+
+\begin{proof}
+  $s_i := (T_1 , \dots , T_n の i次基本対称式)$とすると $s_i \in L$である。
+  つまり、 $s_1 = T_1 + \cdots + T_n , s_2 = T_1 T_2 + T_1 T_3 + \cdots + T_{n-1} T_n , \cdots , s_n = T_1 \cdots T_n$となっている。
+  $M_0 := K(s_1 , \dots , s_n)$とおくと基本対称式は文字を置換しても
+  同じままなので $M_0$は $G$で固定される。
+  よって $M_0 \subset M$である。
+
+  ここで $T_1 , \dots , T_n$は解と係数の関係から
+  $X^n - s_1 X^{n-1} + \cdots + (-1)^n s_n \in M_0[X]$の根になる。
+  $T_1 , \dots , T_n$はそれぞれ異なるから命題 $(\mathrm{\ref{prop:9.2}})$から
+  この多項式は分離的である。
+  $L$はこの多項式の最小分解体なので定義 $(\mathrm{\ref{defi:galoispolynomial}})$
+  から $L/M_0$は有限次\rm{Galois}拡大になる。
+  命題 $(\mathrm{\ref{prop:galoispolynomial}})$から
+  $[L:M_0] \leq n!$である。
+  また、 $L/M$は\rm{Artin}の定理 $(\mathrm{\ref{theo:artin}})$から
+  \rm{Galois}拡大で $G = \mathfrak{S}_n = \aut_M(L)$であり、
+  \rm{Rem} $(\mathrm{\ref{rem:tokutyou}})$から $[L:M] = |\aut_M(L)| = |\mathfrak{S}_n| = n!$となる。
+  よって $M_0 \subset M$と $[L:M_0] \leq n! = [L:M]$より $M_0 = M$となる。
+  以上より $M$は $T_1 , \dots , T_n$の対称有理式の集合になり、
+  $G = \mathfrak{S}_n = \gal(L/M)$で、 $[L:M] = n!$となる。
+\end{proof}
 
 \end{document}

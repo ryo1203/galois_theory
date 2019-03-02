@@ -250,6 +250,11 @@ INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 OUTPUT galois_theory_section12.dvi
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT c:/w32tex/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
+INPUT c:/w32tex/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm5.tfm
 INPUT galois_theory_section12.aux
 INPUT ./galois_theory_section12.out
 INPUT ./galois_theory_section12.out

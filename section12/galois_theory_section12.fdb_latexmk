@@ -1,16 +1,19 @@
 # Fdb version 3
-["dvipdf"] 1551443301 "galois_theory_section12.dvi" "galois_theory_section12.pdf" "galois_theory_section12" 1551443308
-  "galois_theory_section12.dvi" 1551443300 14868 79f4f0711b27db747c72c141995d3b28 "latex"
+["dvipdf"] 1551522344 "galois_theory_section12.dvi" "galois_theory_section12.pdf" "galois_theory_section12" 1551522518
+  "galois_theory_section12.dvi" 1551522344 27600 3857d1056ced60841b5d9122ef99cf30 "latex"
   (generated)
   "galois_theory_section12.pdf"
-["latex"] 1551443287 "galois_theory_section12.tex" "galois_theory_section12.dvi" "galois_theory_section12" 1551443307
-  "../master_galois_theory.tex" 1551165706 1232 f0da5d9855c7d9de5a56a39efc1f3a38 ""
+["latex"] 1551522336 "galois_theory_section12.tex" "galois_theory_section12.dvi" "galois_theory_section12" 1551522518
+  "../master_galois_theory.tex" 1551443654 1277 68e6a3610ccdf7db110b52af15346d85 ""
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1519818042 856 7404843a5f798859944d7973a47821d5 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1519818042 856 39c171483fe1bb7d0e1368980c0c205b ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm" 1233951852 1040 b84415f97d114011685943ade933dc71 ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm5.tfm" 1233951852 1040 a9d2074f3fa062d4d9046b92e2334d8c ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm" 1233951852 1040 82eb6630b094bff824fccca83ff507f9 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233951854 928 2dc8d444221b7a635bb58038579b861a ""
@@ -89,6 +92,7 @@
   "c:/w32tex/share/texmf-dist/tex/latex/amscls/amsthm.sty" 1509462900 12604 3dec726c041422879dc3268237f09026 ""
   "c:/w32tex/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1358197772 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "c:/w32tex/share/texmf-dist/tex/latex/amsfonts/amssymb.sty" 1358197772 13829 94730e64147574077f8ecfea9bb69af4 ""
+  "c:/w32tex/share/texmf-dist/tex/latex/amsfonts/ueuf.fd" 1358197772 1047 4252767c0fde12e3ce9f914ef4bb1ea1 ""
   "c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd" 1358197772 961 6518c6525a34feb5e8250ffa91731cff ""
   "c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsb.fd" 1358197772 961 d02606146ba5601b5645f987c92e6193 ""
   "c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1522996966 2211 ca7ce284ab93c8eecdc6029dc5ccbd73 ""
@@ -139,12 +143,12 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section12.aux" 1551443300 1008 8e544758e522019b42cc06afdc6d5e0c ""
-  "galois_theory_section12.out" 1551443300 243 0f8de32624171ac23b303eb4663c012f ""
-  "galois_theory_section12.tex" 1551443284 5722 7b77daf09cc6a4076fe5d50b57ba2efc ""
+  "galois_theory_section12.aux" 1551522344 1126 d1b9dc2477d71d49af3a7a1e5216ddfd ""
+  "galois_theory_section12.out" 1551522344 243 0f8de32624171ac23b303eb4663c012f ""
+  "galois_theory_section12.tex" 1551522324 13367 cd3a7bf45c8d8d0587991c467cfef198 ""
   "mymacros.sty" 1551438136 1202 3597767b829ed0b686edddc151a43cf1 ""
   (generated)
-  "galois_theory_section12.out"
   "galois_theory_section12.dvi"
-  "galois_theory_section12.aux"
+  "galois_theory_section12.out"
   "galois_theory_section12.log"
+  "galois_theory_section12.aux"

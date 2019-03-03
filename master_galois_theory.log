@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  3 MAR 2019 14:57
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  3 MAR 2019 21:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -706,10 +706,10 @@ Package rerunfilecheck Info: File `master_galois_theory.out' has not changed.
 Here is how much of TeX's memory you used:
  19195 strings out of 493272
  375608 string characters out of 6146850
- 457005 words of memory out of 5000000
+ 458037 words of memory out of 5000000
  22762 multiletter control sequences out of 15000+600000
  20605 words of font info for 93 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  54i,20n,82p,840b,568s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on master_galois_theory.dvi (57 pages, 367180 bytes).
+Output written on master_galois_theory.dvi (57 pages, 367816 bytes).

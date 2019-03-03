@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  1 MAR 2019 21:39
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  3 MAR 2019 14:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -656,7 +656,7 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  18962 strings out of 493272
- 371268 string characters out of 6146850
+ 371269 string characters out of 6146850
  453306 words of memory out of 5000000
  22586 multiletter control sequences out of 15000+600000
  16286 words of font info for 76 fonts, out of 8000000 for 9000

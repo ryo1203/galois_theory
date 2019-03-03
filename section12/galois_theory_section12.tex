@@ -251,4 +251,96 @@ $W = \gal(L_f/K)-$軌道となり推移的である。
   $G = \mathfrak{S}_n = \gal(L/M)$で、 $[L:M] = n!$となる。
 \end{proof}
 
+\begin{fact}
+  $n \geq 5$ならば $n$次交代群 $\mathfrak{A}_n$は非アーベル単純群なので
+  非自明な正規部分群を持たない。
+  命題 $(\mathrm{\ref{theo:koukanshi}})$より可解群となるための可解列に出てくる
+  交換子群は正規部分群であるので $\mathfrak{A}_n$は可解群にならない。
+  よって $\mathfrak{A}_n$を含む $\mathfrak{S}_n$は $n \geq 5$で非可解群。
+  任意の $n$次分離多項式 $(\in \mathbb{Q}[X])$の\rm{Galois}群は命題 $(\mathrm{\ref{prop:galoispolynomial}})$より $\mathfrak{S}_n$の
+  部分群に同型である。
+  これより定理 $\mathrm{\ref{theo:kakai}}$から
+  $5$次以上の一般代数方程式は解の公式を持たないことがわかる。
+\end{fact}
+
+\subsection{IGP (Inverse Galois Problem)}
+
+  \rm{Galois}の逆問題 $(\mathrm{IGP \  Inverse \  Galois \  Problem})$とは
+  $K:$体、 $G:$有限群が与えられたとき、
+  $\gal(L/K) \cong G$となる\rm{Galois}拡大 $L/K$は作れるかというもの
+
+\begin{fact}
+  \rm{Hilbert}の既約性定理
+
+  $X^n - s_1 X^{n-1} + \cdots + (-1)^n s_n$はほとんどの $(有限個の例外を除き)$
+  $(s_1 , \dots , s_n) \in \mathbb{Q}^n$に対し既約で
+  その\rm{Galois}群は $\mathfrak{S}_n$と同型。
+\end{fact}
+
+\subsection{無限次Galois拡大}
+
+$L/K$が無限次 $(かもしれない)$\rm{Galois}拡大のとき
+$\gal(L/K)$は $\mathrm{profinite} (副有限、射影有限)$群 $(有限群の射影極限になっている群)$である。
+つまり、 $L'/K , L''/K (L' \subset L'')$を $L$に含まれる任意の有限次\rm{Galois}拡大とし、
+制限写像 $\gal(L''/K) \longrightarrow \gal(L'/K) , \sigma \longmapsto \sigma|_{L'}$
+による射影極限
+\begin{eqnarray*}
+  \gal(L/K) = \mathop{\varprojlim}\limits_{L'/K} \gal(L'/K) \subset \prod_{L'/K} \gal(L'/K)
+\end{eqnarray*}
+で定義される。
+$\gal(L'/K)$は離散位相によって位相群になるので
+$\gal(L/K)$にはその直積位相が入り、これを\rm{Krull}位相という。
+
+\begin{theo}
+  \rm{Galois}理論の基本定理の無限次版
+
+  $L/K:$\rm{Galois}拡大、 $G := \gal(L/K)$とすると次の一対一対応がある。
+
+  \begin{eqnarray*}
+    \{ L/Kの部分体 \} & \overset{1:1}{\longleftrightarrow} & \{ Gの閉部分群 \} \\
+    M & \longmapsto & \aut_M(L) = \gal(L/M) \\
+    L^H & \leftlongmapsto & H \\
+    \{ L/Kの部分体で K上有限次のもの \} & \overset{1:1}{\longleftrightarrow} & \{ Gの開部分群 (指数有限の部分群) \} \\
+    \{ L/Kの部分体で K上有限次のものでかつ K上 \mathrm{Galois}になるもの \} & \overset{1:1}{\longleftrightarrow} & \{ Gの開正規部分群 \}
+  \end{eqnarray*}
+  他の性質は有限次のとき $(\mathrm{\ref{theo:galois}})$と同じ。
+\end{theo}
+
+\begin{defi}
+  $K:$体、 $K^{\mathrm{sep}}:K$の分離閉包とするとき、
+  命題 $(\mathrm{\ref{prop:9.11}})$から
+  $K$の代数閉包の相対的分離閉包が $K^{\mathrm{sep}}$になるから
+  ${}^\forall x \in K^{\mathrm{sep}}$は $K$上代数的かつ分離的なので
+  $K^{\mathrm{sep}}/K$は\rm{Galois}であり、
+  $G_K := \gal(K^{\mathrm{sep}}/K)$を $K$の
+  \underline{絶対 \rm{Galois}群}という。
+\end{defi}
+
+すると、 $L'/K$を $K^{\mathrm{sep}}/K$に含まれる有限次\rm{Galois}拡大と
+するとき $G_K = \mathop{\varprojlim}\limits_{L'/K} \gal(L'/K)$となり、
+とくに ${}^\forall L'/K$に対し
+$G_K \xlongrightarrow{sur} \gal(L'/K)$があるから
+${}^\forall L'/K$に $G_K$が作用していると考えられる。
+
+逆に $G_K$から $K$を作ることも考えられる。
+
+\begin{theo}
+  \rm{Neukirch} $-$ 内田 $(- \mathrm{Pop})$の定理
+
+  $K_1 , K_2:$素体上有限生成な体。
+  \begin{eqnarray*}
+    G_{K_1} \cong G_{K_2} & \Rightarrow & K_1 \cong K_2 \\
+    (位相群として同型) &  & (体として同型)
+  \end{eqnarray*}
+  が成り立つ。
+  これの一般化である\rm{Grothendieck}予想もある。
+\end{theo}
+
+\subsection{いろいろなGalois拡大 (Abel拡大)}
+
+\subsubsection{有限体}
+
+以下では $K:$有限体、 $\Char(K) = p > 0$で
+$[K:F_p] = f , |K| = p^f = q$とする。
+
 \end{document}

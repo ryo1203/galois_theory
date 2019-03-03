@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1551443951 "galois_theory_section7.dvi" "galois_theory_section7.pdf" "galois_theory_section7" 1551443957
-  "galois_theory_section7.dvi" 1551443951 22112 e93f7339de2158e4f99a73eef9f0600d "latex"
+["dvipdf"] 1551592592 "galois_theory_section7.dvi" "galois_theory_section7.pdf" "galois_theory_section7" 1551592597
+  "galois_theory_section7.dvi" 1551592592 22112 6692972e195b388d7959b88bd644be0e "latex"
   (generated)
   "galois_theory_section7.pdf"
-["latex"] 1551443940 "galois_theory_section7.tex" "galois_theory_section7.dvi" "galois_theory_section7" 1551443957
+["latex"] 1551592580 "galois_theory_section7.tex" "galois_theory_section7.dvi" "galois_theory_section7" 1551592597
   "../master_galois_theory.tex" 1551443654 1277 68e6a3610ccdf7db110b52af15346d85 ""
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -142,12 +142,12 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section7.aux" 1551443951 1282 e74efab6bb93c0fdb2a1bbc5a820032e ""
-  "galois_theory_section7.out" 1551443951 308 06d982b398ccde3b31435fcb5c064261 ""
-  "galois_theory_section7.tex" 1551443919 9151 c28a3d55d128f1c5d05eb84919399e22 ""
+  "galois_theory_section7.aux" 1551592592 1283 63d00a92fba7856579bd3f974dc03a6e ""
+  "galois_theory_section7.out" 1551592592 308 06d982b398ccde3b31435fcb5c064261 ""
+  "galois_theory_section7.tex" 1551592566 9153 06a8a30e3e5f2c91f925ef38df6311c7 ""
   "mymacros.sty" 1550988109 1202 3597767b829ed0b686edddc151a43cf1 ""
   (generated)
   "galois_theory_section7.out"
   "galois_theory_section7.aux"
-  "galois_theory_section7.dvi"
   "galois_theory_section7.log"
+  "galois_theory_section7.dvi"

@@ -40,3 +40,7 @@
 \contentsline {section}{\numberline {12}Galois拡大再論}{53}{section.12}
 \contentsline {subsection}{\numberline {12.1}Galois拡大}{53}{subsection.12.1}
 \contentsline {subsection}{\numberline {12.2}多項式のGalois群}{54}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}IGP (Inverse Galois Problem)}{56}{subsection.12.3}
+\contentsline {subsection}{\numberline {12.4}無限次Galois拡大}{56}{subsection.12.4}
+\contentsline {subsection}{\numberline {12.5}いろいろなGalois拡大 (Abel拡大)}{57}{subsection.12.5}
+\contentsline {subsubsection}{\numberline {12.5.1}有限体}{57}{subsubsection.12.5.1}

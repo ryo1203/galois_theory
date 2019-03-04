@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1551592337 "galois_theory_section12.dvi" "galois_theory_section12.pdf" "galois_theory_section12" 1551592341
-  "galois_theory_section12.dvi" 1551592337 35252 0ad3ecde12578292bf4ca4b3de5d75b0 "latex"
+["dvipdf"] 1551681056 "galois_theory_section12.dvi" "galois_theory_section12.pdf" "galois_theory_section12" 1551681060
+  "galois_theory_section12.dvi" 1551681056 44952 a1845ff9fbc65c1d7e71b1f4e49ced7f "latex"
   (generated)
   "galois_theory_section12.pdf"
-["latex"] 1551592329 "galois_theory_section12.tex" "galois_theory_section12.dvi" "galois_theory_section12" 1551592341
+["latex"] 1551681045 "galois_theory_section12.tex" "galois_theory_section12.dvi" "galois_theory_section12" 1551681060
   "../master_galois_theory.tex" 1551443654 1277 68e6a3610ccdf7db110b52af15346d85 ""
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -144,12 +144,12 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section12.aux" 1551592337 1574 2f6349ad10333268d2a97ce5ea50d81c ""
-  "galois_theory_section12.out" 1551592337 489 14cc6800b191c8f260c0f95ecf5a7d64 ""
-  "galois_theory_section12.tex" 1551592312 17650 79a57de85789b4559e7163a23af6196f ""
-  "mymacros.sty" 1551438136 1202 3597767b829ed0b686edddc151a43cf1 ""
+  "galois_theory_section12.aux" 1551681056 1818 765d87c985ed897e30af849e8205669d ""
+  "galois_theory_section12.out" 1551681056 489 14cc6800b191c8f260c0f95ecf5a7d64 ""
+  "galois_theory_section12.tex" 1551681028 22552 6e1d3ed970a071aceb51989b82d4854b ""
+  "mymacros.sty" 1551678428 1442 866f83b7b94288b208a850cda14df1f6 ""
   (generated)
+  "galois_theory_section12.dvi"
   "galois_theory_section12.out"
   "galois_theory_section12.log"
-  "galois_theory_section12.dvi"
   "galois_theory_section12.aux"

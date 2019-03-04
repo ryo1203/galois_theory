@@ -343,4 +343,112 @@ ${}^\forall L'/K$に $G_K$が作用していると考えられる。
 以下では $K:$有限体、 $\Char(K) = p > 0$で
 $[K:F_p] = f , |K| = p^f = q$とする。
 
+\begin{lemm} \label{lemm12.4}
+  体 $F$の乗法群 $F^\times$の有限部分群は巡回群。
+\end{lemm}
+
+\begin{proof}
+  $G$を $F^\times$の有限部分群、 $N$を $G$の冪数とする。
+  ただし、冪数とは $G$の元の位数の最小公倍数のことである。
+  このとき正整数 $n_1 | n_2 | \cdots | n_r$によって
+  $G \cong \Z/n_1 \Z \oplus \cdots \Z/n_r \Z$
+  で $N = \mathrm{LCM} (n_1 , \dots , n_r) = n_r$となる。
+  このとき ${}^\forall x \in G , x^N = 1$より
+  $G$の元は $X^N - 1$の根であり、この多項式は $F$に高々 $N$個しか根を持たないので
+  $|G| \leq N$となる。
+  そして、 $|\Z/n_r \Z| = n_r = N$より
+  $G = \Z/n_r \Z$となるしかなく、したがって $G$は巡回群になる。
+\end{proof}
+
+\begin{corl} \label{corl:12.5}
+  $K$が $q$元体ならば $K^\times \cong \Z/(q-1)\Z$で
+  位数 $q - 1$の巡回群となる。
+\end{corl}
+
+\begin{proof}
+  $K^\times$は $0$を除いた $q-1$個の元の有限群なので成立。
+\end{proof}
+
+\begin{corl} \label{corl:12.6}
+  位数 $q$の有限体 $K$は同型を除き一意に定まる。
+  これを $\F_q$と書く。
+\end{corl}
+
+\begin{proof}
+  有限体 $K$は素体として $\F_p$と同型な体を含む。
+  $\Omega$を $\F_p$の代数閉包とすると $K/\F_p$が
+  有限次拡大より代数拡大なので定理 $(\mathrm{\ref{theo:7.3}})$から
+  $\Omega$に $K$を埋め込める。
+  $K$の元は系 $(\mathrm{\ref{corl:12.5}})$より $X^{q-1} - 1$の根と $0$ですべて出しつくされるので
+  $K = \{ x \in \Omega | x^{q} = x \}$と書ける。
+  $\Omega$に埋め込めばすべてこの形に書けるので同型を除き一意に定まる。
+\end{proof}
+
+\begin{corl} \label{corl:12.7}
+  各 $n \in \Z^+$に対し $\F_q$の $n$次拡大は
+  同型を除きただ一つ存在しそれは $\F_{q^n}$である。
+  とくに $\F_p$の代数閉包 $\Omega$の中では唯一つである。
+\end{corl}
+
+\begin{proof}
+  $\F_q$の $n$次拡大は $\F_p$の $q^n$次拡大なので
+  系 $(\mathrm{\ref{corl:12.6}})$を $q^n$について適用すれば良い。
+  $\Omega$の中では $\F_{q^n} = \{ x \in \Omega | x^{q^n} = x \}$
+  として書けるので唯一つに定まる。
+\end{proof}
+
+\begin{prop} \label{corl:12.7}
+  $\F_{q^n}/\F_q$は\rm{Galois}拡大であり
+  \begin{eqnarray*}
+    \Z/n \Z & \longrightarrow & \gal(\F_{q^n}/\F_q) \\
+    1 & \longmapsto & \phi_q
+  \end{eqnarray*}
+  で定める準同型写像は同型写像になる。
+  ただし、 $\phi_q$は
+  \begin{eqnarray*}
+    \phi_q : \F_{q^n} & \longrightarrow & \F_{q^n} \\
+    x & \longmapsto & x^q
+  \end{eqnarray*}
+  とする。
+\end{prop}
+
+\begin{proof}
+  $\F_q$の任意の $n$次拡大体 $L$は系 $(\mathrm{\ref{corl:12.7}})$より
+  $L \cong \F_{q^n}$となるので $L = \F_{q^n}$とする。
+  定義から $\phi_q \in \aut(\F_{q^n})$である。
+  ${}^\forall x \in \F_q$に対しては
+  $\F_q = \{ x \in \Omega | x^q = x \}$より
+  $\phi_q(x) = x^q = x$なので $\F_q$上恒等的だから
+  $\phi_q \in \aut_{\F_q}(\F_{q^n})$となる。
+
+  また、 $\phi_q$は位数 $n$になることを示す。
+  つまり、 $\phi_q^i$が $i = 1 , \dots , n-1$で $\phi_q^i \neq \rm{Id}$となり、
+  $i = n$で $\phi_q^i = \rm{Id}$となればよい。
+  $\phi_q^i : x \longmapsto \phi_q^i(x) = x^{q^i}$であるからもしこれが恒等であるとすると ${}^\forall x \in \F_{q^n} , x^{q^i} = x$であるので
+  $\F_{q^n}$は系 $(\mathrm{\ref{corl:12.7}})$の証明における $\{ x \in \Omega | x^{q^i} = x \} = \F_{q^i}$の部分集合になるから
+  元の個数を考えれば $i = n$でそのようになることがわかる。
+  したがって $\phi_q$は位数 $n$である。
+
+  $G := \langle \phi_q \rangle \subset \aut(\F_{q^n})$とする。
+  $\phi_q$の位数が $n$より $\langle \phi_q \rangle \cong \Z/n\Z$となる。
+  $L/L^G$は\rm{Artin}の定理 $(\mathrm{\ref{theo:artin}})$より
+  \rm{Galois}拡大で $[L:L^G] = |G| = n$となる。
+  また、 $L = \F_{q^n}$より $[L:\F_q] = n$なので
+  $[L:\F_q] = [L:L^G]$と $\F_q , L^G \subset L$より $\F_q = L^G$となるから
+  $\F_{q^n}/\F_q$は\rm{Galois}拡大でその\rm{Galois}群は $\Z/n\Z$と同型。
+\end{proof}
+
+\begin{corl}
+  $\F_q$の代数閉包を $\overline{\F_q}$とすると
+  $\F_q$の絶対\rm{Galois}群 $G_{\F_q} := \gal(\overline{\F_q}/\F_q)$であり、
+  このとき $G_{\F_q} \cong \hat{\Z} := \mathop{\varprojlim}\limits_{n} \Z/n\Z$となる。
+  また、 $\Z_l := \mathop{\varprojlim}\limits_{m}\Z/l^m\Z$とするとき
+  $\hat{\Z}$は $\prod_{l:素数} \Z_l$とも書ける。
+\end{corl}
+
+\begin{exam}
+  形式的冪級数体 $K := \mathbb{C}((X))$の絶対\rm{Galois}群は
+  $G_K \cong \hat{\Z}$である。
+\end{exam}
+
 \end{document}

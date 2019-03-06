@@ -44,3 +44,4 @@
 \contentsline {subsection}{\numberline {12.4}無限次Galois拡大}{56}{subsection.12.4}
 \contentsline {subsection}{\numberline {12.5}いろいろなGalois拡大 (Abel拡大)}{57}{subsection.12.5}
 \contentsline {subsubsection}{\numberline {12.5.1}有限体}{57}{subsubsection.12.5.1}
+\contentsline {subsubsection}{\numberline {12.5.2}円分拡大}{58}{subsubsection.12.5.2}

@@ -19,8 +19,8 @@ INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty
 INPUT c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty
 INPUT c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty
-INPUT mymacros.sty
-INPUT mymacros.sty
+INPUT c:/Users/1203r/Dropbox/TeX/galois_theory/mymacros.sty
+INPUT c:/Users/1203r/Dropbox/TeX/galois_theory/mymacros.sty
 INPUT c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/w32tex/share/texmf-dist/tex/latex/amsmath/amstext.sty

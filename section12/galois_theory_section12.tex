@@ -397,7 +397,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   として書けるので唯一つに定まる。
 \end{proof}
 
-\begin{prop} \label{corl:12.7}
+\begin{prop} \label{prop:finitegalois}
   $\F_{q^n}/\F_q$は\rm{Galois}拡大であり
   \begin{eqnarray*}
     \Z/n \Z & \longrightarrow & \gal(\F_{q^n}/\F_q) \\
@@ -453,12 +453,147 @@ $[K:F_p] = f , |K| = p^f = q$とする。
 
 \subsubsection{円分拡大}
 
-\begin{defi}
+\begin{defi} \label{defi:cyclotomic}
   $K:$体、 $n \in \Z^+$とする。
+
   $X^n - 1 \in K[X]$の $K$上の最小分解体を $K$の
-  \underline{$n$分拡大 $(\mathrm{n-th \  cyclotomic \  extension})$}という。
+  \underline{$n$分拡大 $(\mathrm{n-th \  cyclotomic \  extension})$}といい、
   ある $n$に対する $n$分拡大を\underline{円分拡大 $(\mathrm{cyclotomic \  extension})$}という。
   とくに $K = \Q$のとき $n$分体、円分体という。
+
+  $p \mid n$のとき、 $n = p^e m$かつ $p \nmid m$となる $e , m \in \Z^+$が存在して、 $X^n - 1 = X^{p^e m} - 1 = (X^m - 1)^{p^e}$となるので
+  $X^n - 1$の最小分解体と $X^m - 1$の最小分解体は一致するから
+  以降は $p \nmid n$で考える。
+
+  $X^n - 1 \in K[X]$が分離的であるときは定義 $(\mathrm{\ref{defi:galoispolynomial}})$より有限次\rm{Galois}拡大である。
 \end{defi}
+
+\begin{lemm} \label{lemm:pnmidm}
+  $\Char(K) = p > 0$であるとき $X^n - 1 \in K[X]$について以下は同値。
+
+  $(1)$
+  $p \nmid n$
+
+  $(2)$
+  $X^n - 1$は分離的。
+\end{lemm}
+
+\begin{proof}
+  命題 $(\mathrm{\ref{prop:9.3}})$の $(1) \Leftrightarrow (4)$より
+  $X^n - 1$は分離的 $\Leftrightarrow X^n - 1 \notin K[X^p] \Leftrightarrow p \nmid n$なので成立。
+\end{proof}
+
+\begin{rem} \label{rem:cyclotomicgalois}
+  補題 $(\mathrm{\ref{lemm:pnmidm}})$の同値からいま $p \nmid m$で考えてるので
+  $X^n - 1$は分離的だから円分拡大は\rm{Galois}拡大になる。
+\end{rem}
+
+\begin{defi} \label{defi:rootofunity}
+  $K$の元 $\zeta$が $1$の $n$乗根とは
+  ある $n \in \Z^+$に対して $\zeta^n = 1$となることである。
+  原始 $n$乗根とは $\zeta$の位数が $n$であることである。
+  つまり原始 $n$乗根は $n$乗して初めて $1$になる $K$の元のこと。
+\end{defi}
+
+\begin{lemm} \label{lemm:rootgroup}
+  $K$の代数閉包を $\Omega$とし、それに含まれる $1 (\in K)$の $n$乗根全体の集合を
+  $\mu_n (:= \{ 1の n乗根 \in \Omega \})$とする。
+  このとき $\mu_n$は $K$の積で群を成す。
+  これは原始 $n$乗根をもち、それの冪乗で任意の $\mu_n$の元を表せる。
+\end{lemm}
+
+\begin{proof}
+  結合法則は $K$より成り立つ。
+  $\zeta_i , \zeta_j \in \mu_n$に対して $(\zeta_i \zeta_j)^n = \zeta_i^n \zeta_j^n = 1 \cdot 1 = 1$より $\zeta_i , \zeta_j \in \mu_n$なので積で閉じている。
+  単位元は $1 \in K$が $1^n = 1$より存在している。
+  $\zeta_i \zeta_i^{n-1} = \zeta_i^n = 1$から $\zeta_i^{-1} = \zeta_i^{n-1}$
+  から逆元が存在するので $\mu_n$は群。
+
+  とくにこれは $K^\times$の有限部分群なので補題 $(\mathrm{\ref{lemm12.4}})$から
+  巡回群になるので生成元 $\zeta \in \mu_n$が存在する。
+  これは位数 $n$なので定義 $(\mathrm{\ref{defi:rootofunity}})$から原始 $n$乗根である。
+  したがって $|\mu_n| \leq n$と $\zeta$の位数が $n$より $|\mu_n| = n$で
+  ${}^\forall x \in \mu_n$に対して $x = \zeta^i$となる
+  $j \in \Z , 1 \leq i \leq n$が存在する。
+\end{proof}
+
+\begin{lemm} \label{lemm:rootcong1}
+  補題 $(\mathrm{\ref{lemm:rootgroup}})$の文字を用いて
+  $\mu_n \cong \Z/n\Z$が成り立つ。
+\end{lemm}
+
+\begin{proof}
+  $\zeta$は $\mu_n$の生成元なので
+  $\zeta_i := \zeta^i$とする。
+  このとき
+  \begin{eqnarray*}
+    \phi : \mu_n & \longrightarrow & \Z/n\Z \\
+    \zeta_i = \zeta^i & \longmapsto & i
+  \end{eqnarray*}
+  とすると $\zeta^i = \zeta^j$のとき $\zeta^i \zeta^{n-i} = \zeta^j \zeta^{n-i} \Leftrightarrow 1 = \zeta^{n+j-i} \Leftrightarrow 1 = \zeta^{j-i}$
+  より $j - i \in n\Z$から $j = i \in \Z/n\Z$なので写像になっている。
+  $i = j$のとき $\zeta^i = \zeta^j$より単射で
+  ${}^\forall i \in \Z/n\Z$で $1 \leq i \leq n$だから
+  $\zeta^i \in \mu_n$を取ればいいから全射。
+  また、 $\phi(\zeta^i \zeta^j) = \phi(\zeta^{i+j}) = i + j ,
+  \phi(\zeta^i) + \phi(\zeta^j) = i + j$より群準同型になっているため
+  $\mu_n \cong \Z/n\Z$である。
+\end{proof}
+
+\begin{lemm} \label{lemm:rootcong2}
+  補題 $(\mathrm{\ref{lemm:rootgroup}})$の文字を用いて
+  $\aut(\mu_n) \cong (\Z/n\Z)^*$が成り立つ。
+\end{lemm}
+
+\begin{proof}
+  $\mu_n$上で
+  \begin{eqnarray*}
+    \phi : \mu_n & \longrightarrow & \mu_n \\
+    \zeta ( := \zeta_1) & \longmapsto & \phi(\zeta) \\
+    \zeta_i & \longmapsto & \phi(\zeta_i) = \phi(\zeta)^i (1 \leq i \leq n)
+  \end{eqnarray*}
+  とすると $\mu_n$の元は $\zeta$の冪で全て表せるので $\phi$が一意に定まり、
+  準同型になる。
+  もし $\phi(\zeta)$が $\mu_n$の原始 $n$乗根デないとすると
+  ある $ 1 \leq j \leq n$で $\phi(\zeta)^j = 1$となる。
+  しかし、 $\phi$が準同型より $\phi(\zeta^j) = 1$から $\zeta^j = 1$となりこれは
+  $\zeta$が原始 $n$乗根であることに矛盾するので $\phi(\zeta)$も原始 $n$乗根である。
+  $\phi(\zeta) \in \mu_n$より $\phi(\zeta) = \zeta^a$となる $a \in \Z^+ , 1 \leq a \leq n$が存在している。
+  $a = 1$となると $a$と $n$は互いに素であるから $a \in (\Z/n\Z)^*$である。
+  $a \neq 1$のとき $a \mid m$であるとすると $ak = n$となる $k \in \Z^+ , 1 \leq k < n$があり $a = n/k$となる。
+  $\phi(\zeta)^k = (\zeta^{n/k})^k = \zeta^n = 1$となり、
+  これは $\phi(\zeta)$が原始 $n$乗根であることに矛盾するから $a \nmid m$
+  なので $a \in (\Z/n\Z)^*$
+  この $a_\phi := a$を取れば
+  \begin{eqnarray*}
+    \aut(\mu_n) & \longrightarrow & (\Z/n\Z)^* \\
+    \phi & \longmapsto & a_\phi
+  \end{eqnarray*}
+  とできてこの $a$で $\phi$が一意に定まるから全単射である。
+  $\phi \circ \varphi (\zeta) = \phi(\zeta^{a_\varphi}) = (\zeta^{a_\varphi})^{a_\phi} = \zeta^{a_\varphi + a_\phi}$と
+  $\phi(\zeta) = \zeta^{a_\phi} , \varphi(\zeta) = \zeta^{a_\varphi}$より
+  準同型になるので
+  $\aut(\mu_n) \cong (\Z/n\Z)^*$が成立する。
+\end{proof}
+
+\begin{prop}
+  $K_n$を $K$の $n$分拡大とすると\rm{Rem} $(\mathrm{\ref{rem:cyclotomicgalois}})$から $K_n/K$は\rm{Galois}なので
+  $G_n := \aut_K(K_n) = \gal(K_n/K)$とする。
+  $\zeta$を原始 $n$乗根とし、 $\sigma \in G_n$に対して
+  $\sigma(\zeta) = \zeta^{a_\sigma}$となる $a_\sigma \in \Z^+$をとる。
+  このとき
+  \begin{eqnarray*}
+    \chi_n : G_n & \longrightarrow & (\Z/n\Z)^* (\cong \aut(\mu_n)) \\
+    \sigma & \longmapsto & a_\sigma
+  \end{eqnarray*}
+  は単射群準同型となる。
+  この $\chi_n$を\underline{$n$次円分指標 \  $(\mathrm{cyclotomic \  character})$}といい\rm{Galois}表現の一種である。
+\end{prop}
+
+\begin{proof}
+  $\sigma \in G_n$に対して補題 $(\mathrm{\ref{lemm:rootcong2}})$と
+  同様に $\sigma(\zeta) = \zeta^{a_\sigma}$で一意に定まるから
+  $\chi_n$は単射群準同型である。
+\end{proof}
 
 \end{document}

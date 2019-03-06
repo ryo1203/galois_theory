@@ -598,4 +598,31 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   $K$を固定するとは限らないので全射にはならない。
 \end{proof}
 
+\begin{defi} \label{defi:cyclotomicpolynomial}
+  $K = \Q$のとき、その代数閉包を $\overline{\Q}$としてその中で考える。
+  \begin{eqnarray*}
+    \Phi_n(X) & := & \prod_{\zeta : 1の原始 n乗根} (X - \zeta) \\
+    & = & (\zeta の \Q 上の最小多項式) \\
+    & = & (X^n - 1の既約成分で \zeta)を根に持つもの
+  \end{eqnarray*}
+  としてこの $\Phi_n(X)$を\underline{第 $n$次円分多項式 $(\mathrm{cyclotomic \  polynomial})$}という。
+  このとき $X^n - 1 = \prod_{d | n} \Phi_d(X)$と
+  $\deg(\Phi_n = \varphi(n)$が成り立つ。
+  ただしここで $\varphi(n)$は\rm{Euler}の関数であって
+  $\varphi(n) = |(\Z/n\Z)^*|$を満たす。
+\end{defi}
+
+\begin{theo}
+  $(\mathrm{Gauss})$
+
+  $n$次円分多項式 $\Phi_n$と $n$次円分指標 $\chi_n$で次が成り立つ。
+
+  $(1)$
+  $\Phi_n$は $\Q[X]$において既約。
+
+  $(2)$
+  $\chi_n : \gal(\Q(\mu_n)/\Q) \longrightarrow (\Z/n\Z)^*$は同型で
+  とくに $[\Q(\mu_n):\Q] = \phi(n) (= |(\Z/n\Z)^*|)$となる。
+\end{theo}
+
 \end{document}

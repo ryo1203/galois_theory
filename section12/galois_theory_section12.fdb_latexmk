@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1552121535 "galois_theory_section12.dvi" "galois_theory_section12.pdf" "galois_theory_section12" 1552121542
-  "galois_theory_section12.dvi" 1552121535 66564 12bb7c013d899d29aba5544cffe6ebfd "latex"
+["dvipdf"] 1552142328 "galois_theory_section12.dvi" "galois_theory_section12.pdf" "galois_theory_section12" 1552142337
+  "galois_theory_section12.dvi" 1552142327 72172 6fa321e2600108e7a1244798359b1bb0 "latex"
   (generated)
   "galois_theory_section12.pdf"
-["latex"] 1552121523 "galois_theory_section12.tex" "galois_theory_section12.dvi" "galois_theory_section12" 1552121541
+["latex"] 1552142305 "galois_theory_section12.tex" "galois_theory_section12.dvi" "galois_theory_section12" 1552142337
   "../master_galois_theory.tex" 1551866600 1318 1980f350141ac4613dd3f5bd4145ace4 ""
   "c:/Users/1203r/Dropbox/TeX/galois_theory/mymacros.sty" 1551866674 1489 468439427399fbb65ed2bc4fc51fa158 ""
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
@@ -145,11 +145,11 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section12.aux" 1552121535 2659 f1588165adf5e4421da047a8cc9673ea ""
-  "galois_theory_section12.out" 1552121535 489 14cc6800b191c8f260c0f95ecf5a7d64 ""
-  "galois_theory_section12.tex" 1552121522 34916 6d4180f0ba1cd5100165767bbc83c770 ""
+  "galois_theory_section12.aux" 1552142327 2764 fd392617b75e4e8ac6c5fa639a44a13c ""
+  "galois_theory_section12.out" 1552142327 489 14cc6800b191c8f260c0f95ecf5a7d64 ""
+  "galois_theory_section12.tex" 1552142300 38067 731222427e8648dcdf9957d51f12af9f ""
   (generated)
-  "galois_theory_section12.log"
   "galois_theory_section12.aux"
-  "galois_theory_section12.dvi"
   "galois_theory_section12.out"
+  "galois_theory_section12.dvi"
+  "galois_theory_section12.log"

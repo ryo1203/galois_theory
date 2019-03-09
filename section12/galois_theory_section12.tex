@@ -662,7 +662,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   この拡大が\rm{Abel}拡大でその\rm{Galois}群 $\gal(L/K)$が $n$で零化されること。
 \end{defi}
 
-\begin{prop}
+\begin{prop} \label{prop:kummer}
   $a \in K^\times$に対して $X^n - a$の $K$の代数閉包に入っている
   ある根を $x := \sqrt[n]{a}$とする。
   このとき他の根は $x \zeta^i \  (1 \leq i \leq n-1)$であり、
@@ -707,6 +707,60 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   $\sigma' \sigma(x) = \sigma'(x \zeta^i) = \sigma'(x) \sigma'(\zeta^i) = x \zeta^j \zeta^i = x \zeta^{j + i} = x \zeta^{i + j}$より
   $\sigma \sigma'(x) = \sigma' \sigma(x)$より
   $\sigma \sigma' = \sigma' \sigma$なので\rm{Abel}である。
+\end{proof}
+
+\begin{prop} \label{prop:kummerchi}
+  命題 $(\mathrm{\ref{prop:kummer}})$の記号を用いる。
+  $\mu_n := \{ 1の n乗根 \in \barK \}$としたとき
+  \begin{eqnarray*}
+    \chi_a : G & \longrightarrow & \mu_n \\
+    \sigma & \longmapsto & \zeta^i
+  \end{eqnarray*}
+  は単射群準同型である。
+  ただし $\sigma(x) = \zeta^i x$を満たしている。
+  よって補題 $(\mathrm{\ref{lemm:rootcong1}})$から
+  $G$は $\mu_n \cong \Z/n\Z$の部分群に同型である。
+\end{prop}
+
+\begin{proof}
+  $\sigma = \tau$のとき写像として同じなので $\sigma(x) = x \zeta^i = \tau(x)$より $\chi_a$は写像になっている。
+  $\chi_a(\sigma) = 1 = \zeta^0$のとき $\sigma(x) = x \dot 1 = x$より
+  $\sigma = \mathrm{id}_K$なので $\chi_a$は単射。
+  $\sigma , \tau \in G$について $\sigma(x) = x \zeta^i , \tau(x) = x \zeta^j$とすると $\zeta \in K$から
+  $\sigma \tau(x) = \sigma(x \zeta^j) = \sigma(x) \sigma(\zeta^j) = x \zeta^i \zeta^j = x \zeta^{i + j}$より
+  $\chi_a(\sigma \tau) = \zeta^{i + j}$と
+  $\chi_a(\sigma) \chi_n(\tau) = \zeta^i \zeta^j = \zeta^{i + j}$より
+  $\chi_a$は単射準同型。
+\end{proof}
+
+\begin{corl}
+  $a$が $K^\times$で $n$の任意の約数 $d$において $d$乗元でないとする。
+  つまり剰余体 $K^\times/(K^\times)^n$において $a$の像の位数が $n$であるとする。
+  このとき $\chi_a : G \longrightarrow \mu_n$は同型になる。
+\end{corl}
+
+\begin{proof}
+  命題 $(\mathrm{\ref{prop:kummerchi}})$より $\chi_a$は単射準同型なのである $\mu_n$の部分群と同型である。
+  $\im(\chi_a) \subset \mu_n$で $\mu_n$の部分群は\rm{Lagrange}の定理から
+  $n$のある約数 $m$を位数で持つから $\chi_a \cong \mu_m$となる。
+  $f := \prod_{\gamma \in \mu_m}(X - \gamma x) \in L[X]$に任意の $\sigma \in G$
+  を作用させると $\sigma f = \prod_{\gamma \in \mu_m}(X - \sigma(\gamma x))$
+  となって $\gamma \in K$より $\sigma(x) = \gamma' x , \gamma' \in \mu_m$に対して
+  $\sigma(\gamma x) = \sigma(\gamma) \sigma(x) = \gamma \gamma' x$となる。
+  そして $\mu_m$は有限群だから $\gamma$が全体を動くとき $\gamma \gamma'$も
+  全体を動くので $\sigma f = f$となる。
+  任意の $G$の元で固定されるから $L/K$が\rm{Galois}より $f \in K[X]$である。
+  また、 $(\gamma x)^m = \gamma^m x^m = x^m$より $\gamma x$は $x^m$の
+  $m$乗根である。
+  また、ある原始 $m$乗根の冪も $\mu_m$に含まれるので $|\mu_m| = m$から
+  $\deg(f) = m$だから $X^m - x^m$の $K$の代数閉包での根はすべて $\gamma x$で
+  書けるから $f = X^m - x^m$となる。
+  $f \in K[X]$より $x^m \in K^\times$である。
+  $a^m = (x^n)^m = (x^m)^n \in (K^\times)^n$だから
+  $a$の $(K^\times)/(K^\times)^n$への像の位数が $n$であることより
+  $n \leq m$を満たす。
+  $m | n$より $m \leq n$でもあるから $n = m$より $\mu_m = \mu_n$である。
+  したがって $G \cong \mu_m = \mu_n$より $\chi_a$は同型写像。
 \end{proof}
 
 \end{document}

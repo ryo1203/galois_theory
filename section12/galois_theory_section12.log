@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  7 MAR 2019 00:15
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  9 MAR 2019 17:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,21 +726,21 @@ LaTeX Warning: Reference `prop:9.11' on page 4 undefined on input line 311.
 
 [4]
 
-LaTeX Warning: Reference `theo:7.3' on page 5 undefined on input line 380.
+LaTeX Warning: Reference `theo:7.3' on page 5 undefined on input line 383.
 
 [5]
 
-LaTeX Warning: Reference `theo:artin' on page 6 undefined on input line 434.
+LaTeX Warning: Reference `theo:artin' on page 6 undefined on input line 437.
 
 
-LaTeX Warning: Reference `prop:9.3' on page 6 undefined on input line 482.
+LaTeX Warning: Reference `prop:9.3' on page 6 undefined on input line 485.
 
-[6] [7] [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 628.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 628.
+[6] [7] [8] [9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 712.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 712.
  (./galois_theory_section12.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 628.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 628.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 712.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 712.
 Package rerunfilecheck Info: File `galois_theory_section12.out' has not changed.
 (rerunfilecheck)             Checksum: 14CC6800B191C8F260C0F95ECF5A7D64;489.
 
@@ -749,12 +749,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18999 strings out of 493272
- 372068 string characters out of 6146850
- 456725 words of memory out of 5000000
- 22619 multiletter control sequences out of 15000+600000
+ 19002 strings out of 493272
+ 372124 string characters out of 6146850
+ 456811 words of memory out of 5000000
+ 22622 multiletter control sequences out of 15000+600000
  17289 words of font info for 79 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,20n,84p,493b,458s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section12.dvi (8 pages, 59424 bytes).
+Output written on galois_theory_section12.dvi (9 pages, 66564 bytes).

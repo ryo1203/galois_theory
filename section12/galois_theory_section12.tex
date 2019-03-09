@@ -52,7 +52,7 @@
   $g = \sum_{i=1}^n a_i X^i , a_i \in L$と書ける。
   $\sigma g = \sum_{i=1}^n \sigma(a_i) X^i$とすると係数だけに $\sigma$をかけているから $(\sigma g)(X) = \prod_{y \in Y_x}(X - \sigma(y))$となる。
   ここで $y \in Y_x$より $y = \tau(x) , \tau \in \aut_K(L)$となるものが存在する。
-  $\aut_K(L)$は自己同型写像であるから $\sigma \circ \tau \in \aut_K(L)$より $\sigma(y) = \sigma \circ \tau(x)) \in Y_x$となる。
+  $\aut_K(L)$は自己同型写像であるから $\sigma \circ \tau \in \aut_K(L)$より $\sigma(y) = \sigma \circ \tau(x) \in Y_x$となる。
   ここで $Y_x$は有限集合であることと $\sigma$は体の準同型より単射なので
   それぞれの $y$は $\sigma$によりそれぞれ異なる $Y_x$の元に行く。
   したがって $(\sigma g)(X) = \prod_{y \in Y_x}(X - y) = g(X)$となるから
@@ -343,13 +343,16 @@ ${}^\forall L'/K$に $G_K$が作用していると考えられる。
 以下では $K:$有限体、 $\Char(K) = p > 0$で
 $[K:F_p] = f , |K| = p^f = q$とする。
 
+\begin{defi} \label{defi:exponent}
+  群 $G$の冪数とはそれが存在するなら $G$の元の位数の最小公倍数のことである。
+\end{defi}
+
 \begin{lemm} \label{lemm12.4}
   体 $F$の乗法群 $F^\times$の有限部分群は巡回群。
 \end{lemm}
 
 \begin{proof}
   $G$を $F^\times$の有限部分群、 $N$を $G$の冪数とする。
-  ただし、冪数とは $G$の元の位数の最小公倍数のことである。
   このとき正整数 $n_1 | n_2 | \cdots | n_r$によって
   $G \cong \Z/n_1 \Z \oplus \cdots \Z/n_r \Z$
   で $N = \mathrm{LCM} (n_1 , \dots , n_r) = n_r$となる。
@@ -603,7 +606,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   \begin{eqnarray*}
     \Phi_n(X) & := & \prod_{\zeta : 1の原始 n乗根} (X - \zeta) \\
     & = & (\zeta の \Q 上の最小多項式) \\
-    & = & (X^n - 1の既約成分で \zeta)を根に持つもの
+    & = & (X^n - 1の既約成分で \zeta を根に持つもの)
   \end{eqnarray*}
   としてこの $\Phi_n(X)$を\underline{第 $n$次円分多項式 $(\mathrm{cyclotomic \  polynomial})$}という。
   このとき $X^n - 1 = \prod_{d | n} \Phi_d(X)$と
@@ -624,5 +627,86 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   $\chi_n : \gal(\Q(\mu_n)/\Q) \longrightarrow (\Z/n\Z)^*$は同型で
   とくに $[\Q(\mu_n):\Q] = \phi(n) (= |(\Z/n\Z)^*|)$となる。
 \end{theo}
+
+\begin{rem}
+  $\Q(\mu_\infty) := \Q(1の任意の冪根)$を\underline{全円分体}という。
+  このとき
+  \begin{eqnarray*}
+    \gal(\Q(\mu_\infty)/\Q) & \cong & \mathop{\varprojlim}\limits_{n} (\Z/n\Z)^* \cong \hat{\Z}^\times
+  \end{eqnarray*}
+  となる。
+\end{rem}
+
+\begin{rem}
+  \rm{Kronecker-weber}の定理
+
+  $\Q$の任意の\rm{Abel}拡大は $\Q(\mu_\infty)$に含まれる。
+  つまり、 $\Q(\mu_\infty)$は $\Q$の最大\rm{Abel}拡大であり $\Q^{\mathrm{ab}}$とも書く。
+
+  $K = \Q(\sqrt{-m})$の場合の最大\rm{Abel}拡大は\rm{Kronecker}の青春の夢と呼ばれていてそれ以外の場合は\rm{Hilbert}の $12$\rm{th problem}として上がっている。
+\end{rem}
+
+\subsubsection{Kummer拡大}
+
+以下では $n \in \Z^+$と $K:$体とする。
+ただし $K$は $K$の代数閉包におけるある $1$の原始 $n$乗根 $\zeta$を含んでいるとする。
+とくに $\Char(K) = p > 0$のときは $p \nmid n$とする。
+
+\begin{defi} \label{defi:annihilated}
+  群 $G$が\underline{$n$で零化される $(\mathrm{annihilated \ by} \ n )$}とは
+  ${}^\forall g \in G , g^n = e$となること。
+\end{defi}
+
+\begin{defi} \label{defi:exponentdividing}
+  拡大 $L/K$が\underline{冪数 $(定義 (\mathrm{\ref{defi:exponent}}))$が $n$を割り切る\rm{Abel}拡大 $(\mathrm{abelian \ of \ exponent \ dividing} \ n )$}とは
+  この拡大が\rm{Abel}拡大でその\rm{Galois}群 $\gal(L/K)$が $n$で零化されること。
+\end{defi}
+
+\begin{prop}
+  $a \in K^\times$に対して $X^n - a$の $K$の代数閉包に入っている
+  ある根を $x := \sqrt[n]{a}$とする。
+  このとき他の根は $x \zeta^i \  (1 \leq i \leq n-1)$であり、
+  $L = K(x)$は $X^n - a$の最小分解体で $L/K$が冪数が $n$を割り切る\rm{Abel拡大}となる。
+\end{prop}
+
+\begin{proof}
+  仮定より $\zeta \in K$なので $X^n - a$のすべての根は $L = K(x)$に含まれるので
+  $X^n - a$の最小分解体になっている。
+  $X^n - a$のすべての根は $x \zeta^i$で書かれるので重根を持たないから
+  $X^n - a$は分離多項式である。
+  したがって定義 $(\mathrm{\ref{defi:galoispolynomial}})$より
+  $L/K$は有限次\rm{Galois}拡大である。
+
+  冪数が $n$を割り切ることを示す。
+  ${}^\forall \sigma \in G := \gal(L/K)$をとる。
+  $\sigma$は準同型であることと $\sigma|_K = \mathrm{id}_K$であり、
+  $a \in K^\times$から
+  $\sigma(x)^n = \sigma(x^n) = \sigma(a) = a$となる。
+  したがって $\sigma(x)$も $X^n - a$の根だから
+  $\sigma(x) = x \zeta^i$となる整数 $1 \leq i \leq n$が存在する。
+  よって合成写像 $\sigma^n$を考えると $\zeta \in K$より $\zeta^i \in K$だから
+  \begin{eqnarray*}
+    \sigma^n(x) & = & \sigma^{n-1} \circ \sigma(x) \\
+    & = & \sigma^{n-1}(x \zeta^i) \\
+    & = & \sigma^{n-1}(x) \dot \sigma^{n-1}(\zeta^i) \\
+    & = & \zeta^i \sigma^{n-1}(x) \\
+    & \vdots & \\
+    & = & (\zeta^i)^n x = x
+  \end{eqnarray*}
+  なので $\sigma^n(x) = x$である。
+  $\sigma|_K = \mathrm{id}_K$だから $\sigma^n|_K = \mathrm{id}_K$なので
+  $\sigma^n = \mathrm{id}_L$より定義 $(\mathrm{\ref{defi:annihilated}})$
+  から $G$は $n$で零化される。
+
+  $G$が\rm{Abel}であることを示す。
+  $\sigma , \sigma' \in G$をとる。
+  上記と同様に $\sigma(x) = x \zeta^i , \sigma'(x) = x \zeta^j$となる
+  $i , j$が存在する。
+  $K$上ではともに恒等写像だから $\sigma \sigma'|_K = \sigma' \sigma|_K$である。
+  また、 $\sigma \sigma'(x) = \sigma(x \zeta^j) = \sigma(x) \sigma(\zeta^j) = x \zeta^i \zeta^j = x \zeta^{i + j}$と
+  $\sigma' \sigma(x) = \sigma'(x \zeta^i) = \sigma'(x) \sigma'(\zeta^i) = x \zeta^j \zeta^i = x \zeta^{j + i} = x \zeta^{i + j}$より
+  $\sigma \sigma'(x) = \sigma' \sigma(x)$より
+  $\sigma \sigma' = \sigma' \sigma$なので\rm{Abel}である。
+\end{proof}
 
 \end{document}

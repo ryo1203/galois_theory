@@ -336,9 +336,7 @@ ${}^\forall L'/K$に $G_K$が作用していると考えられる。
   これの一般化である\rm{Grothendieck}予想もある。
 \end{theo}
 
-\subsection{いろいろなGalois拡大 (Abel拡大)}
-
-\subsubsection{有限体}
+\subsection{有限体のGalois拡大}
 
 以下では $K:$有限体、 $\Char(K) = p > 0$で
 $[K:F_p] = f , |K| = p^f = q$とする。
@@ -454,7 +452,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   $G_K \cong \hat{\Z}$である。
 \end{exam}
 
-\subsubsection{円分拡大}
+\subsection{円分拡大}
 
 \begin{defi} \label{defi:cyclotomic}
   $K:$体、 $n \in \Z^+$とする。
@@ -557,7 +555,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   \end{eqnarray*}
   とすると $\mu_n$の元は $\zeta$の冪で全て表せるので $\phi$が一意に定まり、
   準同型になる。
-  もし $\phi(\zeta)$が $\mu_n$の原始 $n$乗根デないとすると
+  もし $\phi(\zeta)$が $\mu_n$の原始 $n$乗根でないとすると
   ある $ 1 \leq j \leq n$で $\phi(\zeta)^j = 1$となる。
   しかし、 $\phi$が準同型より $\phi(\zeta^j) = 1$から $\zeta^j = 1$となりこれは
   $\zeta$が原始 $n$乗根であることに矛盾するので $\phi(\zeta)$も原始 $n$乗根である。
@@ -646,7 +644,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   $K = \Q(\sqrt{-m})$の場合の最大\rm{Abel}拡大は\rm{Kronecker}の青春の夢と呼ばれていてそれ以外の場合は\rm{Hilbert}の $12$\rm{th problem}として上がっている。
 \end{rem}
 
-\subsubsection{Kummer拡大}
+\subsection{Kummer拡大}
 
 以下では $n \in \Z^+$と $K:$体とする。
 ただし $K$は $K$の代数閉包におけるある $1$の原始 $n$乗根 $\zeta$を含んでいるとする。
@@ -761,6 +759,53 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   $n \leq m$を満たす。
   $m | n$より $m \leq n$でもあるから $n = m$より $\mu_m = \mu_n$である。
   したがって $G \cong \mu_m = \mu_n$より $\chi_a$は同型写像。
+\end{proof}
+
+\begin{theo} \label{theo:hilbertssatz90}
+  \rm{Hilberts Satz 90}
+
+  $L/K$が $n$次巡回拡大のとき $\gal(L/K)$の生成元を $\sigma$とすると
+  $\N_{L/K}(a) = 1$となる $a \in L$について
+  $a = \sigma(b)/b$となる $b \in L$が存在する。
+\end{theo}
+
+\begin{theo}
+  $K$の $n$次巡回拡大 $L$は
+  ある $a \in (K^\times \cap (L^\times)^n)/(K^\times)^n$により
+  $L = K(\sqrt[n]{a})$と書ける。
+\end{theo}
+
+\begin{proof}
+  $L/K$は $n$次巡回拡大なので $G := \gal(L/K)$としたとき
+  $G$は位数 $n$の巡回群だから $\chi : G \longrightarrow \mu_n$が
+  同型となる $\chi$が存在する。
+  $G$の生成元を $\sigma$とすると $\chi(\sigma) \in \mu_n \subset K$だから
+  例 $(\mathrm{\ref{exam:tracenorm1}})$より
+  $\N_{L/K}(\chi(\sigma)) = (\chi(\sigma))^n = 1$なので
+  \rm{Hilberts Satz 90} $(\mathrm{\ref{theo:hilbertssatz90}})$より
+  $\chi(\sigma) = \sigma(\theta)/\theta$となる $\theta \in L^\times$が存在する。
+  $(\chi(\sigma))^n = 1$より $\sigma(\theta)^n/\theta^n = 1$なので
+  $\sigma(\theta^n) = \theta^n$より $\theta^n$は $G$の生成元で固定されるので
+  $G$の任意の元で固定されるから $L/K$が\rm{Galois}より $\theta^n \in K^\times$
+  となるから $a := \theta^n$とおく。
+  $\theta \in L^\times$より $a = \theta^n \in (L^\times)^n$でもあるから
+  $a \in K^\times \cap (L^\times)^n$である。
+  $a$は任意の $\theta^n$の $n$乗根をとっていいからそれをまとめて書くために
+  $a \in K^\times \cap (L^\times)^n / (K^\times)^n$として $a$を取り直す。
+
+  $f \in K[X]$を $\theta$の最小多項式とする。
+  このとき $\chi(\sigma) \in \mu_n$から $\chi(\sigma) = \zeta^j$とおくと
+  $1 \leq i \leq n$で
+  $\sigma^i(\theta) = \sigma^{i-1}(\zeta^j \theta) = \cdots = (\zeta^j)^i \theta$となる。
+  $(\sigma^i(\theta))^n = (\zeta^{i + j} \theta)^n = \theta^n = a$より
+  $\sigma^i(\theta)$も $X^n - a \in K[X]$の根である。
+  $\sigma^i \in G$より $f(\sigma^i(\theta)) = \sigma^i(f(\theta)) = 0$より
+  $\sigma^i(\theta)$は $\theta$と同じ最小多項式を持つ。
+  したがって $\theta$を根にもつ $X^n - a$は $\zeta^{i + j} \theta$の $n$根を
+  もつからこれ以上次数が下がらないから $f = X^n - a$である。
+  そして $\theta \in L$と $\zeta \in K$なので $\zeta^{i + j} \theta \in L$なので $f$は $L[X]$で一次の積に分解されて根はすべて異なるから分離的である。
+  $[K(\theta):K] = \deg(f) = n = [L:K]$で $K(\theta) \subset L$より
+  $L = K(\theta) = K(\sqrt[n]{a})$より示された。
 \end{proof}
 
 \end{document}

@@ -42,7 +42,6 @@
 \contentsline {subsection}{\numberline {12.2}多項式のGalois群}{54}{subsection.12.2}
 \contentsline {subsection}{\numberline {12.3}IGP (Inverse Galois Problem)}{56}{subsection.12.3}
 \contentsline {subsection}{\numberline {12.4}無限次Galois拡大}{56}{subsection.12.4}
-\contentsline {subsection}{\numberline {12.5}いろいろなGalois拡大 (Abel拡大)}{57}{subsection.12.5}
-\contentsline {subsubsection}{\numberline {12.5.1}有限体}{57}{subsubsection.12.5.1}
-\contentsline {subsubsection}{\numberline {12.5.2}円分拡大}{58}{subsubsection.12.5.2}
-\contentsline {subsubsection}{\numberline {12.5.3}Kummer拡大}{60}{subsubsection.12.5.3}
+\contentsline {subsection}{\numberline {12.5}有限体のGalois拡大}{57}{subsection.12.5}
+\contentsline {subsection}{\numberline {12.6}円分拡大}{58}{subsection.12.6}
+\contentsline {subsection}{\numberline {12.7}Kummer拡大}{60}{subsection.12.7}

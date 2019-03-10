@@ -381,7 +381,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   有限次拡大より代数拡大なので定理 $(\mathrm{\ref{theo:7.3}})$から
   $\Omega$に $K$を埋め込める。
   $K$の元は系 $(\mathrm{\ref{corl:12.5}})$より $X^{q-1} - 1$の根と $0$ですべて出しつくされるので
-  $K = \{ x \in \Omega | x^{q} = x \}$と書ける。
+  $K = \{ x \in \Omega | x^q = x \}$と書ける。
   $\Omega$に埋め込めばすべてこの形に書けるので同型を除き一意に定まる。
 \end{proof}
 
@@ -785,7 +785,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   \rm{Hilberts Satz 90} $(\mathrm{\ref{theo:hilbertssatz90}})$より
   $\chi(\sigma) = \sigma(\theta)/\theta$となる $\theta \in L^\times$が存在する。
   $(\chi(\sigma))^n = 1$より $\sigma(\theta)^n/\theta^n = 1$なので
-  $\sigma(\theta^n) = \theta^n$より $\theta^n$は $G$の生成元で固定されるので
+  $\sigma(\theta^n) = \theta^n$より $\theta^n$は $G$の生成元で固定されるため、
   $G$の任意の元で固定されるから $L/K$が\rm{Galois}より $\theta^n \in K^\times$
   となるから $a := \theta^n$とおく。
   $\theta \in L^\times$より $a = \theta^n \in (L^\times)^n$でもあるから
@@ -799,13 +799,90 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   $\sigma^i(\theta) = \sigma^{i-1}(\zeta^j \theta) = \cdots = (\zeta^j)^i \theta$となる。
   $(\sigma^i(\theta))^n = (\zeta^{i + j} \theta)^n = \theta^n = a$より
   $\sigma^i(\theta)$も $X^n - a \in K[X]$の根である。
-  $\sigma^i \in G$より $f(\sigma^i(\theta)) = \sigma^i(f(\theta)) = 0$より
+  $\sigma^i \in G$より $f(\sigma^i(\theta)) = \sigma^i(f(\theta)) = 0$だから
   $\sigma^i(\theta)$は $\theta$と同じ最小多項式を持つ。
   したがって $\theta$を根にもつ $X^n - a$は $\zeta^{i + j} \theta$の $n$根を
-  もつからこれ以上次数が下がらないから $f = X^n - a$である。
-  そして $\theta \in L$と $\zeta \in K$なので $\zeta^{i + j} \theta \in L$なので $f$は $L[X]$で一次の積に分解されて根はすべて異なるから分離的である。
+  もち、これ以上次数が下がらないので $f = X^n - a$である。
+  そして $\theta \in L$と $\zeta \in K$なので $\zeta^{i + j} \theta \in L$だから $f$は $L[X]$で一次の積に分解されてその根はすべて異なるから分離的である。
   $[K(\theta):K] = \deg(f) = n = [L:K]$で $K(\theta) \subset L$より
-  $L = K(\theta) = K(\sqrt[n]{a})$より示された。
+  $L = K(\theta) = K(\sqrt[n]{a})$なので示された。
+\end{proof}
+
+\begin{fact}
+  より一般に $L/K$を $K$の冪数が $n$を割る最大\rm{Abel}拡大とすると
+  \begin{eqnarray*}
+    \gal(L/K) \times K^\times/(K^\times)^n & \longrightarrow & \mu_n \\
+    (\sigma , a) & \longmapsto & \frac{\sigma(\sqrt[n]{a})}{\sqrt[n]{a}}
+  \end{eqnarray*}
+  は双線形で一意に定まる。
+  これより
+  $\gal(L/K) \cong \Hom(K^\times/(K^\times)^n , \mu_n)$も従う。
+\end{fact}
+
+\subsection{Artin-Schreier拡大}
+
+以下では
+$\Char(K) = p > 0$とする。 $(\Leftrightarrow K \supset \F_p)$
+
+\begin{prop}
+  $K$の代数閉包 $\Omega$上で以下のように対応を定める。
+  \begin{eqnarray*}
+    \p : \Omega & \longrightarrow & \Omega \\
+    x & \longmapsto & x^p - x
+  \end{eqnarray*}
+  するとこれは $\Omega$の加法群の準同型になり、
+  とくに $\p|_K$は $K$の加法群の準同型になる。
+  その核は $\F_p$である。
+\end{prop}
+
+\begin{proof}
+  $x = y$のとき明らかに $x^p - x = y^p - y$より $\p$は写像。
+  $\p(x + y) = (x + y)^p - (x + y) = x^p + y^p -x -y = (x^p - x) + (y^p - y) = \p(x) + \p(y)$より加法群の準同型。
+  また、 $\F_p \subset K \subset \Omega$で系 $(\mathrm{\ref{corl:12.6}})$から
+  $\Omega$のなかで $\F_p = \{ x \in \Omega | x^p = x \}$と書けるから
+  $\p(x) = 0 \Leftrightarrow x^p - x = 0 \Leftrightarrow x^p = x \Leftrightarrow x \in \F_p$より $\ker(\p) = \F_p$となる。
+  $\F_p \subset K$なので $\ker(\p|_K) = \F_p$にもなる。
+\end{proof}
+
+\begin{prop}
+  ある $a \in K$に対して $\p(x) = a$となる $x \in \Omega$をとる。
+  このとき $L := K(x)$とすると $L/K$は冪数が $n$を割る\rm{Abel}拡大であり、
+  $G := \gal(L/K)$とおいたとき加法群としての $\F_p$に対して
+  \begin{eqnarray*}
+    \chi_a : G & \longrightarrow & \F_p \\
+    \sigma & \longmapsto & \sigma(x) - x
+  \end{eqnarray*}
+  という単射群準同型が存在する。
+  とくに $a \in K - \p(K) = K - \im(\p)$を取ったときは
+  $\chi_a$は全射になる。
+\end{prop}
+
+\begin{proof}
+  $\p(x) = a$となる $x$は $\p(x) = x^p - x = a$より $ f := X^p - X - a \in K[X]$の根になっている。
+  ここで $x + i , i \in \F_p$は $\F_p = \{ x \in \Omega | x^p = x \}$と
+  $\Char(K) = p > 0$なので
+  $(x + i)^p - (x + i) - a = x^p + i^p - x - i - a = x^p - x - a = 0$より
+  $f$の根になる。
+  $1 \leq i \leq p$だから $f$の根はこれで全てなので $\F_p \subset K$より
+  $L$は $f$の最小分解体であり、全て根が異なるから分離多項式なので
+  $L/K$は $p$次\rm{Galois}拡大となる。
+
+  $f(\sigma(x)) = (\sigma(x))^p - \sigma(x) - a = \sigma(x^p - x - a) = 0$
+  だから $\sigma(x)$も $f$の根であるのである $i_\sigma \in \F_p$で
+  $\sigma(x) = x + i_\sigma$となるから $\sigma(x) - x = i_\sigma \in \F_p$となる。
+  したがって $\chi_a$の終域は確かに $\F_p$になる。
+  $\sigma = \tau \in G$のとき $\sigma(x) - x = \tau(x) - x$より
+  $\chi_a$は写像になっている。
+  また、 $\chi_a(\sigma) = 0$のとき $\sigma(x) - x = 0 \Leftrightarrow \sigma(x) = x$より $\sigma = \mathrm{id}_L$より $\chi_a$は単射。
+  $\chi_a(\sigma \circ \tau) = \sigma \circ \tau(x) - x = \sigma(x + i_\tau) - x = (x + i_\sigma) + i_\tau - x = i_\sigma + i_\tau$であり、
+  $\chi_a(\sigma) + \chi_a(\tau) = (\sigma(x) - x) + (\tau(x) - x) = i_\sigma + i_\tau$より $\chi_a(\sigma \circ \tau) = \chi_a(\sigma) + \chi_a(\tau)$だから $\chi_a$は群準同型になる。
+
+  ${}^\forall \sigma \in G$に対して $\Char(K) = p > 0$から
+  $\sigma^p(x) = \sigma^{p-1}(x + i) = \sigma^{p-1}(x) + \sigma^{p-1}(i) = \sigma^{p-1}(x) + i = \cdots = x + pi = x$より $\sigma^p(x) = x$となる。
+  したがって $\sigma^n = \mathrm{id}_L$より $n$で零化される。
+  $\sigma \circ \tau(x) = \sigma(x + i_\tau) = x + i_\sigma + i_\tau$と
+  $\tau \circ \sigma(x) = \tau(x + i_\sigma) = x + i_\tau + i_\sigma$で
+  $i_\sigma + i_\tau = i_\tau + i_\sigma$より $\sigma \circ \tau = \tau \circ \sigma$なので $G$は可換だから $L/K$は冪数が $n$を割る\rm{Abel}拡大。
 \end{proof}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  10 MAR 2019 13:18
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  10 MAR 2019 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -689,22 +689,22 @@ Overfull \hbox (12.60394pt too wide) in alignment at lines 299--305
  [][][] []
  []
 
-[56] [57] [58] [59] [60] [61]) [62]
+[56] [57] [58] [59] [60] [61] [62]) [63]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
  (./master_galois_theory.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 43.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
 Package rerunfilecheck Info: File `master_galois_theory.out' has not changed.
-(rerunfilecheck)             Checksum: D3D7558E5EC5BFF27069418B33161EED;3082.
+(rerunfilecheck)             Checksum: A31C39BA5639E708947499348B8541F1;3154.
  ) 
 Here is how much of TeX's memory you used:
  19216 strings out of 493272
  376206 string characters out of 6146850
- 459775 words of memory out of 5000000
+ 459855 words of memory out of 5000000
  22781 multiletter control sequences out of 15000+600000
  20605 words of font info for 93 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  54i,20n,82p,840b,568s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on master_galois_theory.dvi (62 pages, 411200 bytes).
+Output written on master_galois_theory.dvi (63 pages, 419400 bytes).

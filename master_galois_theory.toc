@@ -45,3 +45,4 @@
 \contentsline {subsection}{\numberline {12.5}有限体のGalois拡大}{57}{subsection.12.5}
 \contentsline {subsection}{\numberline {12.6}円分拡大}{58}{subsection.12.6}
 \contentsline {subsection}{\numberline {12.7}Kummer拡大}{60}{subsection.12.7}
+\contentsline {subsection}{\numberline {12.8}Artin-Schreier拡大}{62}{subsection.12.8}

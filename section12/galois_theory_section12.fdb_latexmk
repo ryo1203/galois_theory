@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1552215521 "galois_theory_section12.dvi" "galois_theory_section12.pdf" "galois_theory_section12" 1552215530
-  "galois_theory_section12.dvi" 1552215520 84048 2fa0b3384eb1f06927ca4e9a50eaf864 "latex"
+["dvipdf"] 1552282201 "galois_theory_section12.dvi" "galois_theory_section12.pdf" "galois_theory_section12" 1552282209
+  "galois_theory_section12.dvi" 1552282201 93584 93e920de27e4bcbccaefda56c779088a "latex"
   (generated)
   "galois_theory_section12.pdf"
-["latex"] 1552215501 "galois_theory_section12.tex" "galois_theory_section12.dvi" "galois_theory_section12" 1552215530
+["latex"] 1552282188 "galois_theory_section12.tex" "galois_theory_section12.dvi" "galois_theory_section12" 1552282209
   "../master_galois_theory.tex" 1551866600 1318 1980f350141ac4613dd3f5bd4145ace4 ""
   "c:/Users/1203r/Dropbox/TeX/galois_theory/mymacros.sty" 1552210365 1521 238b444dfbffd0692bd603ce998c305b ""
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
@@ -144,12 +144,12 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section12.aux" 1552215520 2790 3259f175fd59796547f6df7874b4dcec ""
-  "galois_theory_section12.out" 1552215520 668 23014f35950e6c05ef0533f62998e6fc ""
-  "galois_theory_section12.tex" 1552215501 44951 71c7db84469727fd405f92040cb371fc ""
+  "galois_theory_section12.aux" 1552282201 3017 38cd9f7a91f8ab048ff313ee35b08871 ""
+  "galois_theory_section12.out" 1552282201 668 23014f35950e6c05ef0533f62998e6fc ""
+  "galois_theory_section12.tex" 1552282183 50301 d14e607ef240c25eb29d6a7cfde9a1ec ""
   (generated)
   "galois_theory_section12.aux"
-  "galois_theory_section12.dvi"
-  "galois_theory_section12.out"
-  "galois_theory_section12.log"
   "C:/Users/1203r/AppData/Local/Temp/galois_theory_section12.log"
+  "galois_theory_section12.log"
+  "galois_theory_section12.out"
+  "galois_theory_section12.dvi"

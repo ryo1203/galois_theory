@@ -656,8 +656,10 @@ $[K:F_p] = f , |K| = p^f = q$とする。
 \end{defi}
 
 \begin{defi} \label{defi:exponentdividing}
-  拡大 $L/K$が\underline{冪数 $(定義 (\mathrm{\ref{defi:exponent}}))$が $n$を割り切る\rm{Abel}拡大 $(\mathrm{abelian \ of \ exponent \ dividing} \ n )$}とは
+  拡大 $L/K$が\underline{冪数 $(定義 (\mathrm{\ref{defi:exponent}}))$が $n$を割り切る \rm{Abel}拡大 $(\mathrm{abelian \ of \ exponent \ dividing} \ n )$}とは
   この拡大が\rm{Abel}拡大でその\rm{Galois}群 $\gal(L/K)$が $n$で零化されること。
+  冪数は元の位数の最小公倍数であったので任意の元は冪数乗すると単位元になるため
+  $n$で零化されるときその冪数は文字通り $n$を割り切っている。
 \end{defi}
 
 \begin{prop} \label{prop:kummer}
@@ -665,6 +667,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   ある根を $x := \sqrt[n]{a}$とする。
   このとき他の根は $x \zeta^i \  (1 \leq i \leq n-1)$であり、
   $L = K(x)$は $X^n - a$の最小分解体で $L/K$が冪数が $n$を割り切る\rm{Abel拡大}となる。
+  このような拡大 $L/K$を\rm{Kummer}拡大という。
 \end{prop}
 
 \begin{proof}
@@ -769,7 +772,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
   $a = \sigma(b)/b$となる $b \in L$が存在する。
 \end{theo}
 
-\begin{theo}
+\begin{theo} \label{theo:12.11}
   $K$の $n$次巡回拡大 $L$は
   ある $a \in (K^\times \cap (L^\times)^n)/(K^\times)^n$により
   $L = K(\sqrt[n]{a})$と書ける。
@@ -809,7 +812,7 @@ $[K:F_p] = f , |K| = p^f = q$とする。
 \end{proof}
 
 \begin{fact}
-  より一般に $L/K$を $K$の冪数が $n$を割る最大\rm{Abel}拡大とすると
+  より一般に $L/K$を $K$の冪数が $n$を割り切る最大\rm{Abel}拡大とすると
   \begin{eqnarray*}
     \gal(L/K) \times K^\times/(K^\times)^n & \longrightarrow & \mu_n \\
     (\sigma , a) & \longmapsto & \frac{\sigma(\sqrt[n]{a})}{\sqrt[n]{a}}
@@ -844,9 +847,66 @@ $\Char(K) = p > 0$とする。 $(\Leftrightarrow K \supset \F_p)$
   $\F_p \subset K$なので $\ker(\p|_K) = \F_p$にもなる。
 \end{proof}
 
-\begin{prop}
+\begin{lemm} \label{lemm:reducibleartinshreier}
+  $a \in K$に対して
+  $f := X^p - x - a \in K[X]$とおいてそのある根を $x \in \Omega$とおく。
+  このとき $f$が $K$上で可約であることと $a \in \p(K)$は必要十分である。
+\end{lemm}
+
+\begin{proof}
+  $a \in \p(K) \Leftrightarrow {}^\exists \alpha \in K , \alpha^p - \alpha = a = x^p - x$から $\Char(K) = p > 0$より
+  $(x - \alpha)^p = x - \alpha$なので $\F_p = \{ x \in \Omega | x^p = x \}$から $x - \alpha \in \F_p \subset K$である。
+  $\alpha \in K$より $(x - \alpha) + \alpha = x \in K$となる。
+  また、 $x \in K$のとき $x^p - x - a = 0 \Leftrightarrow a = x^p - x$より
+  $a \in \p(K)$となる。
+  したがって $a \in \p(K) \Leftrightarrow x \in K$が成り立つので
+  $f$が $K$上可約 $\Leftrightarrow x \in K$を示せば良い。
+
+  $g(X) \in K[X]$を $x$の $K$上の最小多項式とすると $f(x) = 0$と $\deg(g)$の最小生から $g(X) | f(X)$である。
+  $f(X) = X^p - X - a$はその形から $f(X) = f(X+1)$なので
+  $f(X) = f(X+1) = \cdots = f(X+i) = \cdots = f(X+(p-1)) , i \in \F_p$となっている。
+  $f$が $p$次であることと ${}^\forall i \in F_p$に対して
+  $0 = f(x) = f(x+i)$より $x + i$も $f$の根になっているから
+  $f$の根はすべて $x + i$の形で書ける。
+
+  ここで $g(X) = g(X+1)$のとき同様に $g(X) = g(X+1) = \cdots = g(X+i) = \cdots = g(X+(p-1))$である。
+  $g(X)$は $x$を根に持っていたから $0 = g(x) = g(x+i)$より
+  $x + i$も $g(X)$の根になるので少なくとも $p$個の相異なる根を持っていて
+  $g|f$から $\deg(g) \leq p$なので $\deg(g) = p$となり、
+  $g(X) = \prod_{i=0}^{p-1}(X - (x + i))$と書ける。
+  $f$の根もすべて $x + i$であるから $g = f$となる。
+  したがって $g$が最小多項式なので $f$は既約。
+  対偶をとって $f$が可約 $\Rightarrow g(X) \neq g(X+1)$が言えた。
+
+  $g(X) \neq g(X+1)$のときある $k \in \F_p$で $g(X) = g(X+k)$となったとする。
+  このとき $0 \leq l \leq p-1$で $g(X) = g(X+k) = g(X+2k) = \cdots = g(X+lk) = \cdots = g(X+(p-1)k)$となる。
+  $lk$は $l$によってそれぞれ異なり、それが $p$個あるのである $l$で
+  $g(X+1) = g(X+lk)$となるものが存在する。
+  これは $g(X) \neq g(X+1) (= g(X+lk))$に矛盾するので
+  $g(X) , g(X+1) , \dots , g(X+(p-1))$は相異なる。
+  $g(X)|f(X)$から任意の $i \in \F_p$で $g(X+i)|f(X+i) = f(X)$となるから
+  $\prod_{i=0}^{p-1}g(X+i)|f(X)$となり、 $g(X+i)$がそれぞれ異なるから
+  $f(X)$は可約。
+  したがって $g(X) \neq g(X+1) \Rightarrow f$が可約が言えた。
+
+  とくにこのとき $\deg(f) = p$なので $f = \prod_{i=0}^{p-1}g(X+i)$で
+  $g(X)$は $x$の $K$上の最小多項式であったから
+  $\deg(g(X+i)) \leq 1$だから $g(X+i)$は一次式であり、
+  $g(X) = X - x \in K[X]$となる。
+  よって $f = \prod_{i=0}^{p-1}(X - (x + i))$と $K$上で一次式の積に分解できて
+  $x \in K$となる。
+  したがって $g(X) \neq g(X+1) \Rightarrow f$が可約 $\Rightarrow f = \prod_{i=0}^{p-1}(X - (x + i))$と分解できる $\Rightarrow x \in K$
+  が言えた。
+
+  $x \in K$のとき $x + i \in K$だから $f$は $K$上で $f = \prod_{i=0}^{p-1}(X - (x + i))$と分解できて $x$の最小多項式 $g \in K[X]$は
+  $g(X) = X - x$となるから $g(X) \neq g(X+1)$である。
+  したがって逆も言えて
+  $f$が可約 $\Leftrightarrow x \in K$となるので $x \in K \Leftrightarrow a \in \p(K)$より示された。
+\end{proof}
+
+\begin{prop} \label{prop:artinshreier}
   ある $a \in K$に対して $\p(x) = a$となる $x \in \Omega$をとる。
-  このとき $L := K(x)$とすると $L/K$は冪数が $n$を割る\rm{Abel}拡大であり、
+  このとき $L := K(x)$とすると $L/K$は冪数が $n$を割り切る\rm{Abel}拡大であり、
   $G := \gal(L/K)$とおいたとき加法群としての $\F_p$に対して
   \begin{eqnarray*}
     \chi_a : G & \longrightarrow & \F_p \\
@@ -854,7 +914,8 @@ $\Char(K) = p > 0$とする。 $(\Leftrightarrow K \supset \F_p)$
   \end{eqnarray*}
   という単射群準同型が存在する。
   とくに $a \in K - \p(K) = K - \im(\p)$を取ったときは
-  $\chi_a$は全射になる。
+  $\chi_a$は全射になり、 $L/K$は $p$次巡回拡大になる。
+  このような拡大 $L/K$を\rm{Artin-Shreier}拡大という。
 \end{prop}
 
 \begin{proof}
@@ -879,10 +940,31 @@ $\Char(K) = p > 0$とする。 $(\Leftrightarrow K \supset \F_p)$
 
   ${}^\forall \sigma \in G$に対して $\Char(K) = p > 0$から
   $\sigma^p(x) = \sigma^{p-1}(x + i) = \sigma^{p-1}(x) + \sigma^{p-1}(i) = \sigma^{p-1}(x) + i = \cdots = x + pi = x$より $\sigma^p(x) = x$となる。
-  したがって $\sigma^n = \mathrm{id}_L$より $n$で零化される。
+  したがって $\sigma^n = \mathrm{id}_L$より $p$で零化される。
   $\sigma \circ \tau(x) = \sigma(x + i_\tau) = x + i_\sigma + i_\tau$と
   $\tau \circ \sigma(x) = \tau(x + i_\sigma) = x + i_\tau + i_\sigma$で
-  $i_\sigma + i_\tau = i_\tau + i_\sigma$より $\sigma \circ \tau = \tau \circ \sigma$なので $G$は可換だから $L/K$は冪数が $n$を割る\rm{Abel}拡大。
+  $i_\sigma + i_\tau = i_\tau + i_\sigma$より $\sigma \circ \tau = \tau \circ \sigma$なので $G$は可換だから $L/K$は冪数が $p$を割り切る\rm{Abel}拡大。
+  $p$が素数より冪数が $1$か $p$だから $G$は単位元のみの位数 $1$の群になるか
+  位数 $p$の元を持つ巡回群になるかである。
+
+  $a \in K - \p(K)$を取ったとき補題 $(\mathrm{\ref{lemm:reducibleartinshreier}})$の否定から
+  $f = X^p - X - a$は既約で $f$は $x$の最小多項式である。
+  $L/K$は\rm{Galois}より $|G| = [L:K] = \deg(f) = p = |\F_p|$である。
+  $\chi_a$が単射なので $|G| = |\F_p|$より全射になるから
+  $\chi_a$は同型になる。
+  $\F_p$は加法群として巡回群なので $L/K$は $p$次の巡回拡大になる。
 \end{proof}
+
+\begin{theo} \label{theo:12.12}
+  $\F_p$を含む体 $K$の $p$次巡回拡大はすべて命題 $(\mathrm{\ref{prop:artinshreier}})$のようにして作られる。
+\end{theo}
+
+\begin{fact}
+  $\F_p$を含む体 $K$について $p \nmid n$となる $n$次巡回拡大は
+  定理 $(\mathrm{\ref{theo:12.11}})$のようにして、
+  $p$次巡回拡大は定理 $(\mathrm{\ref{theo:12.12}})$のようにして
+  作られる。
+  $p$の冪次については $K$の加法群の代わりに\rm{Witt}ベクトルの群を考える\rm{Artin-Shreier-Witt}理論を用いて作られる。
+\end{fact}
 
 \end{document}

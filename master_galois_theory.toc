@@ -46,3 +46,4 @@
 \contentsline {subsection}{\numberline {12.6}円分拡大}{58}{subsection.12.6}
 \contentsline {subsection}{\numberline {12.7}Kummer拡大}{60}{subsection.12.7}
 \contentsline {subsection}{\numberline {12.8}Artin-Schreier拡大}{62}{subsection.12.8}
+\contentsline {section}{\numberline {13}Galois理論の基本定理の別の定式化}{65}{section.13}

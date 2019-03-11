@@ -1,12 +1,21 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  11 MAR 2019 14:38
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  11 MAR 2019 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**master_galois_theory.tex
-(./master_galois_theory.tex
+**galois_theory_section13.tex
+(./galois_theory_section13.tex
 pLaTeX2e <2018-05-20> (based on LaTeX2e <2018-04-01> patch level 5)
-(c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+(c:/w32tex/share/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2012/05/23 Federico Garcia
+(c:/w32tex/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks15
+\verbatim@line=\toks16
+\verbatim@in@stream=\read1
+)
+Preamble taken from file `../master_galois_theory'
+(../master_galois_theory.tex (c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2018/03/11 jsclasses (okumura, texjporg)
 \jsc@mpt=\dimen118
 \jsc@mmm=\dimen119
@@ -58,7 +67,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
  (c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks17
 \ex@=\dimen124
 )) (c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -86,21 +95,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \dotsspace@=\muskip10
 \c@parentequation=\count99
 \dspbrk@lvl=\count100
-\tag@help=\toks16
+\tag@help=\toks18
 \row@=\count101
 \column@=\count102
 \maxfields@=\count103
-\andhelp@=\toks17
+\andhelp@=\toks19
 \eqnshift@=\dimen127
 \alignsep@=\dimen128
 \tagshift@=\dimen129
 \tagwidth@=\dimen130
 \totwidth@=\dimen131
 \lineht@=\dimen132
-\@envbody=\toks18
+\@envbody=\toks20
 \multlinegap=\skip45
 \multlinetaggap=\skip46
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 ) (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
@@ -113,19 +122,19 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (c:/w32tex/share/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks20
-\thm@bodyfont=\toks21
-\thm@headfont=\toks22
-\thm@notefont=\toks23
-\thm@headpunct=\toks24
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
 \thm@preskip=\skip47
 \thm@postskip=\skip48
 \thm@headsep=\skip49
-\dth@everypar=\toks25
+\dth@everypar=\toks27
 ) (c:/w32tex/share/texmf-dist/tex/latex/braket/braket.sty) (c:/w32tex/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2018/03/22 version 4.13 text color boxes
  (c:/w32tex/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks26
+\pgfutil@everybye=\toks28
 \pgfutil@tempdima=\dimen133
 \pgfutil@tempdimb=\dimen134
  (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -141,7 +150,7 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks27
+\KV@toks@=\toks29
 ) (c:/w32tex/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
  (c:/w32tex/share/texmf-dist/tex/latex/graphics/trig.sty
@@ -149,19 +158,19 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ) (c:/w32tex/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvipdfmx.def on input line 99.
- (c:/w32tex/share/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
-File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
+Package graphics Info: Driver file: dvips.def on input line 99.
+ (c:/w32tex/share/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 ) (c:/w32tex/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
  (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks28
-\pgfkeys@temptoks=\toks29
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
  (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks30
+\pgfkeys@tmptoks=\toks32
 ))
 \pgf@x=\dimen137
 \pgf@y=\dimen138
@@ -172,26 +181,25 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \pgf@xc=\dimen143
 \pgf@yc=\dimen144
 \w@pgf@writea=\write3
-\r@pgf@reada=\read1
+\r@pgf@reada=\read2
 \c@pgf@counta=\count104
 \c@pgf@countb=\count105
 \c@pgf@countc=\count106
 \c@pgf@countd=\count107
-\t@pgf@toka=\toks31
-\t@pgf@tokb=\toks32
-\t@pgf@tokc=\toks33
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
  (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-dvipdfmx.def
- (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
-File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
+Driver file for pgf: pgfsys-dvips.def
+ (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvips.def
+File: pgfsys-dvips.def 2014/07/09  (rcs-revision 1.25)
 
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-)
-\pgfsys@objnum=\count108
-)) (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-postscript.def
+File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
+\pgf@objectcount=\count108
+))) (c:/w32tex/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count109
 \pgfsyssoftpath@bigbuffer@items=\count110
@@ -202,7 +210,7 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (c:/w32tex/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: dvipdfmx.def on input line 225.
+Package xcolor Info: Driver file: dvips.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
@@ -217,9 +225,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@dimen=\dimen145
 \pgfmath@count=\count111
 \pgfmath@box=\box46
-\pgfmath@toks=\toks34
-\pgfmath@stack@operand=\toks35
-\pgfmath@stack@operation=\toks36
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
 ) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
 (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count112
@@ -298,12 +306,7 @@ Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepend=\dimen171
 ) (c:/w32tex/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (c:/w32tex/share/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks37
-\verbatim@line=\toks38
-\verbatim@in@stream=\read2
-) (c:/w32tex/share/texmf-dist/tex/latex/environ/environ.sty
+)) (c:/w32tex/share/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
  (c:/w32tex/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
@@ -377,8 +380,8 @@ Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
 \mc@col@check@num=\count127
 ) (c:/w32tex/share/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
-) (c:/w32tex/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/w32tex/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+) (c:/w32tex/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/w32tex/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/w32tex/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/w32tex/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
  (c:/w32tex/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen181
@@ -456,6 +459,11 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
 ) (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
@@ -468,8 +476,7 @@ Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count139
-
-(c:/w32tex/share/texmf-dist/tex/latex/config/hyperref.cfg
+ (c:/w32tex/share/texmf-dist/tex/latex/config/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4509.
@@ -530,30 +537,35 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 ))
 \c@defi=\count149
 \c@plob=\count150
- (./master_galois_theory.aux)
-\openout1 = `master_galois_theory.aux'.
+))
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Warning: Unused global option(s):
+    [dvipdfmx].
+
+(./galois_theory_section13.aux)
+\openout1 = `galois_theory_section13.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
  ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box91
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 2.
  (c:/w32tex/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (c:/w32tex/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -561,152 +573,39 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
- (./master_galois_theory.out) (./master_galois_theory.out)
+LaTeX Info: Redefining \ref on input line 2.
+LaTeX Info: Redefining \pageref on input line 2.
+LaTeX Info: Redefining \nameref on input line 2.
+ (./galois_theory_section13.out) (./galois_theory_section13.out)
 \@outlinefile=\write6
-\openout6 = `master_galois_theory.out'.
+\openout6 = `galois_theory_section13.out'.
 
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 25.
+(Font)              scaled to size 13.83836pt on input line 6.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 25.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 25.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 25.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 25.
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
- (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
-
-(c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 25.
- (c:/w32tex/share/texmf-dist/tex/latex/jknappen/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
+(Font)              scaled to size 13.83836pt on input line 6.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 26.
+(Font)              scaled to size 13.83836pt on input line 6.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 26.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 26.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 26.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 26.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 26.
- (./master_galois_theory.toc
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 3.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 3.
+(Font)              scaled to size 13.83836pt on input line 6.
  [1
 
-])
-\tf@toc=\write7
-\openout7 = `master_galois_theory.toc'.
-
- [2] (./section1/galois_theory_section1.tex
-LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <10> not available
-(Font)              Font shape `JT1/mc/m/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 21.
-LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <10> not available
-(Font)              Font shape `JY1/mc/m/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 21.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 22.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 22.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 22.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
- (c:/w32tex/share/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
- [3
-
-] [4]) (./section2/galois_theory_section2.tex
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 8.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 8.
- [5
-
 ]
-Overfull \hbox (4.99834pt too wide) in alignment at lines 125--130
- [][][] []
- []
-
-[6] [7] [8] [9] [10] [11]) (./section3/galois_theory_section3.tex [12
-
-] [13]) (./section4/galois_theory_section4.tex [14
-
-] [15] [16]) (./section5/galois_theory_section5.tex [17
-
-]
-LaTeX Font Info:    Font shape `JT1/mc/bx/it' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 142.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 142.
-LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 142.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 142.
- [18]
-LaTeX Font Info:    Try loading font information for U+euf on input line 155.
- (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [19]) (./section6/galois_theory_section6.tex [20
-
-] [21] [22] [23]) (./section7/galois_theory_section7.tex [24
-
-] [25] [26]) (./section8/galois_theory_section8.tex [27
-
-] [28] [29] [30] [31] [32] [33] [34] [35]) (./section9/galois_theory_section9.tex [36
-
-] [37] [38] [39] [40] [41] [42] [43]) (./section10/galois_theory_section10.tex [44
-
-] [45] [46] [47] [48] [49]) (./section11/galois_theory_section11.tex [50
-
-] [51] [52]) (./section12/galois_theory_section12.tex [53
-
-] [54] [55]
-Overfull \hbox (12.60394pt too wide) in alignment at lines 299--305
- [][][] []
- []
-
-[56] [57] [58] [59] [60] [61] [62] [63] [64]) (./section13/galois_theory_section13.tex) [65
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
- (./master_galois_theory.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 44.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
-Package rerunfilecheck Info: File `master_galois_theory.out' has not changed.
-(rerunfilecheck)             Checksum: 081C99139006DAEEBF0A9DFAE79F7529;3236.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 10.
+ (./galois_theory_section13.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 10.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10.
+Package rerunfilecheck Info: File `galois_theory_section13.out' has not changed.
+(rerunfilecheck)             Checksum: 2AF008BBEFA56D67D188CBC3B2EA0F41;135.
  ) 
 Here is how much of TeX's memory you used:
- 19224 strings out of 493272
- 376386 string characters out of 6146850
- 460038 words of memory out of 5000000
- 22785 multiletter control sequences out of 15000+600000
- 20605 words of font info for 93 fonts, out of 8000000 for 9000
+ 18887 strings out of 493272
+ 370340 string characters out of 6146850
+ 444291 words of memory out of 5000000
+ 22538 multiletter control sequences out of 15000+600000
+ 9539 words of font info for 42 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 54i,20n,82p,840b,568s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 63i,5n,84p,493b,339s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on master_galois_theory.dvi (65 pages, 429708 bytes).
+Output written on galois_theory_section13.dvi (1 page, 5684 bytes).

@@ -1,0 +1,153 @@
+\documentclass[../master_galois_theory]{subfiles}
+\begin{document}
+
+\setcounter{section}{13}
+
+\section{Galois cohomology}
+
+\subsection{群のcohomology}
+
+\begin{defi} \label{defi:cochain}
+  $G:$群、 $M:$加法 $(\mathrm{Abel})$群で
+  $G$は $M$に加群としての作用をしているとする。
+  ここで以下のように $G^n$から $M$への写像全体の集合を
+  $C^n (n \in \Z_{\geq 0})$として定める。
+  \begin{eqnarray*}
+    C^n = C^n(G,M) := \{ f : G^n \longrightarrow M \} = \map(G^n,M)
+  \end{eqnarray*}
+  ただし $G^0 = \{ e \}$と考えることで $C^0 := M$と定める。
+  この $C^n$の各元を\underline{ $n$コチェイン $(\mathrm{cochain})$}という。
+  $C^n$上へは $f , g \in C^n$に対して
+  $(f+g)(x) := f(x) + g(x)$と演算を定めることで $C^n$は加法群となる。
+\end{defi}
+
+\begin{defi} \label{defi:coboundary}
+  $C^n$から $C^{n+1}$への以下のように定まる写像 $\partial$を考える。
+  \begin{eqnarray*}
+    \partial = \partial^n : C^n & \longrightarrow & C^{n+1} \\
+    f & \longmapsto & \partial f
+  \end{eqnarray*}
+  ここで $\partial f : G^{n+1} \longrightarrow M$は
+  $G$が $M$へ作用していることに注意して
+  \begin{eqnarray*}
+    \partial f(g_1 , \dots , g_{n+1}) & = & g_1 f(g_2 , \dots , g_{n+1}) \\
+    & + & \sum_{i=1}^n (-1)^i f(g_1 , \dots , g_i g_{i+1} , \dots , g_{n+1}) \\
+    & + & (-1)^{n+1} f(g_1 , \dots , g_n)
+  \end{eqnarray*}
+と定める。
+このときこの $\partial (= \partial^n) : C^n(G,M) \longrightarrow C^{n+1}(G,M)$は加法群の準同型になり、
+これを\underline{$n$次のコバウンダリー $(双対境界)$作用素 $(\mathrm{coboundary \  operator})$}とよぶ。
+\end{defi}
+
+\begin{prop}
+  コバウンダリー作用素 $\partial$に対して $\partial^{n+1} \circ \partial^n = 0$が成り立つ。
+\end{prop}
+
+\begin{proof}
+  $4 \leq n$でまず考える。
+
+  $(\partial^{n+1} \circ \partial^n)(f)(g_1 , \dots , g_{n+2}) = \partial^{n+1}(\partial^n f)(g_1 , \dots , g_{n+2})$なので
+  $f' := \partial^n f$として $\partial^{n+1}f'(g_1 , \dots , g_{n+2})$は
+  \begin{eqnarray*}
+    \partial^{n+1}f'(g_1 , \dots , g_{n+2}) & = & g_1 f'(g_2 , \dots , g_{n+2}) \\
+    & + & \sum_{i=1}^{n+1} (-1)^i f'(g_1 , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+    & + & (-1)^{n+1} f'(g_1 , \dots , g_{n+1})
+  \end{eqnarray*}
+  である。
+  $f'(g_1 , \dots , g_i g_{i+1} , \dots , g_{n+2}) = \partial^n f(g_1 , \dots g_i g_{i+1} , \dots , g_{n+2})$を $i$の値によって計算する。
+
+  ・ $i = 1$のとき
+  \begin{eqnarray*}
+    \partial^n f(g_1 g_2 , \dots ,g_{n+2}) & = & g_1 g_2 f(g_3 , \dots , g_{n+2}) \\
+    & + & (-1)^1 f((g_1 g_2) g_3 , g_4 , \dots , g_{n+2}) \\
+    & + & \sum_{k=3}^{n+1} (-1)^{k-1} f(g_1 g_2 , g_3 , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+    & + & (-1)^{n+1} f(g_1 g_2 , g_3 , \dots , g_n)
+  \end{eqnarray*}
+  ・ $i = 2$のとき
+  \begin{eqnarray*}
+    \partial^n f(g_1 , g_2 g_3 , g_4 , \dots , g_{n+2}) & = & g_1 f(g_2 g_3 , g_4 , \dots , g_{n+2}) \\
+    & + & (-1)^1 f(g_1 (g_2 g_3) , g_4 , \dots , g_{n+2}) \\
+    & + & (-1)^2 f(g_1 , (g_2 g_3) g_4 , g_5 , \dots , g_{n+2}) \\
+    & + & \sum_{k=4}^{n+1} (-1)^{k-1} f(g_1 , g_2 g_3 , g_4 , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+    & + & (-1)^{n+1} f(g_1 , g_2 g_3 , g_4 , \dots , g_{n+1})
+  \end{eqnarray*}
+  ・ $3 \leq i \leq n-1$のとき
+  \begin{eqnarray*}
+    \partial^n f(g_1 , \dots , g_i g_{i+1} , \dots , g_{n+2}) & = & g_1 f(g_2 , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+    & + & \sum_{k=1}^{i-2} (-1)^k f(g_1 , \dots , g_k g_{k+1} , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+    & + & (-1)^{i-1} f(g_1 , \dots , g_{i-2} , g_{i-1} (g_i g_{i+1}) , g_{i+2} , \dots , g_{n+2}) \\
+    & + & (-1)^i f(g_1 , \dots , g_{i-1} , (g_i g_{i+1}) g_{i+2} , g_{i+3} , \dots , g_{n+2}) \\
+    & + & \sum_{k=i+2}^{n+1} (-1)^{k-1} f(g_1 , \dots , g_i g_{i+1} , \dots , g_k g_{k+1} , \dots , g_{n+2}) \\
+    & + & (-1)^{n+1} f(g_1 , \dots , g_i g_{i+1} , \dots , g_{n+1})
+  \end{eqnarray*}
+  ・ $i = n$のとき
+  \begin{eqnarray*}
+    \partial^n f(g_1 , \dots , g_n g_{n+1} , g_{n+2}) & = & g_1 f(g_2 , \dots , g_n g_{n+1} , g_{n+2}) \\
+    & + & \sum_{k=1}^{n-2} (-1)^k f(g_1 , \dots , g_k g_{k+1} , \dots , g_n g_{n+1} , g_{n+2}) \\
+    & + & (-1)^{n-1} f(g_1 , \dots , g_{n-1} (g_n g_{n+1}) , g_{n+2}) \\
+    & + & (-1)^n f(g_1 , \dots , g_{n-1} , (g_n g_{n+1}) g_{n+2}) \\
+    & + & (-1)^{n+1} f(g_1 , \dots , g_{n-1} , g_n g_{n+1})
+  \end{eqnarray*}
+  ・ $i = n+1$のとき
+  \begin{eqnarray*}
+    \partial^n f(g_1 , \dots , g_{n+1} g_{n+2}) & = & g_1 f(g_2 , \dots , g_{n+1} g_{n+2}) \\
+    & + & \sum_{k=1}^{n-1} (-1)^k f(g_1 , \dots , g_k g_{k+1} , \dots , g_n , g_{n+1} g_{n+2}) \\
+    & + & (-1)^n f(g_1 , \dots , g_{n-1} , g_n (g_{n+1} g_{n+2})) \\
+    & + & (-1)^{n+1} f(g_1 , \dots , g_n)
+  \end{eqnarray*}
+となる。
+
+また、 $g_1 f'(g_2 , \dots , g_{n+2})$と $(-1)^{n+2} f'(g_1 , \dots , g_{n+1})$は以下のようになる。
+\begin{eqnarray*}
+  g_1 \partial^n f(g_2 , \dots , g_{n+2}) & = & g_1 (g_2 f(g_3 , \dots , g_{n+2}) \\
+  & + & \sum_{i=2}^{n+1} (-1)^{i-1} f(g_2 , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+  & + & (-1)^{n+1} f(g_2 , \dots , g_{n+1}) ) \\
+  (-1)^{n+2} \partial^n f(g_1 , \dots , g_{n+1}) & = & (-1)^{n+2} (g_1 f(g_2 , \dots , g_{n+1}) \\
+  & + & \sum_{i=1}^n (-1)^i f(g_1 , \dots , g_i g_{i+1} , \dots , g_{n+1}) \\
+  & + & (-1)^{n+1} f(g_1 , \dots , g_n) )
+\end{eqnarray*}
+
+これを $\partial^{n+1}(\partial^n f)(g_1 , \dots , g_{n+2})$の式に代入すると
+\begin{eqnarray*}
+  \partial^{n+1}(\partial^n f)(g_1 , \dots , g_{n+2}
+  % g_1 f'(g_2 , \dots , g_{n+2})
+  & = & \{ g_1 g_2 f(g_3 , \dots , g_{n+2}) \\
+  & + & \sum_{i=2}^{n+1} (-1)^{i-1} g_1 f(g_2 , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+  & + & (-1)^{n+1} g_1 f(g_2 , \dots , g_{n+1}) \} \\
+  % i = 1
+  & + & (-1)^1 \{ g_1 g_2 f(g_3 , \dots , g_{n+2}) \\
+  & + & (-1)^1 f((g_1 g_2) g_3 , g_4 , \dots , g_{n+2}) \\
+  & + & \sum_{k=3}^{n+1} (-1)^{k-1} f(g_1 g_2 , g_3 , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+  & + & (-1)^{n+1} f(g_1 g_2 , g_3 , \dots , g_n) \} \\
+  % i = 2
+  & + & (-1)^2 \{ g_1 f(g_2 g_3 , g_4 , \dots , g_{n+2}) \\
+  & + & (-1)^1 f(g_1 (g_2 g_3) , g_4 , \dots , g_{n+2}) \\
+  & + & (-1)^2 f(g_1 , (g_2 g_3) g_4 , g_5 , \dots , g_{n+2}) \\
+  & + & \sum_{k=4}^{n+1} (-1)^{k-1} f(g_1 , g_2 g_3 , g_4 , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+  & + & (-1)^{n+1} f(g_1 , g_2 g_3 , g_4 , \dots , g_{n+1}) \} \\
+  % 3 \leq i \leq n-1
+  & + & \sum_{i=3}^{n-1} (-1)^i \{ g_1 f(g_2 , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+  & + & \sum_{k=1}^{i-2} (-1)^k f(g_1 , \dots , g_k g_{k+1} , \dots , g_i g_{i+1} , \dots , g_{n+2}) \\
+  & + & (-1)^{i-1} f(g_1 , \dots , g_{i-2} , g_{i-1} (g_i g_{i+1}) , g_{i+2} , \dots , g_{n+2}) \\
+  & + & (-1)^i f(g_1 , \dots , g_{i-1} , (g_i g_{i+1}) g_{i+2} , g_{i+3} , \dots , g_{n+2}) \\
+  & + & \sum_{k=i+2}^{n+1} (-1)^{k-1} f(g_1 , \dots , g_i g_{i+1} , \dots , g_k g_{k+1} , \dots , g_{n+2}) \\
+  & + & (-1)^{n+1} f(g_1 , \dots , g_i g_{i+1} , \dots , g_{n+1}) \} \\
+  % i = n
+  & + & \{ g_1 f(g_2 , \dots , g_n g_{n+1} , g_{n+2}) \\
+  & + & \sum_{k=1}^{n-2} (-1)^k f(g_1 , \dots , g_k g_{k+1} , \dots , g_n g_{n+1} , g_{n+2}) \\
+  & + & (-1)^{n-1} f(g_1 , \dots , g_{n-1} (g_n g_{n+1}) , g_{n+2}) \\
+  & + & (-1)^n f(g_1 , \dots , g_{n-1} , (g_n g_{n+1}) g_{n+2}) \\
+  & + & (-1)^{n+1} f(g_1 , \dots , g_{n-1} , g_n g_{n+1}) \} \\
+  % i = n+1
+  & + & \{ g_1 f(g_2 , \dots , g_{n+1} g_{n+2}) \\
+  & + & \sum_{k=1}^{n-1} (-1)^k f(g_1 , \dots , g_k g_{k+1} , \dots , g_n , g_{n+1} g_{n+2}) \\
+  & + & (-1)^n f(g_1 , \dots , g_{n-1} , g_n (g_{n+1} g_{n+2})) \\
+  & + & (-1)^{n+1} f(g_1 , \dots , g_n) \} \\
+  % (-1)^{n+2} f'(g_1 , \dots , g_{n+1})
+  & + & \{ (-1)^{n+2} (g_1 f(g_2 , \dots , g_{n+1}) \\
+  & + & \sum_{i=1}^n (-1)^i f(g_1 , \dots , g_i g_{i+1} , \dots , g_{n+1}) \\
+  & + & (-1)^{n+1} f(g_1 , \dots , g_n) ) \}
+\end{eqnarray*}
+\end{proof}
+
+\end{document}

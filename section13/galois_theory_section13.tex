@@ -5,6 +5,27 @@
 
 \section{Galois理論の基本定理の別の定式化}
 
+$K:$体、 $K^\mathrm{sep}:K$の分離閉包、 $A:$\rm{etale} $K-alg$に対して
+$\s(A) := \Hom_{K-alg}(A,K^\mathrm{sep})$とおく。
+このとき $K$の絶対\rm{Galois}群 $G_K := \gal(K^\mathrm{sep}/K)$は $\s(A)$に以下のように作用する。
+\begin{eqnarray*}
+  G_K \times \s(A) & \longrightarrow & \s(A) \\
+  (\sigma , f) & \longmapsto & \sigma f
+\end{eqnarray*}
+ただし $\sigma f$は
+\begin{eqnarray*}
+  \sigma f : A & \longrightarrow & K^\mathrm{sep} \\
+  x & \longmapsto & (\sigma f)(x) := \sigma(f(x))
+\end{eqnarray*}
+である。
+$G_K$は定義 $(\mathrm{\ref{defi:absolutegalois}})$から位相群であり、
+この位相についてこの作用は連続になり、
+これは各 $f \in \s(A)$の固定化群が開であることと同値になっている。
 
+$A = K[X]/(f)$のとき $f$のある根 $\alpha_i$に対して $\alpha_i = X + (f)$とすることで $\s(A)$の写像が一つ定まるので $\s(A) \cong \{ f の根\}$が成り立ち、
+$\s(A)$を多項式の根のように見ることができる。
 
+逆に $S$を $G_K$が連続に作用する有限集合 $(G_K-集合)$とすると
+$\A(S) := \map_G(S,K^\mathrm{sep}) := \{ f : S \longrightarrow K^\mathrm{sep} | f(\sigma(x)) = \sigma(f(x)) , {}^\forall \sigma \in G_K \}$
+とおいたとき $\A(S)$は $K-alg$でさらに有限次\rm{etale}でもある。
 \end{document}

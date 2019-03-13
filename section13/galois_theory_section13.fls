@@ -240,6 +240,7 @@ INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 OUTPUT galois_theory_section13.dvi
 INPUT galois_theory_section13.aux
 INPUT ./galois_theory_section13.out

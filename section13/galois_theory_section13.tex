@@ -28,4 +28,23 @@ $\s(A)$を多項式の根のように見ることができる。
 逆に $S$を $G_K$が連続に作用する有限集合 $(G_K-集合)$とすると
 $\A(S) := \map_G(S,K^\mathrm{sep}) := \{ f : S \longrightarrow K^\mathrm{sep} | f(\sigma(x)) = \sigma(f(x)) , {}^\forall \sigma \in G_K \}$
 とおいたとき $\A(S)$は $K-alg$でさらに有限次\rm{etale}でもある。
+
+以上のことから以下の定理が成り立つ。
+\begin{theo}
+  次の反圏同値がある。
+  \begin{eqnarray*}
+    (\mathrm{etale} K-algの圏) & \cong & (有限 G_K-集合の圏) \\
+    A & \longmapsto & \s(A) \\
+    \A(S) & \leftlongmapsto & S \\
+    K-alg \  \mathrm{hom} : A_1 \rightarrow A_2 & \longleftrightarrow & G_K-集合の射 : S_1 \leftarrow S_2 \\
+    単射 \mathrm{hom} : A_1 \hookrightarrow A_2 & \longleftrightarrow & 全射 : S_1 \twoheadleftarrow S_2 \\
+    全射 \mathrm{hom} : A_1 \twoheadrightarrow A_2 & \longleftrightarrow & 単射 : S_1 \hookleftarrow S_2 \\
+    A : 体 & \longleftrightarrow & Sは一つの\mathrm{orbit}からなる \\
+    A:Kの\mathrm{Galois}拡大 & \longleftrightarrow & \mathrm{Stab}_S := Sの固定化群が G_Kで正規 \\
+    A:Kの\mathrm{Galois}拡大のとき A/Kの中間体 & \longleftrightarrow & 全射 : (一点) \twoheadleftarrow Sの中間集合
+  \end{eqnarray*}
+\end{theo}
+
+\clearpage
+
 \end{document}

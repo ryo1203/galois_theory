@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  13 MAR 2019 14:43
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  13 MAR 2019 15:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -620,14 +620,22 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 
 LaTeX Warning: Reference `defi:absolutegalois' on page 1 undefined on input line 21.
 
+LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <10> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 33.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 33.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <10> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 33.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 33.
 [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
  (./galois_theory_section13.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 31.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `galois_theory_section13.out' has not changed.
 (rerunfilecheck)             Checksum: 2AF008BBEFA56D67D188CBC3B2EA0F41;135.
 
@@ -636,12 +644,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18940 strings out of 493272
- 371203 string characters out of 6146850
- 448315 words of memory out of 5000000
- 22569 multiletter control sequences out of 15000+600000
- 14065 words of font info for 66 fonts, out of 8000000 for 9000
+ 18944 strings out of 493272
+ 371252 string characters out of 6146850
+ 451315 words of memory out of 5000000
+ 22572 multiletter control sequences out of 15000+600000
+ 14411 words of font info for 67 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,10n,84p,493b,337s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 63i,12n,84p,493b,337s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section13.dvi (1 page, 8040 bytes).
+Output written on galois_theory_section13.dvi (1 page, 9524 bytes).

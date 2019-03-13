@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1552454991 "galois_theory_section12.dvi" "galois_theory_section12.pdf" "galois_theory_section12" 1552455003
-  "galois_theory_section12.dvi" 1552454990 93676 79983a4db9f7a10ade8da2cbfe9bb04f "latex"
+["dvipdf"] 1552457884 "galois_theory_section12.dvi" "galois_theory_section12.pdf" "galois_theory_section12" 1552457913
+  "galois_theory_section12.dvi" 1552457883 93676 07a265be4092a778e23cf4663eb25479 "latex"
   (generated)
   "galois_theory_section12.pdf"
-["latex"] 1552454967 "galois_theory_section12.tex" "galois_theory_section12.dvi" "galois_theory_section12" 1552455003
+["latex"] 1552457830 "galois_theory_section12.tex" "galois_theory_section12.dvi" "galois_theory_section12" 1552457912
   "../master_galois_theory.tex" 1552282640 1363 04026c918f3d0ad214ebaa25c41c3cde ""
-  "c:/Users/1203r/Dropbox/TeX/galois_theory/mymacros.sty" 1552454108 1551 48842d887606d990eecf96233054070a ""
+  "c:/Users/1203r/Dropbox/TeX/galois_theory/mymacros.sty" 1552455813 1632 736f555372c487a7081c3866895ed194 ""
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1519818042 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -144,12 +144,12 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section12.aux" 1552454990 3076 5b054e0799f5ad3121793a9e1575a040 ""
-  "galois_theory_section12.out" 1552454990 668 23014f35950e6c05ef0533f62998e6fc ""
+  "galois_theory_section12.aux" 1552457883 3076 5b054e0799f5ad3121793a9e1575a040 ""
+  "galois_theory_section12.out" 1552457883 668 23014f35950e6c05ef0533f62998e6fc ""
   "galois_theory_section12.tex" 1552454956 50430 d0a1af089e389221ec0574ee7f41ed25 ""
   (generated)
-  "galois_theory_section12.aux"
-  "galois_theory_section12.log"
   "galois_theory_section12.dvi"
-  "galois_theory_section12.out"
+  "galois_theory_section12.aux"
   "C:/Users/1203r/AppData/Local/Temp/galois_theory_section12.log"
+  "galois_theory_section12.out"
+  "galois_theory_section12.log"

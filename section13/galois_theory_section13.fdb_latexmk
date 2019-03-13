@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1552455831 "galois_theory_section13.dvi" "galois_theory_section13.pdf" "galois_theory_section13" 1552455836
-  "galois_theory_section13.dvi" 1552455831 8040 ce2802365bd4227534ba1ed0a151e42e "latex"
+["dvipdf"] 1552457702 "galois_theory_section13.dvi" "galois_theory_section13.pdf" "galois_theory_section13" 1552457713
+  "galois_theory_section13.dvi" 1552457702 9524 308c935765e849d9853e3f5f5e10e4d2 "latex"
   (generated)
   "galois_theory_section13.pdf"
-["latex"] 1552455815 "galois_theory_section13.tex" "galois_theory_section13.dvi" "galois_theory_section13" 1552455836
+["latex"] 1552457676 "galois_theory_section13.tex" "galois_theory_section13.dvi" "galois_theory_section13" 1552457713
   "../master_galois_theory.tex" 1552282640 1363 04026c918f3d0ad214ebaa25c41c3cde ""
   "c:/Users/1203r/Dropbox/TeX/galois_theory/mymacros.sty" 1552455813 1632 736f555372c487a7081c3866895ed194 ""
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
@@ -24,6 +24,7 @@
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1136768653 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
+  "c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 836244484 752 af19a43b6220f7d05ebed54406b66674 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm" 836245033 748 42bee92c90245be045b0284919824917 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm" 836245024 756 10c93c46658c2feb9e37a54862301e69 ""
@@ -138,11 +139,11 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section13.aux" 1552455831 785 52f81827b676edc56a7208d67749fdb8 ""
-  "galois_theory_section13.out" 1552455831 135 2af008bbefa56d67d188cbc3b2ea0f41 ""
-  "galois_theory_section13.tex" 1552455738 1544 70c0e4cf2ce4305d222f535ea9ff1c0d ""
+  "galois_theory_section13.aux" 1552457702 785 52f81827b676edc56a7208d67749fdb8 ""
+  "galois_theory_section13.out" 1552457702 135 2af008bbefa56d67d188cbc3b2ea0f41 ""
+  "galois_theory_section13.tex" 1552457676 2510 40078a4d353709a33f36dc7cbcc0961c ""
   (generated)
   "galois_theory_section13.out"
-  "galois_theory_section13.aux"
   "galois_theory_section13.dvi"
+  "galois_theory_section13.aux"
   "galois_theory_section13.log"

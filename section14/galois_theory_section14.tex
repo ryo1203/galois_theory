@@ -39,7 +39,7 @@
 これを\underline{$n$次のコバウンダリー $(双対境界)$作用素 $(\mathrm{coboundary \  operator})$}とよぶ。
 \end{defi}
 
-\begin{prop}
+\begin{prop} \label{prop:partialpartial}
   コバウンダリー作用素 $\partial$に対して $\partial^{n+1} \circ \partial^n = 0$が成り立つ。
 \end{prop}
 
@@ -149,5 +149,22 @@
   & + & (-1)^{n+1} f(g_1 , \dots , g_n) ) \}
 \end{eqnarray*}
 \end{proof}
+
+\begin{defi}
+  以下のように $ n \in \Z_{\geq 0}$に対して定める $Z^n$を\underline{$n$\rm{-th} コサイクル $(双対輪体)$}といい、
+  $B^n$を\underline{$n$\rm{-th} コバウンダリー $(境界輪体)$}という。
+  \begin{eqnarray*}
+    Z^n = Z^n(G,M) & := & \ker(\partial^n) \\
+    B^n = B^n(G,M) & := & \im(\partial^{n-1}) \\
+  \end{eqnarray*}
+  ただし $B^0 := 0$とする。
+  このとき命題 $(\mathrm{\ref{prop:partialpartial}})$から
+  $\partial^n \circ \partial^{n-1} = 0$なので $\partial^n(\im(\partial^{n-1})) = 0$より $B^n \subset Z^n$が成り立っている。
+  よって剰余群 $Z^n/B^n$が定義できて
+  \begin{eqnarray*}
+    H^n = H^n(G,M) := Z^n(G,M)/B^n(G,M)
+  \end{eqnarray*}
+  を $G$の $M$係数の\underline{$n$\rm{-th} コホモロジー群 $(\mathrm{cohomology})$}という。
+\end{defi}
 
 \end{document}

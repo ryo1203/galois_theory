@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1552469497 "galois_theory_section14.dvi" "galois_theory_section14.pdf" "galois_theory_section14" 1552469510
-  "galois_theory_section14.dvi" 1552469496 24372 0a45be0c35419981cce3d8b97bc20181 "latex"
+["dvipdf"] 1552648822 "galois_theory_section14.dvi" "galois_theory_section14.pdf" "galois_theory_section14" 1552648827
+  "galois_theory_section14.dvi" 1552648822 27612 f71454711f8afc2d8fcaeafe48c9543f "latex"
   (generated)
   "galois_theory_section14.pdf"
-["latex"] 1552469473 "galois_theory_section14.tex" "galois_theory_section14.dvi" "galois_theory_section14" 1552469510
+["latex"] 1552648813 "galois_theory_section14.tex" "galois_theory_section14.dvi" "galois_theory_section14" 1552648827
   "../master_galois_theory.tex" 1552458263 1408 4522eee9f0fc414dfcfc6fe71d629200 ""
   "c:/Users/1203r/Dropbox/TeX/galois_theory/mymacros.sty" 1552455813 1632 736f555372c487a7081c3866895ed194 ""
   "c:/Users/1203r/texmf/tex/PXjahyper-master/pxjahyper.sty" 1531587154 31930 8cfcbda6f31d388ab1de8524f6efd674 ""
@@ -137,11 +137,11 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1520730895 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1528355789 4474792 019e5f4ec5dab2ed7af2689700cad76c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1526105313 32626 d522074c185eaea9ed8e92f6a7f22f1d ""
-  "galois_theory_section14.aux" 1552469496 1018 f08ae9c42e65eb46448834508503ba20 ""
-  "galois_theory_section14.out" 1552469496 174 0779f3150e29b5d3c47002d61c3e9bd0 ""
-  "galois_theory_section14.tex" 1552469444 9032 6d9e8d27a63eeb2745c5b393dc1c50b1 ""
+  "galois_theory_section14.aux" 1552648821 1018 f08ae9c42e65eb46448834508503ba20 ""
+  "galois_theory_section14.out" 1552648822 174 0779f3150e29b5d3c47002d61c3e9bd0 ""
+  "galois_theory_section14.tex" 1552648811 10695 952610ddc8e0f89180ba7194e1f3ac63 ""
   (generated)
-  "galois_theory_section14.aux"
-  "galois_theory_section14.out"
   "galois_theory_section14.log"
   "galois_theory_section14.dvi"
+  "galois_theory_section14.out"
+  "galois_theory_section14.aux"

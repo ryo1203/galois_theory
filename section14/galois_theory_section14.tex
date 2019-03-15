@@ -167,4 +167,29 @@
   を $G$の $M$係数の\underline{$n$\rm{-th} コホモロジー群 $(\mathrm{cohomology})$}という。
 \end{defi}
 
+\begin{exam}
+  $n=0$のときのコホモロジー群を考える。
+  $Z^0 = \ker(\partial^0)$であり、
+  定義から
+  $\partial^0 : C^0 (= M) \longrightarrow C^1 , x \longmapsto \partial^0 x$と、
+  $\partial^0 x(g) = gx - x$なので
+  $Z^0 = \{ gx - x = 0 \Leftrightarrow gx = x | x \in M , {}^\forall g \in G \}$となる。
+  $gx$は $M$の元への $G$の作用でありそれがどんな $g \in G$でも $x$になるから
+  $M$の中で $G$によって固定されるので $Z^0 = M^G$である。
+  $B^0 := 0$だったのでコホモロジー群 $H^0$は $H^0 = Z^0/B^0 = M^G$である。
+\end{exam}
+
+\begin{exam}
+  $n=1$のときのコホモロジー群を考える。
+  $Z^1 = \ker(\partial^1)$で
+  $\partial^1 : C^1 \longrightarrow C^2 , f \longmapsto \partial^1 f$となって
+  $\partial^1 f(g_1 , g_2) = g_1 f(g_2) - f(g_1 g_2) + f(g_1)$となるから
+  $Z^1 = \{ f \in C^1 | g_1 f(g_2) - f(g_1 g_2) + f(g_1) = 0 \Leftrightarrow f(g_1 g_2) = g_1 f(g_2) + f(g_1) , {}^\forall g_1 , g_2 \in G \}$となる。
+  $B^1 = \im(\partial^0) = \{ \partial^0 x | x \in M , \partial^0 x(g) = gx - x \}$となっている。
+  いま作用が $G \times M \longrightarrow M , (g , x) \longmapsto gx = x$として自明なものであるときを考えると
+  $Z^1 = \{ f \in C^1 | f(g_1 g_2) = f(g_1) + f(g_2) , {}^\forall g_1 , g_2 \in G \}$でこれは $G$から $M$への群準同型なので $Z^1 = \Hom_{群}(G,M)$となる。
+  $B^1 = \{ \partial^0 x | x \in M , \partial^0 x(g) = gx - x = x - x = 0 \} = 0$となるから
+  $n=1$のときのコホモロジー群 $H^1$は $H^1 = \Hom_{群}(G,M)$となる。
+\end{exam}
+
 \end{document}

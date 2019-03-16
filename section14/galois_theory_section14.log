@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  15 MAR 2019 20:20
+This is e-pTeX, Version 3.14159265-p3.8.1-180518-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  16 MAR 2019 21:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -632,22 +632,35 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ] [2] [3]
 Overfull \vbox (10.6423pt too high) has occurred while \output is active []
 
- [4] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
+ [4] [5] [6]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 327.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 327.
+
+
+LaTeX Warning: Reference `lemm:dedekind' on page 7 undefined on input line 327.
+
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 334.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 334.
  (./galois_theory_section14.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 334.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 334.
 Package rerunfilecheck Info: File `galois_theory_section14.out' has not changed.
-(rerunfilecheck)             Checksum: 0779F3150E29B5D3C47002D61C3E9BD0;174.
+(rerunfilecheck)             Checksum: 772C77798CF0DFF5FF41AF93A0163F8B;242.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 18941 strings out of 493272
- 371234 string characters out of 6146850
- 460393 words of memory out of 5000000
- 22571 multiletter control sequences out of 15000+600000
- 14019 words of font info for 65 fonts, out of 8000000 for 9000
+ 18953 strings out of 493272
+ 371392 string characters out of 6146850
+ 460471 words of memory out of 5000000
+ 22581 multiletter control sequences out of 15000+600000
+ 15578 words of font info for 73 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,10n,84p,493b,427s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 63i,10n,84p,493b,460s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on galois_theory_section14.dvi (5 pages, 27612 bytes).
+Output written on galois_theory_section14.dvi (7 pages, 38572 bytes).

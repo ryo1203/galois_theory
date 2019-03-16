@@ -150,9 +150,9 @@
 \end{eqnarray*}
 \end{proof}
 
-\begin{defi}
-  以下のように $ n \in \Z_{\geq 0}$に対して定める $Z^n$を\underline{$n$\rm{-th} コサイクル $(双対輪体)$}といい、
-  $B^n$を\underline{$n$\rm{-th} コバウンダリー $(境界輪体)$}という。
+\begin{defi} \label{defi:cohomology}
+  以下のように $ n \in \Z_{\geq 0}$に対して定める $Z^n$を\underline{$n$\rm{-th} $(次)$ コサイクル $(双対輪体)$}といい、
+  $B^n$を\underline{$n$\rm{-th} $(次)$ コバウンダリー $(境界輪体)$}という。
   \begin{eqnarray*}
     Z^n = Z^n(G,M) & := & \ker(\partial^n) \\
     B^n = B^n(G,M) & := & \im(\partial^{n-1}) \\
@@ -164,10 +164,10 @@
   \begin{eqnarray*}
     H^n = H^n(G,M) := Z^n(G,M)/B^n(G,M)
   \end{eqnarray*}
-  を $G$の $M$係数の\underline{$n$\rm{-th} コホモロジー群 $(\mathrm{cohomology})$}という。
+  を $G$の $M$係数の\underline{$n$\rm{-th} $(次)$ コホモロジー群 $(\mathrm{cohomology})$}という。
 \end{defi}
 
-\begin{exam}
+\begin{exam} \label{exam:cohomology0}
   $n=0$のときのコホモロジー群を考える。
   $Z^0 = \ker(\partial^0)$であり、
   定義から
@@ -179,7 +179,7 @@
   $B^0 := 0$だったのでコホモロジー群 $H^0$は $H^0 = Z^0/B^0 = M^G$である。
 \end{exam}
 
-\begin{exam}
+\begin{exam} \label{exam:cohomology1}
   $n=1$のときのコホモロジー群を考える。
   $Z^1 = \ker(\partial^1)$で
   $\partial^1 : C^1 \longrightarrow C^2 , f \longmapsto \partial^1 f$となって
@@ -191,5 +191,144 @@
   $B^1 = \{ \partial^0 x | x \in M , \partial^0 x(g) = gx - x = x - x = 0 \} = 0$となるから
   $n=1$のときのコホモロジー群 $H^1$は $H^1 = \Hom_{群}(G,M)$となる。
 \end{exam}
+
+\begin{fact}
+  $G$加群 $M_i (1 \leq i \leq 3)$に対して以下の加群の完全列が存在するとする。
+  \begin{eqnarray*}
+    0 \longrightarrow M_1 \longrightarrow M_2 \longrightarrow M_3 \longrightarrow 0
+  \end{eqnarray*}
+  このとき以下のような無限の長さの完全列が存在する。
+  \begin{eqnarray*}
+    0 & \longrightarrow & H^0(G,M_1) \longrightarrow H^0(G,M_2) \longrightarrow H^0(G,M_3) \\
+    & \longrightarrow & H^1(G,M_1) \longrightarrow H^1(G,M_2) \longrightarrow H^1(G,M_3) \\
+    & \longrightarrow & H^2(G,M_1) \longrightarrow \cdots
+  \end{eqnarray*}
+\end{fact}
+
+\subsection{Galois cohomology}
+
+\begin{defi}
+  $A$を群 $G$が作用する\rm{Abel}とは限らない群とする。
+  このとき例 $(\mathrm{\ref{exam:cohomology0}})$より
+  $0$次のコホモロジー群を
+  $H^0(G,A) := A^G$としても矛盾しないのでそのように定義する。
+
+  また、 $\alpha \in C^1(G,A)$を
+  \begin{eqnarray*}
+    \alpha : G & \longrightarrow & A \\
+    g & \longmapsto & \alpha_g
+  \end{eqnarray*}
+  と定めると、 $A$の演算を非可換性を表すため積で書くことにすると
+  \begin{eqnarray*}
+    \partial^1(\alpha)(g , h) & = & g \alpha_h \cdot \alpha_{gh}^{-1} \cdot \alpha_g \\
+    \alpha \in Z^1 = \ker(\partial^1) & \Leftrightarrow & {}^\forall g , h \in G , g \alpha_h \cdot \alpha_{gh}^{-1} \cdot \alpha_g = 1 \\
+    & \Leftrightarrow & \alpha_{gh}^{-1} \cdot \alpha_g = (g \alpha_h)^{-1} \\
+    & \Leftrightarrow & \alpha_g (g \alpha_h) = \alpha_{gh}
+  \end{eqnarray*}
+  となるから
+  例 $(\mathrm{\ref{exam:cohomology1}})$より
+  $1$次のコサイクルは
+  $Z^1 = \{ \alpha \in C^1 | {}^\forall g , h \in G , \alpha_{gh} = \alpha_g \cdot g \alpha_h \}$
+  となるのでそのように定義する。
+\end{defi}
+
+\begin{defi}
+  群 $G$とそれが作用する非可換群 $A$の
+  $1$次コサイクル $Z^1$について
+  $\alpha , \beta \in Z^1$が\underline{\rm{cohomologous}} $(\alpha \sim \beta)$とは
+  \[
+  {}^\exists a \in A \  \mathrm{s.t.} \
+  {}^\forall g \in G \  , \  \beta_g = a^{-1} \cdot \alpha_g \cdot ga
+  \]
+  となることであり、これは同値関係になる。
+  $G$が恒等的な作用をするのであれば $ga = a$より
+  これは $\alpha_g$と $\beta_g$が共役な関係になってることと同じになる。
+  つまり共役から $ga$の分だけねじれているともみれる。
+\end{defi}
+
+\begin{proof}
+  同値関係になることをしめす。
+
+  まず、 ${}^\forall g \in G$と ${}^\forall a \in A$について
+  $(ga)^{-1} = ga^{-1} , g(1) = 1$が成り立つことを示す。
+  定義から $G$が $A$に加群のように作用するので
+  $g(1) = g(1 \cdot 1) = g(1) \cdot g(1)$から
+  $g(1) = g(1) \cdot g(1)^{-1} = 1$より成立。
+  これを用いれば $1 = g(1) = g(a \cdot a^{-1}) = ga \cdot ga^{-1} \Leftrightarrow (ga)^{-1} = ga^{-1}$より成立。
+
+  ・反射律
+
+  $a = 1 \in A$としてとれば
+  $\alpha_g = 1 \cdot \alpha_g \cdot 1 = 1^{-1} \cdot \alpha_g \cdot g(1)$
+  が任意の $g \in G$で成り立つので $\alpha \sim \alpha$より反射律が成り立つ。
+
+  ・対称律
+
+  $\alpha \sim \beta$のときある $a \in A$で $\beta_g = a^{-1} \cdot \alpha_g \cdot ga$となっているので逆元をそれぞれかけて
+  $\alpha_g = a \cdot \beta_g \cdot (ga)^{-1}$となっていて
+  上で述べたことより $b := a^{-1} \in A$を取る時 $(ga)^{-1} = ga^{-1} = gb$から
+  $\alpha_g = b^{-1} \cdot \beta_g \cdot gb$となるので $\beta \sim \alpha$より対称律がなりたつ。
+
+  ・推移律
+
+  $\alpha \sim \beta , \beta \sim \gamma$となっているとするとき
+  ある $a , b \in A$で $\beta_g = a^{-1} \cdot \alpha_g \cdot ga$と
+  $\gamma_g = b^{-1} \cdot \beta_g \cdot gb$となっている。
+  $\beta_g$に代入すると $\gamma_g = b^{-1} \cdot (a^{-1} \cdot \alpha_g \cdot ga) \cdot gb = (b^{-1} a^{-1}) \cdot \alpha_g \cdot (ga \cdot gb) = (ab)^{-1} \cdot \alpha_g \cdot g(ab)$となり
+  $ab \in A$なので $\alpha \sim \gamma$から推移律が成り立つ。
+\end{proof}
+
+\begin{defi}
+  \rm{Galois cohomology}とは有限次\rm{Galois}拡大 $L/K$があるとき
+  $G := \gal(L/K)$としてこれが作用する群 $M$についての
+  コホモロジー群 $H^n(G,M)$のことである。
+  とくに $M$として $L , L^n , GL_n(L)$等を考える。
+  ただし $GL_n(L)$は $L$成分の $n$次正則行列全体の積による群であり、
+  一般に $L$に作用する群を $G$としたとき $\sigma \in G$は $X = (x_{ij}) \in M_n(L) := (n次正方行列全体の集合)$に対して
+  $\sigma(X) := (\sigma(x_{ij}))$と定める。
+\end{defi}
+
+\begin{prop}
+  体 $L$と有限群 $G \subset \aut(L)$について以下が成り立つ。
+
+  $(1)$
+  ${}^\forall n \in \Z_{\geq 1}$について
+  $H^n(G,L) = 0$となる。
+
+  $(2)$
+  ${}^\forall n \in \Z_{\geq 1}$について
+  $H^1(G,GL_n(L)) = 1$となる。
+  とくに $H^1(G,L^\times) = 1$となる。
+  これは一つの成分だけの正則行列が $GL_1(L) = L^\times$となることからすぐ導かれる。
+\end{prop}
+
+\begin{proof}
+  $(2)$
+
+  一般に定義 $(\mathrm{\ref{defi:cohomology}})$から $B^1 \subset Z^1$だから
+  $Z^1 \subset B^1$を示せば $B^1 = Z^1$から $H^1 = Z^1/B^1 = 1$が示される。
+  まず、 $0$次コバウンダリー作用素 $\partial^0$に対して
+  $B^1 = \im(\partial^0) = \{ \partial^0 X | X \in GL_n(L) \}$となっていて
+  例 $(\mathrm{\ref{exam:cohomology1}})$の $B^1$から
+  $\partial^0 X$は $GL_n(L)$での演算は積であることに注意すれば
+  \begin{eqnarray*}
+    \partial^0 X : G & \longrightarrow & GL_n(L) \\
+    g & \longmapsto & \partial^0 X(g) = gX \cdot X^{-1}
+  \end{eqnarray*}
+  となっている。
+  したがって ${}^\forall \alpha \in Z^1$に対して
+  ${}^\forall g \in G , \alpha_g = \partial^0 X(g) = gX \cdot X^{-1}$となる
+  $X \in GL_n(L)$が存在すればよい。
+  いま、ある $X \in GL_n(L)$について
+  \begin{eqnarray*}
+    b := \sum_{h \in G} \alpha_h \cdot h(X)
+  \end{eqnarray*}
+  と定義すると $b \in GL_n(L)$である。
+  $h \in G \subset \aut(L)$より\rm{Dedekind}の補題 $(\mathrm{\ref{lemm:dedekind}})$から $M$を $L$とみれば
+  その対偶を取ることで
+  $\alpha_h \in GL_n(L)$はより任意の $h \in G$で $\alpha_h \neq 0$となるから
+  ある $x_{ij} \in L$が存在して $\sum_{h \in G} \alpha_h \cdot hx_{ij} \neq 0$
+  となる。
+\end{proof}
 
 \end{document}

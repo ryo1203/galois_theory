@@ -49,4 +49,4 @@
 \contentsline {section}{\numberline {13}Galois理論の基本定理の別の定式化}{65}{section.13}
 \contentsline {section}{\numberline {14}Galois cohomology}{66}{section.14}
 \contentsline {subsection}{\numberline {14.1}群のcohomology}{66}{subsection.14.1}
-\contentsline {subsection}{\numberline {14.2}Galois cohomology}{71}{subsection.14.2}
+\contentsline {subsection}{\numberline {14.2}Galois cohomology}{73}{subsection.14.2}

@@ -155,7 +155,22 @@
   このとき $x - x' \in B^{n+1}_1$であれば $\overline{x} = \overline{x'}$となるから $\partial^*_2$が写像になる。
   したがって $x - x' \in B^{n+1}_1$を示せばいい。
 
-  上記のように $z , z' , y , y' , x , x'$を定めると
+  以下のような可換性を用いる。
+  \begin{center}
+    \begin{tikzpicture}[auto]
+      %\draw [help lines] (0,0) grid (10,4);
+      \node (x-x') at (0,0) {$x - x'$};
+      \node (w) at (0,2) {$w := (f_{12}^n)^{-1}(y) - (f_{12}^n)^{-1}(y')$};
+      \node (partial^n_2y - partial^n_2y') at (4.5,0) {$\partial^n_2(y) - \partial^n_2(y')$};
+      \node (y-y') at (4.5,2) {$y - y'$};
+
+      \draw[->] (y-y') to node {$\scriptstyle \partial^n_2$} (partial^n_2y - partial^n_2y');
+      \draw[->] (w) to node {$\scriptstyle \partial^n_1$} (x-x');
+      \draw[->] (x-x') to node {$\scriptstyle f_{12}^{n+1}$} (partial^n_2y - partial^n_2y');
+      \draw[->] (w) to node {$\scriptstyle f_{12}^n$} (y-y');
+    \end{tikzpicture}
+  \end{center}
+
   $x - x' = (f_{12}^{n+1})^{-1} \circ \partial^n_2(y) - (f_{12}^{n+1})^{-1} \circ \partial^n_2(y')$である。
   $f_{12}^i$が単射で図式が可換より $(f_{12}^{n+1})^{-1} \circ \partial^n_2 = \partial^n_1 \circ (f_{12}^n)^{-1}$となる。
   よって $\partial^n_1$が準同型だから $x - x' = \partial^n_1 \circ (f_{12}^n)^{-1}(y) - \partial^n_1 \circ (f_{12}^n)^{-1}(y') = \partial^n_1((f_{12}^n)^{-1}(y) - (f_{12}^n)^{-1}(y'))$となる。
@@ -182,6 +197,26 @@
     \partial^* : H^n_3 & \longrightarrow & H^{n+1}_1 \\
     \overline{z} = z + B^n_3 & \longmapsto & \partial^*_2(z) = \overline{x} = x + B^{n+1}_1
   \end{eqnarray*}
+  以下のような可換性を用いる。
+  \begin{center}
+    \begin{tikzpicture}[auto]
+      %\draw [help lines] (0,0) grid (10,4);
+      \node (x) at (0,0) {$x$};
+      \node (y) at (2,1.5) {$y = \partial^{n-1}_2(u)$};
+      \node (u) at (2,3) {$u$};
+      \node (w) at (5,3) {$w$};
+      \node (partial^{n-1}_3w) at (5,1.5) {$\partial^{n-1}_3(w)$};
+      \node (0) at (2,0) {$\partial^n \circ \partial^{n-1}(u) = 0$};
+
+      \draw[->] (w) to node {$\scriptstyle \partial^{n-1}_3$} (partial^{n-1}_3w);
+      \draw[->] (u) to node {$\scriptstyle f_{23}^{n-1}$} (w);
+      \draw[->] (u) to node {$\scriptstyle \partial^{n-1}_2$} (y);
+      \draw[->] (y) to node {$\scriptstyle f_{23}^n$} (partial^{n-1}_3w);
+      \draw[->] (y) to node {$\scriptstyle \partial^n_2$} (0);
+      \draw[->] (x) to node {$\scriptstyle f_{12}^{n+1}$} (0);
+    \end{tikzpicture}
+  \end{center}
+
   $\partial^*_2$はすでに準同型写像なので $\partial^*(\overline{z}) = \partial^*_2(z + B^n_3)$より $\partial^*_2(B^n_3) = 0$となれば
   $\partial^*(\overline{z}) = \partial^*_2(z) = \overline{x}$とできて準同型写像が誘導される。
   したがって $\partial^*_2(B^n_3) = 0$を示す。

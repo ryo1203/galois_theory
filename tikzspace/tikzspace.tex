@@ -202,11 +202,11 @@
     \begin{tikzpicture}[auto]
       %\draw [help lines] (0,0) grid (10,4);
       \node (x) at (0,0) {$x$};
-      \node (y) at (2,1.5) {$y = \partial^{n-1}_2(u)$};
-      \node (u) at (2,3) {$u$};
-      \node (w) at (5,3) {$w$};
-      \node (partial^{n-1}_3w) at (5,1.5) {$\partial^{n-1}_3(w)$};
-      \node (0) at (2,0) {$\partial^n \circ \partial^{n-1}(u) = 0$};
+      \node (y) at (3,2) {$y = \partial^{n-1}_2(u) = (f_{23}^n)^{-1} \circ \partial^{n-1}_3(w)$};
+      \node (u) at (3,4) {$u = (f_{23}^{n-1})^{-1}(w)$};
+      \node (w) at (8,4) {$w$};
+      \node (partial^{n-1}_3w) at (8,2) {$\partial^{n-1}_3(w)$};
+      \node (0) at (3,0) {$0 = \partial^n \circ \partial^{n-1}(u)$};
 
       \draw[->] (w) to node {$\scriptstyle \partial^{n-1}_3$} (partial^{n-1}_3w);
       \draw[->] (u) to node {$\scriptstyle f_{23}^{n-1}$} (w);

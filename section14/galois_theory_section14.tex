@@ -192,6 +192,18 @@
   $n=1$のときのコホモロジー群 $H^1$は $H^1 = \Hom_{群}(G,M)$となる。
 \end{exam}
 
+\begin{prop}
+  $G$加群 $M_1 , M_2 , M_3$に対して、 $C^n_i := C^n(G,M_i) , Z^n_i := Z^n(G,M_i) , B^n_i := B^n(G,M_i) , H^n_i := H^n(G,M_i)$と書くことにする。
+  また、 $n$次コバウンダリー作用素 $\partial^n : C^n_i \longrightarrow C^{n+1}_i$を $\partial^n_i$と書くことにする。
+  ここで以下のような行が完全列になっていてそれぞれ写像が可換な図を考える。
+  \begin{tikzpicture}
+    \draw [help lines] (0,0) grid (10,4);%(0,0)から(10,4)までの"細線の方眼"
+    \node (0^{n+1}) at (0,0) {$0$};
+    \node (0^n) at (0,1) {$0$};
+    \node (0^{n-1}) at (0,2) {$0$};
+  \end{tikzpicture}
+\end{prop}
+
 \begin{fact}
   $G$加群 $M_i (1 \leq i \leq 3)$に対して以下の加群の完全列が存在するとする。
   \begin{eqnarray*}
